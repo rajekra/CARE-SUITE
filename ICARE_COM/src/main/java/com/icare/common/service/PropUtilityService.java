@@ -11,13 +11,12 @@ import java.util.Date;
 import java.util.List;
 import java.util.Set;
 
-import org.bson.types.ObjectId;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
 import com.ecams.claim.bo.ClaimHeader;
 import com.ecams.claim.bo.ClaimLine;
 import com.ecams.claim.bo.ClmHdrAdmissionDetail;
+import com.ecams.claim.bo.ClmHdrCondition;
+import com.ecams.claim.bo.ClmHdrOccurrenceDetail;
+import com.ecams.claim.bo.ClmHdrValueAmount;
 import com.ecams.claim.bo.ClmHdrXDiagnosis;
 import com.ecams.claim.bo.ClmHdrXProcedure;
 import com.ecams.claim.bo.ClmHdrXPrvdrLctn;
@@ -99,6 +98,11 @@ public class PropUtilityService {
 		cd.setDrgCode(claimHeaderBo.getDrgCode());
 		cd.setBlngNationalPrvdrIdntfr(claimHeaderBo.getBlngNationalPrvdrIdntfr());
 		cd.setBlngPrvdrLctnZipCode(claimHeaderBo.getBlngPrvdrLctnZipCode());
+		cd.setTotalBilledAmount(claimHeaderBo.getTotalBilledAmount());
+		if(null!=claimHeaderBo.getClmHdrDerivedElement())
+		{
+			cd.setPaidAmount(claimHeaderBo.getClmHdrDerivedElement().getPaidAmount());
+		}
 		//Diagnosis
 		if(null!=claimHeaderBo.getClmHdrXDiagnosis())
 		{
@@ -162,16 +166,38 @@ public class PropUtilityService {
 		}
 		
 		//Conditions
-		if(null!=claimHeaderBo.getClmHdrConditions();)
+		if(null!=claimHeaderBo.getClmHdrConditions())
 		{
-			
+			int seqNo =1;
+			for(ClmHdrCondition clmHdrCondition: claimHeaderBo.getClmHdrConditions())
+			{
+				cd = setValue(cd, "cnd"+seqNo,clmHdrCondition.getClmConditionCid());
+				seqNo++;
+			}
 		}
 		
 		//Occurence
-		claimHeaderBo.getClmHdrOccurrenceDetails();
-		
+		if(null!=claimHeaderBo.getClmHdrOccurrenceDetails())
+		{
+			int seqNo =1;
+			for(ClmHdrOccurrenceDetail clmHdrOccurrenceDetail: claimHeaderBo.getClmHdrOccurrenceDetails())
+			{
+				cd = setValue(cd, "ocr"+seqNo,clmHdrOccurrenceDetail.getClmOccurrenceAndSpanCid());
+				cd = setValue(cd, "ocr"+seqNo+"_dt",clmHdrOccurrenceDetail.getFromDate());
+				seqNo++;
+			}
+		}
 		//Value codes
-		claimHeaderBo.getClmHdrValueAmounts();
+		if(null!=claimHeaderBo.getClmHdrValueAmounts())
+		{
+			int seqNo =1;
+			for(ClmHdrValueAmount clmHdrValueAmount: claimHeaderBo.getClmHdrValueAmounts())
+			{
+				cd = setValue(cd, "val"+seqNo,clmHdrValueAmount.getAmountTypeLkpcd());
+				cd = setValue(cd, "val"+seqNo+"_amt",clmHdrValueAmount.getClmAmountValue());
+				seqNo++;
+			}
+		}
 		
 		List<CL> lines = new ArrayList<CL>();
 		//Lines
