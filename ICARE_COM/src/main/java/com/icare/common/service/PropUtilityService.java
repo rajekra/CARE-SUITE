@@ -162,7 +162,10 @@ public class PropUtilityService {
 		}
 		
 		//Conditions
-		claimHeaderBo.getClmHdrConditions();
+		if(null!=claimHeaderBo.getClmHdrConditions();)
+		{
+			
+		}
 		
 		//Occurence
 		claimHeaderBo.getClmHdrOccurrenceDetails();
