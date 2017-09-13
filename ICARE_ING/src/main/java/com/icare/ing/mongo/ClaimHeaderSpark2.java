@@ -61,13 +61,13 @@ public final class ClaimHeaderSpark2 {
 	  Dataset<Row> dataFrame = spark.createDataFrame(cds, CD.class);
 	  Dataset<Row> lineFrames = spark.createDataFrame(cls, CL.class);
 	  lineFrames.printSchema();
-	  lineFrames.show();
+	//  lineFrames.show();
 	  
 	  dataFrame.createOrReplaceTempView("header");
 	  lineFrames.createOrReplaceTempView("line");
 	    
 	    //Dataset<Row> centenarians = spark.sql("select sum(cast(s.billedAmount as int)) from line s");
-	  Dataset<Row> centenarians = spark.sql("select distinct h.blngNationalPrvdrIdntfr, sum(cast(s.billedAmount as int)) , to_date(s.fromServiceDate) as dd from line s , header h group by s.fromServiceDate,h.blngNationalPrvdrIdntfr");
+	  Dataset<Row> centenarians = spark.sql("select distinct h.totalBilledAmount,h.tcn, sum(cast(s.billedAmount as int)) , to_date(s.fromServiceDate) as dd from line s , header h group by s.fromServiceDate,h.totalBilledAmount,h.tcn");
 	    centenarians.show();
       
     jsc.close();

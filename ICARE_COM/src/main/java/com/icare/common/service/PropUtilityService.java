@@ -86,11 +86,24 @@ public class PropUtilityService {
 		
 		//cd.set_id(new ObjectId());
 		cd.setTcn(claimHeaderBo.getTcn());
-		cd.setFromServiceDate(claimHeaderBo.getFromServiceDate());
-		cd.setToServiceDate(claimHeaderBo.getToServiceDate());
-		cd.setAdmissionDate(claimHeaderBo.getAdmissionDate());
+		if(null!=claimHeaderBo.getFromServiceDate())
+		{
+			cd.setFromServiceDate(claimHeaderBo.getFromServiceDate().toString());
+		}
+		if(null!=claimHeaderBo.getToServiceDate())
+		{
+			cd.setToServiceDate(claimHeaderBo.getToServiceDate().toString());
+		}
+		if(null!=claimHeaderBo.getAdmissionDate())
+		{
+			cd.setAdmissionDate(claimHeaderBo.getAdmissionDate().toString());
+		}
 		cd.setAdmissionHour(claimHeaderBo.getAdmissionHour());
-		cd.setDischargeDate(claimHeaderBo.getDischargeDate());
+		if(null!=claimHeaderBo.getDischargeDate())
+		{
+			cd.setDischargeDate(claimHeaderBo.getDischargeDate().toString());
+		}
+		
 		cd.setFaciType_BillFirstDigit(claimHeaderBo.getFacilityTypeCode().substring(0,1));
 		cd.setServType_BillSecondDigit(claimHeaderBo.getFacilityTypeCode().substring(1,2));
 		cd.setFreqType_BillThirdDigit(claimHeaderBo.getClaimSubmissionReasonLkpcd());
@@ -142,7 +155,10 @@ public class PropUtilityService {
 			if("P".equals(clmHdrXProcedure.getProcedureTypeQlfr()))
 			{
 				cd.setPrncplPrcdrCd(clmHdrXProcedure.getPrcdrCode());
-				cd.setPrncplPrcdrCdDate(clmHdrXProcedure.getSurgicalPrcdrDate());
+				if(null!=clmHdrXProcedure.getSurgicalPrcdrDate())
+				{
+					cd.setPrncplPrcdrCdDate(clmHdrXProcedure.getSurgicalPrcdrDate().toString());
+				}
 			}
 			else if("O".equals(clmHdrXProcedure.getProcedureTypeQlfr()))
 			{

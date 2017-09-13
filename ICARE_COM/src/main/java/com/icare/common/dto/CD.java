@@ -2,16 +2,13 @@ package com.icare.common.dto;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
-
-import org.bson.types.ObjectId;
 
 public class CD {
 	
 	private String tcn;
-	private Date fromServiceDate;
-	private Date toServiceDate;
+	private String fromServiceDate;
+	private String toServiceDate;
 	private BigDecimal blngNationalPrvdrIdntfr;
 	private String blngPrvdrLctnZipCode;
 	private BigDecimal srvcngNationalPrvdrIdntfr;
@@ -22,14 +19,14 @@ public class CD {
 	private String faciType_BillFirstDigit;
 	private String servType_BillSecondDigit;
 	private String freqType_BillThirdDigit;
-	private Date admissionDate;
+	private String admissionDate;
 	private String admissionHour;
 	private String admissionSourceLkpcd;
 	private String admissionTypeLkpcd;
 	
 	//Discharge status
 	private String patientStatusLkpcd;
-	private Date dischargeDate;
+	private String dischargeDate;
 	private BigDecimal totalBilledAmount;
 	private BigDecimal paidAmount;
 	private String drgCode;
@@ -40,7 +37,7 @@ public class CD {
 	private String mbrIdentifier;
 	private String patientFirstName;
 	private String patientLastName;
-	private Date patientBirthDate;
+	private String patientBirthDate;
 	private String patientGender;
 	private String patientZip;
 	private String patientState;
@@ -117,7 +114,7 @@ public class CD {
 	private String de12;
 	private String de12_poa;
 	private String prncplPrcdrCd;
-	private Date prncplPrcdrCdDate;
+	private String prncplPrcdrCdDate;
 	private String p1;
 	private String p1_dt;
 	private String p2;
@@ -292,16 +289,16 @@ public class CD {
 	public void setTcn(String tcn) {
 		this.tcn = tcn;
 	}
-	public Date getFromServiceDate() {
+	public String getFromServiceDate() {
 		return fromServiceDate;
 	}
-	public void setFromServiceDate(Date fromServiceDate) {
+	public void setFromServiceDate(String fromServiceDate) {
 		this.fromServiceDate = fromServiceDate;
 	}
-	public Date getToServiceDate() {
+	public String getToServiceDate() {
 		return toServiceDate;
 	}
-	public void setToServiceDate(Date toServiceDate) {
+	public void setToServiceDate(String toServiceDate) {
 		this.toServiceDate = toServiceDate;
 	}
 	public BigDecimal getBlngNationalPrvdrIdntfr() {
@@ -366,10 +363,10 @@ public class CD {
 	public void setFreqType_BillThirdDigit(String freqType_BillThirdDigit) {
 		this.freqType_BillThirdDigit = freqType_BillThirdDigit;
 	}
-	public Date getAdmissionDate() {
+	public String getAdmissionDate() {
 		return admissionDate;
 	}
-	public void setAdmissionDate(Date admissionDate) {
+	public void setAdmissionDate(String admissionDate) {
 		this.admissionDate = admissionDate;
 	}
 	public String getAdmissionHour() {
@@ -396,10 +393,10 @@ public class CD {
 	public void setPatientStatusLkpcd(String patientStatusLkpcd) {
 		this.patientStatusLkpcd = patientStatusLkpcd;
 	}
-	public Date getDischargeDate() {
+	public String getDischargeDate() {
 		return dischargeDate;
 	}
-	public void setDischargeDate(Date dischargeDate) {
+	public void setDischargeDate(String dischargeDate) {
 		this.dischargeDate = dischargeDate;
 	}
 	public BigDecimal getTotalBilledAmount() {
@@ -438,6 +435,12 @@ public class CD {
 	public void setPrncplDgnsCd(String prncplDgnsCd) {
 		this.prncplDgnsCd = prncplDgnsCd;
 	}
+	public String getPrncplDgnsPoa() {
+		return prncplDgnsPoa;
+	}
+	public void setPrncplDgnsPoa(String prncplDgnsPoa) {
+		this.prncplDgnsPoa = prncplDgnsPoa;
+	}
 	public String getMbrIdentifier() {
 		return mbrIdentifier;
 	}
@@ -456,10 +459,10 @@ public class CD {
 	public void setPatientLastName(String patientLastName) {
 		this.patientLastName = patientLastName;
 	}
-	public Date getPatientBirthDate() {
+	public String getPatientBirthDate() {
 		return patientBirthDate;
 	}
-	public void setPatientBirthDate(Date patientBirthDate) {
+	public void setPatientBirthDate(String patientBirthDate) {
 		this.patientBirthDate = patientBirthDate;
 	}
 	public String getPatientGender() {
@@ -911,6 +914,18 @@ public class CD {
 	}
 	public void setDe12_poa(String de12_poa) {
 		this.de12_poa = de12_poa;
+	}
+	public String getPrncplPrcdrCd() {
+		return prncplPrcdrCd;
+	}
+	public void setPrncplPrcdrCd(String prncplPrcdrCd) {
+		this.prncplPrcdrCd = prncplPrcdrCd;
+	}
+	public String getPrncplPrcdrCdDate() {
+		return prncplPrcdrCdDate;
+	}
+	public void setPrncplPrcdrCdDate(String prncplPrcdrCdDate) {
+		this.prncplPrcdrCdDate = prncplPrcdrCdDate;
 	}
 	public String getP1() {
 		return p1;
@@ -1920,144 +1935,6 @@ public class CD {
 	public void setLines(List<CL> lines) {
 		this.lines = lines;
 	}
-	@Override
-	public String toString() {
-		return "CD [tcn=" + tcn + ", fromServiceDate=" + fromServiceDate
-				+ ", toServiceDate=" + toServiceDate
-				+ ", blngNationalPrvdrIdntfr=" + blngNationalPrvdrIdntfr
-				+ ", blngPrvdrLctnZipCode=" + blngPrvdrLctnZipCode
-				+ ", srvcngNationalPrvdrIdntfr=" + srvcngNationalPrvdrIdntfr
-				+ ", srvcngPrvdrLctnZipCode=" + srvcngPrvdrLctnZipCode
-				+ ", attendingNationalPrvdrIdntfr="
-				+ attendingNationalPrvdrIdntfr
-				+ ", operatingPhyNationalPrvdrIdntfr="
-				+ operatingPhyNationalPrvdrIdntfr
-				+ ", othOeratingPhyNationalPrvdrIdntfr="
-				+ othOeratingPhyNationalPrvdrIdntfr
-				+ ", faciType_BillFirstDigit=" + faciType_BillFirstDigit
-				+ ", servType_BillSecondDigit=" + servType_BillSecondDigit
-				+ ", freqType_BillThirdDigit=" + freqType_BillThirdDigit
-				+ ", admissionDate=" + admissionDate + ", admissionHour="
-				+ admissionHour + ", admissionSourceLkpcd="
-				+ admissionSourceLkpcd + ", admissionTypeLkpcd="
-				+ admissionTypeLkpcd + ", patientStatusLkpcd="
-				+ patientStatusLkpcd + ", dischargeDate=" + dischargeDate
-				+ ", totalBilledAmount=" + totalBilledAmount + ", paidAmount="
-				+ paidAmount + ", drgCode=" + drgCode + ", apc=" + apc
-				+ ", admtDiagCd=" + admtDiagCd + ", prncplDgnsCd="
-				+ prncplDgnsCd + ", mbrIdentifier=" + mbrIdentifier
-				+ ", patientFirstName=" + patientFirstName
-				+ ", patientLastName=" + patientLastName
-				+ ", patientBirthDate=" + patientBirthDate + ", patientGender="
-				+ patientGender + ", patientZip=" + patientZip
-				+ ", patientState=" + patientState + ", d1=" + d1 + ", d1_poa="
-				+ d1_poa + ", d2=" + d2 + ", d2_poa=" + d2_poa + ", d3=" + d3
-				+ ", d3_poa=" + d3_poa + ", d4=" + d4 + ", d4_poa=" + d4_poa
-				+ ", d5=" + d5 + ", d5_poa=" + d5_poa + ", d6=" + d6
-				+ ", d6_poa=" + d6_poa + ", d7=" + d7 + ", d7_poa=" + d7_poa
-				+ ", d8=" + d8 + ", d8_poa=" + d8_poa + ", d9=" + d9
-				+ ", d9_poa=" + d9_poa + ", d10=" + d10 + ", d10_poa="
-				+ d10_poa + ", d11=" + d11 + ", d11_poa=" + d11_poa + ", d12="
-				+ d12 + ", d12_poa=" + d12_poa + ", d13=" + d13 + ", d13_poa="
-				+ d13_poa + ", d14=" + d14 + ", d14_poa=" + d14_poa + ", d15="
-				+ d15 + ", d15_poa=" + d15_poa + ", d16=" + d16 + ", d16_poa="
-				+ d16_poa + ", d17=" + d17 + ", d17_poa=" + d17_poa + ", d18="
-				+ d18 + ", d18_poa=" + d18_poa + ", d19=" + d19 + ", d19_poa="
-				+ d19_poa + ", d20=" + d20 + ", d20_poa=" + d20_poa + ", d21="
-				+ d21 + ", d21_poa=" + d21_poa + ", d22=" + d22 + ", d22_poa="
-				+ d22_poa + ", d23=" + d23 + ", d23_poa=" + d23_poa + ", d24="
-				+ d24 + ", d24_poa=" + d24_poa + ", de1=" + de1 + ", de1_poa="
-				+ de1_poa + ", de2=" + de2 + ", de2_poa=" + de2_poa + ", de3="
-				+ de3 + ", de3_poa=" + de3_poa + ", de4=" + de4 + ", de4_poa="
-				+ de4_poa + ", de5=" + de5 + ", de5_poa=" + de5_poa + ", de6="
-				+ de6 + ", de6_poa=" + de6_poa + ", de7=" + de7 + ", de7_poa="
-				+ de7_poa + ", de8=" + de8 + ", de8_poa=" + de8_poa + ", de9="
-				+ de9 + ", de9_poa=" + de9_poa + ", de10=" + de10
-				+ ", de10_poa=" + de10_poa + ", de11=" + de11 + ", de11_poa="
-				+ de11_poa + ", de12=" + de12 + ", de12_poa=" + de12_poa
-				+ ", p1=" + p1 + ", p1_dt=" + p1_dt + ", p2=" + p2 + ", p2_dt="
-				+ p2_dt + ", p3=" + p3 + ", p3_dt=" + p3_dt + ", p4=" + p4
-				+ ", p4_dt=" + p4_dt + ", p5=" + p5 + ", p5_dt=" + p5_dt
-				+ ", p6=" + p6 + ", p6_dt=" + p6_dt + ", p7=" + p7 + ", p7_dt="
-				+ p7_dt + ", p8=" + p8 + ", p8_dt=" + p8_dt + ", p9=" + p9
-				+ ", p9_dt=" + p9_dt + ", p10=" + p10 + ", p10_dt=" + p10_dt
-				+ ", p11=" + p11 + ", p11_dt=" + p11_dt + ", p12=" + p12
-				+ ", p12_dt=" + p12_dt + ", p13=" + p13 + ", p13_dt=" + p13_dt
-				+ ", p14=" + p14 + ", p14_dt=" + p14_dt + ", p15=" + p15
-				+ ", p15_dt=" + p15_dt + ", p16=" + p16 + ", p16_dt=" + p16_dt
-				+ ", p17=" + p17 + ", p17_dt=" + p17_dt + ", p18=" + p18
-				+ ", p18_dt=" + p18_dt + ", p19=" + p19 + ", p19_dt=" + p19_dt
-				+ ", p20=" + p20 + ", p20_dt=" + p20_dt + ", p21=" + p21
-				+ ", p21_dt=" + p21_dt + ", p22=" + p22 + ", p22_dt=" + p22_dt
-				+ ", p23=" + p23 + ", p23_dt=" + p23_dt + ", p24=" + p24
-				+ ", p24_dt=" + p24_dt + ", rsn_cd_1=" + rsn_cd_1
-				+ ", rsn_cd_=" + rsn_cd_ + ", rsn_cd_3=" + rsn_cd_3 + ", cnd1="
-				+ cnd1 + ", cnd2=" + cnd2 + ", cnd3=" + cnd3 + ", cnd4=" + cnd4
-				+ ", cnd5=" + cnd5 + ", cnd6=" + cnd6 + ", cnd7=" + cnd7
-				+ ", cnd8=" + cnd8 + ", cnd9=" + cnd9 + ", cnd10=" + cnd10
-				+ ", cnd11=" + cnd11 + ", cnd12=" + cnd12 + ", cnd13=" + cnd13
-				+ ", cnd14=" + cnd14 + ", cnd15=" + cnd15 + ", cnd16=" + cnd16
-				+ ", cnd17=" + cnd17 + ", cnd18=" + cnd18 + ", cnd19=" + cnd19
-				+ ", cnd20=" + cnd20 + ", cnd21=" + cnd21 + ", cnd22=" + cnd22
-				+ ", cnd23=" + cnd23 + ", cnd24=" + cnd24 + ", ocr1=" + ocr1
-				+ ", ocr1_dt=" + ocr1_dt + ", ocr2=" + ocr2 + ", ocr2_dt="
-				+ ocr2_dt + ", ocr3=" + ocr3 + ", ocr3_dt=" + ocr3_dt
-				+ ", ocr4=" + ocr4 + ", ocr4_dt=" + ocr4_dt + ", ocr5=" + ocr5
-				+ ", ocr5_dt=" + ocr5_dt + ", ocr6=" + ocr6 + ", ocr6_dt="
-				+ ocr6_dt + ", ocr7=" + ocr7 + ", ocr7_dt=" + ocr7_dt
-				+ ", ocr8=" + ocr8 + ", ocr8_dt=" + ocr8_dt + ", ocr9=" + ocr9
-				+ ", ocr9_dt=" + ocr9_dt + ", ocr10=" + ocr10 + ", ocr10_dt="
-				+ ocr10_dt + ", ocr11=" + ocr11 + ", ocr11_dt=" + ocr11_dt
-				+ ", ocr12=" + ocr12 + ", ocr13_dt=" + ocr13_dt + ", ocr14="
-				+ ocr14 + ", ocr14_dt=" + ocr14_dt + ", ocr15=" + ocr15
-				+ ", ocr15_dt=" + ocr15_dt + ", ocr16=" + ocr16 + ", ocr16_dt="
-				+ ocr16_dt + ", ocr17=" + ocr17 + ", ocr17_dt=" + ocr17_dt
-				+ ", ocr18=" + ocr18 + ", ocr18_dt=" + ocr18_dt + ", ocr19="
-				+ ocr19 + ", ocr19_dt=" + ocr19_dt + ", ocr20=" + ocr20
-				+ ", ocr20_dt=" + ocr20_dt + ", ocr21=" + ocr21 + ", ocr21_dt="
-				+ ocr21_dt + ", ocr22=" + ocr22 + ", ocr22_dt=" + ocr22_dt
-				+ ", ocr23=" + ocr23 + ", ocr23_dt=" + ocr23_dt + ", ocr24="
-				+ ocr24 + ", ocr24_dt=" + ocr24_dt + ", val1=" + val1
-				+ ", val1_amt=" + val1_amt + ", val2=" + val2 + ", val2_amt="
-				+ val2_amt + ", val3=" + val3 + ", val3_amt=" + val3_amt
-				+ ", val4=" + val4 + ", val4_amt=" + val4_amt + ", val5="
-				+ val5 + ", val5_amt=" + val5_amt + ", val6=" + val6
-				+ ", val6_amt=" + val6_amt + ", val7=" + val7 + ", val7_amt="
-				+ val7_amt + ", val8=" + val8 + ", val8_amt=" + val8_amt
-				+ ", val9=" + val9 + ", val9_amt=" + val9_amt + ", val10="
-				+ val10 + ", val10_amt=" + val10_amt + ", val11=" + val11
-				+ ", val11_amt=" + val11_amt + ", val12=" + val12
-				+ ", val13_amt=" + val13_amt + ", val14=" + val14
-				+ ", val14_amt=" + val14_amt + ", val15=" + val15
-				+ ", val15_amt=" + val15_amt + ", val16=" + val16
-				+ ", val16_amt=" + val16_amt + ", val17=" + val17
-				+ ", val17_amt=" + val17_amt + ", val18=" + val18
-				+ ", val18_amt=" + val18_amt + ", val19=" + val19
-				+ ", val19_amt=" + val19_amt + ", val20=" + val20
-				+ ", val20_amt=" + val20_amt + ", val21=" + val21
-				+ ", val21_amt=" + val21_amt + ", val22=" + val22
-				+ ", val22_amt=" + val22_amt + ", val23=" + val23
-				+ ", val23_amt=" + val23_amt + ", val24=" + val24
-				+ ", val24_amt=" + val24_amt + ", lines=" + lines + "]";
-	}
-	public String getPrncplPrcdrCd() {
-		return prncplPrcdrCd;
-	}
-	public void setPrncplPrcdrCd(String prncplPrcdrCd) {
-		this.prncplPrcdrCd = prncplPrcdrCd;
-	}
-	public Date getPrncplPrcdrCdDate() {
-		return prncplPrcdrCdDate;
-	}
-	public void setPrncplPrcdrCdDate(Date prncplPrcdrCdDate) {
-		this.prncplPrcdrCdDate = prncplPrcdrCdDate;
-	}
-	public String getPrncplDgnsPoa() {
-		return prncplDgnsPoa;
-	}
-	public void setPrncplDgnsPoa(String prncplDgnsPoa) {
-		this.prncplDgnsPoa = prncplDgnsPoa;
-	}
-	
+		
 	
 }

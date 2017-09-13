@@ -25,8 +25,18 @@ public class ClaimHeaderIngestion {
 		MongoDatabase database = mongoClient.getDatabase("icare");
 		MongoCollection<BasicDBObject> collection = database.getCollection("institutional",BasicDBObject.class);
 		
+//		BasicDBObject dbc = new BasicDBObject();
+//		ClaimHeader header = PropUtilityService.translateJsonToBusinessObject("C:/Testing/Output/JSON/CLAIM_5010_INSTITUIONAL_A2/20170912/12/Output_Claim_1_20170912_124143106.json");
+//		CD cd = PropUtilityService.translateClaimHeaderToCD(header);
+//		System.out.println("CD String:" + cd);
+//		String headerString = PropUtilityService.translateCDToJsonString(cd);
+//		System.out.println("Converted String:" + headerString);
+//		
+//		BSONObject bson = (BSONObject)com.mongodb.util.JSON.parse(headerString);
+//		dbc.putAll(bson);
+//		collection.insertOne(dbc);
 		
-		
+		int count =1;
 		File folder = new File("C:/EDPS/Delivery/test/json444/IP/20170911171412");
 		File[] listOfFiles = folder.listFiles();
 		List<BasicDBObject>  objs= new ArrayList<BasicDBObject>();
@@ -43,7 +53,11 @@ public class ClaimHeaderIngestion {
 				BSONObject bson = (BSONObject)com.mongodb.util.JSON.parse(headerString);
 				dbc.putAll(bson);
 				objs.add(dbc);
-				break;
+				if(count++ == 10)
+				{
+					break;
+				}
+				
 		    }
 		}
 		
