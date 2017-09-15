@@ -14,6 +14,7 @@ import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.icare.common.dto.CD;
 import com.icare.common.service.PropUtilityService;
+import com.icare.ing.util.CommonConstants;
 import com.mongodb.BasicDBObject;
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoCollection;
@@ -21,9 +22,6 @@ import com.mongodb.client.MongoDatabase;
 public class ClaimHeaderIngestion {
 
 	public static void main(String[] args) throws JsonParseException, JsonMappingException, IOException {
-		MongoClient mongoClient = new MongoClient( "localhost" , 27017 );
-		MongoDatabase database = mongoClient.getDatabase("icare");
-		MongoCollection<BasicDBObject> collection = database.getCollection("institutional",BasicDBObject.class);
 		
 //		BasicDBObject dbc = new BasicDBObject();
 //		ClaimHeader header = PropUtilityService.translateJsonToBusinessObject("C:/Testing/Output/JSON/CLAIM_5010_INSTITUIONAL_A2/20170912/12/Output_Claim_1_20170912_124143106.json");
@@ -36,6 +34,7 @@ public class ClaimHeaderIngestion {
 //		dbc.putAll(bson);
 //		collection.insertOne(dbc);
 		
+		MongoCollection<BasicDBObject> INSTITUTIONAL_LK = CommonConstants.INSTITUTIONAL_LK;
 		int count =1;
 		File folder = new File("C:/EDPS/Delivery/test/json444/IP/20170911171412");
 		File[] listOfFiles = folder.listFiles();
@@ -61,7 +60,7 @@ public class ClaimHeaderIngestion {
 		    }
 		}
 		
-		collection.insertMany(objs);
+		INSTITUTIONAL_LK.insertMany(objs);
 	}
 
 }

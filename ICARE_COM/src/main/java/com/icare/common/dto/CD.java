@@ -1,11 +1,13 @@
 package com.icare.common.dto;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CD {
+public class CD implements Serializable{
 	
+	private String mdc;
 	private String tcn;
 	private String fromServiceDate;
 	private String toServiceDate;
@@ -1934,6 +1936,1793 @@ public class CD {
 	}
 	public void setLines(List<CL> lines) {
 		this.lines = lines;
+	}
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result
+				+ ((admissionDate == null) ? 0 : admissionDate.hashCode());
+		result = prime * result
+				+ ((admissionHour == null) ? 0 : admissionHour.hashCode());
+		result = prime
+				* result
+				+ ((admissionSourceLkpcd == null) ? 0 : admissionSourceLkpcd
+						.hashCode());
+		result = prime
+				* result
+				+ ((admissionTypeLkpcd == null) ? 0 : admissionTypeLkpcd
+						.hashCode());
+		result = prime * result
+				+ ((admtDiagCd == null) ? 0 : admtDiagCd.hashCode());
+		result = prime * result + ((apc == null) ? 0 : apc.hashCode());
+		result = prime
+				* result
+				+ ((attendingNationalPrvdrIdntfr == null) ? 0
+						: attendingNationalPrvdrIdntfr.hashCode());
+		result = prime
+				* result
+				+ ((blngNationalPrvdrIdntfr == null) ? 0
+						: blngNationalPrvdrIdntfr.hashCode());
+		result = prime
+				* result
+				+ ((blngPrvdrLctnZipCode == null) ? 0 : blngPrvdrLctnZipCode
+						.hashCode());
+		result = prime * result + ((cnd1 == null) ? 0 : cnd1.hashCode());
+		result = prime * result + ((cnd10 == null) ? 0 : cnd10.hashCode());
+		result = prime * result + ((cnd11 == null) ? 0 : cnd11.hashCode());
+		result = prime * result + ((cnd12 == null) ? 0 : cnd12.hashCode());
+		result = prime * result + ((cnd13 == null) ? 0 : cnd13.hashCode());
+		result = prime * result + ((cnd14 == null) ? 0 : cnd14.hashCode());
+		result = prime * result + ((cnd15 == null) ? 0 : cnd15.hashCode());
+		result = prime * result + ((cnd16 == null) ? 0 : cnd16.hashCode());
+		result = prime * result + ((cnd17 == null) ? 0 : cnd17.hashCode());
+		result = prime * result + ((cnd18 == null) ? 0 : cnd18.hashCode());
+		result = prime * result + ((cnd19 == null) ? 0 : cnd19.hashCode());
+		result = prime * result + ((cnd2 == null) ? 0 : cnd2.hashCode());
+		result = prime * result + ((cnd20 == null) ? 0 : cnd20.hashCode());
+		result = prime * result + ((cnd21 == null) ? 0 : cnd21.hashCode());
+		result = prime * result + ((cnd22 == null) ? 0 : cnd22.hashCode());
+		result = prime * result + ((cnd23 == null) ? 0 : cnd23.hashCode());
+		result = prime * result + ((cnd24 == null) ? 0 : cnd24.hashCode());
+		result = prime * result + ((cnd3 == null) ? 0 : cnd3.hashCode());
+		result = prime * result + ((cnd4 == null) ? 0 : cnd4.hashCode());
+		result = prime * result + ((cnd5 == null) ? 0 : cnd5.hashCode());
+		result = prime * result + ((cnd6 == null) ? 0 : cnd6.hashCode());
+		result = prime * result + ((cnd7 == null) ? 0 : cnd7.hashCode());
+		result = prime * result + ((cnd8 == null) ? 0 : cnd8.hashCode());
+		result = prime * result + ((cnd9 == null) ? 0 : cnd9.hashCode());
+		result = prime * result + ((d1 == null) ? 0 : d1.hashCode());
+		result = prime * result + ((d10 == null) ? 0 : d10.hashCode());
+		result = prime * result + ((d10_poa == null) ? 0 : d10_poa.hashCode());
+		result = prime * result + ((d11 == null) ? 0 : d11.hashCode());
+		result = prime * result + ((d11_poa == null) ? 0 : d11_poa.hashCode());
+		result = prime * result + ((d12 == null) ? 0 : d12.hashCode());
+		result = prime * result + ((d12_poa == null) ? 0 : d12_poa.hashCode());
+		result = prime * result + ((d13 == null) ? 0 : d13.hashCode());
+		result = prime * result + ((d13_poa == null) ? 0 : d13_poa.hashCode());
+		result = prime * result + ((d14 == null) ? 0 : d14.hashCode());
+		result = prime * result + ((d14_poa == null) ? 0 : d14_poa.hashCode());
+		result = prime * result + ((d15 == null) ? 0 : d15.hashCode());
+		result = prime * result + ((d15_poa == null) ? 0 : d15_poa.hashCode());
+		result = prime * result + ((d16 == null) ? 0 : d16.hashCode());
+		result = prime * result + ((d16_poa == null) ? 0 : d16_poa.hashCode());
+		result = prime * result + ((d17 == null) ? 0 : d17.hashCode());
+		result = prime * result + ((d17_poa == null) ? 0 : d17_poa.hashCode());
+		result = prime * result + ((d18 == null) ? 0 : d18.hashCode());
+		result = prime * result + ((d18_poa == null) ? 0 : d18_poa.hashCode());
+		result = prime * result + ((d19 == null) ? 0 : d19.hashCode());
+		result = prime * result + ((d19_poa == null) ? 0 : d19_poa.hashCode());
+		result = prime * result + ((d1_poa == null) ? 0 : d1_poa.hashCode());
+		result = prime * result + ((d2 == null) ? 0 : d2.hashCode());
+		result = prime * result + ((d20 == null) ? 0 : d20.hashCode());
+		result = prime * result + ((d20_poa == null) ? 0 : d20_poa.hashCode());
+		result = prime * result + ((d21 == null) ? 0 : d21.hashCode());
+		result = prime * result + ((d21_poa == null) ? 0 : d21_poa.hashCode());
+		result = prime * result + ((d22 == null) ? 0 : d22.hashCode());
+		result = prime * result + ((d22_poa == null) ? 0 : d22_poa.hashCode());
+		result = prime * result + ((d23 == null) ? 0 : d23.hashCode());
+		result = prime * result + ((d23_poa == null) ? 0 : d23_poa.hashCode());
+		result = prime * result + ((d24 == null) ? 0 : d24.hashCode());
+		result = prime * result + ((d24_poa == null) ? 0 : d24_poa.hashCode());
+		result = prime * result + ((d2_poa == null) ? 0 : d2_poa.hashCode());
+		result = prime * result + ((d3 == null) ? 0 : d3.hashCode());
+		result = prime * result + ((d3_poa == null) ? 0 : d3_poa.hashCode());
+		result = prime * result + ((d4 == null) ? 0 : d4.hashCode());
+		result = prime * result + ((d4_poa == null) ? 0 : d4_poa.hashCode());
+		result = prime * result + ((d5 == null) ? 0 : d5.hashCode());
+		result = prime * result + ((d5_poa == null) ? 0 : d5_poa.hashCode());
+		result = prime * result + ((d6 == null) ? 0 : d6.hashCode());
+		result = prime * result + ((d6_poa == null) ? 0 : d6_poa.hashCode());
+		result = prime * result + ((d7 == null) ? 0 : d7.hashCode());
+		result = prime * result + ((d7_poa == null) ? 0 : d7_poa.hashCode());
+		result = prime * result + ((d8 == null) ? 0 : d8.hashCode());
+		result = prime * result + ((d8_poa == null) ? 0 : d8_poa.hashCode());
+		result = prime * result + ((d9 == null) ? 0 : d9.hashCode());
+		result = prime * result + ((d9_poa == null) ? 0 : d9_poa.hashCode());
+		result = prime * result + ((de1 == null) ? 0 : de1.hashCode());
+		result = prime * result + ((de10 == null) ? 0 : de10.hashCode());
+		result = prime * result
+				+ ((de10_poa == null) ? 0 : de10_poa.hashCode());
+		result = prime * result + ((de11 == null) ? 0 : de11.hashCode());
+		result = prime * result
+				+ ((de11_poa == null) ? 0 : de11_poa.hashCode());
+		result = prime * result + ((de12 == null) ? 0 : de12.hashCode());
+		result = prime * result
+				+ ((de12_poa == null) ? 0 : de12_poa.hashCode());
+		result = prime * result + ((de1_poa == null) ? 0 : de1_poa.hashCode());
+		result = prime * result + ((de2 == null) ? 0 : de2.hashCode());
+		result = prime * result + ((de2_poa == null) ? 0 : de2_poa.hashCode());
+		result = prime * result + ((de3 == null) ? 0 : de3.hashCode());
+		result = prime * result + ((de3_poa == null) ? 0 : de3_poa.hashCode());
+		result = prime * result + ((de4 == null) ? 0 : de4.hashCode());
+		result = prime * result + ((de4_poa == null) ? 0 : de4_poa.hashCode());
+		result = prime * result + ((de5 == null) ? 0 : de5.hashCode());
+		result = prime * result + ((de5_poa == null) ? 0 : de5_poa.hashCode());
+		result = prime * result + ((de6 == null) ? 0 : de6.hashCode());
+		result = prime * result + ((de6_poa == null) ? 0 : de6_poa.hashCode());
+		result = prime * result + ((de7 == null) ? 0 : de7.hashCode());
+		result = prime * result + ((de7_poa == null) ? 0 : de7_poa.hashCode());
+		result = prime * result + ((de8 == null) ? 0 : de8.hashCode());
+		result = prime * result + ((de8_poa == null) ? 0 : de8_poa.hashCode());
+		result = prime * result + ((de9 == null) ? 0 : de9.hashCode());
+		result = prime * result + ((de9_poa == null) ? 0 : de9_poa.hashCode());
+		result = prime * result
+				+ ((dischargeDate == null) ? 0 : dischargeDate.hashCode());
+		result = prime * result + ((drgCode == null) ? 0 : drgCode.hashCode());
+		result = prime
+				* result
+				+ ((faciType_BillFirstDigit == null) ? 0
+						: faciType_BillFirstDigit.hashCode());
+		result = prime
+				* result
+				+ ((freqType_BillThirdDigit == null) ? 0
+						: freqType_BillThirdDigit.hashCode());
+		result = prime * result
+				+ ((fromServiceDate == null) ? 0 : fromServiceDate.hashCode());
+		result = prime * result + ((lines == null) ? 0 : lines.hashCode());
+		result = prime * result
+				+ ((mbrIdentifier == null) ? 0 : mbrIdentifier.hashCode());
+		result = prime * result + ((ocr1 == null) ? 0 : ocr1.hashCode());
+		result = prime * result + ((ocr10 == null) ? 0 : ocr10.hashCode());
+		result = prime * result
+				+ ((ocr10_dt == null) ? 0 : ocr10_dt.hashCode());
+		result = prime * result + ((ocr11 == null) ? 0 : ocr11.hashCode());
+		result = prime * result
+				+ ((ocr11_dt == null) ? 0 : ocr11_dt.hashCode());
+		result = prime * result + ((ocr12 == null) ? 0 : ocr12.hashCode());
+		result = prime * result
+				+ ((ocr13_dt == null) ? 0 : ocr13_dt.hashCode());
+		result = prime * result + ((ocr14 == null) ? 0 : ocr14.hashCode());
+		result = prime * result
+				+ ((ocr14_dt == null) ? 0 : ocr14_dt.hashCode());
+		result = prime * result + ((ocr15 == null) ? 0 : ocr15.hashCode());
+		result = prime * result
+				+ ((ocr15_dt == null) ? 0 : ocr15_dt.hashCode());
+		result = prime * result + ((ocr16 == null) ? 0 : ocr16.hashCode());
+		result = prime * result
+				+ ((ocr16_dt == null) ? 0 : ocr16_dt.hashCode());
+		result = prime * result + ((ocr17 == null) ? 0 : ocr17.hashCode());
+		result = prime * result
+				+ ((ocr17_dt == null) ? 0 : ocr17_dt.hashCode());
+		result = prime * result + ((ocr18 == null) ? 0 : ocr18.hashCode());
+		result = prime * result
+				+ ((ocr18_dt == null) ? 0 : ocr18_dt.hashCode());
+		result = prime * result + ((ocr19 == null) ? 0 : ocr19.hashCode());
+		result = prime * result
+				+ ((ocr19_dt == null) ? 0 : ocr19_dt.hashCode());
+		result = prime * result + ((ocr1_dt == null) ? 0 : ocr1_dt.hashCode());
+		result = prime * result + ((ocr2 == null) ? 0 : ocr2.hashCode());
+		result = prime * result + ((ocr20 == null) ? 0 : ocr20.hashCode());
+		result = prime * result
+				+ ((ocr20_dt == null) ? 0 : ocr20_dt.hashCode());
+		result = prime * result + ((ocr21 == null) ? 0 : ocr21.hashCode());
+		result = prime * result
+				+ ((ocr21_dt == null) ? 0 : ocr21_dt.hashCode());
+		result = prime * result + ((ocr22 == null) ? 0 : ocr22.hashCode());
+		result = prime * result
+				+ ((ocr22_dt == null) ? 0 : ocr22_dt.hashCode());
+		result = prime * result + ((ocr23 == null) ? 0 : ocr23.hashCode());
+		result = prime * result
+				+ ((ocr23_dt == null) ? 0 : ocr23_dt.hashCode());
+		result = prime * result + ((ocr24 == null) ? 0 : ocr24.hashCode());
+		result = prime * result
+				+ ((ocr24_dt == null) ? 0 : ocr24_dt.hashCode());
+		result = prime * result + ((ocr2_dt == null) ? 0 : ocr2_dt.hashCode());
+		result = prime * result + ((ocr3 == null) ? 0 : ocr3.hashCode());
+		result = prime * result + ((ocr3_dt == null) ? 0 : ocr3_dt.hashCode());
+		result = prime * result + ((ocr4 == null) ? 0 : ocr4.hashCode());
+		result = prime * result + ((ocr4_dt == null) ? 0 : ocr4_dt.hashCode());
+		result = prime * result + ((ocr5 == null) ? 0 : ocr5.hashCode());
+		result = prime * result + ((ocr5_dt == null) ? 0 : ocr5_dt.hashCode());
+		result = prime * result + ((ocr6 == null) ? 0 : ocr6.hashCode());
+		result = prime * result + ((ocr6_dt == null) ? 0 : ocr6_dt.hashCode());
+		result = prime * result + ((ocr7 == null) ? 0 : ocr7.hashCode());
+		result = prime * result + ((ocr7_dt == null) ? 0 : ocr7_dt.hashCode());
+		result = prime * result + ((ocr8 == null) ? 0 : ocr8.hashCode());
+		result = prime * result + ((ocr8_dt == null) ? 0 : ocr8_dt.hashCode());
+		result = prime * result + ((ocr9 == null) ? 0 : ocr9.hashCode());
+		result = prime * result + ((ocr9_dt == null) ? 0 : ocr9_dt.hashCode());
+		result = prime
+				* result
+				+ ((operatingPhyNationalPrvdrIdntfr == null) ? 0
+						: operatingPhyNationalPrvdrIdntfr.hashCode());
+		result = prime
+				* result
+				+ ((othOeratingPhyNationalPrvdrIdntfr == null) ? 0
+						: othOeratingPhyNationalPrvdrIdntfr.hashCode());
+		result = prime * result + ((p1 == null) ? 0 : p1.hashCode());
+		result = prime * result + ((p10 == null) ? 0 : p10.hashCode());
+		result = prime * result + ((p10_dt == null) ? 0 : p10_dt.hashCode());
+		result = prime * result + ((p11 == null) ? 0 : p11.hashCode());
+		result = prime * result + ((p11_dt == null) ? 0 : p11_dt.hashCode());
+		result = prime * result + ((p12 == null) ? 0 : p12.hashCode());
+		result = prime * result + ((p12_dt == null) ? 0 : p12_dt.hashCode());
+		result = prime * result + ((p13 == null) ? 0 : p13.hashCode());
+		result = prime * result + ((p13_dt == null) ? 0 : p13_dt.hashCode());
+		result = prime * result + ((p14 == null) ? 0 : p14.hashCode());
+		result = prime * result + ((p14_dt == null) ? 0 : p14_dt.hashCode());
+		result = prime * result + ((p15 == null) ? 0 : p15.hashCode());
+		result = prime * result + ((p15_dt == null) ? 0 : p15_dt.hashCode());
+		result = prime * result + ((p16 == null) ? 0 : p16.hashCode());
+		result = prime * result + ((p16_dt == null) ? 0 : p16_dt.hashCode());
+		result = prime * result + ((p17 == null) ? 0 : p17.hashCode());
+		result = prime * result + ((p17_dt == null) ? 0 : p17_dt.hashCode());
+		result = prime * result + ((p18 == null) ? 0 : p18.hashCode());
+		result = prime * result + ((p18_dt == null) ? 0 : p18_dt.hashCode());
+		result = prime * result + ((p19 == null) ? 0 : p19.hashCode());
+		result = prime * result + ((p19_dt == null) ? 0 : p19_dt.hashCode());
+		result = prime * result + ((p1_dt == null) ? 0 : p1_dt.hashCode());
+		result = prime * result + ((p2 == null) ? 0 : p2.hashCode());
+		result = prime * result + ((p20 == null) ? 0 : p20.hashCode());
+		result = prime * result + ((p20_dt == null) ? 0 : p20_dt.hashCode());
+		result = prime * result + ((p21 == null) ? 0 : p21.hashCode());
+		result = prime * result + ((p21_dt == null) ? 0 : p21_dt.hashCode());
+		result = prime * result + ((p22 == null) ? 0 : p22.hashCode());
+		result = prime * result + ((p22_dt == null) ? 0 : p22_dt.hashCode());
+		result = prime * result + ((p23 == null) ? 0 : p23.hashCode());
+		result = prime * result + ((p23_dt == null) ? 0 : p23_dt.hashCode());
+		result = prime * result + ((p24 == null) ? 0 : p24.hashCode());
+		result = prime * result + ((p24_dt == null) ? 0 : p24_dt.hashCode());
+		result = prime * result + ((p2_dt == null) ? 0 : p2_dt.hashCode());
+		result = prime * result + ((p3 == null) ? 0 : p3.hashCode());
+		result = prime * result + ((p3_dt == null) ? 0 : p3_dt.hashCode());
+		result = prime * result + ((p4 == null) ? 0 : p4.hashCode());
+		result = prime * result + ((p4_dt == null) ? 0 : p4_dt.hashCode());
+		result = prime * result + ((p5 == null) ? 0 : p5.hashCode());
+		result = prime * result + ((p5_dt == null) ? 0 : p5_dt.hashCode());
+		result = prime * result + ((p6 == null) ? 0 : p6.hashCode());
+		result = prime * result + ((p6_dt == null) ? 0 : p6_dt.hashCode());
+		result = prime * result + ((p7 == null) ? 0 : p7.hashCode());
+		result = prime * result + ((p7_dt == null) ? 0 : p7_dt.hashCode());
+		result = prime * result + ((p8 == null) ? 0 : p8.hashCode());
+		result = prime * result + ((p8_dt == null) ? 0 : p8_dt.hashCode());
+		result = prime * result + ((p9 == null) ? 0 : p9.hashCode());
+		result = prime * result + ((p9_dt == null) ? 0 : p9_dt.hashCode());
+		result = prime * result
+				+ ((paidAmount == null) ? 0 : paidAmount.hashCode());
+		result = prime
+				* result
+				+ ((patientBirthDate == null) ? 0 : patientBirthDate.hashCode());
+		result = prime
+				* result
+				+ ((patientFirstName == null) ? 0 : patientFirstName.hashCode());
+		result = prime * result
+				+ ((patientGender == null) ? 0 : patientGender.hashCode());
+		result = prime * result
+				+ ((patientLastName == null) ? 0 : patientLastName.hashCode());
+		result = prime * result
+				+ ((patientState == null) ? 0 : patientState.hashCode());
+		result = prime
+				* result
+				+ ((patientStatusLkpcd == null) ? 0 : patientStatusLkpcd
+						.hashCode());
+		result = prime * result
+				+ ((patientZip == null) ? 0 : patientZip.hashCode());
+		result = prime * result
+				+ ((prncplDgnsCd == null) ? 0 : prncplDgnsCd.hashCode());
+		result = prime * result
+				+ ((prncplDgnsPoa == null) ? 0 : prncplDgnsPoa.hashCode());
+		result = prime * result
+				+ ((prncplPrcdrCd == null) ? 0 : prncplPrcdrCd.hashCode());
+		result = prime
+				* result
+				+ ((prncplPrcdrCdDate == null) ? 0 : prncplPrcdrCdDate
+						.hashCode());
+		result = prime * result + ((rsn_cd_ == null) ? 0 : rsn_cd_.hashCode());
+		result = prime * result
+				+ ((rsn_cd_1 == null) ? 0 : rsn_cd_1.hashCode());
+		result = prime * result
+				+ ((rsn_cd_3 == null) ? 0 : rsn_cd_3.hashCode());
+		result = prime
+				* result
+				+ ((servType_BillSecondDigit == null) ? 0
+						: servType_BillSecondDigit.hashCode());
+		result = prime
+				* result
+				+ ((srvcngNationalPrvdrIdntfr == null) ? 0
+						: srvcngNationalPrvdrIdntfr.hashCode());
+		result = prime
+				* result
+				+ ((srvcngPrvdrLctnZipCode == null) ? 0
+						: srvcngPrvdrLctnZipCode.hashCode());
+		result = prime * result + ((tcn == null) ? 0 : tcn.hashCode());
+		result = prime * result
+				+ ((toServiceDate == null) ? 0 : toServiceDate.hashCode());
+		result = prime
+				* result
+				+ ((totalBilledAmount == null) ? 0 : totalBilledAmount
+						.hashCode());
+		result = prime * result + ((val1 == null) ? 0 : val1.hashCode());
+		result = prime * result + ((val10 == null) ? 0 : val10.hashCode());
+		result = prime * result
+				+ ((val10_amt == null) ? 0 : val10_amt.hashCode());
+		result = prime * result + ((val11 == null) ? 0 : val11.hashCode());
+		result = prime * result
+				+ ((val11_amt == null) ? 0 : val11_amt.hashCode());
+		result = prime * result + ((val12 == null) ? 0 : val12.hashCode());
+		result = prime * result
+				+ ((val13_amt == null) ? 0 : val13_amt.hashCode());
+		result = prime * result + ((val14 == null) ? 0 : val14.hashCode());
+		result = prime * result
+				+ ((val14_amt == null) ? 0 : val14_amt.hashCode());
+		result = prime * result + ((val15 == null) ? 0 : val15.hashCode());
+		result = prime * result
+				+ ((val15_amt == null) ? 0 : val15_amt.hashCode());
+		result = prime * result + ((val16 == null) ? 0 : val16.hashCode());
+		result = prime * result
+				+ ((val16_amt == null) ? 0 : val16_amt.hashCode());
+		result = prime * result + ((val17 == null) ? 0 : val17.hashCode());
+		result = prime * result
+				+ ((val17_amt == null) ? 0 : val17_amt.hashCode());
+		result = prime * result + ((val18 == null) ? 0 : val18.hashCode());
+		result = prime * result
+				+ ((val18_amt == null) ? 0 : val18_amt.hashCode());
+		result = prime * result + ((val19 == null) ? 0 : val19.hashCode());
+		result = prime * result
+				+ ((val19_amt == null) ? 0 : val19_amt.hashCode());
+		result = prime * result
+				+ ((val1_amt == null) ? 0 : val1_amt.hashCode());
+		result = prime * result + ((val2 == null) ? 0 : val2.hashCode());
+		result = prime * result + ((val20 == null) ? 0 : val20.hashCode());
+		result = prime * result
+				+ ((val20_amt == null) ? 0 : val20_amt.hashCode());
+		result = prime * result + ((val21 == null) ? 0 : val21.hashCode());
+		result = prime * result
+				+ ((val21_amt == null) ? 0 : val21_amt.hashCode());
+		result = prime * result + ((val22 == null) ? 0 : val22.hashCode());
+		result = prime * result
+				+ ((val22_amt == null) ? 0 : val22_amt.hashCode());
+		result = prime * result + ((val23 == null) ? 0 : val23.hashCode());
+		result = prime * result
+				+ ((val23_amt == null) ? 0 : val23_amt.hashCode());
+		result = prime * result + ((val24 == null) ? 0 : val24.hashCode());
+		result = prime * result
+				+ ((val24_amt == null) ? 0 : val24_amt.hashCode());
+		result = prime * result
+				+ ((val2_amt == null) ? 0 : val2_amt.hashCode());
+		result = prime * result + ((val3 == null) ? 0 : val3.hashCode());
+		result = prime * result
+				+ ((val3_amt == null) ? 0 : val3_amt.hashCode());
+		result = prime * result + ((val4 == null) ? 0 : val4.hashCode());
+		result = prime * result
+				+ ((val4_amt == null) ? 0 : val4_amt.hashCode());
+		result = prime * result + ((val5 == null) ? 0 : val5.hashCode());
+		result = prime * result
+				+ ((val5_amt == null) ? 0 : val5_amt.hashCode());
+		result = prime * result + ((val6 == null) ? 0 : val6.hashCode());
+		result = prime * result
+				+ ((val6_amt == null) ? 0 : val6_amt.hashCode());
+		result = prime * result + ((val7 == null) ? 0 : val7.hashCode());
+		result = prime * result
+				+ ((val7_amt == null) ? 0 : val7_amt.hashCode());
+		result = prime * result + ((val8 == null) ? 0 : val8.hashCode());
+		result = prime * result
+				+ ((val8_amt == null) ? 0 : val8_amt.hashCode());
+		result = prime * result + ((val9 == null) ? 0 : val9.hashCode());
+		result = prime * result
+				+ ((val9_amt == null) ? 0 : val9_amt.hashCode());
+		return result;
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		CD other = (CD) obj;
+		if (admissionDate == null) {
+			if (other.admissionDate != null)
+				return false;
+		} else if (!admissionDate.equals(other.admissionDate))
+			return false;
+		if (admissionHour == null) {
+			if (other.admissionHour != null)
+				return false;
+		} else if (!admissionHour.equals(other.admissionHour))
+			return false;
+		if (admissionSourceLkpcd == null) {
+			if (other.admissionSourceLkpcd != null)
+				return false;
+		} else if (!admissionSourceLkpcd.equals(other.admissionSourceLkpcd))
+			return false;
+		if (admissionTypeLkpcd == null) {
+			if (other.admissionTypeLkpcd != null)
+				return false;
+		} else if (!admissionTypeLkpcd.equals(other.admissionTypeLkpcd))
+			return false;
+		if (admtDiagCd == null) {
+			if (other.admtDiagCd != null)
+				return false;
+		} else if (!admtDiagCd.equals(other.admtDiagCd))
+			return false;
+		if (apc == null) {
+			if (other.apc != null)
+				return false;
+		} else if (!apc.equals(other.apc))
+			return false;
+		if (attendingNationalPrvdrIdntfr == null) {
+			if (other.attendingNationalPrvdrIdntfr != null)
+				return false;
+		} else if (!attendingNationalPrvdrIdntfr
+				.equals(other.attendingNationalPrvdrIdntfr))
+			return false;
+		if (blngNationalPrvdrIdntfr == null) {
+			if (other.blngNationalPrvdrIdntfr != null)
+				return false;
+		} else if (!blngNationalPrvdrIdntfr
+				.equals(other.blngNationalPrvdrIdntfr))
+			return false;
+		if (blngPrvdrLctnZipCode == null) {
+			if (other.blngPrvdrLctnZipCode != null)
+				return false;
+		} else if (!blngPrvdrLctnZipCode.equals(other.blngPrvdrLctnZipCode))
+			return false;
+		if (cnd1 == null) {
+			if (other.cnd1 != null)
+				return false;
+		} else if (!cnd1.equals(other.cnd1))
+			return false;
+		if (cnd10 == null) {
+			if (other.cnd10 != null)
+				return false;
+		} else if (!cnd10.equals(other.cnd10))
+			return false;
+		if (cnd11 == null) {
+			if (other.cnd11 != null)
+				return false;
+		} else if (!cnd11.equals(other.cnd11))
+			return false;
+		if (cnd12 == null) {
+			if (other.cnd12 != null)
+				return false;
+		} else if (!cnd12.equals(other.cnd12))
+			return false;
+		if (cnd13 == null) {
+			if (other.cnd13 != null)
+				return false;
+		} else if (!cnd13.equals(other.cnd13))
+			return false;
+		if (cnd14 == null) {
+			if (other.cnd14 != null)
+				return false;
+		} else if (!cnd14.equals(other.cnd14))
+			return false;
+		if (cnd15 == null) {
+			if (other.cnd15 != null)
+				return false;
+		} else if (!cnd15.equals(other.cnd15))
+			return false;
+		if (cnd16 == null) {
+			if (other.cnd16 != null)
+				return false;
+		} else if (!cnd16.equals(other.cnd16))
+			return false;
+		if (cnd17 == null) {
+			if (other.cnd17 != null)
+				return false;
+		} else if (!cnd17.equals(other.cnd17))
+			return false;
+		if (cnd18 == null) {
+			if (other.cnd18 != null)
+				return false;
+		} else if (!cnd18.equals(other.cnd18))
+			return false;
+		if (cnd19 == null) {
+			if (other.cnd19 != null)
+				return false;
+		} else if (!cnd19.equals(other.cnd19))
+			return false;
+		if (cnd2 == null) {
+			if (other.cnd2 != null)
+				return false;
+		} else if (!cnd2.equals(other.cnd2))
+			return false;
+		if (cnd20 == null) {
+			if (other.cnd20 != null)
+				return false;
+		} else if (!cnd20.equals(other.cnd20))
+			return false;
+		if (cnd21 == null) {
+			if (other.cnd21 != null)
+				return false;
+		} else if (!cnd21.equals(other.cnd21))
+			return false;
+		if (cnd22 == null) {
+			if (other.cnd22 != null)
+				return false;
+		} else if (!cnd22.equals(other.cnd22))
+			return false;
+		if (cnd23 == null) {
+			if (other.cnd23 != null)
+				return false;
+		} else if (!cnd23.equals(other.cnd23))
+			return false;
+		if (cnd24 == null) {
+			if (other.cnd24 != null)
+				return false;
+		} else if (!cnd24.equals(other.cnd24))
+			return false;
+		if (cnd3 == null) {
+			if (other.cnd3 != null)
+				return false;
+		} else if (!cnd3.equals(other.cnd3))
+			return false;
+		if (cnd4 == null) {
+			if (other.cnd4 != null)
+				return false;
+		} else if (!cnd4.equals(other.cnd4))
+			return false;
+		if (cnd5 == null) {
+			if (other.cnd5 != null)
+				return false;
+		} else if (!cnd5.equals(other.cnd5))
+			return false;
+		if (cnd6 == null) {
+			if (other.cnd6 != null)
+				return false;
+		} else if (!cnd6.equals(other.cnd6))
+			return false;
+		if (cnd7 == null) {
+			if (other.cnd7 != null)
+				return false;
+		} else if (!cnd7.equals(other.cnd7))
+			return false;
+		if (cnd8 == null) {
+			if (other.cnd8 != null)
+				return false;
+		} else if (!cnd8.equals(other.cnd8))
+			return false;
+		if (cnd9 == null) {
+			if (other.cnd9 != null)
+				return false;
+		} else if (!cnd9.equals(other.cnd9))
+			return false;
+		if (d1 == null) {
+			if (other.d1 != null)
+				return false;
+		} else if (!d1.equals(other.d1))
+			return false;
+		if (d10 == null) {
+			if (other.d10 != null)
+				return false;
+		} else if (!d10.equals(other.d10))
+			return false;
+		if (d10_poa == null) {
+			if (other.d10_poa != null)
+				return false;
+		} else if (!d10_poa.equals(other.d10_poa))
+			return false;
+		if (d11 == null) {
+			if (other.d11 != null)
+				return false;
+		} else if (!d11.equals(other.d11))
+			return false;
+		if (d11_poa == null) {
+			if (other.d11_poa != null)
+				return false;
+		} else if (!d11_poa.equals(other.d11_poa))
+			return false;
+		if (d12 == null) {
+			if (other.d12 != null)
+				return false;
+		} else if (!d12.equals(other.d12))
+			return false;
+		if (d12_poa == null) {
+			if (other.d12_poa != null)
+				return false;
+		} else if (!d12_poa.equals(other.d12_poa))
+			return false;
+		if (d13 == null) {
+			if (other.d13 != null)
+				return false;
+		} else if (!d13.equals(other.d13))
+			return false;
+		if (d13_poa == null) {
+			if (other.d13_poa != null)
+				return false;
+		} else if (!d13_poa.equals(other.d13_poa))
+			return false;
+		if (d14 == null) {
+			if (other.d14 != null)
+				return false;
+		} else if (!d14.equals(other.d14))
+			return false;
+		if (d14_poa == null) {
+			if (other.d14_poa != null)
+				return false;
+		} else if (!d14_poa.equals(other.d14_poa))
+			return false;
+		if (d15 == null) {
+			if (other.d15 != null)
+				return false;
+		} else if (!d15.equals(other.d15))
+			return false;
+		if (d15_poa == null) {
+			if (other.d15_poa != null)
+				return false;
+		} else if (!d15_poa.equals(other.d15_poa))
+			return false;
+		if (d16 == null) {
+			if (other.d16 != null)
+				return false;
+		} else if (!d16.equals(other.d16))
+			return false;
+		if (d16_poa == null) {
+			if (other.d16_poa != null)
+				return false;
+		} else if (!d16_poa.equals(other.d16_poa))
+			return false;
+		if (d17 == null) {
+			if (other.d17 != null)
+				return false;
+		} else if (!d17.equals(other.d17))
+			return false;
+		if (d17_poa == null) {
+			if (other.d17_poa != null)
+				return false;
+		} else if (!d17_poa.equals(other.d17_poa))
+			return false;
+		if (d18 == null) {
+			if (other.d18 != null)
+				return false;
+		} else if (!d18.equals(other.d18))
+			return false;
+		if (d18_poa == null) {
+			if (other.d18_poa != null)
+				return false;
+		} else if (!d18_poa.equals(other.d18_poa))
+			return false;
+		if (d19 == null) {
+			if (other.d19 != null)
+				return false;
+		} else if (!d19.equals(other.d19))
+			return false;
+		if (d19_poa == null) {
+			if (other.d19_poa != null)
+				return false;
+		} else if (!d19_poa.equals(other.d19_poa))
+			return false;
+		if (d1_poa == null) {
+			if (other.d1_poa != null)
+				return false;
+		} else if (!d1_poa.equals(other.d1_poa))
+			return false;
+		if (d2 == null) {
+			if (other.d2 != null)
+				return false;
+		} else if (!d2.equals(other.d2))
+			return false;
+		if (d20 == null) {
+			if (other.d20 != null)
+				return false;
+		} else if (!d20.equals(other.d20))
+			return false;
+		if (d20_poa == null) {
+			if (other.d20_poa != null)
+				return false;
+		} else if (!d20_poa.equals(other.d20_poa))
+			return false;
+		if (d21 == null) {
+			if (other.d21 != null)
+				return false;
+		} else if (!d21.equals(other.d21))
+			return false;
+		if (d21_poa == null) {
+			if (other.d21_poa != null)
+				return false;
+		} else if (!d21_poa.equals(other.d21_poa))
+			return false;
+		if (d22 == null) {
+			if (other.d22 != null)
+				return false;
+		} else if (!d22.equals(other.d22))
+			return false;
+		if (d22_poa == null) {
+			if (other.d22_poa != null)
+				return false;
+		} else if (!d22_poa.equals(other.d22_poa))
+			return false;
+		if (d23 == null) {
+			if (other.d23 != null)
+				return false;
+		} else if (!d23.equals(other.d23))
+			return false;
+		if (d23_poa == null) {
+			if (other.d23_poa != null)
+				return false;
+		} else if (!d23_poa.equals(other.d23_poa))
+			return false;
+		if (d24 == null) {
+			if (other.d24 != null)
+				return false;
+		} else if (!d24.equals(other.d24))
+			return false;
+		if (d24_poa == null) {
+			if (other.d24_poa != null)
+				return false;
+		} else if (!d24_poa.equals(other.d24_poa))
+			return false;
+		if (d2_poa == null) {
+			if (other.d2_poa != null)
+				return false;
+		} else if (!d2_poa.equals(other.d2_poa))
+			return false;
+		if (d3 == null) {
+			if (other.d3 != null)
+				return false;
+		} else if (!d3.equals(other.d3))
+			return false;
+		if (d3_poa == null) {
+			if (other.d3_poa != null)
+				return false;
+		} else if (!d3_poa.equals(other.d3_poa))
+			return false;
+		if (d4 == null) {
+			if (other.d4 != null)
+				return false;
+		} else if (!d4.equals(other.d4))
+			return false;
+		if (d4_poa == null) {
+			if (other.d4_poa != null)
+				return false;
+		} else if (!d4_poa.equals(other.d4_poa))
+			return false;
+		if (d5 == null) {
+			if (other.d5 != null)
+				return false;
+		} else if (!d5.equals(other.d5))
+			return false;
+		if (d5_poa == null) {
+			if (other.d5_poa != null)
+				return false;
+		} else if (!d5_poa.equals(other.d5_poa))
+			return false;
+		if (d6 == null) {
+			if (other.d6 != null)
+				return false;
+		} else if (!d6.equals(other.d6))
+			return false;
+		if (d6_poa == null) {
+			if (other.d6_poa != null)
+				return false;
+		} else if (!d6_poa.equals(other.d6_poa))
+			return false;
+		if (d7 == null) {
+			if (other.d7 != null)
+				return false;
+		} else if (!d7.equals(other.d7))
+			return false;
+		if (d7_poa == null) {
+			if (other.d7_poa != null)
+				return false;
+		} else if (!d7_poa.equals(other.d7_poa))
+			return false;
+		if (d8 == null) {
+			if (other.d8 != null)
+				return false;
+		} else if (!d8.equals(other.d8))
+			return false;
+		if (d8_poa == null) {
+			if (other.d8_poa != null)
+				return false;
+		} else if (!d8_poa.equals(other.d8_poa))
+			return false;
+		if (d9 == null) {
+			if (other.d9 != null)
+				return false;
+		} else if (!d9.equals(other.d9))
+			return false;
+		if (d9_poa == null) {
+			if (other.d9_poa != null)
+				return false;
+		} else if (!d9_poa.equals(other.d9_poa))
+			return false;
+		if (de1 == null) {
+			if (other.de1 != null)
+				return false;
+		} else if (!de1.equals(other.de1))
+			return false;
+		if (de10 == null) {
+			if (other.de10 != null)
+				return false;
+		} else if (!de10.equals(other.de10))
+			return false;
+		if (de10_poa == null) {
+			if (other.de10_poa != null)
+				return false;
+		} else if (!de10_poa.equals(other.de10_poa))
+			return false;
+		if (de11 == null) {
+			if (other.de11 != null)
+				return false;
+		} else if (!de11.equals(other.de11))
+			return false;
+		if (de11_poa == null) {
+			if (other.de11_poa != null)
+				return false;
+		} else if (!de11_poa.equals(other.de11_poa))
+			return false;
+		if (de12 == null) {
+			if (other.de12 != null)
+				return false;
+		} else if (!de12.equals(other.de12))
+			return false;
+		if (de12_poa == null) {
+			if (other.de12_poa != null)
+				return false;
+		} else if (!de12_poa.equals(other.de12_poa))
+			return false;
+		if (de1_poa == null) {
+			if (other.de1_poa != null)
+				return false;
+		} else if (!de1_poa.equals(other.de1_poa))
+			return false;
+		if (de2 == null) {
+			if (other.de2 != null)
+				return false;
+		} else if (!de2.equals(other.de2))
+			return false;
+		if (de2_poa == null) {
+			if (other.de2_poa != null)
+				return false;
+		} else if (!de2_poa.equals(other.de2_poa))
+			return false;
+		if (de3 == null) {
+			if (other.de3 != null)
+				return false;
+		} else if (!de3.equals(other.de3))
+			return false;
+		if (de3_poa == null) {
+			if (other.de3_poa != null)
+				return false;
+		} else if (!de3_poa.equals(other.de3_poa))
+			return false;
+		if (de4 == null) {
+			if (other.de4 != null)
+				return false;
+		} else if (!de4.equals(other.de4))
+			return false;
+		if (de4_poa == null) {
+			if (other.de4_poa != null)
+				return false;
+		} else if (!de4_poa.equals(other.de4_poa))
+			return false;
+		if (de5 == null) {
+			if (other.de5 != null)
+				return false;
+		} else if (!de5.equals(other.de5))
+			return false;
+		if (de5_poa == null) {
+			if (other.de5_poa != null)
+				return false;
+		} else if (!de5_poa.equals(other.de5_poa))
+			return false;
+		if (de6 == null) {
+			if (other.de6 != null)
+				return false;
+		} else if (!de6.equals(other.de6))
+			return false;
+		if (de6_poa == null) {
+			if (other.de6_poa != null)
+				return false;
+		} else if (!de6_poa.equals(other.de6_poa))
+			return false;
+		if (de7 == null) {
+			if (other.de7 != null)
+				return false;
+		} else if (!de7.equals(other.de7))
+			return false;
+		if (de7_poa == null) {
+			if (other.de7_poa != null)
+				return false;
+		} else if (!de7_poa.equals(other.de7_poa))
+			return false;
+		if (de8 == null) {
+			if (other.de8 != null)
+				return false;
+		} else if (!de8.equals(other.de8))
+			return false;
+		if (de8_poa == null) {
+			if (other.de8_poa != null)
+				return false;
+		} else if (!de8_poa.equals(other.de8_poa))
+			return false;
+		if (de9 == null) {
+			if (other.de9 != null)
+				return false;
+		} else if (!de9.equals(other.de9))
+			return false;
+		if (de9_poa == null) {
+			if (other.de9_poa != null)
+				return false;
+		} else if (!de9_poa.equals(other.de9_poa))
+			return false;
+		if (dischargeDate == null) {
+			if (other.dischargeDate != null)
+				return false;
+		} else if (!dischargeDate.equals(other.dischargeDate))
+			return false;
+		if (drgCode == null) {
+			if (other.drgCode != null)
+				return false;
+		} else if (!drgCode.equals(other.drgCode))
+			return false;
+		if (faciType_BillFirstDigit == null) {
+			if (other.faciType_BillFirstDigit != null)
+				return false;
+		} else if (!faciType_BillFirstDigit
+				.equals(other.faciType_BillFirstDigit))
+			return false;
+		if (freqType_BillThirdDigit == null) {
+			if (other.freqType_BillThirdDigit != null)
+				return false;
+		} else if (!freqType_BillThirdDigit
+				.equals(other.freqType_BillThirdDigit))
+			return false;
+		if (fromServiceDate == null) {
+			if (other.fromServiceDate != null)
+				return false;
+		} else if (!fromServiceDate.equals(other.fromServiceDate))
+			return false;
+		if (lines == null) {
+			if (other.lines != null)
+				return false;
+		} else if (!lines.equals(other.lines))
+			return false;
+		if (mbrIdentifier == null) {
+			if (other.mbrIdentifier != null)
+				return false;
+		} else if (!mbrIdentifier.equals(other.mbrIdentifier))
+			return false;
+		if (ocr1 == null) {
+			if (other.ocr1 != null)
+				return false;
+		} else if (!ocr1.equals(other.ocr1))
+			return false;
+		if (ocr10 == null) {
+			if (other.ocr10 != null)
+				return false;
+		} else if (!ocr10.equals(other.ocr10))
+			return false;
+		if (ocr10_dt == null) {
+			if (other.ocr10_dt != null)
+				return false;
+		} else if (!ocr10_dt.equals(other.ocr10_dt))
+			return false;
+		if (ocr11 == null) {
+			if (other.ocr11 != null)
+				return false;
+		} else if (!ocr11.equals(other.ocr11))
+			return false;
+		if (ocr11_dt == null) {
+			if (other.ocr11_dt != null)
+				return false;
+		} else if (!ocr11_dt.equals(other.ocr11_dt))
+			return false;
+		if (ocr12 == null) {
+			if (other.ocr12 != null)
+				return false;
+		} else if (!ocr12.equals(other.ocr12))
+			return false;
+		if (ocr13_dt == null) {
+			if (other.ocr13_dt != null)
+				return false;
+		} else if (!ocr13_dt.equals(other.ocr13_dt))
+			return false;
+		if (ocr14 == null) {
+			if (other.ocr14 != null)
+				return false;
+		} else if (!ocr14.equals(other.ocr14))
+			return false;
+		if (ocr14_dt == null) {
+			if (other.ocr14_dt != null)
+				return false;
+		} else if (!ocr14_dt.equals(other.ocr14_dt))
+			return false;
+		if (ocr15 == null) {
+			if (other.ocr15 != null)
+				return false;
+		} else if (!ocr15.equals(other.ocr15))
+			return false;
+		if (ocr15_dt == null) {
+			if (other.ocr15_dt != null)
+				return false;
+		} else if (!ocr15_dt.equals(other.ocr15_dt))
+			return false;
+		if (ocr16 == null) {
+			if (other.ocr16 != null)
+				return false;
+		} else if (!ocr16.equals(other.ocr16))
+			return false;
+		if (ocr16_dt == null) {
+			if (other.ocr16_dt != null)
+				return false;
+		} else if (!ocr16_dt.equals(other.ocr16_dt))
+			return false;
+		if (ocr17 == null) {
+			if (other.ocr17 != null)
+				return false;
+		} else if (!ocr17.equals(other.ocr17))
+			return false;
+		if (ocr17_dt == null) {
+			if (other.ocr17_dt != null)
+				return false;
+		} else if (!ocr17_dt.equals(other.ocr17_dt))
+			return false;
+		if (ocr18 == null) {
+			if (other.ocr18 != null)
+				return false;
+		} else if (!ocr18.equals(other.ocr18))
+			return false;
+		if (ocr18_dt == null) {
+			if (other.ocr18_dt != null)
+				return false;
+		} else if (!ocr18_dt.equals(other.ocr18_dt))
+			return false;
+		if (ocr19 == null) {
+			if (other.ocr19 != null)
+				return false;
+		} else if (!ocr19.equals(other.ocr19))
+			return false;
+		if (ocr19_dt == null) {
+			if (other.ocr19_dt != null)
+				return false;
+		} else if (!ocr19_dt.equals(other.ocr19_dt))
+			return false;
+		if (ocr1_dt == null) {
+			if (other.ocr1_dt != null)
+				return false;
+		} else if (!ocr1_dt.equals(other.ocr1_dt))
+			return false;
+		if (ocr2 == null) {
+			if (other.ocr2 != null)
+				return false;
+		} else if (!ocr2.equals(other.ocr2))
+			return false;
+		if (ocr20 == null) {
+			if (other.ocr20 != null)
+				return false;
+		} else if (!ocr20.equals(other.ocr20))
+			return false;
+		if (ocr20_dt == null) {
+			if (other.ocr20_dt != null)
+				return false;
+		} else if (!ocr20_dt.equals(other.ocr20_dt))
+			return false;
+		if (ocr21 == null) {
+			if (other.ocr21 != null)
+				return false;
+		} else if (!ocr21.equals(other.ocr21))
+			return false;
+		if (ocr21_dt == null) {
+			if (other.ocr21_dt != null)
+				return false;
+		} else if (!ocr21_dt.equals(other.ocr21_dt))
+			return false;
+		if (ocr22 == null) {
+			if (other.ocr22 != null)
+				return false;
+		} else if (!ocr22.equals(other.ocr22))
+			return false;
+		if (ocr22_dt == null) {
+			if (other.ocr22_dt != null)
+				return false;
+		} else if (!ocr22_dt.equals(other.ocr22_dt))
+			return false;
+		if (ocr23 == null) {
+			if (other.ocr23 != null)
+				return false;
+		} else if (!ocr23.equals(other.ocr23))
+			return false;
+		if (ocr23_dt == null) {
+			if (other.ocr23_dt != null)
+				return false;
+		} else if (!ocr23_dt.equals(other.ocr23_dt))
+			return false;
+		if (ocr24 == null) {
+			if (other.ocr24 != null)
+				return false;
+		} else if (!ocr24.equals(other.ocr24))
+			return false;
+		if (ocr24_dt == null) {
+			if (other.ocr24_dt != null)
+				return false;
+		} else if (!ocr24_dt.equals(other.ocr24_dt))
+			return false;
+		if (ocr2_dt == null) {
+			if (other.ocr2_dt != null)
+				return false;
+		} else if (!ocr2_dt.equals(other.ocr2_dt))
+			return false;
+		if (ocr3 == null) {
+			if (other.ocr3 != null)
+				return false;
+		} else if (!ocr3.equals(other.ocr3))
+			return false;
+		if (ocr3_dt == null) {
+			if (other.ocr3_dt != null)
+				return false;
+		} else if (!ocr3_dt.equals(other.ocr3_dt))
+			return false;
+		if (ocr4 == null) {
+			if (other.ocr4 != null)
+				return false;
+		} else if (!ocr4.equals(other.ocr4))
+			return false;
+		if (ocr4_dt == null) {
+			if (other.ocr4_dt != null)
+				return false;
+		} else if (!ocr4_dt.equals(other.ocr4_dt))
+			return false;
+		if (ocr5 == null) {
+			if (other.ocr5 != null)
+				return false;
+		} else if (!ocr5.equals(other.ocr5))
+			return false;
+		if (ocr5_dt == null) {
+			if (other.ocr5_dt != null)
+				return false;
+		} else if (!ocr5_dt.equals(other.ocr5_dt))
+			return false;
+		if (ocr6 == null) {
+			if (other.ocr6 != null)
+				return false;
+		} else if (!ocr6.equals(other.ocr6))
+			return false;
+		if (ocr6_dt == null) {
+			if (other.ocr6_dt != null)
+				return false;
+		} else if (!ocr6_dt.equals(other.ocr6_dt))
+			return false;
+		if (ocr7 == null) {
+			if (other.ocr7 != null)
+				return false;
+		} else if (!ocr7.equals(other.ocr7))
+			return false;
+		if (ocr7_dt == null) {
+			if (other.ocr7_dt != null)
+				return false;
+		} else if (!ocr7_dt.equals(other.ocr7_dt))
+			return false;
+		if (ocr8 == null) {
+			if (other.ocr8 != null)
+				return false;
+		} else if (!ocr8.equals(other.ocr8))
+			return false;
+		if (ocr8_dt == null) {
+			if (other.ocr8_dt != null)
+				return false;
+		} else if (!ocr8_dt.equals(other.ocr8_dt))
+			return false;
+		if (ocr9 == null) {
+			if (other.ocr9 != null)
+				return false;
+		} else if (!ocr9.equals(other.ocr9))
+			return false;
+		if (ocr9_dt == null) {
+			if (other.ocr9_dt != null)
+				return false;
+		} else if (!ocr9_dt.equals(other.ocr9_dt))
+			return false;
+		if (operatingPhyNationalPrvdrIdntfr == null) {
+			if (other.operatingPhyNationalPrvdrIdntfr != null)
+				return false;
+		} else if (!operatingPhyNationalPrvdrIdntfr
+				.equals(other.operatingPhyNationalPrvdrIdntfr))
+			return false;
+		if (othOeratingPhyNationalPrvdrIdntfr == null) {
+			if (other.othOeratingPhyNationalPrvdrIdntfr != null)
+				return false;
+		} else if (!othOeratingPhyNationalPrvdrIdntfr
+				.equals(other.othOeratingPhyNationalPrvdrIdntfr))
+			return false;
+		if (p1 == null) {
+			if (other.p1 != null)
+				return false;
+		} else if (!p1.equals(other.p1))
+			return false;
+		if (p10 == null) {
+			if (other.p10 != null)
+				return false;
+		} else if (!p10.equals(other.p10))
+			return false;
+		if (p10_dt == null) {
+			if (other.p10_dt != null)
+				return false;
+		} else if (!p10_dt.equals(other.p10_dt))
+			return false;
+		if (p11 == null) {
+			if (other.p11 != null)
+				return false;
+		} else if (!p11.equals(other.p11))
+			return false;
+		if (p11_dt == null) {
+			if (other.p11_dt != null)
+				return false;
+		} else if (!p11_dt.equals(other.p11_dt))
+			return false;
+		if (p12 == null) {
+			if (other.p12 != null)
+				return false;
+		} else if (!p12.equals(other.p12))
+			return false;
+		if (p12_dt == null) {
+			if (other.p12_dt != null)
+				return false;
+		} else if (!p12_dt.equals(other.p12_dt))
+			return false;
+		if (p13 == null) {
+			if (other.p13 != null)
+				return false;
+		} else if (!p13.equals(other.p13))
+			return false;
+		if (p13_dt == null) {
+			if (other.p13_dt != null)
+				return false;
+		} else if (!p13_dt.equals(other.p13_dt))
+			return false;
+		if (p14 == null) {
+			if (other.p14 != null)
+				return false;
+		} else if (!p14.equals(other.p14))
+			return false;
+		if (p14_dt == null) {
+			if (other.p14_dt != null)
+				return false;
+		} else if (!p14_dt.equals(other.p14_dt))
+			return false;
+		if (p15 == null) {
+			if (other.p15 != null)
+				return false;
+		} else if (!p15.equals(other.p15))
+			return false;
+		if (p15_dt == null) {
+			if (other.p15_dt != null)
+				return false;
+		} else if (!p15_dt.equals(other.p15_dt))
+			return false;
+		if (p16 == null) {
+			if (other.p16 != null)
+				return false;
+		} else if (!p16.equals(other.p16))
+			return false;
+		if (p16_dt == null) {
+			if (other.p16_dt != null)
+				return false;
+		} else if (!p16_dt.equals(other.p16_dt))
+			return false;
+		if (p17 == null) {
+			if (other.p17 != null)
+				return false;
+		} else if (!p17.equals(other.p17))
+			return false;
+		if (p17_dt == null) {
+			if (other.p17_dt != null)
+				return false;
+		} else if (!p17_dt.equals(other.p17_dt))
+			return false;
+		if (p18 == null) {
+			if (other.p18 != null)
+				return false;
+		} else if (!p18.equals(other.p18))
+			return false;
+		if (p18_dt == null) {
+			if (other.p18_dt != null)
+				return false;
+		} else if (!p18_dt.equals(other.p18_dt))
+			return false;
+		if (p19 == null) {
+			if (other.p19 != null)
+				return false;
+		} else if (!p19.equals(other.p19))
+			return false;
+		if (p19_dt == null) {
+			if (other.p19_dt != null)
+				return false;
+		} else if (!p19_dt.equals(other.p19_dt))
+			return false;
+		if (p1_dt == null) {
+			if (other.p1_dt != null)
+				return false;
+		} else if (!p1_dt.equals(other.p1_dt))
+			return false;
+		if (p2 == null) {
+			if (other.p2 != null)
+				return false;
+		} else if (!p2.equals(other.p2))
+			return false;
+		if (p20 == null) {
+			if (other.p20 != null)
+				return false;
+		} else if (!p20.equals(other.p20))
+			return false;
+		if (p20_dt == null) {
+			if (other.p20_dt != null)
+				return false;
+		} else if (!p20_dt.equals(other.p20_dt))
+			return false;
+		if (p21 == null) {
+			if (other.p21 != null)
+				return false;
+		} else if (!p21.equals(other.p21))
+			return false;
+		if (p21_dt == null) {
+			if (other.p21_dt != null)
+				return false;
+		} else if (!p21_dt.equals(other.p21_dt))
+			return false;
+		if (p22 == null) {
+			if (other.p22 != null)
+				return false;
+		} else if (!p22.equals(other.p22))
+			return false;
+		if (p22_dt == null) {
+			if (other.p22_dt != null)
+				return false;
+		} else if (!p22_dt.equals(other.p22_dt))
+			return false;
+		if (p23 == null) {
+			if (other.p23 != null)
+				return false;
+		} else if (!p23.equals(other.p23))
+			return false;
+		if (p23_dt == null) {
+			if (other.p23_dt != null)
+				return false;
+		} else if (!p23_dt.equals(other.p23_dt))
+			return false;
+		if (p24 == null) {
+			if (other.p24 != null)
+				return false;
+		} else if (!p24.equals(other.p24))
+			return false;
+		if (p24_dt == null) {
+			if (other.p24_dt != null)
+				return false;
+		} else if (!p24_dt.equals(other.p24_dt))
+			return false;
+		if (p2_dt == null) {
+			if (other.p2_dt != null)
+				return false;
+		} else if (!p2_dt.equals(other.p2_dt))
+			return false;
+		if (p3 == null) {
+			if (other.p3 != null)
+				return false;
+		} else if (!p3.equals(other.p3))
+			return false;
+		if (p3_dt == null) {
+			if (other.p3_dt != null)
+				return false;
+		} else if (!p3_dt.equals(other.p3_dt))
+			return false;
+		if (p4 == null) {
+			if (other.p4 != null)
+				return false;
+		} else if (!p4.equals(other.p4))
+			return false;
+		if (p4_dt == null) {
+			if (other.p4_dt != null)
+				return false;
+		} else if (!p4_dt.equals(other.p4_dt))
+			return false;
+		if (p5 == null) {
+			if (other.p5 != null)
+				return false;
+		} else if (!p5.equals(other.p5))
+			return false;
+		if (p5_dt == null) {
+			if (other.p5_dt != null)
+				return false;
+		} else if (!p5_dt.equals(other.p5_dt))
+			return false;
+		if (p6 == null) {
+			if (other.p6 != null)
+				return false;
+		} else if (!p6.equals(other.p6))
+			return false;
+		if (p6_dt == null) {
+			if (other.p6_dt != null)
+				return false;
+		} else if (!p6_dt.equals(other.p6_dt))
+			return false;
+		if (p7 == null) {
+			if (other.p7 != null)
+				return false;
+		} else if (!p7.equals(other.p7))
+			return false;
+		if (p7_dt == null) {
+			if (other.p7_dt != null)
+				return false;
+		} else if (!p7_dt.equals(other.p7_dt))
+			return false;
+		if (p8 == null) {
+			if (other.p8 != null)
+				return false;
+		} else if (!p8.equals(other.p8))
+			return false;
+		if (p8_dt == null) {
+			if (other.p8_dt != null)
+				return false;
+		} else if (!p8_dt.equals(other.p8_dt))
+			return false;
+		if (p9 == null) {
+			if (other.p9 != null)
+				return false;
+		} else if (!p9.equals(other.p9))
+			return false;
+		if (p9_dt == null) {
+			if (other.p9_dt != null)
+				return false;
+		} else if (!p9_dt.equals(other.p9_dt))
+			return false;
+		if (paidAmount == null) {
+			if (other.paidAmount != null)
+				return false;
+		} else if (!paidAmount.equals(other.paidAmount))
+			return false;
+		if (patientBirthDate == null) {
+			if (other.patientBirthDate != null)
+				return false;
+		} else if (!patientBirthDate.equals(other.patientBirthDate))
+			return false;
+		if (patientFirstName == null) {
+			if (other.patientFirstName != null)
+				return false;
+		} else if (!patientFirstName.equals(other.patientFirstName))
+			return false;
+		if (patientGender == null) {
+			if (other.patientGender != null)
+				return false;
+		} else if (!patientGender.equals(other.patientGender))
+			return false;
+		if (patientLastName == null) {
+			if (other.patientLastName != null)
+				return false;
+		} else if (!patientLastName.equals(other.patientLastName))
+			return false;
+		if (patientState == null) {
+			if (other.patientState != null)
+				return false;
+		} else if (!patientState.equals(other.patientState))
+			return false;
+		if (patientStatusLkpcd == null) {
+			if (other.patientStatusLkpcd != null)
+				return false;
+		} else if (!patientStatusLkpcd.equals(other.patientStatusLkpcd))
+			return false;
+		if (patientZip == null) {
+			if (other.patientZip != null)
+				return false;
+		} else if (!patientZip.equals(other.patientZip))
+			return false;
+		if (prncplDgnsCd == null) {
+			if (other.prncplDgnsCd != null)
+				return false;
+		} else if (!prncplDgnsCd.equals(other.prncplDgnsCd))
+			return false;
+		if (prncplDgnsPoa == null) {
+			if (other.prncplDgnsPoa != null)
+				return false;
+		} else if (!prncplDgnsPoa.equals(other.prncplDgnsPoa))
+			return false;
+		if (prncplPrcdrCd == null) {
+			if (other.prncplPrcdrCd != null)
+				return false;
+		} else if (!prncplPrcdrCd.equals(other.prncplPrcdrCd))
+			return false;
+		if (prncplPrcdrCdDate == null) {
+			if (other.prncplPrcdrCdDate != null)
+				return false;
+		} else if (!prncplPrcdrCdDate.equals(other.prncplPrcdrCdDate))
+			return false;
+		if (rsn_cd_ == null) {
+			if (other.rsn_cd_ != null)
+				return false;
+		} else if (!rsn_cd_.equals(other.rsn_cd_))
+			return false;
+		if (rsn_cd_1 == null) {
+			if (other.rsn_cd_1 != null)
+				return false;
+		} else if (!rsn_cd_1.equals(other.rsn_cd_1))
+			return false;
+		if (rsn_cd_3 == null) {
+			if (other.rsn_cd_3 != null)
+				return false;
+		} else if (!rsn_cd_3.equals(other.rsn_cd_3))
+			return false;
+		if (servType_BillSecondDigit == null) {
+			if (other.servType_BillSecondDigit != null)
+				return false;
+		} else if (!servType_BillSecondDigit
+				.equals(other.servType_BillSecondDigit))
+			return false;
+		if (srvcngNationalPrvdrIdntfr == null) {
+			if (other.srvcngNationalPrvdrIdntfr != null)
+				return false;
+		} else if (!srvcngNationalPrvdrIdntfr
+				.equals(other.srvcngNationalPrvdrIdntfr))
+			return false;
+		if (srvcngPrvdrLctnZipCode == null) {
+			if (other.srvcngPrvdrLctnZipCode != null)
+				return false;
+		} else if (!srvcngPrvdrLctnZipCode.equals(other.srvcngPrvdrLctnZipCode))
+			return false;
+		if (tcn == null) {
+			if (other.tcn != null)
+				return false;
+		} else if (!tcn.equals(other.tcn))
+			return false;
+		if (toServiceDate == null) {
+			if (other.toServiceDate != null)
+				return false;
+		} else if (!toServiceDate.equals(other.toServiceDate))
+			return false;
+		if (totalBilledAmount == null) {
+			if (other.totalBilledAmount != null)
+				return false;
+		} else if (!totalBilledAmount.equals(other.totalBilledAmount))
+			return false;
+		if (val1 == null) {
+			if (other.val1 != null)
+				return false;
+		} else if (!val1.equals(other.val1))
+			return false;
+		if (val10 == null) {
+			if (other.val10 != null)
+				return false;
+		} else if (!val10.equals(other.val10))
+			return false;
+		if (val10_amt == null) {
+			if (other.val10_amt != null)
+				return false;
+		} else if (!val10_amt.equals(other.val10_amt))
+			return false;
+		if (val11 == null) {
+			if (other.val11 != null)
+				return false;
+		} else if (!val11.equals(other.val11))
+			return false;
+		if (val11_amt == null) {
+			if (other.val11_amt != null)
+				return false;
+		} else if (!val11_amt.equals(other.val11_amt))
+			return false;
+		if (val12 == null) {
+			if (other.val12 != null)
+				return false;
+		} else if (!val12.equals(other.val12))
+			return false;
+		if (val13_amt == null) {
+			if (other.val13_amt != null)
+				return false;
+		} else if (!val13_amt.equals(other.val13_amt))
+			return false;
+		if (val14 == null) {
+			if (other.val14 != null)
+				return false;
+		} else if (!val14.equals(other.val14))
+			return false;
+		if (val14_amt == null) {
+			if (other.val14_amt != null)
+				return false;
+		} else if (!val14_amt.equals(other.val14_amt))
+			return false;
+		if (val15 == null) {
+			if (other.val15 != null)
+				return false;
+		} else if (!val15.equals(other.val15))
+			return false;
+		if (val15_amt == null) {
+			if (other.val15_amt != null)
+				return false;
+		} else if (!val15_amt.equals(other.val15_amt))
+			return false;
+		if (val16 == null) {
+			if (other.val16 != null)
+				return false;
+		} else if (!val16.equals(other.val16))
+			return false;
+		if (val16_amt == null) {
+			if (other.val16_amt != null)
+				return false;
+		} else if (!val16_amt.equals(other.val16_amt))
+			return false;
+		if (val17 == null) {
+			if (other.val17 != null)
+				return false;
+		} else if (!val17.equals(other.val17))
+			return false;
+		if (val17_amt == null) {
+			if (other.val17_amt != null)
+				return false;
+		} else if (!val17_amt.equals(other.val17_amt))
+			return false;
+		if (val18 == null) {
+			if (other.val18 != null)
+				return false;
+		} else if (!val18.equals(other.val18))
+			return false;
+		if (val18_amt == null) {
+			if (other.val18_amt != null)
+				return false;
+		} else if (!val18_amt.equals(other.val18_amt))
+			return false;
+		if (val19 == null) {
+			if (other.val19 != null)
+				return false;
+		} else if (!val19.equals(other.val19))
+			return false;
+		if (val19_amt == null) {
+			if (other.val19_amt != null)
+				return false;
+		} else if (!val19_amt.equals(other.val19_amt))
+			return false;
+		if (val1_amt == null) {
+			if (other.val1_amt != null)
+				return false;
+		} else if (!val1_amt.equals(other.val1_amt))
+			return false;
+		if (val2 == null) {
+			if (other.val2 != null)
+				return false;
+		} else if (!val2.equals(other.val2))
+			return false;
+		if (val20 == null) {
+			if (other.val20 != null)
+				return false;
+		} else if (!val20.equals(other.val20))
+			return false;
+		if (val20_amt == null) {
+			if (other.val20_amt != null)
+				return false;
+		} else if (!val20_amt.equals(other.val20_amt))
+			return false;
+		if (val21 == null) {
+			if (other.val21 != null)
+				return false;
+		} else if (!val21.equals(other.val21))
+			return false;
+		if (val21_amt == null) {
+			if (other.val21_amt != null)
+				return false;
+		} else if (!val21_amt.equals(other.val21_amt))
+			return false;
+		if (val22 == null) {
+			if (other.val22 != null)
+				return false;
+		} else if (!val22.equals(other.val22))
+			return false;
+		if (val22_amt == null) {
+			if (other.val22_amt != null)
+				return false;
+		} else if (!val22_amt.equals(other.val22_amt))
+			return false;
+		if (val23 == null) {
+			if (other.val23 != null)
+				return false;
+		} else if (!val23.equals(other.val23))
+			return false;
+		if (val23_amt == null) {
+			if (other.val23_amt != null)
+				return false;
+		} else if (!val23_amt.equals(other.val23_amt))
+			return false;
+		if (val24 == null) {
+			if (other.val24 != null)
+				return false;
+		} else if (!val24.equals(other.val24))
+			return false;
+		if (val24_amt == null) {
+			if (other.val24_amt != null)
+				return false;
+		} else if (!val24_amt.equals(other.val24_amt))
+			return false;
+		if (val2_amt == null) {
+			if (other.val2_amt != null)
+				return false;
+		} else if (!val2_amt.equals(other.val2_amt))
+			return false;
+		if (val3 == null) {
+			if (other.val3 != null)
+				return false;
+		} else if (!val3.equals(other.val3))
+			return false;
+		if (val3_amt == null) {
+			if (other.val3_amt != null)
+				return false;
+		} else if (!val3_amt.equals(other.val3_amt))
+			return false;
+		if (val4 == null) {
+			if (other.val4 != null)
+				return false;
+		} else if (!val4.equals(other.val4))
+			return false;
+		if (val4_amt == null) {
+			if (other.val4_amt != null)
+				return false;
+		} else if (!val4_amt.equals(other.val4_amt))
+			return false;
+		if (val5 == null) {
+			if (other.val5 != null)
+				return false;
+		} else if (!val5.equals(other.val5))
+			return false;
+		if (val5_amt == null) {
+			if (other.val5_amt != null)
+				return false;
+		} else if (!val5_amt.equals(other.val5_amt))
+			return false;
+		if (val6 == null) {
+			if (other.val6 != null)
+				return false;
+		} else if (!val6.equals(other.val6))
+			return false;
+		if (val6_amt == null) {
+			if (other.val6_amt != null)
+				return false;
+		} else if (!val6_amt.equals(other.val6_amt))
+			return false;
+		if (val7 == null) {
+			if (other.val7 != null)
+				return false;
+		} else if (!val7.equals(other.val7))
+			return false;
+		if (val7_amt == null) {
+			if (other.val7_amt != null)
+				return false;
+		} else if (!val7_amt.equals(other.val7_amt))
+			return false;
+		if (val8 == null) {
+			if (other.val8 != null)
+				return false;
+		} else if (!val8.equals(other.val8))
+			return false;
+		if (val8_amt == null) {
+			if (other.val8_amt != null)
+				return false;
+		} else if (!val8_amt.equals(other.val8_amt))
+			return false;
+		if (val9 == null) {
+			if (other.val9 != null)
+				return false;
+		} else if (!val9.equals(other.val9))
+			return false;
+		if (val9_amt == null) {
+			if (other.val9_amt != null)
+				return false;
+		} else if (!val9_amt.equals(other.val9_amt))
+			return false;
+		return true;
+	}
+	public String getMdc() {
+		return mdc;
+	}
+	public void setMdc(String mdc) {
+		this.mdc = mdc;
 	}
 		
 	

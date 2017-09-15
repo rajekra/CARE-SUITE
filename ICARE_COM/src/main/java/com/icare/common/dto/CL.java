@@ -1,9 +1,10 @@
 package com.icare.common.dto;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 
-public class CL {
+public class CL implements Serializable{
 	private String claimLineTcn;
 	private String fromServiceDate;
 	private String toServiceDate;
