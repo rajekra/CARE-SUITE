@@ -1,15 +1,12 @@
-package com.spark.mygraphframe;
+package com.icare.ing.service.analytics;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.SparkSession;
-import org.apache.spark.storage.StorageLevel;
 import org.graphframes.GraphFrame;
-import org.graphframes.lib.PageRank;
 
 public class SparkGraphFrameSample {
 

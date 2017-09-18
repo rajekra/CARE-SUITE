@@ -15,12 +15,6 @@
 	</properties>
 
 	<dependencies>
-		<!-- Spark -->
-		<dependency>
-			<groupId>org.apache.spark</groupId>
-			<artifactId>spark-core_2.11</artifactId>
-			<version>2.2.0</version>
-		</dependency>
 
 		<!-- Logging -->
 		<dependency>
@@ -48,23 +42,10 @@
 			<artifactId>guava</artifactId>
 			<version>15.0</version>
 		</dependency>
-<dependency>
-    <groupId>org.mongodb</groupId>
-    <artifactId>mongo-java-driver</artifactId>
-    <version>3.4.2</version>
-</dependency>
 		<dependency>
 			<groupId>com.ecams.claim.core</groupId>
 			<artifactId>claim-core-dto</artifactId>
 			<version>1.0.0-SNAPSHOT</version>
-		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/org.apache.spark/spark-sql_2.11 -->
-		<dependency>
-			<groupId>org.apache.spark</groupId>
-			<artifactId>spark-sql_2.11</artifactId>
-			<version>2.2.0</version>
-			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
@@ -76,13 +57,6 @@
 			<artifactId>jackson-annotations</artifactId>
 			<version>${jackson.version}</version>
 		</dependency>
-
-<!-- https://mvnrepository.com/artifact/org.apache.phoenix/phoenix-core -->
-<dependency>
-    <groupId>org.apache.phoenix</groupId>
-    <artifactId>phoenix-core</artifactId>
-    <version>4.7.0-HBase-1.0</version>
-</dependency>
 
 
 
@@ -96,27 +70,6 @@
 		</dependency>
 
 
-		<!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-core</artifactId>
-			<version>4.3.4.RELEASE</version>
-		</dependency>
-
-
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-context</artifactId>
-			<version>4.3.4.RELEASE</version>
-		</dependency>
-		
-		<!-- https://mvnrepository.com/artifact/org.apache.kafka/kafka-clients -->
-<dependency>
-   <groupId>org.apache.kafka</groupId>
-   <artifactId>kafka-clients</artifactId>
-   <version>0.10.1.2.6.1.0-129</version>
-</dependency>
-		
 
 	</dependencies>
 </project>
