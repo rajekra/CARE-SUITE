@@ -21,10 +21,10 @@ import com.ecams.claim.bo.ClmHdrXProcedure;
 import com.ecams.claim.bo.ClmHdrXPrvdrLctn;
 import com.icare.common.dto.CH;
 import com.icare.common.dto.CL;
-import com.icare.ing.repository.intf.SparkRepositoryInf;
+import com.icare.ing.repository.ingestion.intf.MasterDataRepositoryInf;
 
 public class ClaimHeaderToCDConverter {
-	public CH translateClaimHeaderToCD(com.ecams.claim.bo.ClaimHeader claimHeaderBo, SparkRepositoryInf repository)
+	public CH translateClaimHeaderToCD(com.ecams.claim.bo.ClaimHeader claimHeaderBo, MasterDataRepositoryInf repository)
 	{
 		CH cd = new CH();
 		DateFormat df = new SimpleDateFormat("yyyy-MM-dd");

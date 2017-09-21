@@ -1,4 +1,4 @@
-package com.icare.ing.repository.impl;
+package com.icare.ing.repository.ingestion.impl;
 
 import static com.mongodb.client.model.Projections.excludeId;
 
@@ -6,7 +6,7 @@ import org.bson.BSONObject;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.icare.common.dto.CH;
-import com.icare.ing.repository.intf.SparkRepositoryInf;
+import com.icare.ing.repository.ingestion.intf.MasterDataRepositoryInf;
 import com.icare.ing.util.CommonConstants;
 import com.icare.ing.util.PropUtilityService;
 import com.mongodb.BasicDBObject;
@@ -16,7 +16,7 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoCursor;
 import com.mongodb.client.model.Projections;
 
-public class SparkMongoRepositoryImpl implements SparkRepositoryInf{
+public class MasterDataRepositoryImpl implements MasterDataRepositoryInf{
 	public String convertIcd9To10(String icd9Code)
 	{
 		MongoCollection<BasicDBObject> ICD_GEM_MS = CommonConstants.ICD_GEM_MS;
