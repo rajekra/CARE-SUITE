@@ -1,0 +1,22 @@
+{ 
+    "_id" : ObjectId("59b423413de79d0a90df0a35"), 
+    "name" : "Kindergarden", 
+    "stidentId" : NumberInt(12), 
+    "students" : [
+        {
+            "name" : "Aadhyan", 
+            "grade" : "A"
+        }
+    ]
+}
+{ 
+    "_id" : ObjectId("59b4234c3de79d0b648318ca"), 
+    "name" : "Kindergarden", 
+    "stidentId" : NumberInt(12), 
+    "students" : [
+        {
+            "name" : "Kaniskar", 
+            "grade" : "A"
+        }
+    ]
+}

@@ -26,7 +26,7 @@ import com.icare.ing.util.PropUtilityService;
 import com.icare.ing.util.kafka.ClaimHeaderDeserializer;
 import com.icare.ing.util.spark.CDBuilder;
 
-public class InpatientClaimHeaderConsumer {
+public class ConsumeInpatientClaim {
     private static final String HOST = "localhost";
     private static final int PORT = 9999;
 

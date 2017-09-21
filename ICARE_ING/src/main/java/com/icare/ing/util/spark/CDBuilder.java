@@ -3,7 +3,7 @@ package com.icare.ing.util.spark;
 import java.io.Serializable;
 
 import com.ecams.claim.bo.ClaimHeader;
-import com.icare.common.dto.CD;
+import com.icare.common.dto.CH;
 import com.icare.ing.repository.impl.SparkMongoRepositoryImpl;
 import com.icare.ing.repository.intf.SparkRepositoryInf;
 
@@ -23,7 +23,7 @@ public class CDBuilder implements Serializable {
 		try {
 			ClaimHeaderToCDConverter claimHeaderToCDConverter = new ClaimHeaderToCDConverter();
 			SparkRepositoryInf repository = new SparkMongoRepositoryImpl();
-			CD cd = claimHeaderToCDConverter.translateClaimHeaderToCD(row,repository);
+			CH cd = claimHeaderToCDConverter.translateClaimHeaderToCD(row,repository);
 			repository.saveCD(cd);
 		} catch (Exception e) {
 			e.printStackTrace();

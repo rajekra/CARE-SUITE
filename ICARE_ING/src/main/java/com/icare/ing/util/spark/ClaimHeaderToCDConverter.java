@@ -2,6 +2,7 @@ package com.icare.ing.util.spark;
 
 import java.lang.reflect.Field;
 import java.math.BigDecimal;
+import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -18,15 +19,25 @@ import com.ecams.claim.bo.ClmHdrValueAmount;
 import com.ecams.claim.bo.ClmHdrXDiagnosis;
 import com.ecams.claim.bo.ClmHdrXProcedure;
 import com.ecams.claim.bo.ClmHdrXPrvdrLctn;
-import com.icare.common.dto.CD;
+import com.icare.common.dto.CH;
 import com.icare.common.dto.CL;
 import com.icare.ing.repository.intf.SparkRepositoryInf;
 
 public class ClaimHeaderToCDConverter {
-	public CD translateClaimHeaderToCD(com.ecams.claim.bo.ClaimHeader claimHeaderBo, SparkRepositoryInf repository)
+	public CH translateClaimHeaderToCD(com.ecams.claim.bo.ClaimHeader claimHeaderBo, SparkRepositoryInf repository)
 	{
-		CD cd = new CD();
+		CH cd = new CH();
+		DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
+		//cd.setInDate(df.format(new Date(117,8,19)));
+		cd.setInDate(df.format(new Date()));
 		//cd.set_id(new ObjectId());
+		cd.setPatientBirthDate(claimHeaderBo.getPatientBirthDate().toString());
+		cd.setPatientFirstName(claimHeaderBo.getPatientFirstName());
+		cd.setPatientGender(claimHeaderBo.getPatientGender());
+		cd.setPatientLastName(claimHeaderBo.getPatientLastName());
+		cd.setPatientZip(claimHeaderBo.getPatientZipCode());
+		cd.setPatientStatusLkpcd(claimHeaderBo.getPatientRelationshipLkpcd());
+		
 		cd.setTcn(claimHeaderBo.getTcn());
 		if(null!=claimHeaderBo.getFromServiceDate())
 		{
@@ -194,7 +205,7 @@ public class ClaimHeaderToCDConverter {
 		return cd;
 	}
 	
-	private CD setValue(CD c1, String p_sAttributeName, Object p_sAttributeValue)
+	private CH setValue(CH c1, String p_sAttributeName, Object p_sAttributeValue)
 	{
 		Field field;
 		try {

@@ -1,0 +1,364 @@
+{ 
+    "_id" : ObjectId("59b3e8a43de79d04b8facd2c"), 
+    "programCid" : NumberInt(1), 
+    "claimHeaderSid" : NumberInt(0), 
+    "aplctnStatusCid" : null, 
+    "aplctnStatusTypeCid" : null, 
+    "athrztnNmbr" : null, 
+    "billTypeFourthDigitLkpcd" : null, 
+    "blngPrvdrFirstName" : null, 
+    "blngPrvdrLastName" : null, 
+    "blngPrvdrLctnIid" : null, 
+    "blngPrvdrLctnTxnmyCode" : null, 
+    "blngPrvdrLegacyId" : null, 
+    "blngPrvdrMiddleName" : null, 
+    "blngPrvdrName" : null, 
+    "blngPrvdrSuffixLkpcd" : null, 
+    "blngPrvdrTypeCode" : null, 
+    "bsnsStatusCid" : null, 
+    "bsnsStatusTypeCid" : null, 
+    "chkdoutBy" : null, 
+    "chkdoutStatusLkpcd" : null, 
+    "clmSbmtrSid" : null, 
+    "clmTypeCid" : null, 
+    "createdBy" : null, 
+    "createdDate" : null, 
+    "denialReasonCd1" : null, 
+    "denialReasonCd2" : null, 
+    "inbndFileLineNmbr" : null, 
+    "insuranceCoverageCode" : null, 
+    "lastPaymentDate" : null, 
+    "lastRunDate" : null, 
+    "lastRunNmbr" : null, 
+    "lastSuspendDate" : null, 
+    "massAdjstmntFlag" : null, 
+    "mbrLegacyIdntfr" : null, 
+    "mbrSid" : null, 
+    "modifiedBy" : null, 
+    "modifiedDate" : null, 
+    "primaryDiagnosisIid" : null, 
+    "primaryDiagnosisPoaLkpcd" : null, 
+    "primaryPaRqstSid" : null, 
+    "primaryRfrlIdntfctnNmbr" : null, 
+    "sbmtFcltyBillClsfctnSid" : null, 
+    "srvcngPrvdrIdntfrTypeCid" : null, 
+    "srvcngPrvdrLctnIid" : null, 
+    "srvcngPrvdrLegacyId" : null, 
+    "ssbpAthrztnHdrSid" : null, 
+    "statusEffectiveDate" : null, 
+    "systemInDate" : null, 
+    "tcnDate" : null, 
+    "totalBilledUnit" : null, 
+    "clmHdrConflicts" : null, 
+    "clmHdrDerivedElement" : null, 
+    "clmHdrQuantities" : null, 
+    "clmHdrRunErrors" : null, 
+    "InterchangeReceiverID" : "77045          ", 
+    "ClaimSubmitterID" : "204330700", 
+    "PatientZipCode" : "98004", 
+    "AdjustmentSourceType" : null, 
+    "AdmissionDate" : null, 
+    "AdmissionHour" : null, 
+    "TransactionSetCreationDate" : "2017-05-10", 
+    "BillingProviderNPI" : NumberInt(1000000004), 
+    "BillingProviderIdentifierType" : NumberInt(3), 
+    "BillingProviderLocationID" : "", 
+    "ClaimFrequencyCode" : "", 
+    "ClaimSourceCode" : "04", 
+    "ClaimCurrencyType" : "USD", 
+    "DischargeDate" : null, 
+    "DiagnosisRelatedGroupCode" : null, 
+    "FacilityTypeCode" : "", 
+    "ServiceStartDate" : null, 
+    "X12Version" : "5010", 
+    "ClaimType" : "P", 
+    "SubscriberPrimaryID" : "500654422WA", 
+    "SubscriberPrimaryIDType" : NumberInt(20), 
+    "MedicalRecordNumber" : "", 
+    "OriginalTcn" : "", 
+    "PayerClaimControlNo" : "", 
+    "PatientControlNo" : "A3WYH879", 
+    "PatientBirthDate" : "1933-07-06", 
+    "PatientDeathDate" : null, 
+    "PatientFirstName" : "ANTHONY", 
+    "PatientGender" : "F", 
+    "PatientLastName" : "BISHOP", 
+    "PatientMiddleName" : "", 
+    "PatientRelationshipCode" : "18", 
+    "PatientSuffix" : "", 
+    "PriorAuthorizationNo" : "", 
+    "ServiceAuthExceptionCode" : "", 
+    "SpecialProgramIndicator" : "", 
+    "RenderingProviderNPI" : NumberInt(1000000004), 
+    "RenderingProviderFirstName" : "JESSICA", 
+    "RenderingProviderLastName" : "AUBIN", 
+    "RenderingProviderLocationID" : null, 
+    "RenderingProviderTaxonomyCode" : "235Z00000X", 
+    "RenderingProviderMiddleName" : "", 
+    "RenderingProviderSuffix" : "", 
+    "BillingProviderZipCode" : null, 
+    "ServicingProviderZipCode" : "98004", 
+    "BillingProviderTaxId" : null, 
+    "BillingProviderTaxIdQualifier" : null, 
+    "TCN" : "", 
+    "ServiceEndDate" : null, 
+    "TotalClaimChargeAmount" : NumberInt(140), 
+    "LineInformation" : [
+        {
+            "@id" : NumberInt(1), 
+            "claimLineSid" : NumberInt(0), 
+            "adjustmentSourceTypeLkpcd" : null, 
+            "adjustmentTypeLkpcd" : null, 
+            "admissionDate" : null, 
+            "aplctnStatusCid" : null, 
+            "aplctnStatusTypeCid" : null, 
+            "athrztnNmbr" : null, 
+            "bsnsStatusCid" : null, 
+            "bsnsStatusTypeCid" : null, 
+            "clmTypeCid" : null, 
+            "clsfctnGroupCid" : null, 
+            "createdBy" : null, 
+            "createdDate" : null, 
+            "lastRunDate" : null, 
+            "lastRunNmbr" : null, 
+            "lastSuspendDate" : null, 
+            "modifiedBy" : null, 
+            "modifiedDate" : null, 
+            "parentLineSid" : null, 
+            "primaryDiagnosisIid" : null, 
+            "primaryPaRqstIdentifier" : null, 
+            "primaryPaRqstSid" : null, 
+            "primaryRfrlIdntfctnNmbr" : null, 
+            "procedureIid" : null, 
+            "programCid" : null, 
+            "revenueIid" : null, 
+            "sbmtdPrcdrCode" : null, 
+            "sbmtdPrcdrDesc" : null, 
+            "sbmtdPrcdrIid" : null, 
+            "srvcngPrvdrLctnIid" : null, 
+            "srvcngPrvdrLegacyId" : null, 
+            "ssbpAthrztnHdrSid" : null, 
+            "statusEffectiveDate" : null, 
+            "systemInDate" : null, 
+            "tplLkpcd" : null, 
+            "clmLnConflicts" : null, 
+            "clmLnCopayAmounts" : null, 
+            "clmLnDentalDetails" : null, 
+            "clmLnDerivedElement" : null, 
+            "clmLnRunErrors" : null, 
+            "clmLnXPaRqsts" : null, 
+            "LineItemChargeAmount" : NumberInt(140), 
+            "UnitofMeasurement" : "UN", 
+            "ServiceUnitCount" : NumberInt(1), 
+            "LineTcn" : "001", 
+            "FacilityTypeCode" : "", 
+            "ServiceStartDate" : "1999-01-02", 
+            "ServiceLineNo" : "1", 
+            "ProcedureModifier1" : "", 
+            "ProcedureModifier2" : "", 
+            "ProcedureModifier3" : "", 
+            "ProcedureModifier4" : "", 
+            "ProcedureCode" : "", 
+            "ServiceIDQualifer" : "", 
+            "ServiceLineRevenueCode" : null, 
+            "RenderingProviderNPI" : null, 
+            "RenderingProviderFirstName" : null, 
+            "RenderingProviderIDType" : null, 
+            "RenderingProviderLastName" : null, 
+            "ServicingProviderZipCode" : null, 
+            "RenderingProviderLocationID" : null, 
+            "RenderingProviderTaxonomyCode" : null, 
+            "RenderingProviderMiddleName" : null, 
+            "RenderingProviderNameSuffix" : null, 
+            "ServiceEndDate" : "1999-01-02", 
+            "LineDiagnosisPointerInformation" : [
+
+            ], 
+            "LineAmbulanceInformation" : [
+
+            ], 
+            "LinePatientCondOnAmbInformation" : [
+
+            ], 
+            "LineAmountInformation" : [
+
+            ], 
+            "LineDrugInformation" : [
+
+            ], 
+            "LineOtherPayerAdjudicationInformation" : [
+
+            ], 
+            "LineReferenceInformation" : [
+                {
+                    "clmLnRfrncInfoSid" : NumberInt(0), 
+                    "ReferenceID" : "54321", 
+                    "ReferenceIDQualifier" : "6R"
+                }
+            ], 
+            "LineIndicatorInformation" : [
+
+            ], 
+            "LinePriorAuthInformation" : [
+
+            ], 
+            "LineProviderInformation" : [
+
+            ]
+        }
+    ], 
+    "HeaderAccidentInformation" : [
+
+    ], 
+    "HeaderHospitalAdmissionInformation" : null, 
+    "HeaderAmbulanceInformation" : [
+
+    ], 
+    "HeaderAmountInformation" : [
+
+    ], 
+    "HeaderConditionInformation" : [
+
+    ], 
+    "HeaderDatesInformation" : [
+        {
+            "clmHdrDateSid" : NumberInt(0), 
+            "ClaimDate" : "2016-12-05", 
+            "ClaimDateQualifier" : "431"
+        }
+    ], 
+    "HeaderOccuranceInformation" : null, 
+    "HeaderOtherPayerAdjudicationInformation" : [
+
+    ], 
+    "HeaderClaimPaymentRemarkInformation" : [
+
+    ], 
+    "HeaderReferenceInformation" : [
+
+    ], 
+    "HeaderSubscriberInformation" : [
+        {
+            "clmHdrSubscriberSid" : NumberInt(0), 
+            "mbrSid" : null, 
+            "SubscriberBirthDate" : "1933-07-06", 
+            "SubscriberDeathDate" : null, 
+            "SubscriberFirstName" : "ANTHONY", 
+            "SubscriberGender" : "F", 
+            "SubscriberPrimaryIDQualifier" : NumberInt(20), 
+            "SubscriberLastName" : "BISHOP", 
+            "SubscriberPrimaryID" : "500654422WA", 
+            "SubscriberMiddleName" : "", 
+            "SubscriberRelationshipCode" : "18", 
+            "SubscriberGroupOrPolicyNo" : "", 
+            "SubscriberSuffix" : ""
+        }
+    ], 
+    "HeaderValueInformation" : null, 
+    "HeaderDiagnosisInformation" : [
+
+    ], 
+    "HeaderIndicatorInformation" : [
+        {
+            "clmHdrXIndicatorSid" : NumberInt(0), 
+            "IndicatorDerivedQualifierCode" : "R", 
+            "IndicatorValue" : "Y", 
+            "IndicatorTypeCode" : NumberInt(120)
+        }, 
+        {
+            "clmHdrXIndicatorSid" : NumberInt(0), 
+            "IndicatorDerivedQualifierCode" : "R", 
+            "IndicatorValue" : "A", 
+            "IndicatorTypeCode" : NumberInt(322)
+        }, 
+        {
+            "clmHdrXIndicatorSid" : NumberInt(0), 
+            "IndicatorDerivedQualifierCode" : "R", 
+            "IndicatorValue" : "MC", 
+            "IndicatorTypeCode" : NumberInt(118)
+        }, 
+        {
+            "clmHdrXIndicatorSid" : NumberInt(0), 
+            "IndicatorDerivedQualifierCode" : "R", 
+            "IndicatorValue" : "Y", 
+            "IndicatorTypeCode" : NumberInt(121)
+        }
+    ], 
+    "HeaderProcedureInformation" : [
+
+    ], 
+    "HeaderProviderInformation" : [
+        {
+            "clmHdrXPrvdrLctnSid" : NumberInt(0), 
+            "prvdrLctnIid" : null, 
+            "ProviderStateCode" : null, 
+            "ProviderType" : "RF", 
+            "ProviderIDQualifier" : NumberInt(3), 
+            "ProviderTaxID" : null, 
+            "ProviderTaxIDQualifier" : null, 
+            "ProviderFirstName" : "MOLLY", 
+            "ProviderLastName" : "LINHARDT", 
+            "ProviderNPI" : "1000000004", 
+            "ProviderMiddleName" : "", 
+            "ProviderNameSuffix" : "", 
+            "ProviderTaxonomyCode" : "", 
+            "ProviderZipCode" : ""
+        }, 
+        {
+            "clmHdrXPrvdrLctnSid" : NumberInt(0), 
+            "prvdrLctnIid" : null, 
+            "ProviderStateCode" : "WA", 
+            "ProviderType" : "PT", 
+            "ProviderIDQualifier" : NumberInt(3), 
+            "ProviderTaxID" : "800546989", 
+            "ProviderTaxIDQualifier" : "1", 
+            "ProviderFirstName" : "", 
+            "ProviderLastName" : "AUBIN APHASIA SPEECH & LANGUAGE", 
+            "ProviderNPI" : "1000000004", 
+            "ProviderMiddleName" : "", 
+            "ProviderNameSuffix" : "", 
+            "ProviderTaxonomyCode" : "", 
+            "ProviderZipCode" : "98004"
+        }
+    ], 
+    "SubmitterInformation" : {
+        "clmSbmtrSid" : NumberInt(0), 
+        "SubmitterIdentifierCode" : "7", 
+        "CommunicationNoQualifier1" : "TE", 
+        "CommunicationNoQualifier2" : "EM", 
+        "CommunicationNoQualifier3" : "", 
+        "CommunicationNoQualifier4" : "", 
+        "CommunicationNoQualifier5" : "", 
+        "CommunicationNoQualifier6" : "", 
+        "CommunicationNo1" : "2006649555", 
+        "CommunicationNo2" : "1005545675", 
+        "CommunicationNo3" : "", 
+        "CommunicationNo4" : "", 
+        "CommunicationNo5" : "", 
+        "CommunicationNo6" : "", 
+        "SubmitterStatusIndicator" : "A", 
+        "SubmitterContactName1" : "Marie May", 
+        "SubmitterContactName2" : "", 
+        "SubmitterFirstName" : "", 
+        "SubmitterIdentifier" : "204330700", 
+        "SubmitterLastName" : "CLAIM.MD", 
+        "SubmitterMiddleName" : ""
+    }, 
+    "TransactionInformation" : {
+        "clmTrnsctnSid" : NumberInt(0), 
+        "inputAcknwldgmntSid" : null, 
+        "ClaimOrEncounterIdentifier" : "CH", 
+        "GroupSenderIdentifier" : "204330700", 
+        "ImplementationGuideVersion" : "005010X222A1", 
+        "InterchangeVersionNumber" : "00501", 
+        "InterchangeSenderID" : "204330700      ", 
+        "OriginatorApplicationID" : "2235833", 
+        "TransactionSetControlNo" : "0001", 
+        "TransactionSetDateTime" : "2017-05-10", 
+        "TransactionSetPurposeCode" : "00", 
+        "GroupVersionReleaseIndustryCode" : "005010X222A1"
+    }, 
+    "HeaderNoteInformation" : [
+
+    ]
+}

@@ -1,0 +1,203 @@
+{ 
+    "_id" : ObjectId("59bf3ac2950bd32880e88230"), 
+    "MDC_ID" : NumberInt(1), 
+    "MDC_DESCRIPTION" : "Nervous system", 
+    "MDC_START" : NumberInt(20), 
+    "MDC_END" : NumberInt(103)
+}
+{ 
+    "_id" : ObjectId("59bf3ac2950bd32880e88231"), 
+    "MDC_ID" : NumberInt(2), 
+    "MDC_DESCRIPTION" : "Eye", 
+    "MDC_START" : NumberInt(113), 
+    "MDC_END" : NumberInt(125)
+}
+{ 
+    "_id" : ObjectId("59bf3ac2950bd32880e88232"), 
+    "MDC_ID" : NumberInt(3), 
+    "MDC_DESCRIPTION" : "Ear, Nose, Mouth & Throat", 
+    "MDC_START" : NumberInt(129), 
+    "MDC_END" : NumberInt(159)
+}
+{ 
+    "_id" : ObjectId("59bf3ac2950bd32880e88233"), 
+    "MDC_ID" : NumberInt(4), 
+    "MDC_DESCRIPTION" : "Respir­atory System", 
+    "MDC_START" : NumberInt(163), 
+    "MDC_END" : NumberInt(208)
+}
+{ 
+    "_id" : ObjectId("59bf3ac2950bd32880e88234"), 
+    "MDC_ID" : NumberInt(5), 
+    "MDC_DESCRIPTION" : "Circul­atory System", 
+    "MDC_START" : NumberInt(215), 
+    "MDC_END" : NumberInt(316)
+}
+{ 
+    "_id" : ObjectId("59bf3ac2950bd32880e88235"), 
+    "MDC_ID" : NumberInt(6), 
+    "MDC_DESCRIPTION" : "Digestive System", 
+    "MDC_START" : NumberInt(326), 
+    "MDC_END" : NumberInt(395)
+}
+{ 
+    "_id" : ObjectId("59bf3ac2950bd32880e88236"), 
+    "MDC_ID" : NumberInt(7), 
+    "MDC_DESCRIPTION" : "Hepato­biliary System & Pancreas", 
+    "MDC_START" : NumberInt(405), 
+    "MDC_END" : NumberInt(446)
+}
+{ 
+    "_id" : ObjectId("59bf3ac2950bd32880e88237"), 
+    "MDC_ID" : NumberInt(8), 
+    "MDC_DESCRIPTION" : "Muscul­osk­eletal System & Connective Tissue", 
+    "MDC_START" : NumberInt(453), 
+    "MDC_END" : NumberInt(566)
+}
+{ 
+    "_id" : ObjectId("59bf3ac2950bd32880e88238"), 
+    "MDC_ID" : NumberInt(9), 
+    "MDC_DESCRIPTION" : "Skin, Subcut­aneous Tissue & Breast", 
+    "MDC_START" : NumberInt(573), 
+    "MDC_END" : NumberInt(607)
+}
+{ 
+    "_id" : ObjectId("59bf3ac2950bd32880e88239"), 
+    "MDC_ID" : NumberInt(10), 
+    "MDC_DESCRIPTION" : "Endocrine, Nutrit­ional & Metabolic System", 
+    "MDC_START" : NumberInt(614), 
+    "MDC_END" : NumberInt(645)
+}
+{ 
+    "_id" : ObjectId("59bf3ac2950bd32880e8823a"), 
+    "MDC_ID" : NumberInt(11), 
+    "MDC_DESCRIPTION" : "Kidney & Urinary Tract", 
+    "MDC_START" : NumberInt(652), 
+    "MDC_END" : NumberInt(700)
+}
+{ 
+    "_id" : ObjectId("59bf3ac2950bd32880e8823b"), 
+    "MDC_ID" : NumberInt(12), 
+    "MDC_DESCRIPTION" : "Male Reprod­uctive System", 
+    "MDC_START" : NumberInt(707), 
+    "MDC_END" : NumberInt(730)
+}
+{ 
+    "_id" : ObjectId("59bf3ac2950bd32880e8823c"), 
+    "MDC_ID" : NumberInt(13), 
+    "MDC_DESCRIPTION" : "Female Reprod­uctive System", 
+    "MDC_START" : NumberInt(734), 
+    "MDC_END" : NumberInt(761)
+}
+{ 
+    "_id" : ObjectId("59bf3ac2950bd32880e8823d"), 
+    "MDC_ID" : NumberInt(14), 
+    "MDC_DESCRIPTION" : "Pregnancy; Childbirth", 
+    "MDC_START" : NumberInt(765), 
+    "MDC_END" : NumberInt(782)
+}
+{ 
+    "_id" : ObjectId("59bf3ac2950bd32880e8823e"), 
+    "MDC_ID" : NumberInt(14), 
+    "MDC_DESCRIPTION" : "Pregnancy; Childbirth", 
+    "MDC_START" : NumberInt(998), 
+    "MDC_END" : NumberInt(998)
+}
+{ 
+    "_id" : ObjectId("59bf3ac2950bd32880e8823f"), 
+    "MDC_ID" : NumberInt(15), 
+    "MDC_DESCRIPTION" : "Newborns & Neonates (Perinatal Period)", 
+    "MDC_START" : NumberInt(789), 
+    "MDC_END" : NumberInt(795)
+}
+{ 
+    "_id" : ObjectId("59bf3ac2950bd32880e88240"), 
+    "MDC_ID" : NumberInt(16), 
+    "MDC_DESCRIPTION" : "Blood, Blood Forming Organs & Immuno­logical Disorders", 
+    "MDC_START" : NumberInt(799), 
+    "MDC_END" : NumberInt(816)
+}
+{ 
+    "_id" : ObjectId("59bf3ac2950bd32880e88241"), 
+    "MDC_ID" : NumberInt(17), 
+    "MDC_DESCRIPTION" : "Myelop­rol­ife­rative Diseases & Disorders", 
+    "MDC_START" : NumberInt(820), 
+    "MDC_END" : NumberInt(849)
+}
+{ 
+    "_id" : ObjectId("59bf3ac2950bd32880e88242"), 
+    "MDC_ID" : NumberInt(18), 
+    "MDC_DESCRIPTION" : "Infectious & Parasitic Disease & Disorders", 
+    "MDC_START" : NumberInt(853), 
+    "MDC_END" : NumberInt(872)
+}
+{ 
+    "_id" : ObjectId("59bf3ac2950bd32880e88243"), 
+    "MDC_ID" : NumberInt(19), 
+    "MDC_DESCRIPTION" : "Mental Diseases & Disorders", 
+    "MDC_START" : NumberInt(876), 
+    "MDC_END" : NumberInt(887)
+}
+{ 
+    "_id" : ObjectId("59bf3ac2950bd32880e88244"), 
+    "MDC_ID" : NumberInt(20), 
+    "MDC_DESCRIPTION" : "Alcoho­l/Drug Use or Induced Mental Disorders", 
+    "MDC_START" : NumberInt(894), 
+    "MDC_END" : NumberInt(897)
+}
+{ 
+    "_id" : ObjectId("59bf3ac2950bd32880e88245"), 
+    "MDC_ID" : NumberInt(21), 
+    "MDC_DESCRIPTION" : "Injuries, Poison & Toxic Effects of Drugs", 
+    "MDC_START" : NumberInt(901), 
+    "MDC_END" : NumberInt(923)
+}
+{ 
+    "_id" : ObjectId("59bf3ac2950bd32880e88246"), 
+    "MDC_ID" : NumberInt(22), 
+    "MDC_DESCRIPTION" : "Burns", 
+    "MDC_START" : NumberInt(927), 
+    "MDC_END" : NumberInt(935)
+}
+{ 
+    "_id" : ObjectId("59bf3ac2950bd32880e88247"), 
+    "MDC_ID" : NumberInt(23), 
+    "MDC_DESCRIPTION" : "Factors influe­ncing Health Status", 
+    "MDC_START" : NumberInt(939), 
+    "MDC_END" : NumberInt(951)
+}
+{ 
+    "_id" : ObjectId("59bf3ac2950bd32880e88248"), 
+    "MDC_ID" : NumberInt(24), 
+    "MDC_DESCRIPTION" : "Multiple Signif­icant Trauma", 
+    "MDC_START" : NumberInt(955), 
+    "MDC_END" : NumberInt(965)
+}
+{ 
+    "_id" : ObjectId("59bf3ac2950bd32880e88249"), 
+    "MDC_ID" : NumberInt(25), 
+    "MDC_DESCRIPTION" : "Human Immuno­def­iciency Virus Infections", 
+    "MDC_START" : NumberInt(969), 
+    "MDC_END" : NumberInt(977)
+}
+{ 
+    "_id" : ObjectId("59bf3ac2950bd32880e8824a"), 
+    "MDC_ID" : NumberInt(26), 
+    "MDC_DESCRIPTION" : "Transp­lants", 
+    "MDC_START" : NumberInt(1), 
+    "MDC_END" : NumberInt(13)
+}
+{ 
+    "_id" : ObjectId("59bf3ac2950bd32880e8824b"), 
+    "MDC_ID" : NumberInt(27), 
+    "MDC_DESCRIPTION" : "Extensive Procedures Unrelated to Principal Diagnosis", 
+    "MDC_START" : NumberInt(981), 
+    "MDC_END" : NumberInt(989)
+}
+{ 
+    "_id" : ObjectId("59bf3ac2950bd32880e8824c"), 
+    "MDC_ID" : NumberInt(27), 
+    "MDC_DESCRIPTION" : "Extensive Procedures Unrelated to Principal Diagnosis", 
+    "MDC_START" : NumberInt(999), 
+    "MDC_END" : NumberInt(999)
+}

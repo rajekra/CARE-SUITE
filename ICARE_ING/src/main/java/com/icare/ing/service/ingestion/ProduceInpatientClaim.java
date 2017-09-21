@@ -16,7 +16,7 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.Random;
 
-public class InpatientClaimHeaderProducer {
+public class ProduceInpatientClaim {
 
    public static void main(String[] args) throws JsonParseException, JsonMappingException, IOException{
 

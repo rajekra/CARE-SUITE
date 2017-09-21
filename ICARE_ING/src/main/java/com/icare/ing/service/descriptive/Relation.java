@@ -1,4 +1,4 @@
-package com.icare.ing.service.analytics;
+package com.icare.ing.service.descriptive;
 
 public class Relation {
 	private String src;

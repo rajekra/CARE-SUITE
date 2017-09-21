@@ -8,7 +8,7 @@ import org.apache.spark.sql.SparkSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.icare.common.dto.CD;
+import com.icare.common.dto.CH;
 import com.icare.ing.util.PropUtilityService;
 
 public class InstitutionalIngestionService {

@@ -11,7 +11,7 @@ import org.apache.spark.storage.StorageLevel;
 import org.bson.Document;
 
 import com.ecams.claim.bo.ClaimHeader;
-import com.icare.common.dto.CD;
+import com.icare.common.dto.CH;
 import com.mongodb.spark.MongoSpark;
 import com.mongodb.spark.config.ReadConfig;
 import com.mongodb.spark.rdd.api.java.JavaMongoRDD;

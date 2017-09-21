@@ -5,7 +5,7 @@ import static com.mongodb.client.model.Projections.excludeId;
 import org.bson.BSONObject;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.icare.common.dto.CD;
+import com.icare.common.dto.CH;
 import com.icare.ing.repository.intf.SparkRepositoryInf;
 import com.icare.ing.util.CommonConstants;
 import com.icare.ing.util.PropUtilityService;
@@ -58,7 +58,7 @@ public class SparkMongoRepositoryImpl implements SparkRepositoryInf{
 		return (mdcDescription==null)?drgCode:mdcDescription;
 	}
 	@Override
-	public void saveCD(CD cd) {
+	public void saveCD(CH cd) {
 		MongoCollection<BasicDBObject> INSTITUTIONAL_LK = CommonConstants.INSTITUTIONAL_LK;
 		String headerString = null;
 		try {

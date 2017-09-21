@@ -12,7 +12,7 @@ import org.bson.Document;
 import com.ecams.claim.bo.ClaimHeader;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
-import com.icare.common.dto.CD;
+import com.icare.common.dto.CH;
 import com.icare.ing.repository.impl.SparkMongoRepositoryImpl;
 import com.icare.ing.repository.intf.SparkRepositoryInf;
 import com.icare.ing.util.CommonConstants;
@@ -22,7 +22,7 @@ import com.mongodb.BasicDBObject;
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
-public class ClaimHeaderIngestion {
+public class ConsumeInpatinetClaimStanalone {
 
 	public static void main(String[] args) throws JsonParseException, JsonMappingException, IOException {
 		
@@ -49,7 +49,7 @@ public class ClaimHeaderIngestion {
 				ClaimHeader header = PropUtilityService.translateJsonToBusinessObject("C:/EDPS/Delivery/test/json444/IP/20170911171412/"+file.getName());
 				ClaimHeaderToCDConverter claimHeaderToCDConverter = new ClaimHeaderToCDConverter();
 				SparkRepositoryInf repository = new SparkMongoRepositoryImpl();
-				CD cd = claimHeaderToCDConverter.translateClaimHeaderToCD(header,repository);
+				CH cd = claimHeaderToCDConverter.translateClaimHeaderToCD(header,repository);
 				System.out.println("CD String:" + cd);
 				String headerString = PropUtilityService.translateCDToJsonString(cd);
 				System.out.println("Converted String:" + headerString);
@@ -57,11 +57,11 @@ public class ClaimHeaderIngestion {
 				BSONObject bson = (BSONObject)com.mongodb.util.JSON.parse(headerString);
 				dbc.putAll(bson);
 				objs.add(dbc);
-				if(count++ == 100)
-				{
-					break;
-				}
-				
+//				if(count++ == 100)
+//				{
+//					break;
+//				}
+//				
 		    }
 		}
 		

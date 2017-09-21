@@ -5,8 +5,13 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CD implements Serializable{
+public class CH implements Serializable{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private String inDate;
 	private String mdc;
 	private String tcn;
 	private String fromServiceDate;
@@ -2332,7 +2337,7 @@ public class CD implements Serializable{
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		CD other = (CD) obj;
+		CH other = (CH) obj;
 		if (admissionDate == null) {
 			if (other.admissionDate != null)
 				return false;
@@ -3723,6 +3728,12 @@ public class CD implements Serializable{
 	}
 	public void setMdc(String mdc) {
 		this.mdc = mdc;
+	}
+	public String getInDate() {
+		return inDate;
+	}
+	public void setInDate(String inDate) {
+		this.inDate = inDate;
 	}
 		
 	

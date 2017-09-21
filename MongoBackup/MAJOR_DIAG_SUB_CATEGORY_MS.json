@@ -1,0 +1,1128 @@
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc5d1"), 
+    "mdcNumber" : "Pre-MDC", 
+    "mdcDesc" : "Pre-MDC", 
+    "mdcSubGroupDesc" : "Heart Transplant or Implant of Heart Assist System", 
+    "mdcSubGroupStart" : NumberInt(1), 
+    "mdcSubGroupEnd" : NumberInt(2)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc5d2"), 
+    "mdcNumber" : "Pre-MDC", 
+    "mdcDesc" : "Pre-MDC", 
+    "mdcSubGroupDesc" : "ECMO or Tracheostomy with MV 96+ Hours or PDX Except Face, Mouth and Neck", 
+    "mdcSubGroupStart" : NumberInt(3), 
+    "mdcSubGroupEnd" : NumberInt(4)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc5d3"), 
+    "mdcNumber" : "Pre-MDC", 
+    "mdcDesc" : "Pre-MDC", 
+    "mdcSubGroupDesc" : "Liver or Intestinal Transplant", 
+    "mdcSubGroupStart" : NumberInt(5), 
+    "mdcSubGroupEnd" : NumberInt(6)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc5d4"), 
+    "mdcNumber" : "Pre-MDC", 
+    "mdcDesc" : "Pre-MDC", 
+    "mdcSubGroupDesc" : "Allogeneic Bone Marrow Transplant", 
+    "mdcSubGroupStart" : null, 
+    "mdcSubGroupEnd" : null
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc5d5"), 
+    "mdcNumber" : "Pre-MDC", 
+    "mdcDesc" : "Pre-MDC", 
+    "mdcSubGroupDesc" : "Lung Transplant", 
+    "mdcSubGroupStart" : null, 
+    "mdcSubGroupEnd" : null
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc5d6"), 
+    "mdcNumber" : "Pre-MDC", 
+    "mdcDesc" : "Pre-MDC", 
+    "mdcSubGroupDesc" : "Simultaneous Pancreas/Kidney Transplant", 
+    "mdcSubGroupStart" : null, 
+    "mdcSubGroupEnd" : null
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc5d7"), 
+    "mdcNumber" : "Pre-MDC", 
+    "mdcDesc" : "Pre-MDC", 
+    "mdcSubGroupDesc" : "Autologous Bone Marrow Transplant", 
+    "mdcSubGroupStart" : NumberInt(16), 
+    "mdcSubGroupEnd" : NumberInt(17)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc5d8"), 
+    "mdcNumber" : "Pre-MDC", 
+    "mdcDesc" : "Pre-MDC", 
+    "mdcSubGroupDesc" : "Pancreas Transplant", 
+    "mdcSubGroupStart" : null, 
+    "mdcSubGroupEnd" : null
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc5d9"), 
+    "mdcNumber" : "Pre-MDC", 
+    "mdcDesc" : "Pre-MDC", 
+    "mdcSubGroupDesc" : "Tracheostomy for Face, Mouth and Neck Diagnoses", 
+    "mdcSubGroupStart" : NumberInt(11), 
+    "mdcSubGroupEnd" : NumberInt(13)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc5da"), 
+    "mdcNumber" : "MDC 01", 
+    "mdcDesc" : "Diseases & Disorders of the Nervous System", 
+    "mdcSubGroupDesc" : "Intracranial Vascular Procedures with PDX Hemorrhage", 
+    "mdcSubGroupStart" : NumberInt(20), 
+    "mdcSubGroupEnd" : NumberInt(22)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc5db"), 
+    "mdcNumber" : "MDC 01", 
+    "mdcDesc" : "Diseases & Disorders of the Nervous System", 
+    "mdcSubGroupDesc" : "Craniotomy", 
+    "mdcSubGroupStart" : NumberInt(23), 
+    "mdcSubGroupEnd" : NumberInt(27)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc5dc"), 
+    "mdcNumber" : "MDC 01", 
+    "mdcDesc" : "Diseases & Disorders of the Nervous System", 
+    "mdcSubGroupDesc" : "Spinal Procedures", 
+    "mdcSubGroupStart" : NumberInt(28), 
+    "mdcSubGroupEnd" : NumberInt(30)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc5dd"), 
+    "mdcNumber" : "MDC 01", 
+    "mdcDesc" : "Diseases & Disorders of the Nervous System", 
+    "mdcSubGroupDesc" : "Ventricular Shunt Procedures", 
+    "mdcSubGroupStart" : NumberInt(31), 
+    "mdcSubGroupEnd" : NumberInt(33)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc5de"), 
+    "mdcNumber" : "MDC 01", 
+    "mdcDesc" : "Diseases & Disorders of the Nervous System", 
+    "mdcSubGroupDesc" : "Carotid Artery Stent Procedures", 
+    "mdcSubGroupStart" : NumberInt(34), 
+    "mdcSubGroupEnd" : NumberInt(36)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc5df"), 
+    "mdcNumber" : "MDC 01", 
+    "mdcDesc" : "Diseases & Disorders of the Nervous System", 
+    "mdcSubGroupDesc" : "Extracranial Procedures", 
+    "mdcSubGroupStart" : NumberInt(37), 
+    "mdcSubGroupEnd" : NumberInt(39)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc5e0"), 
+    "mdcNumber" : "MDC 01", 
+    "mdcDesc" : "Diseases & Disorders of the Nervous System", 
+    "mdcSubGroupDesc" : "Peripheral and Cranial Nerve and Other Nervous System Procedures", 
+    "mdcSubGroupStart" : NumberInt(40), 
+    "mdcSubGroupEnd" : NumberInt(42)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc5e1"), 
+    "mdcNumber" : "MDC 02", 
+    "mdcDesc" : "Diseases & Disorders of the Eye", 
+    "mdcSubGroupDesc" : "Orbital Procedures", 
+    "mdcSubGroupStart" : NumberInt(113), 
+    "mdcSubGroupEnd" : NumberInt(114)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc5e2"), 
+    "mdcNumber" : "MDC 02", 
+    "mdcDesc" : "Diseases & Disorders of the Eye", 
+    "mdcSubGroupDesc" : "Extraocular Procedures Except Orbit", 
+    "mdcSubGroupStart" : null, 
+    "mdcSubGroupEnd" : null
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc5e3"), 
+    "mdcNumber" : "MDC 02", 
+    "mdcDesc" : "Diseases & Disorders of the Eye", 
+    "mdcSubGroupDesc" : "Intraocular Procedures", 
+    "mdcSubGroupStart" : NumberInt(116), 
+    "mdcSubGroupEnd" : NumberInt(117)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc5e4"), 
+    "mdcNumber" : "MDC 03", 
+    "mdcDesc" : "Diseases & Disorders of the Ear, Nose, Mouth & Throat", 
+    "mdcSubGroupDesc" : "Major Head and Neck Procedures", 
+    "mdcSubGroupStart" : NumberInt(129), 
+    "mdcSubGroupEnd" : NumberInt(130)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc5e5"), 
+    "mdcNumber" : "MDC 03", 
+    "mdcDesc" : "Diseases & Disorders of the Ear, Nose, Mouth & Throat", 
+    "mdcSubGroupDesc" : "Cranial/Facial Procedures", 
+    "mdcSubGroupStart" : NumberInt(131), 
+    "mdcSubGroupEnd" : NumberInt(132)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc5e6"), 
+    "mdcNumber" : "MDC 03", 
+    "mdcDesc" : "Diseases & Disorders of the Ear, Nose, Mouth & Throat", 
+    "mdcSubGroupDesc" : "Other Ear, Nose, Mouth and Throat Procedures", 
+    "mdcSubGroupStart" : NumberInt(133), 
+    "mdcSubGroupEnd" : NumberInt(134)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc5e7"), 
+    "mdcNumber" : "MDC 03", 
+    "mdcDesc" : "Diseases & Disorders of the Ear, Nose, Mouth & Throat", 
+    "mdcSubGroupDesc" : "Sinus and Mastoid Procedures", 
+    "mdcSubGroupStart" : NumberInt(135), 
+    "mdcSubGroupEnd" : NumberInt(136)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc5e8"), 
+    "mdcNumber" : "MDC 03", 
+    "mdcDesc" : "Diseases & Disorders of the Ear, Nose, Mouth & Throat", 
+    "mdcSubGroupDesc" : "Mouth Procedures", 
+    "mdcSubGroupStart" : NumberInt(137), 
+    "mdcSubGroupEnd" : NumberInt(138)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc5e9"), 
+    "mdcNumber" : "MDC 03", 
+    "mdcDesc" : "Diseases & Disorders of the Ear, Nose, Mouth & Throat", 
+    "mdcSubGroupDesc" : "Salivary Gland Procedures", 
+    "mdcSubGroupStart" : null, 
+    "mdcSubGroupEnd" : null
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc5ea"), 
+    "mdcNumber" : "MDC 04", 
+    "mdcDesc" : "Diseases & Disorders of the Respiratory System", 
+    "mdcSubGroupDesc" : "Major Chest Procedures", 
+    "mdcSubGroupStart" : NumberInt(163), 
+    "mdcSubGroupEnd" : NumberInt(165)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc5eb"), 
+    "mdcNumber" : "MDC 04", 
+    "mdcDesc" : "Diseases & Disorders of the Respiratory System", 
+    "mdcSubGroupDesc" : "Other Respiratory System Procedures", 
+    "mdcSubGroupStart" : NumberInt(166), 
+    "mdcSubGroupEnd" : NumberInt(168)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc5ec"), 
+    "mdcNumber" : "MDC 05", 
+    "mdcDesc" : "Diseases & Disorders of the Circulatory System", 
+    "mdcSubGroupDesc" : "Other Heart Assist System Implant", 
+    "mdcSubGroupStart" : null, 
+    "mdcSubGroupEnd" : null
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc5ed"), 
+    "mdcNumber" : "MDC 05", 
+    "mdcDesc" : "Diseases & Disorders of the Circulatory System", 
+    "mdcSubGroupDesc" : "Cardiac Valve and Other Major Cardiothoracic Procedures", 
+    "mdcSubGroupStart" : NumberInt(216), 
+    "mdcSubGroupEnd" : NumberInt(221)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc5ee"), 
+    "mdcNumber" : "MDC 05", 
+    "mdcDesc" : "Diseases & Disorders of the Circulatory System", 
+    "mdcSubGroupDesc" : "Cardiac Defibrillator Implant", 
+    "mdcSubGroupStart" : NumberInt(222), 
+    "mdcSubGroupEnd" : NumberInt(227)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc5ef"), 
+    "mdcNumber" : "MDC 05", 
+    "mdcDesc" : "Diseases & Disorders of the Circulatory System", 
+    "mdcSubGroupDesc" : "Other Cardiothoracic Procedures", 
+    "mdcSubGroupStart" : NumberInt(228), 
+    "mdcSubGroupEnd" : NumberInt(230)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc5f0"), 
+    "mdcNumber" : "MDC 05", 
+    "mdcDesc" : "Diseases & Disorders of the Circulatory System", 
+    "mdcSubGroupDesc" : "Coronary Bypass", 
+    "mdcSubGroupStart" : NumberInt(231), 
+    "mdcSubGroupEnd" : NumberInt(236)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc5f1"), 
+    "mdcNumber" : "MDC 05", 
+    "mdcDesc" : "Diseases & Disorders of the Circulatory System", 
+    "mdcSubGroupDesc" : "Major Cardiovascular Procedures", 
+    "mdcSubGroupStart" : NumberInt(237), 
+    "mdcSubGroupEnd" : NumberInt(238)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc5f2"), 
+    "mdcNumber" : "MDC 05", 
+    "mdcDesc" : "Diseases & Disorders of the Circulatory System", 
+    "mdcSubGroupDesc" : "Amputation for Circulatory System Disorders Except Upper Limb and Toe", 
+    "mdcSubGroupStart" : NumberInt(239), 
+    "mdcSubGroupEnd" : NumberInt(241)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc5f3"), 
+    "mdcNumber" : "MDC 05", 
+    "mdcDesc" : "Diseases & Disorders of the Circulatory System", 
+    "mdcSubGroupDesc" : "Permanent Cardiac Pacemaker Implant", 
+    "mdcSubGroupStart" : NumberInt(242), 
+    "mdcSubGroupEnd" : NumberInt(244)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc5f4"), 
+    "mdcNumber" : "MDC 05", 
+    "mdcDesc" : "Diseases & Disorders of the Circulatory System", 
+    "mdcSubGroupDesc" : "AICD Generator Procedures", 
+    "mdcSubGroupStart" : null, 
+    "mdcSubGroupEnd" : null
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc5f5"), 
+    "mdcNumber" : "MDC 05", 
+    "mdcDesc" : "Diseases & Disorders of the Circulatory System", 
+    "mdcSubGroupDesc" : "AICD Lead Procedures", 
+    "mdcSubGroupStart" : null, 
+    "mdcSubGroupEnd" : null
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc5f6"), 
+    "mdcNumber" : "MDC 05", 
+    "mdcDesc" : "Diseases & Disorders of the Circulatory System", 
+    "mdcSubGroupDesc" : "Percutaneous Cardiovascular Procedures with Coronary Artery Stent", 
+    "mdcSubGroupStart" : NumberInt(246), 
+    "mdcSubGroupEnd" : NumberInt(249)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc5f7"), 
+    "mdcNumber" : "MDC 05", 
+    "mdcDesc" : "Diseases & Disorders of the Circulatory System", 
+    "mdcSubGroupDesc" : "Percutaneous Cardiovascular Procedures without Coronary Artery Stent", 
+    "mdcSubGroupStart" : NumberInt(250), 
+    "mdcSubGroupEnd" : NumberInt(251)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc5f8"), 
+    "mdcNumber" : "MDC 05", 
+    "mdcDesc" : "Diseases & Disorders of the Circulatory System", 
+    "mdcSubGroupDesc" : "Other Vascular Procedures", 
+    "mdcSubGroupStart" : NumberInt(252), 
+    "mdcSubGroupEnd" : NumberInt(254)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc5f9"), 
+    "mdcNumber" : "MDC 05", 
+    "mdcDesc" : "Diseases & Disorders of the Circulatory System", 
+    "mdcSubGroupDesc" : "Upper Limb and Toe Amputation for Circulatory System Disorders", 
+    "mdcSubGroupStart" : NumberInt(255), 
+    "mdcSubGroupEnd" : NumberInt(257)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc5fa"), 
+    "mdcNumber" : "MDC 05", 
+    "mdcDesc" : "Diseases & Disorders of the Circulatory System", 
+    "mdcSubGroupDesc" : "Cardiac Pacemaker Device Replacement", 
+    "mdcSubGroupStart" : NumberInt(258), 
+    "mdcSubGroupEnd" : NumberInt(259)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc5fb"), 
+    "mdcNumber" : "MDC 05", 
+    "mdcDesc" : "Diseases & Disorders of the Circulatory System", 
+    "mdcSubGroupDesc" : "Cardiac Pacemaker Revision Except Device Replacement", 
+    "mdcSubGroupStart" : NumberInt(260), 
+    "mdcSubGroupEnd" : NumberInt(262)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc5fc"), 
+    "mdcNumber" : "MDC 05", 
+    "mdcDesc" : "Diseases & Disorders of the Circulatory System", 
+    "mdcSubGroupDesc" : "Vein Ligation and Stripping", 
+    "mdcSubGroupStart" : null, 
+    "mdcSubGroupEnd" : null
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc5fd"), 
+    "mdcNumber" : "MDC 05", 
+    "mdcDesc" : "Diseases & Disorders of the Circulatory System", 
+    "mdcSubGroupDesc" : "Other Circulatory Procedures", 
+    "mdcSubGroupStart" : null, 
+    "mdcSubGroupEnd" : null
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc5fe"), 
+    "mdcNumber" : "MDC 06", 
+    "mdcDesc" : "Diseases & Disorders of the Digestive System", 
+    "mdcSubGroupDesc" : "Stomach, Esophageal and Duodenal Procedures", 
+    "mdcSubGroupStart" : NumberInt(326), 
+    "mdcSubGroupEnd" : NumberInt(328)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc5ff"), 
+    "mdcNumber" : "MDC 06", 
+    "mdcDesc" : "Diseases & Disorders of the Digestive System", 
+    "mdcSubGroupDesc" : "Major Small and Large Bowel Procedures", 
+    "mdcSubGroupStart" : NumberInt(329), 
+    "mdcSubGroupEnd" : NumberInt(331)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc600"), 
+    "mdcNumber" : "MDC 06", 
+    "mdcDesc" : "Diseases & Disorders of the Digestive System", 
+    "mdcSubGroupDesc" : "Rectal Resection", 
+    "mdcSubGroupStart" : NumberInt(332), 
+    "mdcSubGroupEnd" : NumberInt(334)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc601"), 
+    "mdcNumber" : "MDC 06", 
+    "mdcDesc" : "Diseases & Disorders of the Digestive System", 
+    "mdcSubGroupDesc" : "Peritoneal Adhesiolysis", 
+    "mdcSubGroupStart" : NumberInt(335), 
+    "mdcSubGroupEnd" : NumberInt(337)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc602"), 
+    "mdcNumber" : "MDC 06", 
+    "mdcDesc" : "Diseases & Disorders of the Digestive System", 
+    "mdcSubGroupDesc" : "Appendectomy", 
+    "mdcSubGroupStart" : NumberInt(338), 
+    "mdcSubGroupEnd" : NumberInt(343)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc603"), 
+    "mdcNumber" : "MDC 06", 
+    "mdcDesc" : "Diseases & Disorders of the Digestive System", 
+    "mdcSubGroupDesc" : "Minor Small and Large Bowel Procedures", 
+    "mdcSubGroupStart" : NumberInt(344), 
+    "mdcSubGroupEnd" : NumberInt(346)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc604"), 
+    "mdcNumber" : "MDC 06", 
+    "mdcDesc" : "Diseases & Disorders of the Digestive System", 
+    "mdcSubGroupDesc" : "Anal and Stomal Procedures", 
+    "mdcSubGroupStart" : NumberInt(347), 
+    "mdcSubGroupEnd" : NumberInt(349)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc605"), 
+    "mdcNumber" : "MDC 06", 
+    "mdcDesc" : "Diseases & Disorders of the Digestive System", 
+    "mdcSubGroupDesc" : "Hernia Procedures", 
+    "mdcSubGroupStart" : NumberInt(350), 
+    "mdcSubGroupEnd" : NumberInt(355)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc606"), 
+    "mdcNumber" : "MDC 06", 
+    "mdcDesc" : "Diseases & Disorders of the Digestive System", 
+    "mdcSubGroupDesc" : "Other Digestive System Procedures", 
+    "mdcSubGroupStart" : NumberInt(356), 
+    "mdcSubGroupEnd" : NumberInt(358)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc607"), 
+    "mdcNumber" : "MDC 07", 
+    "mdcDesc" : "Diseases & Disorders of the Hepatobiliary System & Pancreas", 
+    "mdcSubGroupDesc" : "Pancreas, Liver and Shunt Procedures", 
+    "mdcSubGroupStart" : NumberInt(405), 
+    "mdcSubGroupEnd" : NumberInt(407)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc608"), 
+    "mdcNumber" : "MDC 07", 
+    "mdcDesc" : "Diseases & Disorders of the Hepatobiliary System & Pancreas", 
+    "mdcSubGroupDesc" : "Biliary Tract Procedures Except Only Cholecystectomy with or without C.D.E.", 
+    "mdcSubGroupStart" : NumberInt(408), 
+    "mdcSubGroupEnd" : NumberInt(410)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc609"), 
+    "mdcNumber" : "MDC 07", 
+    "mdcDesc" : "Diseases & Disorders of the Hepatobiliary System & Pancreas", 
+    "mdcSubGroupDesc" : "Cholecystectomy", 
+    "mdcSubGroupStart" : NumberInt(411), 
+    "mdcSubGroupEnd" : NumberInt(419)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc60a"), 
+    "mdcNumber" : "MDC 07", 
+    "mdcDesc" : "Diseases & Disorders of the Hepatobiliary System & Pancreas", 
+    "mdcSubGroupDesc" : "Hepatobiliary Diagnostic Procedures", 
+    "mdcSubGroupStart" : NumberInt(420), 
+    "mdcSubGroupEnd" : NumberInt(422)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc60b"), 
+    "mdcNumber" : "MDC 07", 
+    "mdcDesc" : "Diseases & Disorders of the Hepatobiliary System & Pancreas", 
+    "mdcSubGroupDesc" : "Other Hepatobiliary or Pancreas Procedures", 
+    "mdcSubGroupStart" : NumberInt(423), 
+    "mdcSubGroupEnd" : NumberInt(425)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc60c"), 
+    "mdcNumber" : "MDC 08", 
+    "mdcDesc" : "Diseases & Disorders of the Musculoskeletal System & Connective Tissue", 
+    "mdcSubGroupDesc" : "Combined Anterior/Posterior Spinal Fusion", 
+    "mdcSubGroupStart" : NumberInt(453), 
+    "mdcSubGroupEnd" : NumberInt(455)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc60d"), 
+    "mdcNumber" : "MDC 08", 
+    "mdcDesc" : "Diseases & Disorders of the Musculoskeletal System & Connective Tissue", 
+    "mdcSubGroupDesc" : "Spinal Fusion Except Cervical with Spinal Curvature / Malignancy / Infection or Extensive Fusions", 
+    "mdcSubGroupStart" : NumberInt(456), 
+    "mdcSubGroupEnd" : NumberInt(458)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc60e"), 
+    "mdcNumber" : "MDC 08", 
+    "mdcDesc" : "Diseases & Disorders of the Musculoskeletal System & Connective Tissue", 
+    "mdcSubGroupDesc" : "Spinal Fusion Except Cervical", 
+    "mdcSubGroupStart" : NumberInt(459), 
+    "mdcSubGroupEnd" : NumberInt(460)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc60f"), 
+    "mdcNumber" : "MDC 08", 
+    "mdcDesc" : "Diseases & Disorders of the Musculoskeletal System & Connective Tissue", 
+    "mdcSubGroupDesc" : "Bilateral or Multiple Major Joint Procedures of Lower Extremity", 
+    "mdcSubGroupStart" : NumberInt(461), 
+    "mdcSubGroupEnd" : NumberInt(462)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc610"), 
+    "mdcNumber" : "MDC 08", 
+    "mdcDesc" : "Diseases & Disorders of the Musculoskeletal System & Connective Tissue", 
+    "mdcSubGroupDesc" : "Wound Debridement and Skin Graft Except Hand, for Musculoskeletal and Connective Tissue Disorders", 
+    "mdcSubGroupStart" : NumberInt(463), 
+    "mdcSubGroupEnd" : NumberInt(465)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc611"), 
+    "mdcNumber" : "MDC 08", 
+    "mdcDesc" : "Diseases & Disorders of the Musculoskeletal System & Connective Tissue", 
+    "mdcSubGroupDesc" : "Revision of Hip or Knee Replacement", 
+    "mdcSubGroupStart" : NumberInt(466), 
+    "mdcSubGroupEnd" : NumberInt(468)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc612"), 
+    "mdcNumber" : "MDC 08", 
+    "mdcDesc" : "Diseases & Disorders of the Musculoskeletal System & Connective Tissue", 
+    "mdcSubGroupDesc" : "Major Joint Replacement or Reattachment of Lower Extremity", 
+    "mdcSubGroupStart" : NumberInt(469), 
+    "mdcSubGroupEnd" : NumberInt(470)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc613"), 
+    "mdcNumber" : "MDC 08", 
+    "mdcDesc" : "Diseases & Disorders of the Musculoskeletal System & Connective Tissue", 
+    "mdcSubGroupDesc" : "Cervical Spinal Fusion", 
+    "mdcSubGroupStart" : NumberInt(471), 
+    "mdcSubGroupEnd" : NumberInt(473)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc614"), 
+    "mdcNumber" : "MDC 08", 
+    "mdcDesc" : "Diseases & Disorders of the Musculoskeletal System & Connective Tissue", 
+    "mdcSubGroupDesc" : "Amputation for Musculoskeletal System and Connective Tissue Disorders", 
+    "mdcSubGroupStart" : NumberInt(474), 
+    "mdcSubGroupEnd" : NumberInt(476)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc615"), 
+    "mdcNumber" : "MDC 08", 
+    "mdcDesc" : "Diseases & Disorders of the Musculoskeletal System & Connective Tissue", 
+    "mdcSubGroupDesc" : "Biopsies of Musculoskeletal System and Connective Tissue", 
+    "mdcSubGroupStart" : NumberInt(477), 
+    "mdcSubGroupEnd" : NumberInt(479)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc616"), 
+    "mdcNumber" : "MDC 08", 
+    "mdcDesc" : "Diseases & Disorders of the Musculoskeletal System & Connective Tissue", 
+    "mdcSubGroupDesc" : "Hip and Femur Procedures Except Major Joint", 
+    "mdcSubGroupStart" : NumberInt(480), 
+    "mdcSubGroupEnd" : NumberInt(482)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc617"), 
+    "mdcNumber" : "MDC 08", 
+    "mdcDesc" : "Diseases & Disorders of the Musculoskeletal System & Connective Tissue", 
+    "mdcSubGroupDesc" : "Major Joint and Limb Reattachment Procedures of Upper Extremity", 
+    "mdcSubGroupStart" : NumberInt(483), 
+    "mdcSubGroupEnd" : NumberInt(484)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc618"), 
+    "mdcNumber" : "MDC 08", 
+    "mdcDesc" : "Diseases & Disorders of the Musculoskeletal System & Connective Tissue", 
+    "mdcSubGroupDesc" : "Knee Procedures", 
+    "mdcSubGroupStart" : NumberInt(485), 
+    "mdcSubGroupEnd" : NumberInt(489)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc619"), 
+    "mdcNumber" : "MDC 08", 
+    "mdcDesc" : "Diseases & Disorders of the Musculoskeletal System & Connective Tissue", 
+    "mdcSubGroupDesc" : "Back and Neck Procedures, Except Spinal Fusion, or Disc Devices/Neurostimulators", 
+    "mdcSubGroupStart" : NumberInt(490), 
+    "mdcSubGroupEnd" : NumberInt(491)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc61a"), 
+    "mdcNumber" : "MDC 08", 
+    "mdcDesc" : "Diseases & Disorders of the Musculoskeletal System & Connective Tissue", 
+    "mdcSubGroupDesc" : "Lower Extremity and Humerus Procedures Except Hip,Foot,Femur", 
+    "mdcSubGroupStart" : NumberInt(492), 
+    "mdcSubGroupEnd" : NumberInt(494)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc61b"), 
+    "mdcNumber" : "MDC 08", 
+    "mdcDesc" : "Diseases & Disorders of the Musculoskeletal System & Connective Tissue", 
+    "mdcSubGroupDesc" : "Local Excision and Removal Int Fix Devices Except Hip and Femur", 
+    "mdcSubGroupStart" : NumberInt(495), 
+    "mdcSubGroupEnd" : NumberInt(497)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc61c"), 
+    "mdcNumber" : "MDC 08", 
+    "mdcDesc" : "Diseases & Disorders of the Musculoskeletal System & Connective Tissue", 
+    "mdcSubGroupDesc" : "Local Excision and Removal Int Fix Devices of Hip and Femur", 
+    "mdcSubGroupStart" : NumberInt(498), 
+    "mdcSubGroupEnd" : NumberInt(499)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc61d"), 
+    "mdcNumber" : "MDC 08", 
+    "mdcDesc" : "Diseases & Disorders of the Musculoskeletal System & Connective Tissue", 
+    "mdcSubGroupDesc" : "Soft Tissue Procedures", 
+    "mdcSubGroupStart" : NumberInt(500), 
+    "mdcSubGroupEnd" : NumberInt(502)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc61e"), 
+    "mdcNumber" : "MDC 08", 
+    "mdcDesc" : "Diseases & Disorders of the Musculoskeletal System & Connective Tissue", 
+    "mdcSubGroupDesc" : "Foot Procedures", 
+    "mdcSubGroupStart" : NumberInt(503), 
+    "mdcSubGroupEnd" : NumberInt(505)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc61f"), 
+    "mdcNumber" : "MDC 08", 
+    "mdcDesc" : "Diseases & Disorders of the Musculoskeletal System & Connective Tissue", 
+    "mdcSubGroupDesc" : "Major Thumb or Joint Procedures", 
+    "mdcSubGroupStart" : null, 
+    "mdcSubGroupEnd" : null
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc620"), 
+    "mdcNumber" : "MDC 08", 
+    "mdcDesc" : "Diseases & Disorders of the Musculoskeletal System & Connective Tissue", 
+    "mdcSubGroupDesc" : "Major Shoulder or Elbow Joint Procedures", 
+    "mdcSubGroupStart" : NumberInt(507), 
+    "mdcSubGroupEnd" : NumberInt(508)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc621"), 
+    "mdcNumber" : "MDC 08", 
+    "mdcDesc" : "Diseases & Disorders of the Musculoskeletal System & Connective Tissue", 
+    "mdcSubGroupDesc" : "Arthoscopy", 
+    "mdcSubGroupStart" : null, 
+    "mdcSubGroupEnd" : null
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc622"), 
+    "mdcNumber" : "MDC 08", 
+    "mdcDesc" : "Diseases & Disorders of the Musculoskeletal System & Connective Tissue", 
+    "mdcSubGroupDesc" : "Shoulder, Elbow or Forearm Procedures, Except Major Joint Procedures", 
+    "mdcSubGroupStart" : NumberInt(510), 
+    "mdcSubGroupEnd" : NumberInt(512)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc623"), 
+    "mdcNumber" : "MDC 08", 
+    "mdcDesc" : "Diseases & Disorders of the Musculoskeletal System & Connective Tissue", 
+    "mdcSubGroupDesc" : "Hand or Wrist Procedures, Except Major Thumb or Joint Procedures", 
+    "mdcSubGroupStart" : NumberInt(513), 
+    "mdcSubGroupEnd" : NumberInt(514)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc624"), 
+    "mdcNumber" : "MDC 08", 
+    "mdcDesc" : "Diseases & Disorders of the Musculoskeletal System & Connective Tissue", 
+    "mdcSubGroupDesc" : "Other Musculoskeletal System and Connective Tissue Procedures", 
+    "mdcSubGroupStart" : NumberInt(515), 
+    "mdcSubGroupEnd" : NumberInt(517)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc625"), 
+    "mdcNumber" : "MDC 09", 
+    "mdcDesc" : "Diseases & Disorders of the Skin, Subcutaneous Tissue & Breast", 
+    "mdcSubGroupDesc" : "Skin Graft", 
+    "mdcSubGroupStart" : NumberInt(573), 
+    "mdcSubGroupEnd" : NumberInt(578)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc626"), 
+    "mdcNumber" : "MDC 09", 
+    "mdcDesc" : "Diseases & Disorders of the Skin, Subcutaneous Tissue & Breast", 
+    "mdcSubGroupDesc" : "Skin Debridement", 
+    "mdcSubGroupStart" : NumberInt(570), 
+    "mdcSubGroupEnd" : NumberInt(572)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc627"), 
+    "mdcNumber" : "MDC 09", 
+    "mdcDesc" : "Diseases & Disorders of the Skin, Subcutaneous Tissue & Breast", 
+    "mdcSubGroupDesc" : "Other Skin, Subcutaneous Tissue and Breast Procedures", 
+    "mdcSubGroupStart" : NumberInt(579), 
+    "mdcSubGroupEnd" : NumberInt(581)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc628"), 
+    "mdcNumber" : "MDC 09", 
+    "mdcDesc" : "Diseases & Disorders of the Skin, Subcutaneous Tissue & Breast", 
+    "mdcSubGroupDesc" : "Mastectomy for Malignancy", 
+    "mdcSubGroupStart" : NumberInt(582), 
+    "mdcSubGroupEnd" : NumberInt(583)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc629"), 
+    "mdcNumber" : "MDC 09", 
+    "mdcDesc" : "Diseases & Disorders of the Skin, Subcutaneous Tissue & Breast", 
+    "mdcSubGroupDesc" : "Breast Biopsy, Local Excision and Other Breast Procedures", 
+    "mdcSubGroupStart" : NumberInt(584), 
+    "mdcSubGroupEnd" : NumberInt(585)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc62a"), 
+    "mdcNumber" : "MDC 09", 
+    "mdcDesc" : "Diseases & Disorders of the Skin, Subcutaneous Tissue & Breast", 
+    "mdcSubGroupDesc" : "MDC 10,Endocrine, Nutritional & Metabolic Diseases & Disorders", 
+    "mdcSubGroupStart" : null, 
+    "mdcSubGroupEnd" : null
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc62b"), 
+    "mdcNumber" : "MDC 09", 
+    "mdcDesc" : "Diseases & Disorders of the Skin, Subcutaneous Tissue & Breast", 
+    "mdcSubGroupDesc" : "Amputation of Lower Limb for Endocrine, Nutritional and Metabolic Disorders", 
+    "mdcSubGroupStart" : NumberInt(616), 
+    "mdcSubGroupEnd" : NumberInt(618)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc62c"), 
+    "mdcNumber" : "MDC 09", 
+    "mdcDesc" : "Diseases & Disorders of the Skin, Subcutaneous Tissue & Breast", 
+    "mdcSubGroupDesc" : "Procedures for Obesity", 
+    "mdcSubGroupStart" : NumberInt(619), 
+    "mdcSubGroupEnd" : NumberInt(621)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc62d"), 
+    "mdcNumber" : "MDC 09", 
+    "mdcDesc" : "Diseases & Disorders of the Skin, Subcutaneous Tissue & Breast", 
+    "mdcSubGroupDesc" : "Skin Grafts and Wound Debridement for Endocrine, Nutritional and Metabolic Disorders", 
+    "mdcSubGroupStart" : NumberInt(622), 
+    "mdcSubGroupEnd" : NumberInt(624)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc62e"), 
+    "mdcNumber" : "MDC 09", 
+    "mdcDesc" : "Diseases & Disorders of the Skin, Subcutaneous Tissue & Breast", 
+    "mdcSubGroupDesc" : "Adrenal and Pituitary Procedures", 
+    "mdcSubGroupStart" : NumberInt(614), 
+    "mdcSubGroupEnd" : NumberInt(615)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc62f"), 
+    "mdcNumber" : "MDC 09", 
+    "mdcDesc" : "Diseases & Disorders of the Skin, Subcutaneous Tissue & Breast", 
+    "mdcSubGroupDesc" : "Thyroid, Parathyroid and Thyroglossal Procedures", 
+    "mdcSubGroupStart" : NumberInt(625), 
+    "mdcSubGroupEnd" : NumberInt(627)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc630"), 
+    "mdcNumber" : "MDC 09", 
+    "mdcDesc" : "Diseases & Disorders of the Skin, Subcutaneous Tissue & Breast", 
+    "mdcSubGroupDesc" : "Other Endocrine, Nutritional and Metabolic Procedures", 
+    "mdcSubGroupStart" : NumberInt(628), 
+    "mdcSubGroupEnd" : NumberInt(630)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc631"), 
+    "mdcNumber" : "MDC 11", 
+    "mdcDesc" : "Diseases & Disorders of the Kidney & Urinary Tract", 
+    "mdcSubGroupDesc" : "Kidney Transplant", 
+    "mdcSubGroupStart" : null, 
+    "mdcSubGroupEnd" : null
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc632"), 
+    "mdcNumber" : "MDC 11", 
+    "mdcDesc" : "Diseases & Disorders of the Kidney & Urinary Tract", 
+    "mdcSubGroupDesc" : "Major Bladder Procedures", 
+    "mdcSubGroupStart" : NumberInt(653), 
+    "mdcSubGroupEnd" : NumberInt(655)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc633"), 
+    "mdcNumber" : "MDC 11", 
+    "mdcDesc" : "Diseases & Disorders of the Kidney & Urinary Tract", 
+    "mdcSubGroupDesc" : "Kidney and Ureter Procedures", 
+    "mdcSubGroupStart" : NumberInt(656), 
+    "mdcSubGroupEnd" : NumberInt(661)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc634"), 
+    "mdcNumber" : "MDC 11", 
+    "mdcDesc" : "Diseases & Disorders of the Kidney & Urinary Tract", 
+    "mdcSubGroupDesc" : "Minor Bladder Procedures", 
+    "mdcSubGroupStart" : NumberInt(662), 
+    "mdcSubGroupEnd" : NumberInt(664)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc635"), 
+    "mdcNumber" : "MDC 11", 
+    "mdcDesc" : "Diseases & Disorders of the Kidney & Urinary Tract", 
+    "mdcSubGroupDesc" : "Prostatectomy", 
+    "mdcSubGroupStart" : NumberInt(665), 
+    "mdcSubGroupEnd" : NumberInt(667)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc636"), 
+    "mdcNumber" : "MDC 11", 
+    "mdcDesc" : "Diseases & Disorders of the Kidney & Urinary Tract", 
+    "mdcSubGroupDesc" : "Transurethral Procedures", 
+    "mdcSubGroupStart" : NumberInt(668), 
+    "mdcSubGroupEnd" : NumberInt(670)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc637"), 
+    "mdcNumber" : "MDC 11", 
+    "mdcDesc" : "Diseases & Disorders of the Kidney & Urinary Tract", 
+    "mdcSubGroupDesc" : "Urethral Procedures", 
+    "mdcSubGroupStart" : NumberInt(671), 
+    "mdcSubGroupEnd" : NumberInt(672)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc638"), 
+    "mdcNumber" : "MDC 11", 
+    "mdcDesc" : "Diseases & Disorders of the Kidney & Urinary Tract", 
+    "mdcSubGroupDesc" : "Other Kidney and Urinary Tract Procedures", 
+    "mdcSubGroupStart" : NumberInt(673), 
+    "mdcSubGroupEnd" : NumberInt(675)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc639"), 
+    "mdcNumber" : "MDC 12", 
+    "mdcDesc" : "Diseases & Disorders of the Male Reproductive System", 
+    "mdcSubGroupDesc" : "Major Male Pelvic Procedures", 
+    "mdcSubGroupStart" : NumberInt(707), 
+    "mdcSubGroupEnd" : NumberInt(708)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc63a"), 
+    "mdcNumber" : "MDC 12", 
+    "mdcDesc" : "Diseases & Disorders of the Male Reproductive System", 
+    "mdcSubGroupDesc" : "Penis Procedures", 
+    "mdcSubGroupStart" : NumberInt(709), 
+    "mdcSubGroupEnd" : NumberInt(710)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc63b"), 
+    "mdcNumber" : "MDC 12", 
+    "mdcDesc" : "Diseases & Disorders of the Male Reproductive System", 
+    "mdcSubGroupDesc" : "Testes Procedures", 
+    "mdcSubGroupStart" : NumberInt(711), 
+    "mdcSubGroupEnd" : NumberInt(712)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc63c"), 
+    "mdcNumber" : "MDC 12", 
+    "mdcDesc" : "Diseases & Disorders of the Male Reproductive System", 
+    "mdcSubGroupDesc" : "Transurethral Prostatectomy", 
+    "mdcSubGroupStart" : NumberInt(713), 
+    "mdcSubGroupEnd" : NumberInt(714)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc63d"), 
+    "mdcNumber" : "MDC 12", 
+    "mdcDesc" : "Diseases & Disorders of the Male Reproductive System", 
+    "mdcSubGroupDesc" : "Other Male Reproductive System Procedures", 
+    "mdcSubGroupStart" : NumberInt(715), 
+    "mdcSubGroupEnd" : NumberInt(718)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc63e"), 
+    "mdcNumber" : "MDC 13", 
+    "mdcDesc" : "Diseases & Disorders of the Female Reproductive System", 
+    "mdcSubGroupDesc" : "Pelvic Evisceration, Radical Hysterectomy and Radical Vulvectomy", 
+    "mdcSubGroupStart" : NumberInt(734), 
+    "mdcSubGroupEnd" : NumberInt(735)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc63f"), 
+    "mdcNumber" : "MDC 13", 
+    "mdcDesc" : "Diseases & Disorders of the Female Reproductive System", 
+    "mdcSubGroupDesc" : "Uterine and Adnexal Procedures for Malignancy", 
+    "mdcSubGroupStart" : NumberInt(736), 
+    "mdcSubGroupEnd" : NumberInt(741)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc640"), 
+    "mdcNumber" : "MDC 13", 
+    "mdcDesc" : "Diseases & Disorders of the Female Reproductive System", 
+    "mdcSubGroupDesc" : "Uterine and Adnexal Procedures for Non-Malignancy", 
+    "mdcSubGroupStart" : NumberInt(742), 
+    "mdcSubGroupEnd" : NumberInt(743)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc641"), 
+    "mdcNumber" : "MDC 13", 
+    "mdcDesc" : "Diseases & Disorders of the Female Reproductive System", 
+    "mdcSubGroupDesc" : "D&C, Conization, Laparoscopy and Tubal Interruption", 
+    "mdcSubGroupStart" : NumberInt(744), 
+    "mdcSubGroupEnd" : NumberInt(745)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc642"), 
+    "mdcNumber" : "MDC 13", 
+    "mdcDesc" : "Diseases & Disorders of the Female Reproductive System", 
+    "mdcSubGroupDesc" : "Vagina, Cervix and Vulva Procedures", 
+    "mdcSubGroupStart" : NumberInt(746), 
+    "mdcSubGroupEnd" : NumberInt(747)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc643"), 
+    "mdcNumber" : "MDC 13", 
+    "mdcDesc" : "Diseases & Disorders of the Female Reproductive System", 
+    "mdcSubGroupDesc" : "Female Reproductive System Reconstructive Procedures", 
+    "mdcSubGroupStart" : null, 
+    "mdcSubGroupEnd" : null
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc644"), 
+    "mdcNumber" : "MDC 13", 
+    "mdcDesc" : "Diseases & Disorders of the Female Reproductive System", 
+    "mdcSubGroupDesc" : "Other Female Reproductive System Procedures", 
+    "mdcSubGroupStart" : NumberInt(749), 
+    "mdcSubGroupEnd" : NumberInt(750)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc645"), 
+    "mdcNumber" : "MDC 14", 
+    "mdcDesc" : "Pregnancy, Childbirth & the Puerperium", 
+    "mdcSubGroupDesc" : "Cesarean Section", 
+    "mdcSubGroupStart" : NumberInt(765), 
+    "mdcSubGroupEnd" : NumberInt(766)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc646"), 
+    "mdcNumber" : "MDC 14", 
+    "mdcDesc" : "Pregnancy, Childbirth & the Puerperium", 
+    "mdcSubGroupDesc" : "Postpartum and Post Abortion Diagnoses with Major Procedure", 
+    "mdcSubGroupStart" : null, 
+    "mdcSubGroupEnd" : null
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc647"), 
+    "mdcNumber" : "MDC 14", 
+    "mdcDesc" : "Pregnancy, Childbirth & the Puerperium", 
+    "mdcSubGroupDesc" : "Abortion with D&C, Aspiration Curettage or Hysterotomy", 
+    "mdcSubGroupStart" : null, 
+    "mdcSubGroupEnd" : null
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc648"), 
+    "mdcNumber" : "MDC 14", 
+    "mdcDesc" : "Pregnancy, Childbirth & the Puerperium", 
+    "mdcSubGroupDesc" : "Vaginal Delivery with O.R. procedure", 
+    "mdcSubGroupStart" : NumberInt(767), 
+    "mdcSubGroupEnd" : NumberInt(768)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc649"), 
+    "mdcNumber" : "MDC 15", 
+    "mdcDesc" : "Newborns & Other Neonates with Conditions Originating in Perinatal Period", 
+    "mdcSubGroupDesc" : "None", 
+    "mdcSubGroupStart" : null, 
+    "mdcSubGroupEnd" : null
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc64a"), 
+    "mdcNumber" : "MDC 16", 
+    "mdcDesc" : "Diseases & Disorders of Blood, Blood Forming Organs, Immunologic Disorders", 
+    "mdcSubGroupDesc" : "Splenectomy", 
+    "mdcSubGroupStart" : NumberInt(799), 
+    "mdcSubGroupEnd" : NumberInt(801)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc64b"), 
+    "mdcNumber" : "MDC 16", 
+    "mdcDesc" : "Diseases & Disorders of Blood, Blood Forming Organs, Immunologic Disorders", 
+    "mdcSubGroupDesc" : "Other Procedures of the Blood and Blood Forming Organs", 
+    "mdcSubGroupStart" : NumberInt(802), 
+    "mdcSubGroupEnd" : NumberInt(804)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc64c"), 
+    "mdcNumber" : "MDC 17", 
+    "mdcDesc" : "Myeloproliferative Diseases & Disorders, Poorly Differentiated Neoplasms", 
+    "mdcSubGroupDesc" : "Lymphoma and Leukemia with Major Procedure", 
+    "mdcSubGroupStart" : NumberInt(820), 
+    "mdcSubGroupEnd" : NumberInt(822)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc64d"), 
+    "mdcNumber" : "MDC 17", 
+    "mdcDesc" : "Myeloproliferative Diseases & Disorders, Poorly Differentiated Neoplasms", 
+    "mdcSubGroupDesc" : "Lymphoma and Non-Acute Leukemia with Other listed Procedure", 
+    "mdcSubGroupStart" : NumberInt(823), 
+    "mdcSubGroupEnd" : NumberInt(825)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc64e"), 
+    "mdcNumber" : "MDC 17", 
+    "mdcDesc" : "Myeloproliferative Diseases & Disorders, Poorly Differentiated Neoplasms", 
+    "mdcSubGroupDesc" : "Myeloproliferative Disorders or Poorly Differentiated Neoplasms", 
+    "mdcSubGroupStart" : NumberInt(826), 
+    "mdcSubGroupEnd" : NumberInt(830)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc64f"), 
+    "mdcNumber" : "MDC 18", 
+    "mdcDesc" : "Infectious & Parasitic Diseases, Systemic or Unspecified Sites", 
+    "mdcSubGroupDesc" : "Postoperative or Post-Traumatic Infections with Procedure", 
+    "mdcSubGroupStart" : NumberInt(856), 
+    "mdcSubGroupEnd" : NumberInt(858)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc650"), 
+    "mdcNumber" : "MDC 18", 
+    "mdcDesc" : "Infectious & Parasitic Diseases, Systemic or Unspecified Sites", 
+    "mdcSubGroupDesc" : "Infections and Parasitic Diseases with listed Procedure", 
+    "mdcSubGroupStart" : NumberInt(853), 
+    "mdcSubGroupEnd" : NumberInt(855)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc651"), 
+    "mdcNumber" : "MDC 19", 
+    "mdcDesc" : "Mental Diseases & Disorders", 
+    "mdcSubGroupDesc" : "Major Procedure with Principal Diagnosis of Mental Illness", 
+    "mdcSubGroupStart" : null, 
+    "mdcSubGroupEnd" : null
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc652"), 
+    "mdcNumber" : "MDC 20", 
+    "mdcDesc" : "Alcohol/Drug Use & Alcohol/Drug Induced Organic Mental Disorders", 
+    "mdcSubGroupDesc" : "None", 
+    "mdcSubGroupStart" : null, 
+    "mdcSubGroupEnd" : null
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc653"), 
+    "mdcNumber" : "MDC 21", 
+    "mdcDesc" : "Injuries, Poisonings & Toxic Effects of Drugs", 
+    "mdcSubGroupDesc" : "Wound Debridements for Injuries", 
+    "mdcSubGroupStart" : NumberInt(901), 
+    "mdcSubGroupEnd" : NumberInt(903)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc654"), 
+    "mdcNumber" : "MDC 21", 
+    "mdcDesc" : "Injuries, Poisonings & Toxic Effects of Drugs", 
+    "mdcSubGroupDesc" : "Skin Grafts for Injuries", 
+    "mdcSubGroupStart" : NumberInt(904), 
+    "mdcSubGroupEnd" : NumberInt(905)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc655"), 
+    "mdcNumber" : "MDC 21", 
+    "mdcDesc" : "Injuries, Poisonings & Toxic Effects of Drugs", 
+    "mdcSubGroupDesc" : "Hand Procedures for Injuries", 
+    "mdcSubGroupStart" : null, 
+    "mdcSubGroupEnd" : null
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc656"), 
+    "mdcNumber" : "MDC 21", 
+    "mdcDesc" : "Injuries, Poisonings & Toxic Effects of Drugs", 
+    "mdcSubGroupDesc" : "Other Procedures for Injuries", 
+    "mdcSubGroupStart" : NumberInt(907), 
+    "mdcSubGroupEnd" : NumberInt(909)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc657"), 
+    "mdcNumber" : "MDC 22", 
+    "mdcDesc" : "Burns", 
+    "mdcSubGroupDesc" : "Extensive Burns or Full Thickness Burns with MV 96+Hours", 
+    "mdcSubGroupStart" : NumberInt(927), 
+    "mdcSubGroupEnd" : null
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc658"), 
+    "mdcNumber" : "MDC 22", 
+    "mdcDesc" : "Burns", 
+    "mdcSubGroupDesc" : "Full Thickness Burns", 
+    "mdcSubGroupStart" : NumberInt(928), 
+    "mdcSubGroupEnd" : NumberInt(929)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc659"), 
+    "mdcNumber" : "MDC 23", 
+    "mdcDesc" : "Factors Influencing Health Status & Other Contacts with Health Services", 
+    "mdcSubGroupDesc" : "Major Procedures with Diagnosis of Other Contact with Health Services", 
+    "mdcSubGroupStart" : NumberInt(939), 
+    "mdcSubGroupEnd" : NumberInt(941)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc65a"), 
+    "mdcNumber" : "MDC 24", 
+    "mdcDesc" : "Multiple Significant Trauma", 
+    "mdcSubGroupDesc" : "Craniotomy for Multiple Significant Trauma", 
+    "mdcSubGroupStart" : null, 
+    "mdcSubGroupEnd" : null
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc65b"), 
+    "mdcNumber" : "MDC 24", 
+    "mdcDesc" : "Multiple Significant Trauma", 
+    "mdcSubGroupDesc" : "Limb Reattachment, Hip and Femur Procedures for Multiple Significant Trauma", 
+    "mdcSubGroupStart" : null, 
+    "mdcSubGroupEnd" : null
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc65c"), 
+    "mdcNumber" : "MDC 24", 
+    "mdcDesc" : "Multiple Significant Trauma", 
+    "mdcSubGroupDesc" : "Other Procedures for Multiple Significant Trauma", 
+    "mdcSubGroupStart" : NumberInt(957), 
+    "mdcSubGroupEnd" : NumberInt(959)
+}
+{ 
+    "_id" : ObjectId("59b73a786b598e2e08bfc65d"), 
+    "mdcNumber" : "MDC 25", 
+    "mdcDesc" : "Human Immunodeficiency Virus Infections", 
+    "mdcSubGroupDesc" : "HIV with Extensive Procedure", 
+    "mdcSubGroupStart" : NumberInt(969), 
+    "mdcSubGroupEnd" : NumberInt(970)
+}

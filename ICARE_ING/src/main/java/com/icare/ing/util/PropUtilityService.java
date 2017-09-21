@@ -27,7 +27,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.icare.common.dto.CD;
+import com.icare.common.dto.CH;
 import com.icare.common.dto.CL;
 
 
@@ -62,15 +62,15 @@ public class PropUtilityService {
 		return objectMapper.writeValueAsString(claimHeaderBo);
 	}
 	
-	public static String translateCDToJsonString(CD claimHeaderBo) throws JsonProcessingException
+	public static String translateCDToJsonString(CH claimHeaderBo) throws JsonProcessingException
 	{
 		return objectMapper.writeValueAsString(claimHeaderBo);
 	}
 	
-	public static CD translateJsonToCD(String json) throws JsonParseException, JsonMappingException, IOException
+	public static CH translateJsonToCD(String json) throws JsonParseException, JsonMappingException, IOException
 	{
 		objectMapper.configure(DeserializationFeature.UNWRAP_ROOT_VALUE, false);
-		CD cd = objectMapper.readValue(json, CD.class);
+		CH cd = objectMapper.readValue(json, CH.class);
 		objectMapper.configure(DeserializationFeature.UNWRAP_ROOT_VALUE, true);
 		return cd;
 	}
