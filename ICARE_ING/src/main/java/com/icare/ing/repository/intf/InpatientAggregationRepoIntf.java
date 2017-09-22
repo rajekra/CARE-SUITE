@@ -346,4 +346,6 @@ public interface InpatientAggregationRepoIntf {
  * @param dataSet the data set
  */
 public <T> void save(T dataSet);
+
+public <T,C> T load(C context);
 }

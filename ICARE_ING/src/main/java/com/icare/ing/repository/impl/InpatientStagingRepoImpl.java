@@ -28,7 +28,7 @@ public class InpatientStagingRepoImpl implements InpatientStagingRepoIntf{
 	 */
 	public <T> T load() throws JsonParseException, JsonMappingException, IOException {
 		Map<String, List<?>> returnItems = new HashMap<String, List<?>>();
-		MongoCollection<BasicDBObject> collection = CommonConstants.INSTITUTIONAL_LK;
+		MongoCollection<BasicDBObject> collection = CommonConstants.INPATIENT_STAGING;
 		MongoCursor<BasicDBObject> cursor = collection.find().iterator();
 		List<CH> cds = new ArrayList<CH>();
 		List<CL> cls = new ArrayList<CL>();

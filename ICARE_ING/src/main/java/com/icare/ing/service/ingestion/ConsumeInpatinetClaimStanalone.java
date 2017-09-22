@@ -37,7 +37,7 @@ public class ConsumeInpatinetClaimStanalone {
 //		dbc.putAll(bson);
 //		collection.insertOne(dbc);
 		
-		MongoCollection<BasicDBObject> INSTITUTIONAL_LK = CommonConstants.INSTITUTIONAL_LK;
+		MongoCollection<BasicDBObject> INSTITUTIONAL_LK = CommonConstants.INPATIENT_STAGING;
 		int count =1;
 		File folder = new File("C:/EDPS/Delivery/test/json444/IP/20170911171412");
 		File[] listOfFiles = folder.listFiles();

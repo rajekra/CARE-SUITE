@@ -59,7 +59,7 @@ public class MasterDataRepositoryImpl implements MasterDataRepositoryInf{
 	}
 	@Override
 	public void saveCD(CH cd) {
-		MongoCollection<BasicDBObject> INSTITUTIONAL_LK = CommonConstants.INSTITUTIONAL_LK;
+		MongoCollection<BasicDBObject> INSTITUTIONAL_LK = CommonConstants.INPATIENT_STAGING;
 		String headerString = null;
 		try {
 			headerString = JsonUtil.translateCDToJsonString(cd);

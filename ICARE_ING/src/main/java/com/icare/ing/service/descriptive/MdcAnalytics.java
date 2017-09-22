@@ -43,7 +43,7 @@ public class MdcAnalytics {
 		
 		
 		
-		MongoCollection<BasicDBObject> collection = CommonConstants.INSTITUTIONAL_LK;
+		MongoCollection<BasicDBObject> collection = CommonConstants.INPATIENT_STAGING;
 		
 		MongoCursor<BasicDBObject> cursor= collection.find().iterator();
 		List<InpatientVertex> cds = new ArrayList<InpatientVertex>();

@@ -7,11 +7,12 @@ import org.apache.spark.sql.SparkSession;
 
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
+import com.icare.ing.util.CommonConstants;
 
 /**
  * The Class AbstractAnaytics.
  */
-public abstract class AbstractAnayticsService {
+public abstract class AbstractAnaytics {
 	
 	/** The spark session. */
 	protected SparkSession sparkSession ;
@@ -60,9 +61,15 @@ public abstract class AbstractAnayticsService {
 		javaSparkContext.close();
 	}
 	
-	public AbstractAnayticsService() throws Exception
+	public AbstractAnaytics() throws Exception
 	{
 		init();
+		if(null==sparkSession)
+		{
+			sparkSession = SparkSession.builder().master(CommonConstants.SPARK_MASTER)
+					 .config("spark.app.name", "AbstractAnaytics")
+					  .getOrCreate();
+		}
 		javaSparkContext = new JavaSparkContext(sparkSession.sparkContext());
 		write(process(load(null)));
 		close();
