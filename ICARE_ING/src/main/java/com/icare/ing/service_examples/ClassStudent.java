@@ -14,7 +14,7 @@ import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.icare.common.dto.Student;
 import com.icare.common.dto.Class;
-import com.icare.ing.util.PropUtilityService;
+import com.icare.ing.util.JsonUtil;
 import com.mongodb.BasicDBObject;
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoCollection;
@@ -38,7 +38,7 @@ public class ClassStudent {
 		stus.add(stu);
 		clazz.setStudents(stus);
 		
-		String headerString = PropUtilityService.translateBoToJsonString(clazz);
+		String headerString = JsonUtil.translateBoToJsonString(clazz);
 		System.out.println("My String:" + headerString);
 		
 		BSONObject bson = (BSONObject)com.mongodb.util.JSON.parse(headerString);

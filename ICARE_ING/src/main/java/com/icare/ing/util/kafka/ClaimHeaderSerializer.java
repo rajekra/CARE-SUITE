@@ -7,7 +7,7 @@ import org.apache.kafka.common.serialization.Serializer;
 import com.ecams.claim.bo.ClaimHeader;
 import com.ecams.claim.bo.ClaimLine;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.icare.ing.util.PropUtilityService;
+import com.icare.ing.util.JsonUtil;
 public class ClaimHeaderSerializer implements Serializer<ClaimHeader> {
 
 	  @Override
@@ -24,7 +24,7 @@ public class ClaimHeaderSerializer implements Serializer<ClaimHeader> {
 	  public byte[] serialize(String arg0, ClaimHeader arg1) {
 	    byte[] retVal = null;
 	    try {
-	      retVal = PropUtilityService.getMapper().writeValueAsString(arg1).getBytes();
+	      retVal = JsonUtil.getMapper().writeValueAsString(arg1).getBytes();
 	    } catch (Exception e) {
 	      e.printStackTrace();
 	    }

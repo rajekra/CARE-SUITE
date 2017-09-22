@@ -2,36 +2,19 @@ package com.icare.ing.util;
 
 import java.io.File;
 import java.io.IOException;
-import java.lang.reflect.Field;
-import java.math.BigDecimal;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Set;
-
-import org.apache.commons.lang.StringUtils;
 
 import com.ecams.claim.bo.ClaimHeader;
-import com.ecams.claim.bo.ClaimLine;
-import com.ecams.claim.bo.ClmHdrAdmissionDetail;
-import com.ecams.claim.bo.ClmHdrCondition;
-import com.ecams.claim.bo.ClmHdrOccurrenceDetail;
-import com.ecams.claim.bo.ClmHdrValueAmount;
-import com.ecams.claim.bo.ClmHdrXDiagnosis;
-import com.ecams.claim.bo.ClmHdrXProcedure;
-import com.ecams.claim.bo.ClmHdrXPrvdrLctn;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.icare.common.dto.CH;
-import com.icare.common.dto.CL;
 
 
-public class PropUtilityService {
+public class JsonUtil {
 
 	public static void main(String[] args)
 	{

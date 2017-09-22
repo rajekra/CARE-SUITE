@@ -1,4 +1,4 @@
-package com.icare.ing.repository.ingestion.impl;
+package com.icare.ing.repository.impl;
 
 import static com.mongodb.client.model.Projections.excludeId;
 
@@ -6,9 +6,9 @@ import org.bson.BSONObject;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.icare.common.dto.CH;
-import com.icare.ing.repository.ingestion.intf.MasterDataRepositoryInf;
+import com.icare.ing.repository.intf.MasterDataRepositoryInf;
 import com.icare.ing.util.CommonConstants;
-import com.icare.ing.util.PropUtilityService;
+import com.icare.ing.util.JsonUtil;
 import com.mongodb.BasicDBObject;
 import com.mongodb.BasicDBObjectBuilder;
 import com.mongodb.client.FindIterable;
@@ -62,7 +62,7 @@ public class MasterDataRepositoryImpl implements MasterDataRepositoryInf{
 		MongoCollection<BasicDBObject> INSTITUTIONAL_LK = CommonConstants.INSTITUTIONAL_LK;
 		String headerString = null;
 		try {
-			headerString = PropUtilityService.translateCDToJsonString(cd);
+			headerString = JsonUtil.translateCDToJsonString(cd);
 		} catch (JsonProcessingException e) {
 			e.printStackTrace();
 		}

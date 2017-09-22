@@ -22,9 +22,9 @@ import scala.Tuple2;
 
 import com.ecams.claim.bo.ClaimHeader;
 import com.icare.ing.service_examples.PhoenixForwarder;
-import com.icare.ing.util.PropUtilityService;
+import com.icare.ing.util.JsonUtil;
 import com.icare.ing.util.kafka.ClaimHeaderDeserializer;
-import com.icare.ing.util.spark.CDBuilder;
+import com.icare.ing.util.spark.CHBuilder;
 
 public class ConsumeInpatientClaim {
     private static final String HOST = "localhost";
@@ -71,7 +71,7 @@ public class ConsumeInpatientClaim {
 				@Override
 				public void call(Tuple2<String, ClaimHeader> inboundClaim) throws Exception {
 					System.out.println(inboundClaim._1() + "RAJ," + inboundClaim._2());
-					CDBuilder cdBuilder = new CDBuilder();
+					CHBuilder cdBuilder = new CHBuilder();
 					cdBuilder.buildAndIngest(inboundClaim._2());
 				}
 				

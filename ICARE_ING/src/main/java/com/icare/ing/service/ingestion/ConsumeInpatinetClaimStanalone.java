@@ -13,11 +13,11 @@ import com.ecams.claim.bo.ClaimHeader;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.icare.common.dto.CH;
-import com.icare.ing.repository.ingestion.impl.MasterDataRepositoryImpl;
-import com.icare.ing.repository.ingestion.intf.MasterDataRepositoryInf;
+import com.icare.ing.repository.impl.MasterDataRepositoryImpl;
+import com.icare.ing.repository.intf.MasterDataRepositoryInf;
 import com.icare.ing.util.CommonConstants;
-import com.icare.ing.util.PropUtilityService;
-import com.icare.ing.util.spark.ClaimHeaderToCDConverter;
+import com.icare.ing.util.JsonUtil;
+import com.icare.ing.util.spark.ClaimHeaderToCHConverter;
 import com.mongodb.BasicDBObject;
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoCollection;
@@ -46,17 +46,19 @@ public class ConsumeInpatinetClaimStanalone {
 		    if (file.isFile()) {
 		        System.out.println(file.getName());
 		        BasicDBObject dbc = new BasicDBObject();
-				ClaimHeader header = PropUtilityService.translateJsonToBusinessObject("C:/EDPS/Delivery/test/json444/IP/20170911171412/"+file.getName());
-				ClaimHeaderToCDConverter claimHeaderToCDConverter = new ClaimHeaderToCDConverter();
+			//	ClaimHeader header = PropUtilityService.translateJsonToBusinessObject("C:/EDPS/Delivery/test/json444/IP/20170911171412/"+file.getName());
+				ClaimHeader header = JsonUtil.translateJsonToBusinessObject("C:\\Users\\kandhasamyr\\OneDrive - CNSI\\ICARE\\data\\WA_DATA\\201501600221217000.JSON" );
+				ClaimHeaderToCHConverter claimHeaderToCDConverter = new ClaimHeaderToCHConverter();
 				MasterDataRepositoryInf repository = new MasterDataRepositoryImpl();
 				CH cd = claimHeaderToCDConverter.translateClaimHeaderToCD(header,repository);
 				System.out.println("CD String:" + cd);
-				String headerString = PropUtilityService.translateCDToJsonString(cd);
+				String headerString = JsonUtil.translateCDToJsonString(cd);
 				System.out.println("Converted String:" + headerString);
 				
 				BSONObject bson = (BSONObject)com.mongodb.util.JSON.parse(headerString);
 				dbc.putAll(bson);
 				objs.add(dbc);
+				break;
 //				if(count++ == 100)
 //				{
 //					break;

@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.icare.common.dto.CH;
-import com.icare.ing.util.PropUtilityService;
+import com.icare.ing.util.JsonUtil;
 
 public class InstitutionalIngestionService {
 

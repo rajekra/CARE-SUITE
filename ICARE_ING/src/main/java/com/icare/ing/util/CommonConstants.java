@@ -6,6 +6,8 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 
 public class CommonConstants {
+	public static String SPARK_MASTER = "local";
+	public static String MONGO_URI = "mongodb://127.0.0.1/";
 	public static MongoClient MONGO_CLIENT_URL = new MongoClient( "localhost" , 27017 );
 	public static MongoDatabase ICARE_SCHEMA = MONGO_CLIENT_URL.getDatabase("icare");
 	public static MongoCollection<BasicDBObject> MDC_DRG_DIAGNOSIS_CROSSWALK_MS = ICARE_SCHEMA.getCollection("MDC_DRG_DIAGNOSIS_CROSSWALK_MS",BasicDBObject.class);

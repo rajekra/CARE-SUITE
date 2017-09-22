@@ -11,16 +11,13 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 /**
  * The Class AbstractAnaytics.
  */
-public abstract class AbstractAnaytics {
+public abstract class AbstractAnayticsService {
 	
 	/** The spark session. */
-	protected SparkSession sparkSession = SparkSession.builder()
-		      .master("local")
-		      .appName("AbstractAnaytics")
-		      .getOrCreate();
+	protected SparkSession sparkSession ;
 	
 	/** The java spark context. */
-	protected JavaSparkContext javaSparkContext = new JavaSparkContext(sparkSession.sparkContext());
+	protected JavaSparkContext javaSparkContext;
 	
 	/**
 	 * Inits the.
@@ -63,9 +60,10 @@ public abstract class AbstractAnaytics {
 		javaSparkContext.close();
 	}
 	
-	public void executePipeLine() throws Exception
+	public AbstractAnayticsService() throws Exception
 	{
 		init();
+		javaSparkContext = new JavaSparkContext(sparkSession.sparkContext());
 		write(process(load(null)));
 		close();
 	}

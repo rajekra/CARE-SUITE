@@ -8,7 +8,7 @@ import org.apache.kafka.clients.producer.RecordMetadata;
 import com.ecams.claim.bo.ClaimHeader;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
-import com.icare.ing.util.PropUtilityService;
+import com.icare.ing.util.JsonUtil;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -35,7 +35,7 @@ public class ProduceInpatientClaim {
        Random rnd = new Random();
        for (long i = 0; i < 2 ; i++) {
     	   System.out.println("1");
-   		   ClaimHeader header = PropUtilityService.translateJsonToBusinessObject("C:\\Testing\\Output\\JSON\\CLAIM_5010_INSTITUIONAL_A2\\20170918\\15\\Output_Claim_1_20170918_150311338.json");
+   		   ClaimHeader header = JsonUtil.translateJsonToBusinessObject("C:\\Testing\\Output\\JSON\\CLAIM_5010_INSTITUIONAL_A2\\20170918\\15\\Output_Claim_1_20170918_150311338.json");
            ProducerRecord<String, ClaimHeader> data = new ProducerRecord<String, ClaimHeader>("test", "key-" + i, header );
            producer.send(data, callback);
        }

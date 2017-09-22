@@ -7,7 +7,7 @@ import org.bson.BSONObject;
 import com.ecams.claim.bo.ClaimHeader;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
-import com.icare.ing.util.PropUtilityService;
+import com.icare.ing.util.JsonUtil;
 import com.mongodb.BasicDBObject;
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoCollection;
@@ -21,8 +21,8 @@ public class Sample {
 		BasicDBObject dbc = new BasicDBObject();
 		
 		
-		ClaimHeader header = PropUtilityService.translateJsonToBusinessObject("C:\\Testing\\Output\\JSON\\CLAIM_5010_PROFESSIONAL_A1\\20170906\\16\\Output_Claim_1_20170906_160815546.json");
-		String headerString = PropUtilityService.translateBoToJsonString(header);
+		ClaimHeader header = JsonUtil.translateJsonToBusinessObject("C:\\Testing\\Output\\JSON\\CLAIM_5010_PROFESSIONAL_A1\\20170906\\16\\Output_Claim_1_20170906_160815546.json");
+		String headerString = JsonUtil.translateBoToJsonString(header);
 		System.out.println("My String:" + headerString);
 		
 		BSONObject bson = (BSONObject)com.mongodb.util.JSON.parse(headerString);

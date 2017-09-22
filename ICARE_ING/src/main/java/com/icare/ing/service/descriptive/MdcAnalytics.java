@@ -19,7 +19,7 @@ import com.icare.common.dto.CL;
 import com.icare.ing.dto.InpatientVertex;
 import com.icare.ing.dto.MDCVertex;
 import com.icare.ing.util.CommonConstants;
-import com.icare.ing.util.PropUtilityService;
+import com.icare.ing.util.JsonUtil;
 import com.mongodb.BasicDBObject;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoCursor;
@@ -50,7 +50,7 @@ public class MdcAnalytics {
 		 while (cursor.hasNext()) {
 			 BasicDBObject basicDBObject = cursor.next();
 			 String jsonString = basicDBObject.toJson();
-			 CH cd = PropUtilityService.translateJsonToCD(jsonString);
+			 CH cd = JsonUtil.translateJsonToCD(jsonString);
 			 InpatientVertex ipv = new InpatientVertex();
 			 ipv.setMdc(cd.getMdc());
 			 ipv.setTotalBilledAmount(cd.getTotalBilledAmount());

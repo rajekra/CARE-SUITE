@@ -35,7 +35,7 @@ import org.apache.spark.streaming.kafka010.KafkaUtils;
 import org.apache.spark.streaming.kafka010.LocationStrategies;
 
 import com.ecams.claim.bo.ClaimHeader;
-import com.icare.ing.util.PropUtilityService;
+import com.icare.ing.util.JsonUtil;
 
 public class SparkKafkaConsumerOp1 {
     private static final String HOST = "localhost";

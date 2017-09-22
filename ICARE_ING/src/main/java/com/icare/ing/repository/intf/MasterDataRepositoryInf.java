@@ -1,4 +1,4 @@
-package com.icare.ing.repository.ingestion.intf;
+package com.icare.ing.repository.intf;
 
 import com.icare.common.dto.CH;
 

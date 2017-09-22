@@ -21,9 +21,9 @@ import com.ecams.claim.bo.ClmHdrXProcedure;
 import com.ecams.claim.bo.ClmHdrXPrvdrLctn;
 import com.icare.common.dto.CH;
 import com.icare.common.dto.CL;
-import com.icare.ing.repository.ingestion.intf.MasterDataRepositoryInf;
+import com.icare.ing.repository.intf.MasterDataRepositoryInf;
 
-public class ClaimHeaderToCDConverter {
+public class ClaimHeaderToCHConverter {
 	public CH translateClaimHeaderToCD(com.ecams.claim.bo.ClaimHeader claimHeaderBo, MasterDataRepositoryInf repository)
 	{
 		CH cd = new CH();
@@ -190,9 +190,13 @@ public class ClaimHeaderToCDConverter {
 			cl.setBilledUnits(claimLine.getBilledUnits().toString());
 			cl.setClaimLineTcn(claimLine.getClaimLineTcn());
 			SimpleDateFormat sdfSource = new SimpleDateFormat("yyyy-MM-dd");
-			String date = sdfSource.format(claimLine.getFromServiceDate());
-			cl.setFromServiceDate(date);
-			cl.setToServiceDate(date);
+			if(null!=claimLine.getFromServiceDate())
+			{
+				String date = sdfSource.format(claimLine.getFromServiceDate());
+				cl.setFromServiceDate(date);
+				cl.setToServiceDate(date);
+			}
+			
 			if(null!=claimLine.getClmLnDerivedElement())
 			{
 				cl.setPaidAmount(claimLine.getClmLnDerivedElement().getPaidAmount().toString());
