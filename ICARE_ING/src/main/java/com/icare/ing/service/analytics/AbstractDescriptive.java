@@ -12,7 +12,7 @@ import com.icare.ing.util.CommonConstants;
 /**
  * The Class AbstractAnaytics.
  */
-public abstract class AbstractAnaytics {
+public abstract class AbstractDescriptive {
 	
 	/** The spark session. */
 	protected SparkSession sparkSession ;
@@ -61,7 +61,7 @@ public abstract class AbstractAnaytics {
 		javaSparkContext.close();
 	}
 	
-	public AbstractAnaytics() throws Exception
+	public AbstractDescriptive() throws Exception
 	{
 		init();
 		if(null==sparkSession)

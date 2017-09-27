@@ -11,10 +11,10 @@ import com.icare.common.dto.CH;
 import com.icare.common.dto.CL;
 import com.icare.ing.repository.RepositoryFactory;
 import com.icare.ing.repository.intf.InpatientAggregationRepoIntf;
-import com.icare.ing.service.analytics.AbstractAnaytics;
+import com.icare.ing.service.analytics.AbstractDescriptive;
 import com.icare.ing.util.CommonConstants;
 
-public class InpatientAggregation extends AbstractAnaytics {
+public class InpatientAggregation extends AbstractDescriptive {
 
 	public InpatientAggregation() throws Exception {
 		super();

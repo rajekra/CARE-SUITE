@@ -2,11 +2,10 @@ package com.icare.ing.service.analytics.predictive.regression.linear_regression;
 
 import org.apache.spark.sql.SparkSession;
 
-import com.icare.ing.repository.RepositoryFactory;
-import com.icare.ing.service.analytics.AbstractPredictiveAnalytics;
+import com.icare.ing.service.analytics.predictive.models.LinearRegressionBuilder;
 import com.icare.ing.util.CommonConstants;
 
-public class InpatientMdcwisePrediction extends AbstractPredictiveAnalytics {
+public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 	public InpatientMdcwisePrediction() throws Exception {
 		super();
 	}
@@ -15,19 +14,16 @@ public class InpatientMdcwisePrediction extends AbstractPredictiveAnalytics {
 		new InpatientMdcwisePrediction();
 	}
 
-	@Override
-	public void init() {
-		sparkSession = SparkSession.builder().master(CommonConstants.SPARK_MASTER)
-				 .config("spark.app.name", "InpatientMdcwisePrediction")
-				 .config("spark.sql.crossJoin.enabled", "true")
-				 .config("spark.mongodb.input.uri",	CommonConstants.MONGO_URI+"icare.INPATIENT_AGGREGATED")
-				 .config("spark.mongodb.output.uri", CommonConstants.MONGO_URI+"icare.INPATIENT_AGGREGATED")
-				  .getOrCreate();
-	}
 
 	@Override
-	public <T, P> T load(P config) throws Exception {
-		return RepositoryFactory.getInpatientAggregationRepo().load(javaSparkContext);
+	public <T, P> T initialize(P config) throws Exception {
+		sparkSession = SparkSession.builder().master(CommonConstants.SPARK_MASTER)
+		 .config("spark.app.name", "InpatientMdcwisePrediction")
+		 .config("spark.sql.crossJoin.enabled", "true")
+		 .config("spark.mongodb.input.uri",	CommonConstants.MONGO_URI+"icare.INPATIENT_AGGREGATED")
+		 .config("spark.mongodb.output.uri", CommonConstants.MONGO_URI+"icare.INPATIENT_AGGREGATED")
+		  .getOrCreate();
+		return null;
 	}
 
 	@Override
@@ -65,6 +61,13 @@ public class InpatientMdcwisePrediction extends AbstractPredictiveAnalytics {
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+	@Override
+	public <T, P> T readModel(P config) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 
 
 }
