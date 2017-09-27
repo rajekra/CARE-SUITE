@@ -67,6 +67,7 @@ public class InpatientAggregation extends AbstractAnaytics {
 		return (T) centenarians;
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public <T, P> T write(P inputData) {
 		Dataset<Row> dataSet = (Dataset<Row>) inputData;
@@ -76,5 +77,6 @@ public class InpatientAggregation extends AbstractAnaytics {
 		RepositoryFactory.getInpatientAggregationRepo().save(dataSet);
 		return null;
 	}
+
 
 }
