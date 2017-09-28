@@ -41,13 +41,14 @@ public class ConsumeInpatinetClaimStanalone {
 		int count =1;
 		File folder = new File("C:/EDPS/Delivery/test/json444/IP/20170911171412");
 		File[] listOfFiles = folder.listFiles();
+		System.out.println("No. Of Files:" +listOfFiles.length );
 		List<BasicDBObject>  objs= new ArrayList<BasicDBObject>();
 		for (File file : listOfFiles) {
 		    if (file.isFile()) {
 		        System.out.println(file.getName());
 		        BasicDBObject dbc = new BasicDBObject();
-			//	ClaimHeader header = PropUtilityService.translateJsonToBusinessObject("C:/EDPS/Delivery/test/json444/IP/20170911171412/"+file.getName());
-				ClaimHeader header = JsonUtil.translateJsonToBusinessObject("C:\\Users\\kandhasamyr\\OneDrive - CNSI\\ICARE\\data\\WA_DATA\\201501600221217000.JSON" );
+				ClaimHeader header = JsonUtil.translateJsonToBusinessObject("C:/EDPS/Delivery/test/json444/IP/20170911171412/"+file.getName());
+			//	ClaimHeader header = JsonUtil.translateJsonToBusinessObject("C:\\Users\\kandhasamyr\\OneDrive - CNSI\\ICARE\\data\\WA_DATA\\201501600221217000.JSON" );
 				ClaimHeaderToCHConverter claimHeaderToCDConverter = new ClaimHeaderToCHConverter();
 				MasterDataRepositoryInf repository = new MasterDataRepositoryImpl();
 				CH cd = claimHeaderToCDConverter.translateClaimHeaderToCD(header,repository);
@@ -58,11 +59,10 @@ public class ConsumeInpatinetClaimStanalone {
 				BSONObject bson = (BSONObject)com.mongodb.util.JSON.parse(headerString);
 				dbc.putAll(bson);
 				objs.add(dbc);
-				break;
-//				if(count++ == 100)
-//				{
-//					break;
-//				}
+				if(count++ == 100)
+				{
+					break;
+				}
 //				
 		    }
 		}

@@ -1,4 +1,4 @@
-package com.icare.ing.service.analytics.predictive.models;
+package com.icare.ing.service.analytics.predictive.regression.linear_regression;
 
 import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.ml.evaluation.RegressionEvaluator;
@@ -6,6 +6,7 @@ import org.apache.spark.ml.param.ParamMap;
 import org.apache.spark.ml.regression.LinearRegression;
 import org.apache.spark.ml.tuning.ParamGridBuilder;
 import org.apache.spark.ml.tuning.TrainValidationSplit;
+import org.apache.spark.ml.tuning.TrainValidationSplitModel;
 import org.apache.spark.sql.SparkSession;
 
 import com.icare.ing.service.analytics.AbstractPredictive;
@@ -22,7 +23,7 @@ public abstract class LinearRegressionBuilder implements AbstractPredictive{
 	 // We use a ParamGridBuilder to construct a grid of parameters to search over.
 	 // TrainValidationSplit will try all combinations of values and determine best model using
 	 // the evaluator.
-	 ParamMap[] paramGrid = new ParamGridBuilder()
+	protected ParamMap[] paramGrid = new ParamGridBuilder()
 	   .addGrid(linearRegression.regParam(), new double[] {0.1, 0.01})
 	   .addGrid(linearRegression.fitIntercept())
 	   .addGrid(linearRegression.elasticNetParam(), new double[] {0.0, 0.5, 1.0})
@@ -30,11 +31,13 @@ public abstract class LinearRegressionBuilder implements AbstractPredictive{
 
 	 // In this case the estimator is simply the linear regression.
 	 // A TrainValidationSplit requires an Estimator, a set of Estimator ParamMaps, and an Evaluator.
-	 TrainValidationSplit trainValidationSplit = new TrainValidationSplit()
+	protected TrainValidationSplit trainValidationSplit = new TrainValidationSplit()
 	   .setEstimator(linearRegression)
 	   .setEvaluator(new RegressionEvaluator())
 	   .setEstimatorParamMaps(paramGrid)
 	   .setTrainRatio(0.8); 
+	 
+	protected TrainValidationSplitModel trainValidationSplitModel = null;
 	
 	
 	/** The spark session. */

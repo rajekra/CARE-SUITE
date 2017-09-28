@@ -72,8 +72,8 @@ public class InpatientAggregation extends AbstractDescriptive {
 	public <T, P> T write(P inputData) {
 		Dataset<Row> dataSet = (Dataset<Row>) inputData;
 		dataSet.createOrReplaceTempView("aggheader");
-		dataSet.printSchema();
-		dataSet.show(100);
+		//dataSet.printSchema();
+		dataSet.show();
 		RepositoryFactory.getInpatientAggregationRepo().save(dataSet);
 		return null;
 	}

@@ -13,7 +13,7 @@ public class CommonConstants {
 	public static MongoCollection<BasicDBObject> MDC_DRG_DIAGNOSIS_CROSSWALK_MS = ICARE_SCHEMA.getCollection("MDC_DRG_DIAGNOSIS_CROSSWALK_MS",BasicDBObject.class);
 	public static MongoCollection<BasicDBObject> INPATIENT_STAGING = ICARE_SCHEMA.getCollection("INPATIENT_STAGING",BasicDBObject.class);
 	public static MongoCollection<BasicDBObject> INPATIENT_AGGREGATED = ICARE_SCHEMA.getCollection("INPATIENT_AGGREGATED",BasicDBObject.class);
-	public static String INPATIENT_AGGREGATED_STR = "INPATIENT_AGGREGATED_STR";
+	public static String INPATIENT_AGGREGATED_STR = "INPATIENT_AGGREGATED";
 	public static MongoCollection<BasicDBObject> ICD_GEM_MS = ICARE_SCHEMA.getCollection("ICD_GEM_MS",BasicDBObject.class);
 	public static MongoCollection<BasicDBObject> MAJOR_DIAG_CATEGORY_MS = ICARE_SCHEMA.getCollection("MAJOR_DIAG_CATEGORY_MS",BasicDBObject.class);
 }

@@ -1,5 +1,8 @@
 package com.icare.ing.service.analytics.predictive;
 
+import org.apache.spark.sql.Dataset;
+import org.apache.spark.sql.Row;
+
 import com.icare.ing.service.analytics.AbstractPredictive;
 
 public class ClientWaiter {
@@ -16,14 +19,19 @@ public class ClientWaiter {
 	public <P> void buildModel(P config) throws Exception
 	{
 		modelBuilder.initialize(config);
-		modelBuilder.loadTrainingData(config);
-		modelBuilder.loadTestingData(config);
+		Dataset<Row> trainingData = modelBuilder.loadTrainingData(config);
+		System.out.println("====================Training Data====================");
+		trainingData.show();
 		modelBuilder.buildPipeline(config);
-		modelBuilder.buildModel(config);
+		modelBuilder.buildModel(trainingData);
 	}
 	
 	public <P> void predict(P config) throws Exception
 	{
-		modelBuilder.predict(config);
+		Dataset<Row> testingData = modelBuilder.loadTestingData(config);
+		System.out.println("====================Testing Data====================");
+		testingData.show();
+		testingData.printSchema();
+		modelBuilder.predict(testingData);
 	}
 }

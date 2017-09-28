@@ -60,6 +60,8 @@ public class JsonUtil {
 	
 	public static ClaimHeader translateJsonToBusinessObject(String jsonFileWithPath) throws JsonParseException, JsonMappingException, IOException
 	{
+		DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
+		objectMapper.setDateFormat(df);
 		ClaimHeader claimHeader =   objectMapper.readValue(new File(jsonFileWithPath), ClaimHeader.class);
 		System.out.println("ClaimHeader:" + claimHeader.getClaimLines());
 		return claimHeader;

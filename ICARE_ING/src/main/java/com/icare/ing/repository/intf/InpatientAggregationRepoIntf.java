@@ -13,7 +13,7 @@ public interface InpatientAggregationRepoIntf {
 	.append("  cd.mdc,")
 	.append("  SUM(CAST(cd.totalBilledAmount AS INT)) AS totalBilledAmount,")
 	.append("  SUM(CAST(cd.paidAmount AS        INT)) AS paidAmount,")
-	.append("  cd.admissionDate,")
+	.append("  cd.patientStatusLkpcd, cd.admissionDate,")
 	.append("  cd.dischargeDate,")
 	.append("  cd.drgCode,")
 	.append("  cd.admtDiagCd,")
@@ -172,7 +172,10 @@ public interface InpatientAggregationRepoIntf {
 	.append("  cd.val9 ,")
 	.append("  cd.val9_amt ,")
 	.append("  cd.val10 ,")
-	.append("  cd.val10_amt")
+	.append("  cd.val10_amt, ")
+	.append("  cd.patientGender, ")
+	.append("  datediff(TO_DATE(CAST(UNIX_TIMESTAMP(cd.dischargeDate,'yyyy-MM-dd') AS TIMESTAMP)), TO_DATE(CAST(UNIX_TIMESTAMP(cd.admissionDate,'yyyy-MM-dd') AS TIMESTAMP))) as los,")
+	.append("  datediff(current_date(), TO_DATE(CAST(UNIX_TIMESTAMP(cd.patientBirthDate,'yyyy-MM-dd') AS TIMESTAMP)))/365 as age")
 	.append(" FROM CD cd ")
 	.append(" GROUP BY cd.mdc,cd.inDate,")
 	.append("  cd.prncplPrcdrCd,")
@@ -336,7 +339,7 @@ public interface InpatientAggregationRepoIntf {
 	.append("  cd.val9 ,")
 	.append("  cd.val9_amt ,")
 	.append("  cd.val10 ,")
-	.append("  cd.val10_amt ")
+	.append("  cd.val10_amt,cd.patientStatusLkpcd,cd.patientGender, cd.patientBirthDate  ")
 	.append("ORDER BY totalBilledAmount DESC   ");
 
 /**

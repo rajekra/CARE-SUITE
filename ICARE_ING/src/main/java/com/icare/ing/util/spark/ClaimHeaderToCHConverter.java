@@ -3,6 +3,7 @@ package com.icare.ing.util.spark;
 import java.lang.reflect.Field;
 import java.math.BigDecimal;
 import java.text.DateFormat;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -31,7 +32,10 @@ public class ClaimHeaderToCHConverter {
 		//cd.setInDate(df.format(new Date(117,8,19)));
 		cd.setInDate(df.format(new Date()));
 		//cd.set_id(new ObjectId());
-		cd.setPatientBirthDate(claimHeaderBo.getPatientBirthDate().toString());
+		System.out.println(claimHeaderBo.getPatientBirthDate());
+		System.out.println(new Date());
+		//getDate(date, currentFormat, expectedFormat);
+		cd.setPatientBirthDate(df.format(claimHeaderBo.getPatientBirthDate()));
 		cd.setPatientFirstName(claimHeaderBo.getPatientFirstName());
 		cd.setPatientGender(claimHeaderBo.getPatientGender());
 		cd.setPatientLastName(claimHeaderBo.getPatientLastName());
@@ -41,20 +45,20 @@ public class ClaimHeaderToCHConverter {
 		cd.setTcn(claimHeaderBo.getTcn());
 		if(null!=claimHeaderBo.getFromServiceDate())
 		{
-			cd.setFromServiceDate(claimHeaderBo.getFromServiceDate().toString());
+			cd.setFromServiceDate(df.format(claimHeaderBo.getFromServiceDate()));
 		}
 		if(null!=claimHeaderBo.getToServiceDate())
 		{
-			cd.setToServiceDate(claimHeaderBo.getToServiceDate().toString());
+			cd.setToServiceDate(df.format(claimHeaderBo.getToServiceDate()));
 		}
 		if(null!=claimHeaderBo.getAdmissionDate())
 		{
-			cd.setAdmissionDate(claimHeaderBo.getAdmissionDate().toString());
+			cd.setAdmissionDate(df.format(claimHeaderBo.getAdmissionDate()));
 		}
 		cd.setAdmissionHour(claimHeaderBo.getAdmissionHour());
 		if(null!=claimHeaderBo.getDischargeDate())
 		{
-			cd.setDischargeDate(claimHeaderBo.getDischargeDate().toString());
+			cd.setDischargeDate(df.format(claimHeaderBo.getDischargeDate()));
 		}
 		
 		if(!StringUtils.isEmpty(claimHeaderBo.getFacilityTypeCode()))
@@ -124,7 +128,7 @@ public class ClaimHeaderToCHConverter {
 				cd.setPrncplPrcdrCd(repository.convertIcd9To10(clmHdrXProcedure.getPrcdrCode()));
 				if(null!=clmHdrXProcedure.getSurgicalPrcdrDate())
 				{
-					cd.setPrncplPrcdrCdDate(clmHdrXProcedure.getSurgicalPrcdrDate().toString());
+					cd.setPrncplPrcdrCdDate(df.format(clmHdrXProcedure.getSurgicalPrcdrDate()));
 				}
 			}
 			else if("O".equals(clmHdrXProcedure.getProcedureTypeQlfr()))
@@ -132,7 +136,7 @@ public class ClaimHeaderToCHConverter {
 				int seqNo = clmHdrXProcedure.getPrcdrOrderSqncNmbr().intValue();
 				seqNo = seqNo -1;
 				cd = setValue(cd, "p"+seqNo,repository.convertIcd9To10(clmHdrXProcedure.getPrcdrCode()));
-				cd = setValue(cd, "p"+seqNo+"_dt",clmHdrXProcedure.getSurgicalPrcdrDate());
+				cd = setValue(cd, "p"+seqNo+"_dt",df.format(clmHdrXProcedure.getSurgicalPrcdrDate()));
 			}
 		}
 		
@@ -165,7 +169,10 @@ public class ClaimHeaderToCHConverter {
 			for(ClmHdrOccurrenceDetail clmHdrOccurrenceDetail: claimHeaderBo.getClmHdrOccurrenceDetails())
 			{
 				cd = setValue(cd, "ocr"+seqNo,clmHdrOccurrenceDetail.getClmOccurrenceAndSpanCid());
-				cd = setValue(cd, "ocr"+seqNo+"_dt",clmHdrOccurrenceDetail.getFromDate());
+				if(null!=clmHdrOccurrenceDetail.getFromDate())
+				{
+					cd = setValue(cd, "ocr"+seqNo+"_dt",df.format(clmHdrOccurrenceDetail.getFromDate()));
+				}
 				seqNo++;
 			}
 		}
@@ -249,4 +256,22 @@ public class ClaimHeaderToCHConverter {
 		}
 		return null;
 	}
+	
+	public static String getDate(
+	        String date, String currentFormat, String expectedFormat)
+	throws ParseException {
+	    // Validating if the supplied parameters is null 
+	    if (date == null || currentFormat == null || expectedFormat == null ) {
+	        return null;
+	    }
+	    // Create SimpleDateFormat object with source string date format
+	    SimpleDateFormat sourceDateFormat = new SimpleDateFormat(currentFormat);
+	    // Parse the string into Date object
+	    Date dateObj = sourceDateFormat.parse(date);
+	    // Create SimpleDateFormat object with desired date format
+	    SimpleDateFormat desiredDateFormat = new SimpleDateFormat(expectedFormat);
+	    // Parse the date into another format
+	    return desiredDateFormat.format(dateObj).toString();
+	}
+
 }
