@@ -32,7 +32,8 @@ public abstract class LinearRegressionBuilder implements AbstractPredictive{
 	 // In this case the estimator is simply the linear regression.
 	 // A TrainValidationSplit requires an Estimator, a set of Estimator ParamMaps, and an Evaluator.
 	protected TrainValidationSplit trainValidationSplit = new TrainValidationSplit()
-	   .setEstimator(linearRegression)
+	   // Replace below with pipeline
+	   //.setEstimator(linearRegression)
 	   .setEvaluator(new RegressionEvaluator())
 	   .setEstimatorParamMaps(paramGrid)
 	   .setTrainRatio(0.8); 

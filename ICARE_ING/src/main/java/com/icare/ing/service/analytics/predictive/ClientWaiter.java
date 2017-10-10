@@ -21,7 +21,7 @@ public class ClientWaiter {
 		modelBuilder.initialize(config);
 		Dataset<Row> trainingData = modelBuilder.loadTrainingData(config);
 		System.out.println("====================Training Data====================");
-		trainingData.show();
+		//trainingData.show();
 		modelBuilder.buildPipeline(config);
 		modelBuilder.buildModel(trainingData);
 	}

@@ -2,6 +2,7 @@ package com.icare.ing.util.spark;
 
 import java.lang.reflect.Field;
 import java.math.BigDecimal;
+import java.sql.SQLException;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -71,7 +72,15 @@ public class ClaimHeaderToCHConverter {
 			cd.setFreqType_BillThirdDigit(claimHeaderBo.getClaimSubmissionReasonLkpcd());
 		}
 		cd.setApc("");
-		cd.setDrgCode(claimHeaderBo.getDrgCode());
+		if(null==claimHeaderBo.getDrgCode())
+		{
+			cd.setDrgCode(claimHeaderBo.getClmHdrDerivedElement().getDrgCode());
+		}
+		else
+		{
+			cd.setDrgCode(claimHeaderBo.getDrgCode());
+		}
+		
 		if(!StringUtils.isEmpty(claimHeaderBo.getDrgCode()))
 		{
 			cd.setMdc(repository.getMdcId(claimHeaderBo.getDrgCode()));
@@ -89,15 +98,29 @@ public class ClaimHeaderToCHConverter {
 		{
 			Set<ClmHdrXDiagnosis> diagSet = claimHeaderBo.getClmHdrXDiagnosis();
 			for(ClmHdrXDiagnosis clmHdrXDiagnosis : diagSet){
-				if("P".equals(clmHdrXDiagnosis.getPrimaryQlfr()))
+				String diagcode = clmHdrXDiagnosis.getDiagnosisCode();
+				//to be removed for non CNSI envs
+				if(null==diagcode && clmHdrXDiagnosis.getDiagnosisIid()!=null)
 				{
-					cd.setPrncplDgnsCd(repository.convertIcd9To10(clmHdrXDiagnosis.getDiagnosisCode()));
+					try {
+						diagcode = CNSIDBUtil.getDiagCode(clmHdrXDiagnosis.getDiagnosisIid());
+					} catch (SQLException e) {
+						e.printStackTrace();
+					}
+				}
+				//Principle Diag
+				if("P".equals(clmHdrXDiagnosis.getPrimaryQlfr()) ||"P".equals(clmHdrXDiagnosis.getPrimaryQlfr()))
+				{
+					cd.setPrncplDgnsCd(repository.convertIcd9To10(diagcode));
 					cd.setPrncplDgnsPoa(clmHdrXDiagnosis.getPoaLkpcd());
 				}
-				if("BJ".equals(clmHdrXDiagnosis.getDiagQlfr()) || "ABJ".equals(clmHdrXDiagnosis.getDiagQlfr()))
+				//Admitting Diag
+				if("BJ".equals(clmHdrXDiagnosis.getDiagQlfr()) || "ABJ".equals(clmHdrXDiagnosis.getDiagQlfr()) || "A".equals(clmHdrXDiagnosis.getPrimaryQlfr()))
 				{
-					cd.setAdmtDiagCd(repository.convertIcd9To10(clmHdrXDiagnosis.getDiagnosisCode()));
+					cd.setAdmtDiagCd(repository.convertIcd9To10(diagcode));
+					cd.setAdmtDiagCdPoa(clmHdrXDiagnosis.getPoaLkpcd());
 				}
+				//Other Diag
 				else if("T".equals(clmHdrXDiagnosis.getPrimaryQlfr()))
 				{
 					int seqNo = clmHdrXDiagnosis.getDiagnosisOrderSqncNmbr().intValue();
@@ -105,7 +128,7 @@ public class ClaimHeaderToCHConverter {
 					if(seqNo<25)
 					{
 						//cd.setP1(clmHdrXProcedure.getPrcdrCode());
-						cd = setValue(cd, "d"+seqNo,repository.convertIcd9To10(clmHdrXDiagnosis.getDiagnosisCode()));
+						cd = setValue(cd, "d"+seqNo,repository.convertIcd9To10(diagcode));
 						cd = setValue(cd, "d"+seqNo+"_poa",clmHdrXDiagnosis.getPoaLkpcd());
 					}
 				}
@@ -123,9 +146,18 @@ public class ClaimHeaderToCHConverter {
 		if(null!=claimHeaderBo.getClmHdrXProcedures())
 		for(ClmHdrXProcedure clmHdrXProcedure:claimHeaderBo.getClmHdrXProcedures())
 		{
+			String prcdrCode = clmHdrXProcedure.getPrcdrCode();
+			if(null==prcdrCode && clmHdrXProcedure.getProcedureIid()!=null)
+			{
+				try {
+					prcdrCode = CNSIDBUtil.getProcCode(clmHdrXProcedure.getProcedureIid());
+				} catch (SQLException e) {
+					e.printStackTrace();
+				}
+			}
 			if("P".equals(clmHdrXProcedure.getProcedureTypeQlfr()))
 			{
-				cd.setPrncplPrcdrCd(repository.convertIcd9To10(clmHdrXProcedure.getPrcdrCode()));
+				cd.setPrncplPrcdrCd(repository.convertIcd9To10(prcdrCode));
 				if(null!=clmHdrXProcedure.getSurgicalPrcdrDate())
 				{
 					cd.setPrncplPrcdrCdDate(df.format(clmHdrXProcedure.getSurgicalPrcdrDate()));
@@ -135,7 +167,7 @@ public class ClaimHeaderToCHConverter {
 			{
 				int seqNo = clmHdrXProcedure.getPrcdrOrderSqncNmbr().intValue();
 				seqNo = seqNo -1;
-				cd = setValue(cd, "p"+seqNo,repository.convertIcd9To10(clmHdrXProcedure.getPrcdrCode()));
+				cd = setValue(cd, "p"+seqNo,repository.convertIcd9To10(prcdrCode));
 				cd = setValue(cd, "p"+seqNo+"_dt",df.format(clmHdrXProcedure.getSurgicalPrcdrDate()));
 			}
 		}

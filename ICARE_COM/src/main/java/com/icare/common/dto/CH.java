@@ -39,6 +39,7 @@ public class CH implements Serializable{
 	private String drgCode;
 	private String apc;
 	private String admtDiagCd;
+	private String admtDiagCdPoa;
 	private String prncplDgnsCd;
 	private String prncplDgnsPoa;
 	private String mbrIdentifier;
@@ -3734,6 +3735,12 @@ public class CH implements Serializable{
 	}
 	public void setInDate(String inDate) {
 		this.inDate = inDate;
+	}
+	public String getAdmtDiagCdPoa() {
+		return admtDiagCdPoa;
+	}
+	public void setAdmtDiagCdPoa(String admtDiagCdPoa) {
+		this.admtDiagCdPoa = admtDiagCdPoa;
 	}
 		
 	

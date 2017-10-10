@@ -39,7 +39,8 @@ public class ConsumeInpatinetClaimStanalone {
 		
 		MongoCollection<BasicDBObject> INSTITUTIONAL_LK = CommonConstants.INPATIENT_STAGING;
 		int count =1;
-		File folder = new File("C:/EDPS/Delivery/test/json444/IP/20170911171412");
+		//File folder = new File("C:/EDPS/Delivery/test/json444/IP/20170911171412");
+		File folder = new File("C:/Users/kandhasamyr/OneDrive - CNSI/ICARE/data/WA_DATA");
 		File[] listOfFiles = folder.listFiles();
 		System.out.println("No. Of Files:" +listOfFiles.length );
 		List<BasicDBObject>  objs= new ArrayList<BasicDBObject>();
@@ -47,7 +48,7 @@ public class ConsumeInpatinetClaimStanalone {
 		    if (file.isFile()) {
 		        System.out.println(file.getName());
 		        BasicDBObject dbc = new BasicDBObject();
-				ClaimHeader header = JsonUtil.translateJsonToBusinessObject("C:/EDPS/Delivery/test/json444/IP/20170911171412/"+file.getName());
+				ClaimHeader header = JsonUtil.translateJsonToBusinessObject("C:/Users/kandhasamyr/OneDrive - CNSI/ICARE/data/WA_DATA/"+file.getName());
 			//	ClaimHeader header = JsonUtil.translateJsonToBusinessObject("C:\\Users\\kandhasamyr\\OneDrive - CNSI\\ICARE\\data\\WA_DATA\\201501600221217000.JSON" );
 				ClaimHeaderToCHConverter claimHeaderToCDConverter = new ClaimHeaderToCHConverter();
 				MasterDataRepositoryInf repository = new MasterDataRepositoryImpl();

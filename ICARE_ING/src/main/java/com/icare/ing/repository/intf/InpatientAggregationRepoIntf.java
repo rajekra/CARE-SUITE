@@ -10,13 +10,14 @@ public interface InpatientAggregationRepoIntf {
 	public static final StringBuilder aggregateQuery = new StringBuilder()
 	.append("SELECT cd.inDate, cd.prncplPrcdrCd,")
 	.append("  cd.prncplDgnsCd,")
-	.append("  cd.mdc,")
-	.append("  SUM(CAST(cd.totalBilledAmount AS INT)) AS totalBilledAmount,")
+	.append("  CAST(cd.mdc AS INT),")
+	.append("  SUM(CAST(cd.totalBilledAmount AS INT)) AS label,")
 	.append("  SUM(CAST(cd.paidAmount AS        INT)) AS paidAmount,")
 	.append("  cd.patientStatusLkpcd, cd.admissionDate,")
 	.append("  cd.dischargeDate,")
-	.append("  cd.drgCode,")
+	.append("  CAST(cd.drgCode AS INT),")
 	.append("  cd.admtDiagCd,")
+	.append("  cd.admtDiagCdPoa,")
 	.append("  cd.prncplDgnsCd,")
 	.append("  cd.prncplDgnsPoa,")
 	.append("  cd.mbrIdentifier,")
@@ -183,12 +184,12 @@ public interface InpatientAggregationRepoIntf {
 	.append("  cd.admissionDate,")
 	.append("  cd.dischargeDate,")
 	.append("  cd.drgCode,")
-	.append("  cd.admtDiagCd,")
+	.append("  cd.admtDiagCd,cd.admtDiagCdPoa,")
 	.append("  cd.prncplDgnsCd,")
 	.append("  cd.prncplDgnsPoa,")
 	.append("  cd.mbrIdentifier,")
 	.append("  cd.prncplPrcdrCd,")
-	.append("  cd.prncplPrcdrCdDate,")
+	.append("  cd.prncplPrcdrCdDate,cd.patientStatusLkpcd,cd.patientGender, cd.patientBirthDate ,")
 	.append("  cd.de1,")
 	.append("  cd.de1_poa,")
 	.append("  cd.de2,")
@@ -339,8 +340,8 @@ public interface InpatientAggregationRepoIntf {
 	.append("  cd.val9 ,")
 	.append("  cd.val9_amt ,")
 	.append("  cd.val10 ,")
-	.append("  cd.val10_amt,cd.patientStatusLkpcd,cd.patientGender, cd.patientBirthDate  ")
-	.append("ORDER BY totalBilledAmount DESC   ");
+	.append("  cd.val10_amt  ");
+	//.append("ORDER BY totalBilledAmount DESC   ");
 
 /**
  * Save.
