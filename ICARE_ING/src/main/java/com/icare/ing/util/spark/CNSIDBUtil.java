@@ -12,7 +12,6 @@ public class CNSIDBUtil {
 	private static final String DB_CONNECTION = "jdbc:oracle:thin:@172.25.17.144:1521:WCMDEVDB";
 	private static final String DB_USER = "WCMBPDEV";
 	private static final String DB_PASSWORD = "O3cP4EM0Tt";
-	private static Connection dbConnection = null;
 	
 	public static void main(String[] argv) {
 
@@ -20,7 +19,8 @@ public class CNSIDBUtil {
 	}
 
 	public static String getDiagCode(BigDecimal diagIID) throws SQLException {
-
+		Connection dbConnection = null;
+		System.out.println("diagIID:"+diagIID);
 		String selectTableSQL = "SELECT distinct DIAGNOSIS_CODE from DIAGNOSIS WHERE DIAGNOSIS_IID=? and ROWNUM < 2";
 		PreparedStatement prest = null;
 		String diagCode = null;
@@ -41,10 +41,10 @@ public class CNSIDBUtil {
 				diagCode = rs.getString("DIAGNOSIS_CODE");
 				break;
 			}
-
+			rs.close();
 		} catch (SQLException e) {
 
-			System.out.println(e.getMessage());
+			e.getMessage();
 
 		} finally {
 
@@ -57,13 +57,15 @@ public class CNSIDBUtil {
 			}
 
 		}
+		System.out.println("diagCode:" + diagCode);
 		return diagCode;
 	}
 	public static String getProcCode(BigDecimal procIID) throws SQLException {
-
+		System.out.println("procIID:"+procIID);
 		String selectTableSQL = "SELECT distinct PRCDR_CODE from PROCEDURE WHERE PROCEDURE_IID=? and ROWNUM < 2";
 		PreparedStatement prest = null;
 		String PRCDR_CODE = null;
+		Connection dbConnection = null;
 		try {
 			if(dbConnection==null)
 			{
@@ -97,6 +99,7 @@ public class CNSIDBUtil {
 			}
 
 		}
+		System.out.println("PRCDR_CODE:" + PRCDR_CODE);
 		return PRCDR_CODE;
 	}
 

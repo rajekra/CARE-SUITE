@@ -106,13 +106,13 @@ import com.icare.ing.util.CommonConstants;
  |-- prncplPrcdrCd: string (nullable = true)
  |-- totalBilledAmount: long (nullable = true)
  */
-public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
-	public InpatientMdcwisePrediction() throws Exception {
+public class InpatientMdcwisePredictionORG extends LinearRegressionBuilder {
+	public InpatientMdcwisePredictionORG() throws Exception {
 		super();
 	}
 
 	public static void main(String args[]) throws Exception {
-		new InpatientMdcwisePrediction();
+		new InpatientMdcwisePredictionORG();
 	}
 
 
@@ -186,7 +186,6 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 		trainingDataConverted.createOrReplaceTempView("TrainingTable");
 		System.out.println("RAJ");
 		
-		//trainingDataConverted = sparkSession.sql("SELECT los, label, d1, d1_poa,d2, d2_poa,d3, d3_poa,d4, d4_poa from TrainingTable");
 		
 		List<PipelineStage> indexers = new ArrayList<PipelineStage>();
 		//List<PipelineStage> indexers = new ArrayList<PipelineStage>();
@@ -778,544 +777,564 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 		}
 		//Other Diag codes - Ends		
 		
-		
 		//Other Procedure codes - Starts	
-				if(ArrayUtils.contains(trainingDataConverted.columns(),"p1"))
-				{		
-					List<Row> d1Max = sparkSession.sql("SELECT p1, COUNT(p1) as d1_ct from TrainingTable group by p1 order by d1_ct desc").takeAsList(2);
-					if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("p1"))
-					{
-						Row row = d1Max.get(0);
-					String d1MaxValue = row.getAs("p1");
-					trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"p1"});
-					StringIndexer p1Indexer = new StringIndexer().setInputCol("p1").setOutputCol("p1Indexer");
-					OneHotEncoder p1Vec = new OneHotEncoder().setInputCol("p1Indexer").setOutputCol("p1Vec");
-					indexers.add(p1Indexer);
-					//indexers.add(p1Vec);
-				////	assemblers.add("p1");
-					}
+		if(ArrayUtils.contains(trainingDataConverted.columns(),"p1"))
+		{		
+			List<Row> d1Max = sparkSession.sql("SELECT p1, COUNT(p1) as d1_ct from TrainingTable group by p1 order by d1_ct desc").takeAsList(2);
+			if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("p1"))
+			{
+				Row row = d1Max.get(0);
+			String d1MaxValue = row.getAs("p1");
+			trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"p1"});
+			StringIndexer p1Indexer = new StringIndexer().setInputCol("p1").setOutputCol("p1Indexer");
+			OneHotEncoder p1Vec = new OneHotEncoder().setInputCol("p1Indexer").setOutputCol("p1Vec");
+			indexers.add(p1Indexer);
+			//indexers.add(p1Vec);
+		////	assemblers.add("p1");
+			}
+		}
+		if(ArrayUtils.contains(trainingDataConverted.columns(),"p2"))
+		{		
+			List<Row> d1Max = sparkSession.sql("SELECT p2, COUNT(p2) as d1_ct from TrainingTable group by p2 order by d1_ct desc").takeAsList(2);
+			if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("p2"))
+			{
+				Row row = d1Max.get(0);
+			String d1MaxValue = row.getAs("p2");
+			trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"p2"});
+			StringIndexer p2Indexer = new StringIndexer().setInputCol("p2").setOutputCol("p2Indexer");
+			OneHotEncoder p2Vec = new OneHotEncoder().setInputCol("p2Indexer").setOutputCol("p2Vec");
+			indexers.add(p2Indexer);
+			//indexers.add(p2Vec);
+		//	assemblers.add("p2");
+			}
+		}
+		if(ArrayUtils.contains(trainingDataConverted.columns(),"p3"))
+		{		
+			List<Row> d1Max = sparkSession.sql("SELECT p3, COUNT(p3) as d1_ct from TrainingTable group by p3 order by d1_ct desc").takeAsList(2);
+			if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("p3"))
+			{
+				Row row = d1Max.get(0);
+			String d1MaxValue = row.getAs("p3");
+			trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"p3"});
+		StringIndexer p3Indexer = new StringIndexer().setInputCol("p3").setOutputCol("p3Indexer");
+			OneHotEncoder p3Vec = new OneHotEncoder().setInputCol("p3Indexer").setOutputCol("p3Vec");
+			indexers.add(p3Indexer);
+			//indexers.add(p3Vec);
+		//	assemblers.add("p3");
+			}
+		}
+		if(ArrayUtils.contains(trainingDataConverted.columns(),"p4"))
+		{		
+			List<Row> d1Max = sparkSession.sql("SELECT p4, COUNT(p4) as d1_ct from TrainingTable group by p4 order by d1_ct desc").takeAsList(2);
+			if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("p4"))
+			{
+				Row row = d1Max.get(0);
+			String d1MaxValue = row.getAs("p4");
+			trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"p4"});
+			StringIndexer p4Indexer = new StringIndexer().setInputCol("p4").setOutputCol("p4Indexer");
+			OneHotEncoder p4Vec = new OneHotEncoder().setInputCol("p4Indexer").setOutputCol("p4Vec");
+			indexers.add(p4Indexer);
+			//indexers.add(p4Vec);
+			//assemblers.add("p4");
+			}
+		}
+		if(ArrayUtils.contains(trainingDataConverted.columns(),"p5"))
+		{		
+			List<Row> d1Max = sparkSession.sql("SELECT p5, COUNT(p5) as d1_ct from TrainingTable group by p5 order by d1_ct desc").takeAsList(2);
+			if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("p5"))
+			{
+				Row row = d1Max.get(0);
+			String d1MaxValue = row.getAs("p5");
+			trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"p5"});
+			StringIndexer p5Indexer = new StringIndexer().setInputCol("p5").setOutputCol("p5Indexer");
+			OneHotEncoder p5Vec = new OneHotEncoder().setInputCol("p5Indexer").setOutputCol("p5Vec");
+			indexers.add(p5Indexer);
+			//indexers.add(p5Vec);
+			//assemblers.add("p5");
+			}
+		}
+		if(ArrayUtils.contains(trainingDataConverted.columns(),"p6"))
+		{		
+			List<Row> d1Max = sparkSession.sql("SELECT p6, COUNT(p6) as d1_ct from TrainingTable group by p6 order by d1_ct desc").takeAsList(2);
+			if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("p6"))
+			{
+				Row row = d1Max.get(0);
+			String d1MaxValue = row.getAs("p6");
+			trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"p6"});
+			StringIndexer p6Indexer = new StringIndexer().setInputCol("p6").setOutputCol("p6Indexer");
+			OneHotEncoder p6Vec = new OneHotEncoder().setInputCol("p6Indexer").setOutputCol("p6Vec");
+			indexers.add(p6Indexer);
+			//indexers.add(p6Vec);
+		//	assemblers.add("p6");
+			}
+		}
+		if(ArrayUtils.contains(trainingDataConverted.columns(),"p7"))
+		{		
+			List<Row> d1Max = sparkSession.sql("SELECT p7, COUNT(p7) as d1_ct from TrainingTable group by p7 order by d1_ct desc").takeAsList(2);
+			if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("p7"))
+			{
+				Row row = d1Max.get(0);
+			String d1MaxValue = row.getAs("p7");
+			trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"p7"});
+			StringIndexer p7Indexer = new StringIndexer().setInputCol("p7").setOutputCol("p7Indexer");
+			OneHotEncoder p7Vec = new OneHotEncoder().setInputCol("p7Indexer").setOutputCol("p7Vec");
+			indexers.add(p7Indexer);
+			//indexers.add(p7Vec);
+		//	assemblers.add("p7");
+			}
+		}
+		if(ArrayUtils.contains(trainingDataConverted.columns(),"p8"))
+		{		
+			List<Row> d1Max = sparkSession.sql("SELECT p8, COUNT(p8) as d1_ct from TrainingTable group by p8 order by d1_ct desc").takeAsList(2);
+			System.out.println("p8Indexer:"+ d1Max);
+			if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("p8"))
+			{
+				Row row = d1Max.get(0);
+			String d1MaxValue = row.getAs("p8");
+			trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"p8"});
+			StringIndexer p8Indexer = new StringIndexer().setInputCol("p8").setOutputCol("p8Indexer");
+			OneHotEncoder p8Vec = new OneHotEncoder().setInputCol("p8Indexer").setOutputCol("p8Vec");
+			indexers.add(p8Indexer);
+			//indexers.add(p8Vec);
+			//assemblers.add("p8");
+			}
+		}
+		if(ArrayUtils.contains(trainingDataConverted.columns(),"p9"))
+		{		
+			List<Row> d1Max = sparkSession.sql("SELECT p9, COUNT(p9) as d1_ct from TrainingTable group by p9 order by d1_ct desc").takeAsList(2);
+			System.out.println("p9Indexer "+d1Max);
+			if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("p9"))
+			{
+				Row row = d1Max.get(0);
+				String d1MaxValue = row.getAs("p9");
+				trainingDataConverted = trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"p9"});
+				StringIndexer p9Indexer = new StringIndexer().setInputCol("p9").setOutputCol("p9Indexer");
+				OneHotEncoder p9Vec = new OneHotEncoder().setInputCol("p9Indexer").setOutputCol("p9Vec");
+				indexers.add(p9Indexer);
+				//indexers.add(p9Vec);
+			//	assemblers.add("p9");
+			}
+		}
+		if(ArrayUtils.contains(trainingDataConverted.columns(),"p10"))
+		{		
+			List<Row> d1Max = sparkSession.sql("SELECT p10, COUNT(p10) as d1_ct from TrainingTable group by p10 order by d1_ct desc").takeAsList(2);
+			if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("p10"))
+			{
+				Row row = d1Max.get(0);
+			String d1MaxValue = row.getAs("p10");
+			trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"p10"});
+			StringIndexer p10Indexer = new StringIndexer().setInputCol("p10").setOutputCol("p10Indexer");
+			OneHotEncoder p10Vec = new OneHotEncoder().setInputCol("p10Indexer").setOutputCol("p10Vec");
+			indexers.add(p10Indexer);
+			//indexers.add(p10Vec);
+		//	assemblers.add("p10");
+			}
+		}
+		if(ArrayUtils.contains(trainingDataConverted.columns(),"p11"))
+		{		
+			List<Row> d1Max = sparkSession.sql("SELECT p11, COUNT(p11) as d1_ct from TrainingTable group by p11 order by d1_ct desc").takeAsList(2);
+			if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("p11"))
+			{
+				Row row = d1Max.get(0);
+			String d1MaxValue = row.getAs("p11");
+			trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"p11"});
+			StringIndexer p11Indexer = new StringIndexer().setInputCol("p11").setOutputCol("p11Indexer");
+			OneHotEncoder p11Vec = new OneHotEncoder().setInputCol("p11Indexer").setOutputCol("p11Vec");
+			indexers.add(p11Indexer);
+			//indexers.add(p11Vec);
+		//	assemblers.add("p11");
+			}
+		}
+		if(ArrayUtils.contains(trainingDataConverted.columns(),"p12"))
+		{		
+			List<Row> d1Max = sparkSession.sql("SELECT p12, COUNT(p12) as d1_ct from TrainingTable group by p12 order by d1_ct desc").takeAsList(2);
+			System.out.println("p12Indexer:"+d1Max);
+			if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("p12"))
+			{
+				Row row = d1Max.get(0);
+			String d1MaxValue = row.getAs("p12");
+			trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"p12"});
+			StringIndexer p12Indexer = new StringIndexer().setInputCol("p12").setOutputCol("p12Indexer");
+			OneHotEncoder p12Vec = new OneHotEncoder().setInputCol("p12Indexer").setOutputCol("p12Vec");
+			indexers.add(p12Indexer);
+			//indexers.add(p12Vec);
+			//assemblers.add("p12");
+			}
+		}
+		if(ArrayUtils.contains(trainingDataConverted.columns(),"p13"))
+		{		
+			List<Row> d1Max = sparkSession.sql("SELECT p13, COUNT(p13) as d1_ct from TrainingTable group by p13 order by d1_ct desc").takeAsList(2);
+			if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("p13"))
+			{
+				Row row = d1Max.get(0);
+			String d1MaxValue = row.getAs("p13");
+			trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"p13"});
+			StringIndexer p13Indexer = new StringIndexer().setInputCol("p13").setOutputCol("p13Indexer");
+			OneHotEncoder p13Vec = new OneHotEncoder().setInputCol("p13Indexer").setOutputCol("p13Vec");
+			indexers.add(p13Indexer);
+			//indexers.add(p13Vec);
+		//	assemblers.add("p13");
+			}
+		}
+		if(ArrayUtils.contains(trainingDataConverted.columns(),"p14"))
+		{		
+			List<Row> d1Max = sparkSession.sql("SELECT p14, COUNT(p14) as d1_ct from TrainingTable group by p14 order by d1_ct desc").takeAsList(2);
+			if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("p14"))
+			{
+				Row row = d1Max.get(0);
+			String d1MaxValue = row.getAs("p14");
+			trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"p14"});
+			StringIndexer p14Indexer = new StringIndexer().setInputCol("p14").setOutputCol("p14Indexer");
+			OneHotEncoder p14Vec = new OneHotEncoder().setInputCol("p14Indexer").setOutputCol("p14Vec");
+			indexers.add(p14Indexer);
+			//indexers.add(p14Vec);
+	//		assemblers.add("p14");
+			}
+		}
+		if(ArrayUtils.contains(trainingDataConverted.columns(),"p15"))
+		{		
+			List<Row> d1Max = sparkSession.sql("SELECT p15, COUNT(p15) as d1_ct from TrainingTable group by p15 order by d1_ct desc").takeAsList(2);
+			System.out.println("d1Max List size:" + d1Max.size());
+			System.out.println("d1Max List size:" + d1Max);
+			if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("p15"))
+			{
+				Row row = d1Max.get(0);
+				String d1MaxValue = row.getAs("p15");
+				System.out.println("p15Indexer va:" + d1MaxValue);
+				trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"p15"});
+				trainingDataConverted.select("p15").show();
+				StringIndexer p15Indexer = new StringIndexer().setInputCol("p15").setOutputCol("p15Indexer");
+				OneHotEncoder p15Vec = new OneHotEncoder().setInputCol("p15Indexer").setOutputCol("p15Vec");
+				indexers.add(p15Indexer);
+				//indexers.add(p15Vec);
+			//	assemblers.add("p15");
+			}
+			else
+			{
+				trainingDataConverted = trainingDataConverted.drop("p15");
+			}
+		}
+		if(ArrayUtils.contains(trainingDataConverted.columns(),"p16"))
+		{		
+			List<Row> d1Max = sparkSession.sql("SELECT p16, COUNT(p16) as d1_ct from TrainingTable group by p16 order by d1_ct desc").takeAsList(2);
+			System.out.println("p16Indexer:"+d1Max);
+			if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("p16"))
+			{
+				Row row = d1Max.get(0);
+			String d1MaxValue = row.getAs("p16");
+			trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"p16"});
+			StringIndexer p16Indexer = new StringIndexer().setInputCol("p16").setOutputCol("p16Indexer");
+			OneHotEncoder p16Vec = new OneHotEncoder().setInputCol("p16Indexer").setOutputCol("p16Vec");
+			indexers.add(p16Indexer);
+			//indexers.add(p16Vec);
+		//	assemblers.add("p16");
+			}
+			else
+			{
+				trainingDataConverted = trainingDataConverted.drop("p16");
+			}
+		}
+		if(ArrayUtils.contains(trainingDataConverted.columns(),"p17"))
+		{		
+			List<Row> d1Max = sparkSession.sql("SELECT p17, COUNT(p17) as d1_ct from TrainingTable group by p17 order by d1_ct desc").takeAsList(2);
+			System.out.println("p17Indexer:"+d1Max);
+			if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("p17"))
+			{
+				Row row = d1Max.get(0);
+			String d1MaxValue = row.getAs("p17");
+			trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"p17"});
+			StringIndexer p17Indexer = new StringIndexer().setInputCol("p17").setOutputCol("p17Indexer");
+			OneHotEncoder p17Vec = new OneHotEncoder().setInputCol("p17Indexer").setOutputCol("p17Vec");
+			indexers.add(p17Indexer);
+			//indexers.add(p17Vec);
+		//	assemblers.add("p17");
+			}
+			else
+			{
+				trainingDataConverted = trainingDataConverted.drop("p17");
+			}
+			
+		}
+		if(ArrayUtils.contains(trainingDataConverted.columns(),"p18"))
+		{		
+			List<Row> d1Max = sparkSession.sql("SELECT p18, COUNT(p18) as d1_ct from TrainingTable group by p18 order by d1_ct desc").takeAsList(2);
+			System.out.println("p18Indexer:" + d1Max);
+			System.out.println("d1Max.get(1).getAs:" + StringUtils.isEmpty(d1Max.get(1).getAs("p18")));
+			if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && !StringUtils.isEmpty(d1Max.get(1).getAs("p18")))
+			{
+				Row row = d1Max.get(0);
+			String d1MaxValue = row.getAs("p18");
+			trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"p18"});
+			StringIndexer p18Indexer = new StringIndexer().setInputCol("p18").setOutputCol("p18Indexer");
+			OneHotEncoder p18Vec = new OneHotEncoder().setInputCol("p18Indexer").setOutputCol("p18Vec");
+			indexers.add(p18Indexer);
+			//indexers.add(p18Vec);
+		//	assemblers.add("p18");
+			}
+			else
+			{
+				trainingDataConverted = trainingDataConverted.drop("p18");
+			}
+		}
+		if(ArrayUtils.contains(trainingDataConverted.columns(),"p19"))
+		{		
+			List<Row> d1Max = sparkSession.sql("SELECT p19, COUNT(p19) as d1_ct from TrainingTable group by p19 order by d1_ct desc").takeAsList(2);
+			if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("p19"))
+			{
+				Row row = d1Max.get(0);
+			String d1MaxValue = row.getAs("p19");
+			trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"p19"});
+			StringIndexer p19Indexer = new StringIndexer().setInputCol("p19").setOutputCol("p19Indexer");
+			OneHotEncoder p19Vec = new OneHotEncoder().setInputCol("p19Indexer").setOutputCol("p19Vec");
+			indexers.add(p19Indexer);
+			//indexers.add(p19Vec);
+		//	assemblers.add("p19");
+			}
+			else
+			{
+				trainingDataConverted = trainingDataConverted.drop("p19");
+			}
+		}
+		if(ArrayUtils.contains(trainingDataConverted.columns(),"p20"))
+		{		
+			List<Row> d1Max = sparkSession.sql("SELECT p20, COUNT(p20) as d1_ct from TrainingTable group by p20 order by d1_ct desc").takeAsList(2);
+			if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("p20"))
+			{
+				Row row = d1Max.get(0);
+			String d1MaxValue = row.getAs("p20");
+			trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"p20"});
+			StringIndexer p20Indexer = new StringIndexer().setInputCol("p20").setOutputCol("p20Indexer");
+			OneHotEncoder p20Vec = new OneHotEncoder().setInputCol("p20Indexer").setOutputCol("p20Vec");
+			indexers.add(p20Indexer);
+			//indexers.add(p20Vec);
+	//		assemblers.add("p20");
+			}
+			else
+			{
+				trainingDataConverted = trainingDataConverted.drop("p20");
+			}
+		}
+		if(ArrayUtils.contains(trainingDataConverted.columns(),"p21"))
+		{		
+			List<Row> d1Max = sparkSession.sql("SELECT p21, COUNT(p21) as d1_ct from TrainingTable group by p21 order by d1_ct desc").takeAsList(2);
+			if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("p21"))
+			{
+				Row row = d1Max.get(0);
+			String d1MaxValue = row.getAs("p21");
+			trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"p21"});
+			StringIndexer p21Indexer = new StringIndexer().setInputCol("p21").setOutputCol("p21Indexer");
+			OneHotEncoder p21Vec = new OneHotEncoder().setInputCol("p21Indexer").setOutputCol("p21Vec");
+			indexers.add(p21Indexer);
+			//indexers.add(p21Vec);
+		//	assemblers.add("p21");
+			}
+			else
+			{
+				trainingDataConverted = trainingDataConverted.drop("p21");
+			}
+		}
+		if(ArrayUtils.contains(trainingDataConverted.columns(),"p22"))
+		{		
+			List<Row> d1Max = sparkSession.sql("SELECT p22, COUNT(p22) as d1_ct from TrainingTable group by p22 order by d1_ct desc").takeAsList(2);
+			if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("p22"))
+			{
+				Row row = d1Max.get(0);
+			String d1MaxValue = row.getAs("p22");
+			trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"p22"});
+			StringIndexer p22Indexer = new StringIndexer().setInputCol("p22").setOutputCol("p22Indexer");
+			OneHotEncoder p22Vec = new OneHotEncoder().setInputCol("p22Indexer").setOutputCol("p22Vec");
+			indexers.add(p22Indexer);
+			//indexers.add(p22Vec);
+		//	assemblers.add("p22");
+			}
+			else
+			{
+				trainingDataConverted = trainingDataConverted.drop("p22");
+			}
+		}
+		if(ArrayUtils.contains(trainingDataConverted.columns(),"p23"))
+		{		
+			List<Row> d1Max = sparkSession.sql("SELECT p23, COUNT(p23) as d1_ct from TrainingTable group by p23 order by d1_ct desc").takeAsList(2);
+			if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("p23"))
+			{
+				Row row = d1Max.get(0);
+			String d1MaxValue = row.getAs("p23");
+			trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"p23"});
+			StringIndexer p23Indexer = new StringIndexer().setInputCol("p23").setOutputCol("p23Indexer");
+			OneHotEncoder p23Vec = new OneHotEncoder().setInputCol("p23Indexer").setOutputCol("p23Vec");
+			indexers.add(p23Indexer);
+			indexers.add(p23Vec);
+		//	assemblers.add("p23");
+			}
+			else
+			{
+				trainingDataConverted = trainingDataConverted.drop("p23");
+			}
+		}
+		if(ArrayUtils.contains(trainingDataConverted.columns(),"p24"))
+		{		
+			List<Row> d1Max = sparkSession.sql("SELECT p24, COUNT(p24) as d1_ct from TrainingTable group by p24 order by d1_ct desc").takeAsList(2);
+			if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("p24"))
+			{
+				Row row = d1Max.get(0);
+			String d1MaxValue = row.getAs("p24");
+			trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"p24"});
+			StringIndexer p24Indexer = new StringIndexer().setInputCol("p24").setOutputCol("p24Indexer");
+			OneHotEncoder p24Vec = new OneHotEncoder().setInputCol("p24Indexer").setOutputCol("p24Vec");
+			indexers.add(p24Indexer);
+			//indexers.add(p24Vec);
+	//		assemblers.add("p24");
+			}
+			else
+			{
+				trainingDataConverted = trainingDataConverted.drop("p24");
+			}
+		}
+		//Other Procedure codes - Ends
+		
+		if(ArrayUtils.contains(trainingDataConverted.columns(),"admtDiagCd"))
+		{		
+			Row d1Max = sparkSession.sql("SELECT admtDiagCd, COUNT(admtDiagCd) as d1_ct from TrainingTable group by admtDiagCd order by d1_ct desc").first();
+			String d1MaxValue = d1Max.getAs("admtDiagCd");
+			trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"admtDiagCd"});
+			StringIndexer admtDiagCdIndexer = new StringIndexer().setInputCol("admtDiagCd").setOutputCol("admtDiagCdIndexer");
+			OneHotEncoder admtDiagCdVec = new OneHotEncoder().setInputCol("admtDiagCdIndexer").setOutputCol("admtDiagCdVec");
+			indexers.add(admtDiagCdIndexer);
+			//indexers.add(admtDiagCdVec);
+		//	assemblers.add("admtDiagCd");
+		}
+		if(ArrayUtils.contains(trainingDataConverted.columns(),"admtDiagCdPoa"))
+		{		
+			List<Row> d1Max = sparkSession.sql("SELECT admtDiagCdPoa, COUNT(admtDiagCdPoa) as d1_ct from TrainingTable group by admtDiagCdPoa order by d1_ct desc").takeAsList(2);
+			if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("admtDiagCdPoa"))
+			{
+				Row row = d1Max.get(0);
+				String d1MaxValue = row.getAs("admtDiagCdPoa");
+				trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"admtDiagCdPoa"});
+				StringIndexer admtDiagCdPoaIndexer = new StringIndexer().setInputCol("admtDiagCdPoa").setOutputCol("admtDiagCdPoaIndexer");
+				OneHotEncoder admtDiagCdPoaVec = new OneHotEncoder().setInputCol("admtDiagCdPoaIndexer").setOutputCol("admtDiagCdPoaVec");
+				indexers.add(admtDiagCdPoaIndexer);
+				//indexers.add(admtDiagCdPoaVec);
+			//	assemblers.add("admtDiagCdPoa");
+			}
+			else
+			{
+				trainingDataConverted = trainingDataConverted.drop("admtDiagCdPoa");
+			}
+		}
+		if(ArrayUtils.contains(trainingDataConverted.columns(),"prncplDgnsCd"))
+		{		
+			List<Row> d1Max = sparkSession.sql("SELECT prncplDgnsCd, COUNT(prncplDgnsCd) as d1_ct from TrainingTable group by prncplDgnsCd order by d1_ct desc").takeAsList(2);
+			if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("prncplDgnsCd"))
+			{
+				Row row = d1Max.get(0);
+				String d1MaxValue = row.getAs("prncplDgnsCd");
+				trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"prncplDgnsCd"});
+				StringIndexer prncplDgnsCdIndexer = new StringIndexer().setInputCol("prncplDgnsCd").setOutputCol("prncplDgnsCdIndexer");
+				OneHotEncoder prncplDgnsCdVec = new OneHotEncoder().setInputCol("prncplDgnsCdIndexer").setOutputCol("prncplDgnsCdVec");
+				indexers.add(prncplDgnsCdIndexer);
+				//indexers.add(prncplDgnsCdVec);
+		//		assemblers.add("prncplDgnsCd");
+			}
+			else
+			{
+				trainingDataConverted = trainingDataConverted.drop("prncplDgnsCd");
+			}
+		}
+		
+		if(ArrayUtils.contains(trainingDataConverted.columns(),"prncplDgnsPoa"))
+		{		
+			Row d1Max = sparkSession.sql("SELECT prncplDgnsPoa, COUNT(prncplDgnsPoa) as d1_ct from TrainingTable group by prncplDgnsPoa order by d1_ct desc").first();
+			System.out.println("prncplDgnsPoaIndexer:"+d1Max.toString());
+			if(null!=d1Max)
+			{
+				String d1MaxValue = d1Max.getAs("prncplDgnsPoa");
+				if(!StringUtils.isEmpty(d1MaxValue))
+				{
+					trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"prncplDgnsPoa"});
+					StringIndexer prncplDgnsPoaIndexer = new StringIndexer().setInputCol("prncplDgnsPoa").setOutputCol("prncplDgnsPoaIndexer");
+					OneHotEncoder prncplDgnsPoaVec = new OneHotEncoder().setInputCol("prncplDgnsPoaIndexer").setOutputCol("prncplDgnsPoaVec");
+					indexers.add(prncplDgnsPoaIndexer);
+					//indexers.add(prncplDgnsPoaVec);
+				//	assemblers.add("prncplDgnsPoa");
 				}
-				if(ArrayUtils.contains(trainingDataConverted.columns(),"p2"))
-				{		
-					List<Row> d1Max = sparkSession.sql("SELECT p2, COUNT(p2) as d1_ct from TrainingTable group by p2 order by d1_ct desc").takeAsList(2);
-					if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("p2"))
-					{
-						Row row = d1Max.get(0);
-					String d1MaxValue = row.getAs("p2");
-					trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"p2"});
-					StringIndexer p2Indexer = new StringIndexer().setInputCol("p2").setOutputCol("p2Indexer");
-					OneHotEncoder p2Vec = new OneHotEncoder().setInputCol("p2Indexer").setOutputCol("p2Vec");
-					indexers.add(p2Indexer);
-					//indexers.add(p2Vec);
-				//	assemblers.add("p2");
-					}
+				else
+				{
+					trainingDataConverted = trainingDataConverted.drop("prncplDgnsPoa");
 				}
-				if(ArrayUtils.contains(trainingDataConverted.columns(),"p3"))
-				{		
-					List<Row> d1Max = sparkSession.sql("SELECT p3, COUNT(p3) as d1_ct from TrainingTable group by p3 order by d1_ct desc").takeAsList(2);
-					if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("p3"))
-					{
-						Row row = d1Max.get(0);
-					String d1MaxValue = row.getAs("p3");
-					trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"p3"});
-				StringIndexer p3Indexer = new StringIndexer().setInputCol("p3").setOutputCol("p3Indexer");
-					OneHotEncoder p3Vec = new OneHotEncoder().setInputCol("p3Indexer").setOutputCol("p3Vec");
-					indexers.add(p3Indexer);
-					//indexers.add(p3Vec);
-				//	assemblers.add("p3");
-					}
-				}
-				if(ArrayUtils.contains(trainingDataConverted.columns(),"p4"))
-				{		
-					List<Row> d1Max = sparkSession.sql("SELECT p4, COUNT(p4) as d1_ct from TrainingTable group by p4 order by d1_ct desc").takeAsList(2);
-					if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("p4"))
-					{
-						Row row = d1Max.get(0);
-					String d1MaxValue = row.getAs("p4");
-					trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"p4"});
-					StringIndexer p4Indexer = new StringIndexer().setInputCol("p4").setOutputCol("p4Indexer");
-					OneHotEncoder p4Vec = new OneHotEncoder().setInputCol("p4Indexer").setOutputCol("p4Vec");
-					indexers.add(p4Indexer);
-					//indexers.add(p4Vec);
-					//assemblers.add("p4");
-					}
-				}
-				if(ArrayUtils.contains(trainingDataConverted.columns(),"p5"))
-				{		
-					List<Row> d1Max = sparkSession.sql("SELECT p5, COUNT(p5) as d1_ct from TrainingTable group by p5 order by d1_ct desc").takeAsList(2);
-					if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("p5"))
-					{
-						Row row = d1Max.get(0);
-					String d1MaxValue = row.getAs("p5");
-					trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"p5"});
-					StringIndexer p5Indexer = new StringIndexer().setInputCol("p5").setOutputCol("p5Indexer");
-					OneHotEncoder p5Vec = new OneHotEncoder().setInputCol("p5Indexer").setOutputCol("p5Vec");
-					indexers.add(p5Indexer);
-					//indexers.add(p5Vec);
-					//assemblers.add("p5");
-					}
-				}
-				if(ArrayUtils.contains(trainingDataConverted.columns(),"p6"))
-				{		
-					List<Row> d1Max = sparkSession.sql("SELECT p6, COUNT(p6) as d1_ct from TrainingTable group by p6 order by d1_ct desc").takeAsList(2);
-					if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("p6"))
-					{
-						Row row = d1Max.get(0);
-					String d1MaxValue = row.getAs("p6");
-					trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"p6"});
-					StringIndexer p6Indexer = new StringIndexer().setInputCol("p6").setOutputCol("p6Indexer");
-					OneHotEncoder p6Vec = new OneHotEncoder().setInputCol("p6Indexer").setOutputCol("p6Vec");
-					indexers.add(p6Indexer);
-					//indexers.add(p6Vec);
-				//	assemblers.add("p6");
-					}
-				}
-				if(ArrayUtils.contains(trainingDataConverted.columns(),"p7"))
-				{		
-					List<Row> d1Max = sparkSession.sql("SELECT p7, COUNT(p7) as d1_ct from TrainingTable group by p7 order by d1_ct desc").takeAsList(2);
-					if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("p7"))
-					{
-						Row row = d1Max.get(0);
-					String d1MaxValue = row.getAs("p7");
-					trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"p7"});
-					StringIndexer p7Indexer = new StringIndexer().setInputCol("p7").setOutputCol("p7Indexer");
-					OneHotEncoder p7Vec = new OneHotEncoder().setInputCol("p7Indexer").setOutputCol("p7Vec");
-					indexers.add(p7Indexer);
-					//indexers.add(p7Vec);
-				//	assemblers.add("p7");
-					}
-				}
-				if(ArrayUtils.contains(trainingDataConverted.columns(),"p8"))
-				{		
-					List<Row> d1Max = sparkSession.sql("SELECT p8, COUNT(p8) as d1_ct from TrainingTable group by p8 order by d1_ct desc").takeAsList(2);
-					System.out.println("p8Indexer:"+ d1Max);
-					if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("p8"))
-					{
-						Row row = d1Max.get(0);
-					String d1MaxValue = row.getAs("p8");
-					trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"p8"});
-					StringIndexer p8Indexer = new StringIndexer().setInputCol("p8").setOutputCol("p8Indexer");
-					OneHotEncoder p8Vec = new OneHotEncoder().setInputCol("p8Indexer").setOutputCol("p8Vec");
-					indexers.add(p8Indexer);
-					//indexers.add(p8Vec);
-					//assemblers.add("p8");
-					}
-				}
-				if(ArrayUtils.contains(trainingDataConverted.columns(),"p9"))
-				{		
-					List<Row> d1Max = sparkSession.sql("SELECT p9, COUNT(p9) as d1_ct from TrainingTable group by p9 order by d1_ct desc").takeAsList(2);
-					System.out.println("p9Indexer "+d1Max);
-					if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("p9"))
-					{
-						Row row = d1Max.get(0);
-						String d1MaxValue = row.getAs("p9");
-						trainingDataConverted = trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"p9"});
-						StringIndexer p9Indexer = new StringIndexer().setInputCol("p9").setOutputCol("p9Indexer");
-						OneHotEncoder p9Vec = new OneHotEncoder().setInputCol("p9Indexer").setOutputCol("p9Vec");
-						indexers.add(p9Indexer);
-						//indexers.add(p9Vec);
-					//	assemblers.add("p9");
-					}
-				}
-				if(ArrayUtils.contains(trainingDataConverted.columns(),"p10"))
-				{		
-					List<Row> d1Max = sparkSession.sql("SELECT p10, COUNT(p10) as d1_ct from TrainingTable group by p10 order by d1_ct desc").takeAsList(2);
-					if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("p10"))
-					{
-						Row row = d1Max.get(0);
-					String d1MaxValue = row.getAs("p10");
-					trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"p10"});
-					StringIndexer p10Indexer = new StringIndexer().setInputCol("p10").setOutputCol("p10Indexer");
-					OneHotEncoder p10Vec = new OneHotEncoder().setInputCol("p10Indexer").setOutputCol("p10Vec");
-					indexers.add(p10Indexer);
-					//indexers.add(p10Vec);
-				//	assemblers.add("p10");
-					}
-				}
-				if(ArrayUtils.contains(trainingDataConverted.columns(),"p11"))
-				{		
-					List<Row> d1Max = sparkSession.sql("SELECT p11, COUNT(p11) as d1_ct from TrainingTable group by p11 order by d1_ct desc").takeAsList(2);
-					if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("p11"))
-					{
-						Row row = d1Max.get(0);
-					String d1MaxValue = row.getAs("p11");
-					trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"p11"});
-					StringIndexer p11Indexer = new StringIndexer().setInputCol("p11").setOutputCol("p11Indexer");
-					OneHotEncoder p11Vec = new OneHotEncoder().setInputCol("p11Indexer").setOutputCol("p11Vec");
-					indexers.add(p11Indexer);
-					//indexers.add(p11Vec);
-				//	assemblers.add("p11");
-					}
-				}
-				if(ArrayUtils.contains(trainingDataConverted.columns(),"p12"))
-				{		
-					List<Row> d1Max = sparkSession.sql("SELECT p12, COUNT(p12) as d1_ct from TrainingTable group by p12 order by d1_ct desc").takeAsList(2);
-					System.out.println("p12Indexer:"+d1Max);
-					if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("p12"))
-					{
-						Row row = d1Max.get(0);
-					String d1MaxValue = row.getAs("p12");
-					trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"p12"});
-					StringIndexer p12Indexer = new StringIndexer().setInputCol("p12").setOutputCol("p12Indexer");
-					OneHotEncoder p12Vec = new OneHotEncoder().setInputCol("p12Indexer").setOutputCol("p12Vec");
-					indexers.add(p12Indexer);
-					//indexers.add(p12Vec);
-					//assemblers.add("p12");
-					}
-				}
-				if(ArrayUtils.contains(trainingDataConverted.columns(),"p13"))
-				{		
-					List<Row> d1Max = sparkSession.sql("SELECT p13, COUNT(p13) as d1_ct from TrainingTable group by p13 order by d1_ct desc").takeAsList(2);
-					if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("p13"))
-					{
-						Row row = d1Max.get(0);
-					String d1MaxValue = row.getAs("p13");
-					trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"p13"});
-					StringIndexer p13Indexer = new StringIndexer().setInputCol("p13").setOutputCol("p13Indexer");
-					OneHotEncoder p13Vec = new OneHotEncoder().setInputCol("p13Indexer").setOutputCol("p13Vec");
-					indexers.add(p13Indexer);
-					//indexers.add(p13Vec);
-				//	assemblers.add("p13");
-					}
-				}
-				if(ArrayUtils.contains(trainingDataConverted.columns(),"p14"))
-				{		
-					List<Row> d1Max = sparkSession.sql("SELECT p14, COUNT(p14) as d1_ct from TrainingTable group by p14 order by d1_ct desc").takeAsList(2);
-					if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("p14"))
-					{
-						Row row = d1Max.get(0);
-					String d1MaxValue = row.getAs("p14");
-					trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"p14"});
-					StringIndexer p14Indexer = new StringIndexer().setInputCol("p14").setOutputCol("p14Indexer");
-					OneHotEncoder p14Vec = new OneHotEncoder().setInputCol("p14Indexer").setOutputCol("p14Vec");
-					indexers.add(p14Indexer);
-					//indexers.add(p14Vec);
-			//		assemblers.add("p14");
-					}
-				}
-				if(ArrayUtils.contains(trainingDataConverted.columns(),"p15"))
-				{		
-					List<Row> d1Max = sparkSession.sql("SELECT p15, COUNT(p15) as d1_ct from TrainingTable group by p15 order by d1_ct desc").takeAsList(2);
-					System.out.println("d1Max List size:" + d1Max.size());
-					System.out.println("d1Max List size:" + d1Max);
-					if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("p15"))
-					{
-						Row row = d1Max.get(0);
-						String d1MaxValue = row.getAs("p15");
-						System.out.println("p15Indexer va:" + d1MaxValue);
-						trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"p15"});
-						trainingDataConverted.select("p15").show();
-						StringIndexer p15Indexer = new StringIndexer().setInputCol("p15").setOutputCol("p15Indexer");
-						OneHotEncoder p15Vec = new OneHotEncoder().setInputCol("p15Indexer").setOutputCol("p15Vec");
-						indexers.add(p15Indexer);
-						//indexers.add(p15Vec);
-					//	assemblers.add("p15");
-					}
-					else
-					{
-						trainingDataConverted = trainingDataConverted.drop("p15");
-					}
-				}
-				if(ArrayUtils.contains(trainingDataConverted.columns(),"p16"))
-				{		
-					List<Row> d1Max = sparkSession.sql("SELECT p16, COUNT(p16) as d1_ct from TrainingTable group by p16 order by d1_ct desc").takeAsList(2);
-					System.out.println("p16Indexer:"+d1Max);
-					if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("p16"))
-					{
-						Row row = d1Max.get(0);
-					String d1MaxValue = row.getAs("p16");
-					trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"p16"});
-					StringIndexer p16Indexer = new StringIndexer().setInputCol("p16").setOutputCol("p16Indexer");
-					OneHotEncoder p16Vec = new OneHotEncoder().setInputCol("p16Indexer").setOutputCol("p16Vec");
-					indexers.add(p16Indexer);
-					//indexers.add(p16Vec);
-				//	assemblers.add("p16");
-					}
-					else
-					{
-						trainingDataConverted = trainingDataConverted.drop("p16");
-					}
-				}
-				if(ArrayUtils.contains(trainingDataConverted.columns(),"p17"))
-				{		
-					List<Row> d1Max = sparkSession.sql("SELECT p17, COUNT(p17) as d1_ct from TrainingTable group by p17 order by d1_ct desc").takeAsList(2);
-					System.out.println("p17Indexer:"+d1Max);
-					if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("p17"))
-					{
-						Row row = d1Max.get(0);
-					String d1MaxValue = row.getAs("p17");
-					trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"p17"});
-					StringIndexer p17Indexer = new StringIndexer().setInputCol("p17").setOutputCol("p17Indexer");
-					OneHotEncoder p17Vec = new OneHotEncoder().setInputCol("p17Indexer").setOutputCol("p17Vec");
-					indexers.add(p17Indexer);
-					//indexers.add(p17Vec);
-				//	assemblers.add("p17");
-					}
-					else
-					{
-						trainingDataConverted = trainingDataConverted.drop("p17");
-					}
-					
-				}
-				if(ArrayUtils.contains(trainingDataConverted.columns(),"p18"))
-				{		
-					List<Row> d1Max = sparkSession.sql("SELECT p18, COUNT(p18) as d1_ct from TrainingTable group by p18 order by d1_ct desc").takeAsList(2);
-					System.out.println("p18Indexer:" + d1Max);
-					System.out.println("d1Max.get(1).getAs:" + StringUtils.isEmpty(d1Max.get(1).getAs("p18")));
-					if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && !StringUtils.isEmpty(d1Max.get(1).getAs("p18")))
-					{
-						Row row = d1Max.get(0);
-					String d1MaxValue = row.getAs("p18");
-					trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"p18"});
-					StringIndexer p18Indexer = new StringIndexer().setInputCol("p18").setOutputCol("p18Indexer");
-					OneHotEncoder p18Vec = new OneHotEncoder().setInputCol("p18Indexer").setOutputCol("p18Vec");
-					indexers.add(p18Indexer);
-					//indexers.add(p18Vec);
-				//	assemblers.add("p18");
-					}
-					else
-					{
-						trainingDataConverted = trainingDataConverted.drop("p18");
-					}
-				}
-				if(ArrayUtils.contains(trainingDataConverted.columns(),"p19"))
-				{		
-					List<Row> d1Max = sparkSession.sql("SELECT p19, COUNT(p19) as d1_ct from TrainingTable group by p19 order by d1_ct desc").takeAsList(2);
-					if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("p19"))
-					{
-						Row row = d1Max.get(0);
-					String d1MaxValue = row.getAs("p19");
-					trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"p19"});
-					StringIndexer p19Indexer = new StringIndexer().setInputCol("p19").setOutputCol("p19Indexer");
-					OneHotEncoder p19Vec = new OneHotEncoder().setInputCol("p19Indexer").setOutputCol("p19Vec");
-					indexers.add(p19Indexer);
-					//indexers.add(p19Vec);
-				//	assemblers.add("p19");
-					}
-					else
-					{
-						trainingDataConverted = trainingDataConverted.drop("p19");
-					}
-				}
-				if(ArrayUtils.contains(trainingDataConverted.columns(),"p20"))
-				{		
-					List<Row> d1Max = sparkSession.sql("SELECT p20, COUNT(p20) as d1_ct from TrainingTable group by p20 order by d1_ct desc").takeAsList(2);
-					if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("p20"))
-					{
-						Row row = d1Max.get(0);
-					String d1MaxValue = row.getAs("p20");
-					trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"p20"});
-					StringIndexer p20Indexer = new StringIndexer().setInputCol("p20").setOutputCol("p20Indexer");
-					OneHotEncoder p20Vec = new OneHotEncoder().setInputCol("p20Indexer").setOutputCol("p20Vec");
-					indexers.add(p20Indexer);
-					//indexers.add(p20Vec);
-			//		assemblers.add("p20");
-					}
-					else
-					{
-						trainingDataConverted = trainingDataConverted.drop("p20");
-					}
-				}
-				if(ArrayUtils.contains(trainingDataConverted.columns(),"p21"))
-				{		
-					List<Row> d1Max = sparkSession.sql("SELECT p21, COUNT(p21) as d1_ct from TrainingTable group by p21 order by d1_ct desc").takeAsList(2);
-					if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("p21"))
-					{
-						Row row = d1Max.get(0);
-					String d1MaxValue = row.getAs("p21");
-					trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"p21"});
-					StringIndexer p21Indexer = new StringIndexer().setInputCol("p21").setOutputCol("p21Indexer");
-					OneHotEncoder p21Vec = new OneHotEncoder().setInputCol("p21Indexer").setOutputCol("p21Vec");
-					indexers.add(p21Indexer);
-					//indexers.add(p21Vec);
-				//	assemblers.add("p21");
-					}
-					else
-					{
-						trainingDataConverted = trainingDataConverted.drop("p21");
-					}
-				}
-				if(ArrayUtils.contains(trainingDataConverted.columns(),"p22"))
-				{		
-					List<Row> d1Max = sparkSession.sql("SELECT p22, COUNT(p22) as d1_ct from TrainingTable group by p22 order by d1_ct desc").takeAsList(2);
-					if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("p22"))
-					{
-						Row row = d1Max.get(0);
-					String d1MaxValue = row.getAs("p22");
-					trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"p22"});
-					StringIndexer p22Indexer = new StringIndexer().setInputCol("p22").setOutputCol("p22Indexer");
-					OneHotEncoder p22Vec = new OneHotEncoder().setInputCol("p22Indexer").setOutputCol("p22Vec");
-					indexers.add(p22Indexer);
-					//indexers.add(p22Vec);
-				//	assemblers.add("p22");
-					}
-					else
-					{
-						trainingDataConverted = trainingDataConverted.drop("p22");
-					}
-				}
-				if(ArrayUtils.contains(trainingDataConverted.columns(),"p23"))
-				{		
-					List<Row> d1Max = sparkSession.sql("SELECT p23, COUNT(p23) as d1_ct from TrainingTable group by p23 order by d1_ct desc").takeAsList(2);
-					if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("p23"))
-					{
-						Row row = d1Max.get(0);
-					String d1MaxValue = row.getAs("p23");
-					trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"p23"});
-					StringIndexer p23Indexer = new StringIndexer().setInputCol("p23").setOutputCol("p23Indexer");
-					OneHotEncoder p23Vec = new OneHotEncoder().setInputCol("p23Indexer").setOutputCol("p23Vec");
-					indexers.add(p23Indexer);
-					indexers.add(p23Vec);
-				//	assemblers.add("p23");
-					}
-					else
-					{
-						trainingDataConverted = trainingDataConverted.drop("p23");
-					}
-				}
-				if(ArrayUtils.contains(trainingDataConverted.columns(),"p24"))
-				{		
-					List<Row> d1Max = sparkSession.sql("SELECT p24, COUNT(p24) as d1_ct from TrainingTable group by p24 order by d1_ct desc").takeAsList(2);
-					if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("p24"))
-					{
-						Row row = d1Max.get(0);
-					String d1MaxValue = row.getAs("p24");
-					trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"p24"});
-					StringIndexer p24Indexer = new StringIndexer().setInputCol("p24").setOutputCol("p24Indexer");
-					OneHotEncoder p24Vec = new OneHotEncoder().setInputCol("p24Indexer").setOutputCol("p24Vec");
-					indexers.add(p24Indexer);
-					//indexers.add(p24Vec);
-			//		assemblers.add("p24");
-					}
-					else
-					{
-						trainingDataConverted = trainingDataConverted.drop("p24");
-					}
-				}
-				//Other Procedure codes - Ends
-				
-				if(ArrayUtils.contains(trainingDataConverted.columns(),"admtDiagCd"))
-				{		
-					Row d1Max = sparkSession.sql("SELECT admtDiagCd, COUNT(admtDiagCd) as d1_ct from TrainingTable group by admtDiagCd order by d1_ct desc").first();
-					String d1MaxValue = d1Max.getAs("admtDiagCd");
-					trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"admtDiagCd"});
-					StringIndexer admtDiagCdIndexer = new StringIndexer().setInputCol("admtDiagCd").setOutputCol("admtDiagCdIndexer");
-					OneHotEncoder admtDiagCdVec = new OneHotEncoder().setInputCol("admtDiagCdIndexer").setOutputCol("admtDiagCdVec");
-					indexers.add(admtDiagCdIndexer);
-					//indexers.add(admtDiagCdVec);
-				//	assemblers.add("admtDiagCd");
-				}
-				if(ArrayUtils.contains(trainingDataConverted.columns(),"admtDiagCdPoa"))
-				{		
-					List<Row> d1Max = sparkSession.sql("SELECT admtDiagCdPoa, COUNT(admtDiagCdPoa) as d1_ct from TrainingTable group by admtDiagCdPoa order by d1_ct desc").takeAsList(2);
-					if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("admtDiagCdPoa"))
-					{
-						Row row = d1Max.get(0);
-						String d1MaxValue = row.getAs("admtDiagCdPoa");
-						trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"admtDiagCdPoa"});
-						StringIndexer admtDiagCdPoaIndexer = new StringIndexer().setInputCol("admtDiagCdPoa").setOutputCol("admtDiagCdPoaIndexer");
-						OneHotEncoder admtDiagCdPoaVec = new OneHotEncoder().setInputCol("admtDiagCdPoaIndexer").setOutputCol("admtDiagCdPoaVec");
-						indexers.add(admtDiagCdPoaIndexer);
-						//indexers.add(admtDiagCdPoaVec);
-					//	assemblers.add("admtDiagCdPoa");
-					}
-					else
-					{
-						trainingDataConverted = trainingDataConverted.drop("admtDiagCdPoa");
-					}
-				}
-				if(ArrayUtils.contains(trainingDataConverted.columns(),"prncplDgnsCd"))
-				{		
-					List<Row> d1Max = sparkSession.sql("SELECT prncplDgnsCd, COUNT(prncplDgnsCd) as d1_ct from TrainingTable group by prncplDgnsCd order by d1_ct desc").takeAsList(2);
-					if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("prncplDgnsCd"))
-					{
-						Row row = d1Max.get(0);
-						String d1MaxValue = row.getAs("prncplDgnsCd");
-						trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"prncplDgnsCd"});
-						StringIndexer prncplDgnsCdIndexer = new StringIndexer().setInputCol("prncplDgnsCd").setOutputCol("prncplDgnsCdIndexer");
-						OneHotEncoder prncplDgnsCdVec = new OneHotEncoder().setInputCol("prncplDgnsCdIndexer").setOutputCol("prncplDgnsCdVec");
-						indexers.add(prncplDgnsCdIndexer);
-						//indexers.add(prncplDgnsCdVec);
-				//		assemblers.add("prncplDgnsCd");
-					}
-					else
-					{
-						trainingDataConverted = trainingDataConverted.drop("prncplDgnsCd");
-					}
-				}
-				
-				if(ArrayUtils.contains(trainingDataConverted.columns(),"prncplDgnsPoa"))
-				{		
-					Row d1Max = sparkSession.sql("SELECT prncplDgnsPoa, COUNT(prncplDgnsPoa) as d1_ct from TrainingTable group by prncplDgnsPoa order by d1_ct desc").first();
-					System.out.println("prncplDgnsPoaIndexer:"+d1Max.toString());
-					if(null!=d1Max)
-					{
-						String d1MaxValue = d1Max.getAs("prncplDgnsPoa");
-						if(!StringUtils.isEmpty(d1MaxValue))
-						{
-							trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"prncplDgnsPoa"});
-							StringIndexer prncplDgnsPoaIndexer = new StringIndexer().setInputCol("prncplDgnsPoa").setOutputCol("prncplDgnsPoaIndexer");
-							OneHotEncoder prncplDgnsPoaVec = new OneHotEncoder().setInputCol("prncplDgnsPoaIndexer").setOutputCol("prncplDgnsPoaVec");
-							indexers.add(prncplDgnsPoaIndexer);
-							//indexers.add(prncplDgnsPoaVec);
-						//	assemblers.add("prncplDgnsPoa");
-						}
-						else
-						{
-							trainingDataConverted = trainingDataConverted.drop("prncplDgnsPoa");
-						}
-					}
-				}
-				if(ArrayUtils.contains(trainingDataConverted.columns(),"prncplPrcdrCd"))
-				{		
-					Row d1Max = sparkSession.sql("SELECT prncplPrcdrCd, COUNT(prncplPrcdrCd) as d1_ct from TrainingTable group by prncplPrcdrCd order by d1_ct desc").first();
-					String d1MaxValue = d1Max.getAs("prncplPrcdrCd");
-					trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"prncplPrcdrCd"});
-					StringIndexer prncplPrcdrCdIndexer = new StringIndexer().setInputCol("prncplPrcdrCd").setOutputCol("prncplPrcdrCdIndexer");
-					OneHotEncoder prncplPrcdrCdVec = new OneHotEncoder().setInputCol("prncplPrcdrCdIndexer").setOutputCol("prncplPrcdrCdVec");
-					indexers.add(prncplPrcdrCdIndexer);
-					//indexers.add(prncplPrcdrCdVec);
-			//		assemblers.add("prncplPrcdrCd");
-				}
-				if(ArrayUtils.contains(trainingDataConverted.columns(),"patientStatusLkpcd"))
-				{		
-					List<Row> d1Max = sparkSession.sql("SELECT patientStatusLkpcd, COUNT(patientStatusLkpcd) as d1_ct from TrainingTable group by patientStatusLkpcd order by d1_ct desc").takeAsList(2);
-					System.out.println("patientStatusLkpcd:"+d1Max);
-					if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("patientStatusLkpcd"))
-					{
-						Row row = d1Max.get(0);
-						String d1MaxValue = row.getAs("patientStatusLkpcd");
-						trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"patientStatusLkpcd"});
-						StringIndexer patientStatusLkpcdIndexer = new StringIndexer().setInputCol("patientStatusLkpcd").setOutputCol("patientStatusLkpcdIndexer");
-						indexers.add(patientStatusLkpcdIndexer);
-						OneHotEncoder patientStatusLkpcdVec = new OneHotEncoder().setInputCol("patientStatusLkpcdIndexer").setOutputCol("patientStatusLkpcdVec");
-						//indexers.add(patientStatusLkpcdVec);
-					}
-					else
-					{
-						Row row = d1Max.get(0);
-						String d1MaxValue = row.getAs("patientStatusLkpcd");
-						trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"patientStatusLkpcd"});
-						StringIndexer patientStatusLkpcdIndexer = new StringIndexer().setInputCol("patientStatusLkpcd").setOutputCol("patientStatusLkpcdIndexer");
-						indexers.add(patientStatusLkpcdIndexer);
-					}
-				}
-				
-				StringIndexer patientGenderIndexer = new StringIndexer().setInputCol("patientGender").setOutputCol("patientGenderIndexer");
-				indexers.add(patientGenderIndexer);
-			//	OneHotEncoder patientGenderVec = new OneHotEncoder().setInputCol("patientGenderIndexer").setOutputCol("patientGenderVec");
-			//F	indexers.add(patientGenderVec);
-				
-				
-				
-				double[] splits = {020,113,129,163,215,326,405,453,573,614,652,707,734,765,789,799,820,853,876,894,901,927,939,955,969,981,999};
-				Bucketizer drgCodeBucketizer = new Bucketizer().setInputCol("drgCode").setOutputCol("drgCodeBucketizer").setSplits(splits);
-				indexers.add(drgCodeBucketizer);
-				
-				double[] mdcSplits = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27};
-				Bucketizer mdcBucketizer = new Bucketizer().setInputCol("mdc").setOutputCol("mdcBucketizer").setSplits(mdcSplits);
-				indexers.add(mdcBucketizer);
-		assemblers.add("los");
+			}
+		}
+		if(ArrayUtils.contains(trainingDataConverted.columns(),"prncplPrcdrCd"))
+		{		
+			Row d1Max = sparkSession.sql("SELECT prncplPrcdrCd, COUNT(prncplPrcdrCd) as d1_ct from TrainingTable group by prncplPrcdrCd order by d1_ct desc").first();
+			String d1MaxValue = d1Max.getAs("prncplPrcdrCd");
+			trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"prncplPrcdrCd"});
+			StringIndexer prncplPrcdrCdIndexer = new StringIndexer().setInputCol("prncplPrcdrCd").setOutputCol("prncplPrcdrCdIndexer");
+			OneHotEncoder prncplPrcdrCdVec = new OneHotEncoder().setInputCol("prncplPrcdrCdIndexer").setOutputCol("prncplPrcdrCdVec");
+			indexers.add(prncplPrcdrCdIndexer);
+			//indexers.add(prncplPrcdrCdVec);
+	//		assemblers.add("prncplPrcdrCd");
+		}
+		if(ArrayUtils.contains(trainingDataConverted.columns(),"patientStatusLkpcd"))
+		{		
+			List<Row> d1Max = sparkSession.sql("SELECT patientStatusLkpcd, COUNT(patientStatusLkpcd) as d1_ct from TrainingTable group by patientStatusLkpcd order by d1_ct desc").takeAsList(2);
+			System.out.println("patientStatusLkpcd:"+d1Max);
+			if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("patientStatusLkpcd"))
+			{
+				Row row = d1Max.get(0);
+				String d1MaxValue = row.getAs("patientStatusLkpcd");
+				trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"patientStatusLkpcd"});
+				StringIndexer patientStatusLkpcdIndexer = new StringIndexer().setInputCol("patientStatusLkpcd").setOutputCol("patientStatusLkpcdIndexer");
+				indexers.add(patientStatusLkpcdIndexer);
+				OneHotEncoder patientStatusLkpcdVec = new OneHotEncoder().setInputCol("patientStatusLkpcdIndexer").setOutputCol("patientStatusLkpcdVec");
+				//indexers.add(patientStatusLkpcdVec);
+			}
+			else
+			{
+				Row row = d1Max.get(0);
+				String d1MaxValue = row.getAs("patientStatusLkpcd");
+				trainingDataConverted = trainingDataConverted.na().fill(d1MaxValue, new String[] {"patientStatusLkpcd"});
+				StringIndexer patientStatusLkpcdIndexer = new StringIndexer().setInputCol("patientStatusLkpcd").setOutputCol("patientStatusLkpcdIndexer");
+				indexers.add(patientStatusLkpcdIndexer);
+			}
+		}
+//		StringIndexer patientGenderIndexer = new StringIndexer().setInputCol("patientGender").setOutputCol("patientGenderIndexer");
+//		indexers.add(patientGenderIndexer);
+////		OneHotEncoder patientGenderVec = new OneHotEncoder().setInputCol("patientGenderIndexer").setOutputCol("patientGenderVec");
+////		indexers.add(patientGenderVec);
+//		
+//		
+//		
+//		double[] splits = {020,113,129,163,215,326,405,453,573,614,652,707,734,765,789,799,820,853,876,894,901,927,939,955,969,981,999};
+//		Bucketizer drgCodeBucketizer = new Bucketizer().setInputCol("drgCode").setOutputCol("drgCodeBucketizer").setSplits(splits);
+//		indexers.add(drgCodeBucketizer);
+//		
+//		double[] mdcSplits = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27};
+//		Bucketizer mdcBucketizer = new Bucketizer().setInputCol("mdc").setOutputCol("mdcBucketizer").setSplits(mdcSplits);
+//		indexers.add(mdcBucketizer);
+//		
+//		//Vector assembler
+//		VectorAssembler assembler = new VectorAssembler().setInputCols(
+//				new String[] { "age","los","totalBilledAmount",
+//						"d1Vec", "d1poaVec", "d2Vec", "d2poaV", "d3Vec",
+//						"d3poaV", "d4Vec", "d4poaV", "d5Vec", "d5poaV",
+//						"d6Vec", "d6poaV", "d7Vec", "d7poaV", "d8Vec",
+//						"d8poaV", "d9Vec", "d9poaV", "d10Vec", "d10poa",
+//						"d11Vec", "d11poa", "d12Vec", "d12poa", "d13Vec",
+//						"d13poa", "d14Vec", "d14poa", "d15Vec", "d15poa",
+//						"d16Vec", "d16poa", "d17Vec", "d17poa", "d18Vec",
+//						"d18poa", "d19Vec", "d19poa", "d20Vec", "d20poa",
+//						"d21Vec", "d21poa", "d22Vec", "d22poa", "d23Vec",
+//						"d23poa", "d24Vec", "d24poa", "p1Vec", "p2Vec",
+//						"p3Vec", "p4Vec", "p5Vec", "p6Vec", "p7Vec", "p8Vec",
+//						"p9Vec", "p10Vec", "p11Vec", "p12Vec", "p13Vec",
+//						"p14Vec", "p15Vec", "p16Vec", "p17Vec", "p18Vec",
+//						"p19Vec", "p20Vec", "p21Vec", "p22Vec", "p23Vec",
+//						"p24Vec", "admtDiagCdVec", "admtDiagCdPoaVec",
+//						"prncplDgnsCdVec", "prncplDgnsPoaVec",
+//						"prncplPrcdrCdVec", "mdcVec", "patientGenderVec",
+//						"patientStatusLkpcdVec" }).setOutputCol("features_temp");
+//		
 		VectorAssembler assembler = new VectorAssembler().setInputCols(assemblers.toArray(new String[assemblers.size()])).setOutputCol("features_temp");
 		
 //		//Vector normalizer
@@ -1328,21 +1347,60 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 		Pipeline pipeLine = new Pipeline().setStages(indexers.toArray(new PipelineStage[indexers.size()]));
 		
 
+		//		Pipeline pipeLine = new Pipeline().setStages(new PipelineStage[] {
+//				d1Indexer, d1poaIndexer, d2Indexer, d2poaIndexer, d3Indexer,
+//				d3poaIndexer, d4Indexer, d4poaIndexer, d5Indexer, d5poaIndexer,
+//				d6Indexer, d6poaIndexer, d7Indexer, d7poaIndexer, d8Indexer,
+//				d8poaIndexer, d9Indexer, d9poaIndexer, d10Indexer,
+//				d10poaIndexer, d11Indexer, d11poaIndexer, d12Indexer,
+//				d12poaIndexer, d13Indexer, d13poaIndexer, d14Indexer,
+//				d14poaIndexer, d15Indexer, d15poaIndexer, d16Indexer,
+//				d16poaIndexer, d17Indexer, d17poaIndexer, d18Indexer,
+//				d18poaIndexer, d19Indexer, d19poaIndexer, d20Indexer,
+//				d20poaIndexer, d21Indexer, d21poaIndexer, d22Indexer,
+//				d22poaIndexer, d23poaIndexer, d24Indexer, d24poaIndexer,
+//				p1Indexer, p2Indexer, p3Indexer, p4Indexer, p5Indexer,
+//				p6Indexer, p7Indexer, p8Indexer, p9Indexer, p10Indexer,
+//				p11Indexer, p12Indexer, p13Indexer, p14Indexer, p15Indexer,
+//				p16Indexer, p17Indexer, p18Indexer, p19Indexer, p20Indexer,
+//				p21Indexer, p22Indexer, p23Indexer, p24Indexer,
+//				//
+//				admtDiagCdIndexer, admtDiagCdPoaIndexer, prncplDgnsCdIndexer,
+//				prncplDgnsPoaIndexer, prncplPrcdrCdIndexer, mdcIndexer,
+//				patientGenderIndexer, patientStatusLkpcdIndexer,
+//				d1Vec,d1poaVec, d2Vec, d2poaVec, d3Vec, d3poaVec, d4Vec, d4poaVec,
+//				d5Vec, d5poaVec, d6Vec, d6poaVec, d7Vec, d7poaVec, d8Vec, d8poaVec,
+//				d9Vec, d9poaVec, d10Vec, d10poaVec, d11Vec, d11poaVec, d12Vec, d12poaVec,
+//				d13Vec, d13poaVec, d14Vec, d14poaVec, d15Vec, d15poaVec, d16Vec, d16poaVec,
+//				d17Vec, d17poaVec, d18Vec, d18poaVec, d19Vec, d19poaVec, d20Vec, d20poaVec,
+//				d21Vec, d21poaVec, d22Vec, d22poaVec, d23Vec, d23poaVec, d24Vec, d24poaVec,
+//				p1Vec, p2Vec, p3Vec, p4Vec, p5Vec, p6Vec, p7Vec, p8Vec, p9Vec,
+//				p10Vec, p11Vec, p12Vec, p13Vec, p14Vec, p15Vec, p16Vec, p17Vec,
+//				p18Vec, p19Vec, p20Vec, p21Vec, p22Vec, p23Vec, p24Vec,
+//				admtDiagCdVec, admtDiagCdPoaVec, prncplDgnsCdVec,
+//				prncplDgnsPoaVec, prncplPrcdrCdVec, mdcVec, patientGenderVec,
+//				patientStatusLkpcdVec,
+//				//
+//				assembler,
+//				normalizer,
+//				linearRegression});
+//	    
 		//Option 1
 		trainValidationSplit.setEstimator(pipeLine);
 		
 		
-		Dataset<Row>[] splitData = trainingDataConverted.randomSplit(new double[]{0.8, 0.2});
+		Dataset<Row>[] splitData = trainingDataConverted.randomSplit(new double[]{0.9, 0.1});
 		Dataset<Row> train = splitData[0];
 		List<Row> rows = train.takeAsList(100);
 		
 		for(Row row:rows)
 		{
+			System.out.println("schema:" +row.schema());
 			System.out.println("row:" +row);
 		}
 		Dataset<Row> test = splitData[1];
-		train.printSchema();
-		train.show();
+		//train.printSchema();
+		//train.show();
 		trainValidationSplitModel = trainValidationSplit.fit(train);
 		Dataset<Row> holdOut = trainValidationSplitModel.transform(test).select("prediction", "label");
 		RegressionMetrics metrics = new RegressionMetrics(holdOut);
