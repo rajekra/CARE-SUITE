@@ -200,7 +200,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 			StringIndexer d1Indexer = new StringIndexer().setInputCol("d1").setOutputCol("d1Indexer");
 			OneHotEncoder d1Vec = new OneHotEncoder().setInputCol("d1Indexer").setOutputCol("d1Vec");
 			indexers.add(d1Indexer);
-		//	indexers.add(d1Vec);
+			indexers.add(d1Vec);
 			//assemblers.add("d1Vec");
 		}
 		
@@ -212,7 +212,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 			StringIndexer d1poaIndexer = new StringIndexer().setInputCol("d1_poa").setOutputCol("d1poaIndexer");
 			OneHotEncoder d1poaVec = new OneHotEncoder().setInputCol("d1poaIndexer").setOutputCol("d1poaVec");
 			indexers.add(d1poaIndexer);
-			//indexers.add(d1poaVec);
+			indexers.add(d1poaVec);
 			//assemblers.add("d1_poa");
 		}
 		
@@ -224,7 +224,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 			StringIndexer d2Indexer = new StringIndexer().setInputCol("d2").setOutputCol("d2Indexer");
 			OneHotEncoder d2Vec = new OneHotEncoder().setInputCol("d2Indexer").setOutputCol("d2Vec");
 			indexers.add(d2Indexer);
-			//indexers.add(d2Vec);
+			indexers.add(d2Vec);
 			//assemblers.add("d2");
 		}
 		
@@ -237,7 +237,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 			StringIndexer d2poaIndexer = new StringIndexer().setInputCol("d2_poa").setOutputCol("d2poaIndexer");
 			OneHotEncoder d2poaVec = new OneHotEncoder().setInputCol("d2poaIndexer").setOutputCol("d2poaVec");
 			indexers.add(d2poaIndexer);
-			//indexers.add(d2poaVec);
+			indexers.add(d2poaVec);
 		//	assemblers.add("d2_poa");
 		}
 		
@@ -249,7 +249,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 			StringIndexer d3Indexer = new StringIndexer().setInputCol("d3").setOutputCol("d3Indexer");
 			OneHotEncoder d3Vec = new OneHotEncoder().setInputCol("d3Indexer").setOutputCol("d3Vec");
 			indexers.add(d3Indexer);
-			//indexers.add(d3Vec);
+			indexers.add(d3Vec);
 		//	assemblers.add("d3");
 		}
 		
@@ -261,7 +261,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 			StringIndexer d3poaIndexer = new StringIndexer().setInputCol("d3_poa").setOutputCol("d3poaIndexer");
 			OneHotEncoder d3poaVec = new OneHotEncoder().setInputCol("d3poaIndexer").setOutputCol("d3poaVec");
 			indexers.add(d3poaIndexer);
-			//indexers.add(d3poaVec);
+			indexers.add(d3poaVec);
 			//assemblers.add("d3_poa");
 		}
 		
@@ -273,7 +273,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 			StringIndexer d4Indexer = new StringIndexer().setInputCol("d4").setOutputCol("d4Indexer");
 			OneHotEncoder d4Vec = new OneHotEncoder().setInputCol("d4Indexer").setOutputCol("d4Vec");
 			indexers.add(d4Indexer);
-			//indexers.add(d4Vec);
+			indexers.add(d4Vec);
 			//assemblers.add("d4");
 		}
 		
@@ -285,7 +285,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 			StringIndexer d4poaIndexer = new StringIndexer().setInputCol("d4_poa").setOutputCol("d4poaIndexer");
 			OneHotEncoder d4poaVec = new OneHotEncoder().setInputCol("d4poaIndexer").setOutputCol("d4poaVec");
 			indexers.add(d4poaIndexer);
-			//indexers.add(d4poaVec);
+			indexers.add(d4poaVec);
 		//	assemblers.add("d4_poa");
 		}
 		
@@ -297,7 +297,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 			StringIndexer d5Indexer = new StringIndexer().setInputCol("d5").setOutputCol("d5Indexer");
 			OneHotEncoder d5Vec = new OneHotEncoder().setInputCol("d5Indexer").setOutputCol("d5Vec");
 			indexers.add(d5Indexer);
-			//indexers.add(d5Vec);
+			indexers.add(d5Vec);
 			//assemblers.add("d5");
 		}
 		
@@ -309,7 +309,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 			StringIndexer d5poaIndexer = new StringIndexer().setInputCol("d5_poa").setOutputCol("d5poaIndexer");
 			OneHotEncoder d5poaVec = new OneHotEncoder().setInputCol("d5poaIndexer").setOutputCol("d5poaVec");
 			indexers.add(d5poaIndexer);
-			//indexers.add(d5poaVec);
+			indexers.add(d5poaVec);
 			//assemblers.add("d5_poa");
 		}
 		
@@ -321,7 +321,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 			StringIndexer d6Indexer = new StringIndexer().setInputCol("d6").setOutputCol("d6Indexer");
 			OneHotEncoder d6Vec = new OneHotEncoder().setInputCol("d6Indexer").setOutputCol("d6Vec");
 			indexers.add(d6Indexer);
-			//indexers.add(d6Vec);
+			indexers.add(d6Vec);
 			//assemblers.add("d6");
 		}
 		
@@ -333,7 +333,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 			StringIndexer d6poaIndexer = new StringIndexer().setInputCol("d6_poa").setOutputCol("d6poaIndexer");
 			OneHotEncoder d6poaVec = new OneHotEncoder().setInputCol("d6poaIndexer").setOutputCol("d6poaVec");
 			indexers.add(d6poaIndexer);
-			//indexers.add(d6poaVec);
+			indexers.add(d6poaVec);
 			//assemblers.add("d6_poa");
 		}
 		
@@ -345,7 +345,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 			StringIndexer d7Indexer = new StringIndexer().setInputCol("d7").setOutputCol("d7Indexer");
 			OneHotEncoder d7Vec = new OneHotEncoder().setInputCol("d7Indexer").setOutputCol("d7Vec");
 			indexers.add(d7Indexer);
-			//indexers.add(d7Vec);
+			indexers.add(d7Vec);
 		//	assemblers.add("d7");
 		}
 		if(ArrayUtils.contains(trainingDataConverted.columns(),"d7_poa"))
@@ -356,7 +356,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 			StringIndexer d7poaIndexer = new StringIndexer().setInputCol("d7_poa").setOutputCol("d7poaIndexer");
 			OneHotEncoder d7poaVec = new OneHotEncoder().setInputCol("d7poaIndexer").setOutputCol("d7poaVec");
 			indexers.add(d7poaIndexer);
-			//indexers.add(d7poaVec);
+			indexers.add(d7poaVec);
 		//	assemblers.add("d7_poa");
 		}
 		
@@ -368,7 +368,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 			StringIndexer d8Indexer = new StringIndexer().setInputCol("d8").setOutputCol("d8Indexer");
 			OneHotEncoder d8Vec = new OneHotEncoder().setInputCol("d8Indexer").setOutputCol("d8Vec");
 			indexers.add(d8Indexer);
-			//indexers.add(d8Vec);
+			indexers.add(d8Vec);
 		//	assemblers.add("d8");
 		}
 		
@@ -380,7 +380,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 			StringIndexer d8poaIndexer = new StringIndexer().setInputCol("d8_poa").setOutputCol("d8poaIndexer");
 			OneHotEncoder d8poaVec = new OneHotEncoder().setInputCol("d8poaIndexer").setOutputCol("d8poaVec");
 			indexers.add(d8poaIndexer);
-			//indexers.add(d8poaVec);
+			indexers.add(d8poaVec);
 		//	assemblers.add("d8_poa");
 		}
 		
@@ -392,7 +392,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 			StringIndexer d9Indexer = new StringIndexer().setInputCol("d9").setOutputCol("d9Indexer");
 			OneHotEncoder d9Vec = new OneHotEncoder().setInputCol("d9Indexer").setOutputCol("d9Vec");
 			indexers.add(d9Indexer);
-			//indexers.add(d9Vec);
+			indexers.add(d9Vec);
 	//		assemblers.add("d9");
 		}
 		
@@ -404,7 +404,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 			StringIndexer d9poaIndexer = new StringIndexer().setInputCol("d9_poa").setOutputCol("d9poaIndexer");
 			OneHotEncoder d9poaVec = new OneHotEncoder().setInputCol("d9poaIndexer").setOutputCol("d9poaVec");
 			indexers.add(d9poaIndexer);
-			//indexers.add(d9poaVec);
+			indexers.add(d9poaVec);
 	//		assemblers.add("d9_poa");
 		}
 		
@@ -416,7 +416,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 			StringIndexer d10Indexer = new StringIndexer().setInputCol("d10").setOutputCol("d10Indexer");
 			OneHotEncoder d10Vec = new OneHotEncoder().setInputCol("d10Indexer").setOutputCol("d10Vec");
 			indexers.add(d10Indexer);
-			//indexers.add(d10Vec);
+			indexers.add(d10Vec);
 		//	assemblers.add("d10");
 		}
 		
@@ -428,7 +428,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 			StringIndexer d10poaIndexer = new StringIndexer().setInputCol("d10_poa").setOutputCol("d10poaIndexer");
 			OneHotEncoder d10poaVec = new OneHotEncoder().setInputCol("d10poaIndexer").setOutputCol("d10poaVec");
 			indexers.add(d10poaIndexer);
-			//indexers.add(d10poaVec);
+			indexers.add(d10poaVec);
 		//	assemblers.add("d10_poa");
 		}
 		
@@ -440,7 +440,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 			StringIndexer d11Indexer = new StringIndexer().setInputCol("d11").setOutputCol("d11Indexer");
 			OneHotEncoder d11Vec = new OneHotEncoder().setInputCol("d11Indexer").setOutputCol("d11Vec");
 			indexers.add(d11Indexer);
-			//indexers.add(d11Vec);
+			indexers.add(d11Vec);
 		//	assemblers.add("d11");
 		}
 		
@@ -452,7 +452,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 			StringIndexer d11poaIndexer = new StringIndexer().setInputCol("d11_poa").setOutputCol("d11poaIndexer");
 			OneHotEncoder d11poaVec = new OneHotEncoder().setInputCol("d11poaIndexer").setOutputCol("d11poaVec");
 			indexers.add(d11poaIndexer);
-			//indexers.add(d11poaVec);
+			indexers.add(d11poaVec);
 		//	assemblers.add("d11_poa");
 		}
 		
@@ -464,7 +464,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 			StringIndexer d12Indexer = new StringIndexer().setInputCol("d12").setOutputCol("d12Indexer");
 			OneHotEncoder d12Vec = new OneHotEncoder().setInputCol("d12Indexer").setOutputCol("d12Vec");
 			indexers.add(d12Indexer);
-			//indexers.add(d12Vec);
+			indexers.add(d12Vec);
 		//	assemblers.add("d12");
 		}
 		
@@ -476,7 +476,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 			StringIndexer d12poaIndexer = new StringIndexer().setInputCol("d12_poa").setOutputCol("d12poaIndexer");
 			OneHotEncoder d12poaVec = new OneHotEncoder().setInputCol("d12poaIndexer").setOutputCol("d12poaVec");
 			indexers.add(d12poaIndexer);
-			//indexers.add(d12poaVec);
+			indexers.add(d12poaVec);
 		//	assemblers.add("d12_poa");
 		}
 		
@@ -488,7 +488,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 			StringIndexer d13Indexer = new StringIndexer().setInputCol("d13").setOutputCol("d13Indexer");
 			OneHotEncoder d13Vec = new OneHotEncoder().setInputCol("d13Indexer").setOutputCol("d13Vec");
 			indexers.add(d13Indexer);
-			//indexers.add(d13Vec);
+			indexers.add(d13Vec);
 	//		assemblers.add("d13");
 		}
 		
@@ -500,7 +500,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 			StringIndexer d13poaIndexer = new StringIndexer().setInputCol("d13_poa").setOutputCol("d13poaIndexer");
 			OneHotEncoder d13poaVec = new OneHotEncoder().setInputCol("d13poaIndexer").setOutputCol("d13poaVec");
 			indexers.add(d13poaIndexer);
-			//indexers.add(d13poaVec);
+			indexers.add(d13poaVec);
 //			assemblers.add("d13_poa");
 		}
 		
@@ -512,7 +512,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 			StringIndexer d14Indexer = new StringIndexer().setInputCol("d14").setOutputCol("d14Indexer");
 			OneHotEncoder d14Vec = new OneHotEncoder().setInputCol("d14Indexer").setOutputCol("d14Vec");
 			indexers.add(d14Indexer);
-			//indexers.add(d14Vec);
+			indexers.add(d14Vec);
 		//	assemblers.add("d14");
 		}
 		
@@ -524,7 +524,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 			StringIndexer d14poaIndexer = new StringIndexer().setInputCol("d14_poa").setOutputCol("d14poaIndexer");
 			OneHotEncoder d14poaVec = new OneHotEncoder().setInputCol("d14poaIndexer").setOutputCol("d14poaVec");
 			indexers.add(d14poaIndexer);
-			//indexers.add(d14poaVec);
+			indexers.add(d14poaVec);
 		//	assemblers.add("d14_poa");
 		}
 		
@@ -536,7 +536,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 			StringIndexer d15Indexer = new StringIndexer().setInputCol("d15").setOutputCol("d15Indexer");
 			OneHotEncoder d15Vec = new OneHotEncoder().setInputCol("d15Indexer").setOutputCol("d15Vec");
 			indexers.add(d15Indexer);
-			//indexers.add(d15Vec);
+			indexers.add(d15Vec);
 		//	assemblers.add("d15");
 		}
 		
@@ -548,7 +548,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 			StringIndexer d15poaIndexer = new StringIndexer().setInputCol("d15_poa").setOutputCol("d15poaIndexer");
 			OneHotEncoder d15poaVec = new OneHotEncoder().setInputCol("d15poaIndexer").setOutputCol("d15poaVec");
 			indexers.add(d15poaIndexer);
-			//indexers.add(d15poaVec);
+			indexers.add(d15poaVec);
 		//	assemblers.add("d15_poa");
 		}
 		
@@ -560,7 +560,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 			StringIndexer d16Indexer = new StringIndexer().setInputCol("d16").setOutputCol("d16Indexer");
 			OneHotEncoder d16Vec = new OneHotEncoder().setInputCol("d16Indexer").setOutputCol("d16Vec");
 			indexers.add(d16Indexer);
-			//indexers.add(d16Vec);
+			indexers.add(d16Vec);
 		//	assemblers.add("d16");
 		}
 		
@@ -572,7 +572,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 			StringIndexer d16poaIndexer = new StringIndexer().setInputCol("d16_poa").setOutputCol("d16poaIndexer");
 			OneHotEncoder d16poaVec = new OneHotEncoder().setInputCol("d16poaIndexer").setOutputCol("d16poaVec");
 			indexers.add(d16poaIndexer);
-			//indexers.add(d16poaVec);
+			indexers.add(d16poaVec);
 		//	assemblers.add("d16_poa");
 		}
 		
@@ -584,7 +584,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 			StringIndexer d17Indexer = new StringIndexer().setInputCol("d17").setOutputCol("d17Indexer");
 			OneHotEncoder d17Vec = new OneHotEncoder().setInputCol("d17Indexer").setOutputCol("d17Vec");
 			indexers.add(d17Indexer);
-			//indexers.add(d17Vec);
+			indexers.add(d17Vec);
 		//	assemblers.add("d17");
 		}
 		
@@ -596,7 +596,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 			StringIndexer d17poaIndexer = new StringIndexer().setInputCol("d17_poa").setOutputCol("d17poaIndexer");
 			OneHotEncoder d17poaVec = new OneHotEncoder().setInputCol("d17poaIndexer").setOutputCol("d17poaVec");
 			indexers.add(d17poaIndexer);
-			//indexers.add(d17poaVec);
+			indexers.add(d17poaVec);
 		//	assemblers.add("d17_poa");
 		}
 		
@@ -608,7 +608,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 			StringIndexer d18Indexer = new StringIndexer().setInputCol("d18").setOutputCol("d18Indexer");
 			OneHotEncoder d18Vec = new OneHotEncoder().setInputCol("d18Indexer").setOutputCol("d18Vec");
 			indexers.add(d18Indexer);
-			//indexers.add(d18Vec);
+			indexers.add(d18Vec);
 		//	assemblers.add("d18");
 		}
 		
@@ -620,7 +620,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 			StringIndexer d18poaIndexer = new StringIndexer().setInputCol("d18_poa").setOutputCol("d18poaIndexer");
 			OneHotEncoder d18poaVec = new OneHotEncoder().setInputCol("d18poaIndexer").setOutputCol("d18poaVec");
 			indexers.add(d18poaIndexer);
-			//indexers.add(d18poaVec);
+			indexers.add(d18poaVec);
 		//	assemblers.add("d18_poa");
 		}
 		
@@ -632,7 +632,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 			StringIndexer d19Indexer = new StringIndexer().setInputCol("d19").setOutputCol("d19Indexer");
 			OneHotEncoder d19Vec = new OneHotEncoder().setInputCol("d19Indexer").setOutputCol("d19Vec");
 			indexers.add(d19Indexer);
-			//indexers.add(d19Vec);
+			indexers.add(d19Vec);
 		//	assemblers.add("d19");
 		}
 		
@@ -644,7 +644,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 			StringIndexer d19poaIndexer = new StringIndexer().setInputCol("d19_poa").setOutputCol("d19poaIndexer");
 			OneHotEncoder d19poaVec = new OneHotEncoder().setInputCol("d19poaIndexer").setOutputCol("d19poaVec");
 			indexers.add(d19poaIndexer);
-			//indexers.add(d19poaVec);
+			indexers.add(d19poaVec);
 	//		assemblers.add("d19_poa");
 		}
 		
@@ -656,7 +656,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 			StringIndexer d20Indexer = new StringIndexer().setInputCol("d20").setOutputCol("d20Indexer");
 			OneHotEncoder d20Vec = new OneHotEncoder().setInputCol("d20Indexer").setOutputCol("d20Vec");
 			indexers.add(d20Indexer);
-			//indexers.add(d20Vec);
+			indexers.add(d20Vec);
 		//	assemblers.add("d20");
 		}
 		
@@ -668,7 +668,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 			StringIndexer d20poaIndexer = new StringIndexer().setInputCol("d20_poa").setOutputCol("d20poaIndexer");
 			OneHotEncoder d20poaVec = new OneHotEncoder().setInputCol("d20poaIndexer").setOutputCol("d20poaVec");
 			indexers.add(d20poaIndexer);
-			//indexers.add(d20poaVec);
+			indexers.add(d20poaVec);
 //			assemblers.add("d20_poa");
 		}
 		
@@ -680,7 +680,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 			StringIndexer d21Indexer = new StringIndexer().setInputCol("d21").setOutputCol("d21Indexer");
 			OneHotEncoder d21Vec = new OneHotEncoder().setInputCol("d21Indexer").setOutputCol("d21Vec");
 			indexers.add(d21Indexer);
-			//indexers.add(d21Vec);
+			indexers.add(d21Vec);
 		//	assemblers.add("d21");
 		}
 		
@@ -692,7 +692,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 			StringIndexer d21poaIndexer = new StringIndexer().setInputCol("d21_poa").setOutputCol("d21poaIndexer");
 			OneHotEncoder d21poaVec = new OneHotEncoder().setInputCol("d21poaIndexer").setOutputCol("d21poaVec");
 			indexers.add(d21poaIndexer);
-			//indexers.add(d21poaVec);
+			indexers.add(d21poaVec);
 		//	assemblers.add("d21_poa");
 		}
 		
@@ -704,7 +704,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 			StringIndexer d22Indexer = new StringIndexer().setInputCol("d22").setOutputCol("d22Indexer");
 			OneHotEncoder d22Vec = new OneHotEncoder().setInputCol("d22Indexer").setOutputCol("d22Vec");
 			indexers.add(d22Indexer);
-			//indexers.add(d22Vec);
+			indexers.add(d22Vec);
 	//		assemblers.add("d22");
 		}
 		
@@ -716,7 +716,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 			StringIndexer d22poaIndexer = new StringIndexer().setInputCol("d22_poa").setOutputCol("d22poaIndexer");
 			OneHotEncoder d22poaVec = new OneHotEncoder().setInputCol("d22poaIndexer").setOutputCol("d22poaVec");
 			indexers.add(d22poaIndexer);
-			//indexers.add(d22poaVec);
+			indexers.add(d22poaVec);
 	//		assemblers.add("d22_poa");
 		}
 		
@@ -728,7 +728,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 			StringIndexer d23ndexer = new StringIndexer().setInputCol("d23").setOutputCol("d23Indexer");
 			OneHotEncoder d23Vec = new OneHotEncoder().setInputCol("d23Indexer").setOutputCol("d23Vec");
 			indexers.add(d23ndexer);
-			//indexers.add(d23Vec);
+			indexers.add(d23Vec);
 		//	assemblers.add("d23");
 		}
 		
@@ -740,7 +740,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 			StringIndexer d23poaIndexer = new StringIndexer().setInputCol("d23_poa").setOutputCol("d23poaIndexer");
 			OneHotEncoder d23poaVec = new OneHotEncoder().setInputCol("d23poaIndexer").setOutputCol("d23poaVec");
 			indexers.add(d23poaIndexer);
-			//indexers.add(d23poaVec);
+			indexers.add(d23poaVec);
 	//		assemblers.add("d23_poa");
 		}
 		
@@ -755,7 +755,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 			StringIndexer d24Indexer = new StringIndexer().setInputCol("d24").setOutputCol("d24Indexer");
 			OneHotEncoder d24Vec = new OneHotEncoder().setInputCol("d24Indexer").setOutputCol("d24Vec");
 			indexers.add(d24Indexer);
-			//indexers.add(d24Vec);
+			indexers.add(d24Vec);
 		//	assemblers.add("d24");
 			}
 		}
@@ -772,7 +772,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 			StringIndexer d24poaIndexer = new StringIndexer().setInputCol("d24_poa").setOutputCol("d24poaIndexer");
 			OneHotEncoder d24poaVec = new OneHotEncoder().setInputCol("d24poaIndexer").setOutputCol("d24poaVec");
 			indexers.add(d24poaIndexer);
-			//indexers.add(d24poaVec);
+			indexers.add(d24poaVec);
 	//		assemblers.add("d24_poa");
 			}
 		}
@@ -791,7 +791,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 					StringIndexer p1Indexer = new StringIndexer().setInputCol("p1").setOutputCol("p1Indexer");
 					OneHotEncoder p1Vec = new OneHotEncoder().setInputCol("p1Indexer").setOutputCol("p1Vec");
 					indexers.add(p1Indexer);
-					//indexers.add(p1Vec);
+					indexers.add(p1Vec);
 				////	assemblers.add("p1");
 					}
 				}
@@ -806,7 +806,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 					StringIndexer p2Indexer = new StringIndexer().setInputCol("p2").setOutputCol("p2Indexer");
 					OneHotEncoder p2Vec = new OneHotEncoder().setInputCol("p2Indexer").setOutputCol("p2Vec");
 					indexers.add(p2Indexer);
-					//indexers.add(p2Vec);
+					indexers.add(p2Vec);
 				//	assemblers.add("p2");
 					}
 				}
@@ -821,7 +821,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 				StringIndexer p3Indexer = new StringIndexer().setInputCol("p3").setOutputCol("p3Indexer");
 					OneHotEncoder p3Vec = new OneHotEncoder().setInputCol("p3Indexer").setOutputCol("p3Vec");
 					indexers.add(p3Indexer);
-					//indexers.add(p3Vec);
+					indexers.add(p3Vec);
 				//	assemblers.add("p3");
 					}
 				}
@@ -836,7 +836,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 					StringIndexer p4Indexer = new StringIndexer().setInputCol("p4").setOutputCol("p4Indexer");
 					OneHotEncoder p4Vec = new OneHotEncoder().setInputCol("p4Indexer").setOutputCol("p4Vec");
 					indexers.add(p4Indexer);
-					//indexers.add(p4Vec);
+					indexers.add(p4Vec);
 					//assemblers.add("p4");
 					}
 				}
@@ -851,7 +851,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 					StringIndexer p5Indexer = new StringIndexer().setInputCol("p5").setOutputCol("p5Indexer");
 					OneHotEncoder p5Vec = new OneHotEncoder().setInputCol("p5Indexer").setOutputCol("p5Vec");
 					indexers.add(p5Indexer);
-					//indexers.add(p5Vec);
+					indexers.add(p5Vec);
 					//assemblers.add("p5");
 					}
 				}
@@ -866,7 +866,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 					StringIndexer p6Indexer = new StringIndexer().setInputCol("p6").setOutputCol("p6Indexer");
 					OneHotEncoder p6Vec = new OneHotEncoder().setInputCol("p6Indexer").setOutputCol("p6Vec");
 					indexers.add(p6Indexer);
-					//indexers.add(p6Vec);
+					indexers.add(p6Vec);
 				//	assemblers.add("p6");
 					}
 				}
@@ -881,7 +881,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 					StringIndexer p7Indexer = new StringIndexer().setInputCol("p7").setOutputCol("p7Indexer");
 					OneHotEncoder p7Vec = new OneHotEncoder().setInputCol("p7Indexer").setOutputCol("p7Vec");
 					indexers.add(p7Indexer);
-					//indexers.add(p7Vec);
+					indexers.add(p7Vec);
 				//	assemblers.add("p7");
 					}
 				}
@@ -897,7 +897,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 					StringIndexer p8Indexer = new StringIndexer().setInputCol("p8").setOutputCol("p8Indexer");
 					OneHotEncoder p8Vec = new OneHotEncoder().setInputCol("p8Indexer").setOutputCol("p8Vec");
 					indexers.add(p8Indexer);
-					//indexers.add(p8Vec);
+					indexers.add(p8Vec);
 					//assemblers.add("p8");
 					}
 				}
@@ -913,8 +913,12 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 						StringIndexer p9Indexer = new StringIndexer().setInputCol("p9").setOutputCol("p9Indexer");
 						OneHotEncoder p9Vec = new OneHotEncoder().setInputCol("p9Indexer").setOutputCol("p9Vec");
 						indexers.add(p9Indexer);
-						//indexers.add(p9Vec);
+						indexers.add(p9Vec);
 					//	assemblers.add("p9");
+					}
+					else
+					{
+						trainingDataConverted = trainingDataConverted.drop("p9");
 					}
 				}
 				if(ArrayUtils.contains(trainingDataConverted.columns(),"p10"))
@@ -928,8 +932,12 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 					StringIndexer p10Indexer = new StringIndexer().setInputCol("p10").setOutputCol("p10Indexer");
 					OneHotEncoder p10Vec = new OneHotEncoder().setInputCol("p10Indexer").setOutputCol("p10Vec");
 					indexers.add(p10Indexer);
-					//indexers.add(p10Vec);
+					indexers.add(p10Vec);
 				//	assemblers.add("p10");
+					}
+					else
+					{
+						trainingDataConverted = trainingDataConverted.drop("p10");
 					}
 				}
 				if(ArrayUtils.contains(trainingDataConverted.columns(),"p11"))
@@ -943,8 +951,12 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 					StringIndexer p11Indexer = new StringIndexer().setInputCol("p11").setOutputCol("p11Indexer");
 					OneHotEncoder p11Vec = new OneHotEncoder().setInputCol("p11Indexer").setOutputCol("p11Vec");
 					indexers.add(p11Indexer);
-					//indexers.add(p11Vec);
+					indexers.add(p11Vec);
 				//	assemblers.add("p11");
+					}
+					else
+					{
+						trainingDataConverted = trainingDataConverted.drop("p11");
 					}
 				}
 				if(ArrayUtils.contains(trainingDataConverted.columns(),"p12"))
@@ -959,13 +971,18 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 					StringIndexer p12Indexer = new StringIndexer().setInputCol("p12").setOutputCol("p12Indexer");
 					OneHotEncoder p12Vec = new OneHotEncoder().setInputCol("p12Indexer").setOutputCol("p12Vec");
 					indexers.add(p12Indexer);
-					//indexers.add(p12Vec);
+					indexers.add(p12Vec);
 					//assemblers.add("p12");
+					}
+					else
+					{
+						trainingDataConverted = trainingDataConverted.drop("p12");
 					}
 				}
 				if(ArrayUtils.contains(trainingDataConverted.columns(),"p13"))
 				{		
 					List<Row> d1Max = sparkSession.sql("SELECT p13, COUNT(p13) as d1_ct from TrainingTable group by p13 order by d1_ct desc").takeAsList(2);
+					System.out.println("p13 indexser:"+d1Max);
 					if(null!=d1Max && !d1Max.isEmpty() && d1Max.size()>1 && null!=d1Max.get(1).getAs("p13"))
 					{
 						Row row = d1Max.get(0);
@@ -974,8 +991,12 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 					StringIndexer p13Indexer = new StringIndexer().setInputCol("p13").setOutputCol("p13Indexer");
 					OneHotEncoder p13Vec = new OneHotEncoder().setInputCol("p13Indexer").setOutputCol("p13Vec");
 					indexers.add(p13Indexer);
-					//indexers.add(p13Vec);
+					indexers.add(p13Vec);
 				//	assemblers.add("p13");
+					}
+					else
+					{
+						trainingDataConverted = trainingDataConverted.drop("p13");
 					}
 				}
 				if(ArrayUtils.contains(trainingDataConverted.columns(),"p14"))
@@ -989,8 +1010,12 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 					StringIndexer p14Indexer = new StringIndexer().setInputCol("p14").setOutputCol("p14Indexer");
 					OneHotEncoder p14Vec = new OneHotEncoder().setInputCol("p14Indexer").setOutputCol("p14Vec");
 					indexers.add(p14Indexer);
-					//indexers.add(p14Vec);
+					indexers.add(p14Vec);
 			//		assemblers.add("p14");
+					}
+					else
+					{
+						trainingDataConverted = trainingDataConverted.drop("p14");
 					}
 				}
 				if(ArrayUtils.contains(trainingDataConverted.columns(),"p15"))
@@ -1008,7 +1033,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 						StringIndexer p15Indexer = new StringIndexer().setInputCol("p15").setOutputCol("p15Indexer");
 						OneHotEncoder p15Vec = new OneHotEncoder().setInputCol("p15Indexer").setOutputCol("p15Vec");
 						indexers.add(p15Indexer);
-						//indexers.add(p15Vec);
+						indexers.add(p15Vec);
 					//	assemblers.add("p15");
 					}
 					else
@@ -1028,7 +1053,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 					StringIndexer p16Indexer = new StringIndexer().setInputCol("p16").setOutputCol("p16Indexer");
 					OneHotEncoder p16Vec = new OneHotEncoder().setInputCol("p16Indexer").setOutputCol("p16Vec");
 					indexers.add(p16Indexer);
-					//indexers.add(p16Vec);
+					indexers.add(p16Vec);
 				//	assemblers.add("p16");
 					}
 					else
@@ -1048,7 +1073,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 					StringIndexer p17Indexer = new StringIndexer().setInputCol("p17").setOutputCol("p17Indexer");
 					OneHotEncoder p17Vec = new OneHotEncoder().setInputCol("p17Indexer").setOutputCol("p17Vec");
 					indexers.add(p17Indexer);
-					//indexers.add(p17Vec);
+					indexers.add(p17Vec);
 				//	assemblers.add("p17");
 					}
 					else
@@ -1070,7 +1095,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 					StringIndexer p18Indexer = new StringIndexer().setInputCol("p18").setOutputCol("p18Indexer");
 					OneHotEncoder p18Vec = new OneHotEncoder().setInputCol("p18Indexer").setOutputCol("p18Vec");
 					indexers.add(p18Indexer);
-					//indexers.add(p18Vec);
+					indexers.add(p18Vec);
 				//	assemblers.add("p18");
 					}
 					else
@@ -1089,7 +1114,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 					StringIndexer p19Indexer = new StringIndexer().setInputCol("p19").setOutputCol("p19Indexer");
 					OneHotEncoder p19Vec = new OneHotEncoder().setInputCol("p19Indexer").setOutputCol("p19Vec");
 					indexers.add(p19Indexer);
-					//indexers.add(p19Vec);
+					indexers.add(p19Vec);
 				//	assemblers.add("p19");
 					}
 					else
@@ -1108,7 +1133,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 					StringIndexer p20Indexer = new StringIndexer().setInputCol("p20").setOutputCol("p20Indexer");
 					OneHotEncoder p20Vec = new OneHotEncoder().setInputCol("p20Indexer").setOutputCol("p20Vec");
 					indexers.add(p20Indexer);
-					//indexers.add(p20Vec);
+					indexers.add(p20Vec);
 			//		assemblers.add("p20");
 					}
 					else
@@ -1127,7 +1152,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 					StringIndexer p21Indexer = new StringIndexer().setInputCol("p21").setOutputCol("p21Indexer");
 					OneHotEncoder p21Vec = new OneHotEncoder().setInputCol("p21Indexer").setOutputCol("p21Vec");
 					indexers.add(p21Indexer);
-					//indexers.add(p21Vec);
+					indexers.add(p21Vec);
 				//	assemblers.add("p21");
 					}
 					else
@@ -1146,7 +1171,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 					StringIndexer p22Indexer = new StringIndexer().setInputCol("p22").setOutputCol("p22Indexer");
 					OneHotEncoder p22Vec = new OneHotEncoder().setInputCol("p22Indexer").setOutputCol("p22Vec");
 					indexers.add(p22Indexer);
-					//indexers.add(p22Vec);
+					indexers.add(p22Vec);
 				//	assemblers.add("p22");
 					}
 					else
@@ -1184,7 +1209,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 					StringIndexer p24Indexer = new StringIndexer().setInputCol("p24").setOutputCol("p24Indexer");
 					OneHotEncoder p24Vec = new OneHotEncoder().setInputCol("p24Indexer").setOutputCol("p24Vec");
 					indexers.add(p24Indexer);
-					//indexers.add(p24Vec);
+					indexers.add(p24Vec);
 			//		assemblers.add("p24");
 					}
 					else
@@ -1202,7 +1227,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 					StringIndexer admtDiagCdIndexer = new StringIndexer().setInputCol("admtDiagCd").setOutputCol("admtDiagCdIndexer");
 					OneHotEncoder admtDiagCdVec = new OneHotEncoder().setInputCol("admtDiagCdIndexer").setOutputCol("admtDiagCdVec");
 					indexers.add(admtDiagCdIndexer);
-					//indexers.add(admtDiagCdVec);
+					indexers.add(admtDiagCdVec);
 				//	assemblers.add("admtDiagCd");
 				}
 				if(ArrayUtils.contains(trainingDataConverted.columns(),"admtDiagCdPoa"))
@@ -1216,7 +1241,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 						StringIndexer admtDiagCdPoaIndexer = new StringIndexer().setInputCol("admtDiagCdPoa").setOutputCol("admtDiagCdPoaIndexer");
 						OneHotEncoder admtDiagCdPoaVec = new OneHotEncoder().setInputCol("admtDiagCdPoaIndexer").setOutputCol("admtDiagCdPoaVec");
 						indexers.add(admtDiagCdPoaIndexer);
-						//indexers.add(admtDiagCdPoaVec);
+						indexers.add(admtDiagCdPoaVec);
 					//	assemblers.add("admtDiagCdPoa");
 					}
 					else
@@ -1235,7 +1260,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 						StringIndexer prncplDgnsCdIndexer = new StringIndexer().setInputCol("prncplDgnsCd").setOutputCol("prncplDgnsCdIndexer");
 						OneHotEncoder prncplDgnsCdVec = new OneHotEncoder().setInputCol("prncplDgnsCdIndexer").setOutputCol("prncplDgnsCdVec");
 						indexers.add(prncplDgnsCdIndexer);
-						//indexers.add(prncplDgnsCdVec);
+						indexers.add(prncplDgnsCdVec);
 				//		assemblers.add("prncplDgnsCd");
 					}
 					else
@@ -1257,7 +1282,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 							StringIndexer prncplDgnsPoaIndexer = new StringIndexer().setInputCol("prncplDgnsPoa").setOutputCol("prncplDgnsPoaIndexer");
 							OneHotEncoder prncplDgnsPoaVec = new OneHotEncoder().setInputCol("prncplDgnsPoaIndexer").setOutputCol("prncplDgnsPoaVec");
 							indexers.add(prncplDgnsPoaIndexer);
-							//indexers.add(prncplDgnsPoaVec);
+							indexers.add(prncplDgnsPoaVec);
 						//	assemblers.add("prncplDgnsPoa");
 						}
 						else
@@ -1274,7 +1299,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 					StringIndexer prncplPrcdrCdIndexer = new StringIndexer().setInputCol("prncplPrcdrCd").setOutputCol("prncplPrcdrCdIndexer");
 					OneHotEncoder prncplPrcdrCdVec = new OneHotEncoder().setInputCol("prncplPrcdrCdIndexer").setOutputCol("prncplPrcdrCdVec");
 					indexers.add(prncplPrcdrCdIndexer);
-					//indexers.add(prncplPrcdrCdVec);
+					indexers.add(prncplPrcdrCdVec);
 			//		assemblers.add("prncplPrcdrCd");
 				}
 				if(ArrayUtils.contains(trainingDataConverted.columns(),"patientStatusLkpcd"))
@@ -1289,7 +1314,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 						StringIndexer patientStatusLkpcdIndexer = new StringIndexer().setInputCol("patientStatusLkpcd").setOutputCol("patientStatusLkpcdIndexer");
 						indexers.add(patientStatusLkpcdIndexer);
 						OneHotEncoder patientStatusLkpcdVec = new OneHotEncoder().setInputCol("patientStatusLkpcdIndexer").setOutputCol("patientStatusLkpcdVec");
-						//indexers.add(patientStatusLkpcdVec);
+						indexers.add(patientStatusLkpcdVec);
 					}
 					else
 					{
