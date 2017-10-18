@@ -3,7 +3,7 @@ package com.icare.ing.util.spark;
 import java.io.Serializable;
 
 import com.ecams.claim.bo.ClaimHeader;
-import com.icare.common.dto.CH;
+import com.icare.ing.dto.CH;
 import com.icare.ing.repository.impl.MasterDataRepositoryImpl;
 import com.icare.ing.repository.intf.MasterDataRepositoryInf;
 

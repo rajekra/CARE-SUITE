@@ -7,8 +7,8 @@ import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.SparkSession;
 
-import com.icare.common.dto.CH;
-import com.icare.common.dto.CL;
+import com.icare.ing.dto.CH;
+import com.icare.ing.dto.CL;
 import com.icare.ing.repository.RepositoryFactory;
 import com.icare.ing.repository.intf.InpatientAggregationRepoIntf;
 import com.icare.ing.service.analytics.AbstractDescriptive;

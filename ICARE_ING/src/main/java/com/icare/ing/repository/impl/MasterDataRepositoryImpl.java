@@ -5,7 +5,7 @@ import static com.mongodb.client.model.Projections.excludeId;
 import org.bson.BSONObject;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.icare.common.dto.CH;
+import com.icare.ing.dto.CH;
 import com.icare.ing.repository.intf.MasterDataRepositoryInf;
 import com.icare.ing.util.CommonConstants;
 import com.icare.ing.util.JsonUtil;

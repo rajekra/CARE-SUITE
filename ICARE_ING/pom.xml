@@ -113,12 +113,6 @@
 		</dependency>
 
 		<dependency>
-			<groupId>ICARE</groupId>
-			<artifactId>ZCOM</artifactId>
-			<version>1.0-SNAPSHOT</version>
-		</dependency>
-
-		<dependency>
 			<groupId>commons-dbcp</groupId>
 			<artifactId>commons-dbcp</artifactId>
 			<version>1.4</version>
@@ -148,6 +142,12 @@
 			<groupId>org.apache.spark</groupId>
 			<artifactId>spark-streaming-kafka-0-10_2.11</artifactId>
 			<version>2.2.0</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.ecams.claim.core</groupId>
+			<artifactId>claim-core-dto</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
 		</dependency>
 
 	</dependencies>

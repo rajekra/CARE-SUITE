@@ -12,7 +12,7 @@ import org.apache.spark.sql.SQLContext;
 import antlr.collections.List;
 
 import com.google.common.collect.ImmutableMap;
-import com.icare.common.dto.CH;
+import com.icare.ing.dto.CH;
 
 import java.io.Serializable;
 import java.util.ArrayList;

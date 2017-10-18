@@ -8,8 +8,8 @@ import java.util.Map;
 
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
-import com.icare.common.dto.CH;
-import com.icare.common.dto.CL;
+import com.icare.ing.dto.CH;
+import com.icare.ing.dto.CL;
 import com.icare.ing.repository.intf.InpatientStagingRepoIntf;
 import com.icare.ing.util.CommonConstants;
 import com.icare.ing.util.JsonUtil;

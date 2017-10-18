@@ -11,7 +11,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.icare.common.dto.CH;
+import com.icare.ing.dto.CH;
 
 
 public class JsonUtil {
@@ -40,7 +40,7 @@ public class JsonUtil {
 		return objectMapper.writeValueAsString(claimHeaderBo);
 	}
 	
-	public static String translateBoToJsonString(com.icare.common.dto.Class claimHeaderBo) throws JsonProcessingException
+	public static String translateBoToJsonString(com.icare.ing.dto.Class claimHeaderBo) throws JsonProcessingException
 	{
 		return objectMapper.writeValueAsString(claimHeaderBo);
 	}

@@ -21,8 +21,8 @@ import com.ecams.claim.bo.ClmHdrValueAmount;
 import com.ecams.claim.bo.ClmHdrXDiagnosis;
 import com.ecams.claim.bo.ClmHdrXProcedure;
 import com.ecams.claim.bo.ClmHdrXPrvdrLctn;
-import com.icare.common.dto.CH;
-import com.icare.common.dto.CL;
+import com.icare.ing.dto.CH;
+import com.icare.ing.dto.CL;
 import com.icare.ing.repository.intf.MasterDataRepositoryInf;
 
 public class ClaimHeaderToCHConverter {

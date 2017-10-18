@@ -13,7 +13,7 @@ import org.apache.spark.storage.StorageLevel;
 import org.bson.Document;
 
 import com.ecams.claim.bo.ClaimHeader;
-import com.icare.common.dto.CH;
+import com.icare.ing.dto.CH;
 import com.mongodb.spark.MongoSpark;
 import com.mongodb.spark.config.ReadConfig;
 import com.mongodb.spark.rdd.api.java.JavaMongoRDD;
@@ -66,7 +66,7 @@ public final class ClaimHeaderSpark {
     JavaMongoRDD<Document> dd = MongoSpark.load(jsc);
     dd.persist(StorageLevel.MEMORY_AND_DISK());
     System.out.println("2");
-    Dataset<com.icare.common.dto.CH> explicitDS = dd.toDS(com.icare.common.dto.CH.class);
+    Dataset<com.icare.ing.dto.CH> explicitDS = dd.toDS(com.icare.ing.dto.CH.class);
     
     explicitDS.printSchema();
    // explicitDS.show();

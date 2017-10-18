@@ -14,8 +14,8 @@ import org.graphframes.GraphFrame;
 
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
-import com.icare.common.dto.CH;
-import com.icare.common.dto.CL;
+import com.icare.ing.dto.CH;
+import com.icare.ing.dto.CL;
 import com.icare.ing.dto.InpatientVertex;
 import com.icare.ing.dto.MDCVertex;
 import com.icare.ing.util.CommonConstants;

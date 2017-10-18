@@ -12,7 +12,7 @@ import org.bson.Document;
 import com.ecams.claim.bo.ClaimHeader;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
-import com.icare.common.dto.CH;
+import com.icare.ing.dto.CH;
 import com.icare.ing.repository.impl.MasterDataRepositoryImpl;
 import com.icare.ing.repository.intf.MasterDataRepositoryInf;
 import com.icare.ing.util.CommonConstants;
