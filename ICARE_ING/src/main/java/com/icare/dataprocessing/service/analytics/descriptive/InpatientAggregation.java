@@ -63,7 +63,7 @@ public class InpatientAggregation extends AbstractDescriptive {
 
 		// Dataset<Row> centenarians =
 		// spark.sql("select distinct h.prncplPrcdrCd, h.prncplDgnsCd, h.mdc, sum(cast(h.totalBilledAmount as int)) as total_amount from header h group by h.mdc,h.prncplDgnsCd, h.prncplPrcdrCd order by total_amount desc");
-		Dataset<Row> centenarians = sparkSession.sql(InpatientAggregationRepoIntf.aggregateQuery.toString());
+		Dataset<Row> centenarians = sparkSession.sql(InpatientAggregationRepoIntf.inpatientAggregateQuery.toString());
 		return (T) centenarians;
 	}
 
@@ -74,7 +74,7 @@ public class InpatientAggregation extends AbstractDescriptive {
 		dataSet.createOrReplaceTempView("aggheader");
 		//dataSet.printSchema();
 		dataSet.show();
-		RepositoryFactory.getInpatientAggregationRepo().save(dataSet);
+		RepositoryFactory.getInpatientAggregationRepo().save(dataSet,CommonConstants.INPATIENT_AGGREGATED_STR);
 		return null;
 	}
 

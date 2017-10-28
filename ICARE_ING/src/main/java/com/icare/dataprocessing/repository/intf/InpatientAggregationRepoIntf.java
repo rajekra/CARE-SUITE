@@ -7,7 +7,7 @@ package com.icare.dataprocessing.repository.intf;
 public interface InpatientAggregationRepoIntf {
 	
 	/** The Constant aggregateQuery. */
-	public static final StringBuilder aggregateQuery = new StringBuilder()
+	public static final StringBuilder inpatientAggregateQuery = new StringBuilder()
 	.append("SELECT cd.inDate, cd.prncplPrcdrCd,")
 	.append("  cd.prncplDgnsCd,")
 	.append("  CAST(cd.mdc AS INT),")
@@ -349,7 +349,7 @@ public interface InpatientAggregationRepoIntf {
  * @param <T> the generic type
  * @param dataSet the data set
  */
-public <T> void save(T dataSet);
+public <T> void save(T dataSet, String tableName);
 
-public <T,C> T load(C context);
+public <T,C> T load(C context, String tableName);
 }

@@ -133,7 +133,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 
 	@Override
 	public <T, P> T loadTrainingData(P config) throws Exception {
-		Dataset<Row> testingData  = RepositoryFactory.getInpatientAggregationRepo().load(javaSparkContext);
+		Dataset<Row> testingData  = RepositoryFactory.getInpatientAggregationRepo().load(javaSparkContext,"INPATIENT_AGGREGATED");
 		Dataset<Row> extractedTestingData = testingData.drop("_id", "inDate",
 				"ocr1_dt", "ocr2_dt", "ocr3_dt", "ocr4_dt", "ocr5_dt", "p1_dt",
 				"p2_dt", "p3_dt", "p4_dt", "p5_dt", "p6_dt", "p7_dt", "p8_dt",
@@ -155,7 +155,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 
 	@Override
 	public <T, P> T loadTestingData(P config) throws Exception {
-		Dataset<Row> testingData  = RepositoryFactory.getInpatientAggregationRepo().load(javaSparkContext);
+		Dataset<Row> testingData  = RepositoryFactory.getInpatientAggregationRepo().load(javaSparkContext,"INPATIENT_AGGREGATED");
 		Dataset<Row> extractedTestingData = testingData.drop("_id", "inDate",
 				"ocr1_dt", "ocr2_dt", "ocr3_dt", "ocr4_dt", "ocr5_dt", "p1_dt",
 				"p2_dt", "p3_dt", "p4_dt", "p5_dt", "p6_dt", "p7_dt", "p8_dt",
