@@ -47,17 +47,10 @@ public abstract class LinearRegressionBuilder implements AbstractPredictive{
 	/** The java spark context. */
 	protected JavaSparkContext javaSparkContext;
 
-	public LinearRegressionBuilder() throws Exception
-	{
-		if(null==sparkSession)
-		{
-			sparkSession = SparkSession.builder().master(CommonConstants.SPARK_MASTER)
-					 .config("spark.app.name", "AbstractAnaytics")
-					  .getOrCreate();
-		}
+	public LinearRegressionBuilder(SparkSession sparkSession2) {
+		this.sparkSession = sparkSession2;
 		javaSparkContext = new JavaSparkContext(sparkSession.sparkContext());
-		close();
-	}
+		}
 	public void close()
 	{
 		if(null!=javaSparkContext)

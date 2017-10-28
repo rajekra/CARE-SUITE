@@ -108,35 +108,26 @@ import com.icare.dataprocessing.util.CommonConstants;
  |-- totalBilledAmount: long (nullable = true)
  */
 public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
-	public InpatientMdcwisePrediction() throws Exception {
-		super();
+	public InpatientMdcwisePrediction(SparkSession sparkSession) throws Exception {
+		super(sparkSession);
 		 System.out.println("InpatientMdcwisePrediction Constructor");
 	}
 
 	public static void main(String args[]) throws Exception {
-		new InpatientMdcwisePrediction();
+		SparkSession sparkSession = SparkSession.builder().master(CommonConstants.SPARK_MASTER)
+				 .config("spark.app.name", "InpatientMdcwisePrediction")
+				 .config("spark.sql.crossJoin.enabled", "true")
+				// .config("spark.mongodb.input.uri", "mongodb://10.0.0.247:27017/icare.INPATIENT_AGGREGATED")
+				// .config("spark.mongodb.output.uri", "mongodb://10.0.0.247:27017")
+				// .config("spark.mongodb.input.collection", "icare.INPATIENT_AGGREGATED")
+				//  .config("spark.mongodb.input.database", "icare")
+				  .getOrCreate();
+		new InpatientMdcwisePrediction(sparkSession);
 	}
 
 
 	@Override
 	public <T, P> T initialize(P config) throws Exception {
-		System.out.println("InpatientMdcwisePrediction [initialize]: STARTS");
-		try{
-			sparkSession = SparkSession.builder().master(CommonConstants.SPARK_MASTER)
-					 .config("spark.app.name", "InpatientMdcwisePrediction")
-					 .config("spark.sql.crossJoin.enabled", "true")
-					// .config("spark.mongodb.input.uri", "mongodb://10.0.0.247:27017/icare.INPATIENT_AGGREGATED")
-					// .config("spark.mongodb.output.uri", "mongodb://10.0.0.247:27017")
-					// .config("spark.mongodb.input.collection", "icare.INPATIENT_AGGREGATED")
-					//  .config("spark.mongodb.input.database", "icare")
-					  .getOrCreate();
-			javaSparkContext = new JavaSparkContext(sparkSession.sparkContext());
-		}
-		catch(Exception ex)
-		{
-			System.out.println("InpatientMdcwisePrediction [initialize]: Exception:" + ex.getMessage());
-		}
-		System.out.println("InpatientMdcwisePrediction [initialize]: ENDS");
 		return null;
 	}
 

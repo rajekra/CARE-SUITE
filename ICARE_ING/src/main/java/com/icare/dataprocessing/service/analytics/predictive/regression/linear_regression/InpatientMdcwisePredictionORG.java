@@ -108,7 +108,7 @@ import com.icare.dataprocessing.util.CommonConstants;
  */
 public class InpatientMdcwisePredictionORG extends LinearRegressionBuilder {
 	public InpatientMdcwisePredictionORG() throws Exception {
-		super();
+		super(null);
 	}
 
 	public static void main(String args[]) throws Exception {

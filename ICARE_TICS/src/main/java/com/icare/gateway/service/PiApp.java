@@ -4,7 +4,7 @@ import java.io.File;
 import java.net.URI;
 
 import com.cloudera.livy.*;
-import com.icare.dataprocessing.service.analytics.predictive.PredictorFacade;
+import com.icare.dataprocessing.service.analytics.predictive.PredictionExecutor;
 
 
 public class PiApp {
@@ -30,8 +30,7 @@ public class PiApp {
 	      client.uploadJar(new File("C:\\Users\\kandhasamyr\\OneDrive - CNSI\\ICARE\\lib\\icare\\mongo-java-driver-3.4.2.jar"));
 	      client.uploadJar(new File("C:\\Users\\kandhasamyr\\OneDrive - CNSI\\ICARE\\lib\\icare\\mongo-spark-connector_2.10-2.1.0.jar"));
 	      System.out.println("File uploaded...");
-
-	      System.out.println("Pi is roughly " +client.submit(new PredictorFacade()).get());
+	      System.out.println("Pi is roughly " +client.submit(new PredictionExecutor("INPATIENT_MDC")).get());
 	    }
 	    catch(Exception ex)
 	    {

@@ -1,11 +1,13 @@
 package com.icare.dataprocessing.service.analytics.predictive;
 
+import org.apache.spark.sql.SparkSession;
+
 import com.icare.dataprocessing.service.analytics.AbstractPredictive;
 import com.icare.dataprocessing.service.analytics.predictive.regression.linear_regression.InpatientMdcwisePrediction;
 
 public class PredictiveFactory {
 	
-	   public static AbstractPredictive getPredictor(String predictorType) throws Exception{
+	   public static AbstractPredictive getPredictor(String predictorType, SparkSession sparkSession) throws Exception{
 		   System.out.println("[getPredictor] STARTS");
 	      if(predictorType == null){
 	         return null;
@@ -15,7 +17,7 @@ public class PredictiveFactory {
 	    	  InpatientMdcwisePrediction inp = null;
 	    	  try
 	    	  {
-	    		  inp = new InpatientMdcwisePrediction();
+	    		  inp = new InpatientMdcwisePrediction(sparkSession);
 	    		  System.out.println("[getPredictor] after InpatientMdcwisePrediction"  +inp);
 	    	  }
 	    	  catch(Exception ex)

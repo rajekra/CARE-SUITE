@@ -83,17 +83,17 @@
 			<scope>provided</scope>
 		</dependency>
 
-	<!--  	<dependency>
+	 	<dependency>
 			<groupId>org.mongodb.spark</groupId>
 			<artifactId>mongo-spark-connector_2.11</artifactId>
 			<version>2.2.0</version>
-		</dependency>-->
-		
+		</dependency>
+	<!-- 	
 <dependency>
     <groupId>org.mongodb.spark</groupId>
     <artifactId>mongo-spark-connector_2.10</artifactId>
     <version>2.1.0</version>
-</dependency>
+</dependency>-->
 		
 
 		<!-- fix java.lang.ClassNotFoundException: org.codehaus.commons.compiler.UncheckedCompileException -->
