@@ -1,5 +1,8 @@
 package com.icare.dataprocessing.repository.impl;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
@@ -7,6 +10,7 @@ import org.apache.spark.sql.Row;
 import com.icare.dataprocessing.repository.intf.InpatientAggregationRepoIntf;
 import com.icare.dataprocessing.util.CommonConstants;
 import com.mongodb.spark.MongoSpark;
+import com.mongodb.spark.config.ReadConfig;
 
 public class InpatientAggregationRepoImpl implements InpatientAggregationRepoIntf{
 
@@ -19,7 +23,14 @@ public class InpatientAggregationRepoImpl implements InpatientAggregationRepoInt
 	@SuppressWarnings("unchecked")
 	@Override
 	public <T,C> T load(C context) {
-		Dataset<Row> implicitDS = MongoSpark.load((JavaSparkContext) context).toDF();
+		System.out.println("InpatientAggregationRepoImpl [load] STARTS");
+		Map<String, String> readOverrides = new HashMap<String, String>();
+	        readOverrides.put("uri", "mongodb://10.0.0.247:27017/icare.INPATIENT_AGGREGATED");
+	     //   readOverrides.put("readPreference.name", "secondaryPreferred");
+	        ReadConfig readConfig = ReadConfig.create(readOverrides);
+		Dataset<Row> implicitDS = MongoSpark.load((JavaSparkContext) context, readConfig).toDF();
+	//	Dataset<Row> implicitDS = MongoSpark.load((JavaSparkContext) context).toDF();
+		System.out.println("InpatientAggregationRepoImpl [load] ENDS");
 		return (T) implicitDS;
 	}
 

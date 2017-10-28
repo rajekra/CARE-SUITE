@@ -6,7 +6,7 @@ import java.util.List;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.SparkSession;
-import org.graphframes.GraphFrame;
+//import org.graphframes.GraphFrame;
 
 public class CopyOfSparkGraphFrameSample {
 
@@ -55,32 +55,32 @@ public class CopyOfSparkGraphFrameSample {
 		
 		edgDF.cache();
 		// Create a GraphFrame
-		GraphFrame gFrame = new GraphFrame(verDF, edgDF);
-		//gFrame.vertices().show();
-		gFrame.cache();
-//		gFrame.edges().show();
+//		GraphFrame gFrame = new GraphFrame(verDF, edgDF);
+//		//gFrame.vertices().show();
+//		gFrame.cache();
+////		gFrame.edges().show();
+////		gFrame.inDegrees().show();
+////		gFrame.outDegrees().show();
+//		
+//		//working fine
+//		GraphFrame pRank = gFrame.pageRank().resetProbability(0.01).maxIter(1).run();
+//		System.out.println("RAJK:"+pRank.vertices().count());
+//		pRank.edges().count();
+//		pRank.vertices().show();
+//		
+//		// Get in-degree of each vertex.
+//		System.out.println("RAJ Indeg");
 //		gFrame.inDegrees().show();
+//		System.out.println("RAJ out");
 //		gFrame.outDegrees().show();
-		
-		//working fine
-		GraphFrame pRank = gFrame.pageRank().resetProbability(0.01).maxIter(1).run();
-		System.out.println("RAJK:"+pRank.vertices().count());
-		pRank.edges().count();
-		pRank.vertices().show();
-		
-		// Get in-degree of each vertex.
-		System.out.println("RAJ Indeg");
-		gFrame.inDegrees().show();
-		System.out.println("RAJ out");
-		gFrame.outDegrees().show();
-		// Count the number of "follow" connections in the graph.
-		@SuppressWarnings("unused")
-		long count = gFrame.edges().filter("relationship = 'follow'").count();
-		// Run PageRank algorithm, and show results.
-//		
-//		
-//		PageRank pRank = gFrame.pageRank().resetProbability(0.00).maxIter(1);
-//		pRank.run().vertices().select("id", "pagerank").show();
+//		// Count the number of "follow" connections in the graph.
+//		@SuppressWarnings("unused")
+//		long count = gFrame.edges().filter("relationship = 'follow'").count();
+//		// Run PageRank algorithm, and show results.
+////		
+////		
+////		PageRank pRank = gFrame.pageRank().resetProbability(0.00).maxIter(1);
+////		pRank.run().vertices().select("id", "pagerank").show();
 
 		// stop
 		spark.stop();

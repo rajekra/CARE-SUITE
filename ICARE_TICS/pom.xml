@@ -46,7 +46,20 @@
 			<artifactId>tomcat-embed-jasper</artifactId>
 			<scope>provided</scope>
 		</dependency>
+		
+<!-- https://mvnrepository.com/artifact/com.cloudera.livy/livy-client-http -->
+<dependency>
+    <groupId>com.cloudera.livy</groupId>
+    <artifactId>livy-client-http</artifactId>
+    <version>0.3.0</version>
+</dependency>
 
+
+<dependency>
+<groupId>ICARE</groupId>
+	<artifactId>ZING</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	</dependency>
 		<!-- Need this to compile JSP -->
 		<dependency>
 			<groupId>org.eclipse.jdt.core.compiler</groupId>

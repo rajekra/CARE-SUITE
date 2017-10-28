@@ -18,6 +18,7 @@ public abstract class AbstractPredictorBuilder {
 	}
 	public <P> void buildModel(P config) throws Exception
 	{
+		System.out.println("[buildModel]: STARTS");
 		if(null!=modelBuilder)
 		{
 			modelBuilder.initialize(config);
@@ -27,6 +28,7 @@ public abstract class AbstractPredictorBuilder {
 			modelBuilder.buildPipeline(config);
 			modelBuilder.buildModel(trainingData);
 		}
+		System.out.println("[buildModel]: ENDS");
 	}
 	
 	public <P> void predict(P config) throws Exception

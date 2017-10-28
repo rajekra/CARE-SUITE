@@ -10,7 +10,7 @@ import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.SparkSession;
-import org.graphframes.GraphFrame;
+//import org.graphframes.GraphFrame;
 
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
@@ -92,12 +92,12 @@ public class MdcAnalytics {
 	     Dataset<Row> edges = spark.sql("SELECT cast(MDC_ID as int) as srcMdc, cast(MDC_ID as int) as desMdc FROM MasterMdc");
 	     
 	     edges.printSchema();
-	     GraphFrame gFrame = new GraphFrame(masterMdcVertices, edges);
-		 gFrame.cache();
-		 
-		 
-		// gFrame.edges().show();
- 		 gFrame.inDegrees().show();
+//	     GraphFrame gFrame = new GraphFrame(masterMdcVertices, edges);
+//		 gFrame.cache();
+//		 
+//		 
+//		// gFrame.edges().show();
+// 		 gFrame.inDegrees().show();
 		 
 //		 GraphFrame pRank = gFrame.pageRank().resetProbability(0.01).maxIter(1).run();
 //			pRank.vertices().show();

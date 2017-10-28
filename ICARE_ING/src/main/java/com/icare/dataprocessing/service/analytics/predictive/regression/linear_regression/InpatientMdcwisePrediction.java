@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.apache.commons.lang.ArrayUtils;
 import org.apache.commons.lang.StringUtils;
+import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.ml.Estimator;
 import org.apache.spark.ml.Pipeline;
 import org.apache.spark.ml.PipelineStage;
@@ -109,6 +110,7 @@ import com.icare.dataprocessing.util.CommonConstants;
 public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 	public InpatientMdcwisePrediction() throws Exception {
 		super();
+		 System.out.println("InpatientMdcwisePrediction Constructor");
 	}
 
 	public static void main(String args[]) throws Exception {
@@ -118,12 +120,23 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 
 	@Override
 	public <T, P> T initialize(P config) throws Exception {
-		sparkSession = SparkSession.builder().master(CommonConstants.SPARK_MASTER)
-		 .config("spark.app.name", "InpatientMdcwisePrediction")
-		 .config("spark.sql.crossJoin.enabled", "true")
-		 .config("spark.mongodb.input.uri",	CommonConstants.MONGO_URI+"icare.INPATIENT_AGGREGATED")
-		 .config("spark.mongodb.output.uri", CommonConstants.MONGO_URI+"icare.INPATIENT_AGGREGATED")
-		  .getOrCreate();
+		System.out.println("InpatientMdcwisePrediction [initialize]: STARTS");
+		try{
+			sparkSession = SparkSession.builder().master(CommonConstants.SPARK_MASTER)
+					 .config("spark.app.name", "InpatientMdcwisePrediction")
+					 .config("spark.sql.crossJoin.enabled", "true")
+					// .config("spark.mongodb.input.uri", "mongodb://10.0.0.247:27017/icare.INPATIENT_AGGREGATED")
+					// .config("spark.mongodb.output.uri", "mongodb://10.0.0.247:27017")
+					// .config("spark.mongodb.input.collection", "icare.INPATIENT_AGGREGATED")
+					//  .config("spark.mongodb.input.database", "icare")
+					  .getOrCreate();
+			javaSparkContext = new JavaSparkContext(sparkSession.sparkContext());
+		}
+		catch(Exception ex)
+		{
+			System.out.println("InpatientMdcwisePrediction [initialize]: Exception:" + ex.getMessage());
+		}
+		System.out.println("InpatientMdcwisePrediction [initialize]: ENDS");
 		return null;
 	}
 
