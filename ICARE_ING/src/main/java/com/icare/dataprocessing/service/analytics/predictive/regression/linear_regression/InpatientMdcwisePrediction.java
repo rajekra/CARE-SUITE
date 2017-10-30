@@ -168,9 +168,9 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 				"val4_amt", "val5", "val5_amt", "val6", "val6_amt", "val7",
 				"val7_amt", "val8", "val8_amt", "val9", "val9_amt", "val10",
 				"val10_amt", "prncplPrcdrCdDate", "dischargeDate",
-				"admissionDate");
+				"admissionDate","totalBilledAmount");
 		//extractedTestingData.printSchema();
-
+		
 		//To print mean/median
 		//extractedTestingData.describe("admtDiagCd").show();
 		return (T) extractedTestingData;
@@ -187,6 +187,9 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 //		trainValidationSplitModel = trainValidationSplit.fit((Dataset<Row>) trainingData);
 //		return (T) trainValidationSplitModel;
 		Dataset<Row> trainingDataConverted = (Dataset<Row>) trainingData;
+		
+		trainingDataConverted = trainingDataConverted.withColumnRenamed("totalBilledAmount", "label");
+		
 		trainingDataConverted.createOrReplaceTempView("TrainingTable");
 		System.out.println("RAJ");
 		
@@ -1345,6 +1348,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 				Bucketizer mdcBucketizer = new Bucketizer().setInputCol("mdc").setOutputCol("mdcBucketizer").setSplits(mdcSplits);
 				indexers.add(mdcBucketizer);
 		assemblers.add("los");
+		
 		VectorAssembler assembler = new VectorAssembler().setInputCols(assemblers.toArray(new String[assemblers.size()])).setOutputCol("features_temp");
 		
 //		//Vector normalizer
@@ -1361,7 +1365,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 		trainValidationSplit.setEstimator(pipeLine);
 		
 		
-		Dataset<Row>[] splitData = trainingDataConverted.randomSplit(new double[]{0.8, 0.2});
+		Dataset<Row>[] splitData = trainingDataConverted.randomSplit(new double[]{0.7, 0.3});
 		Dataset<Row> train = splitData[0];
 		List<Row> rows = train.takeAsList(100);
 		
@@ -1385,7 +1389,6 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 		System.out.println("Test RMSE:");
 		System.out.println(metrics.rootMeanSquaredError());
 		
-		
 		//Option 2
 //		LinearRegressionModel lrModel = linearRegression.fit(null);
 //		printMySummary(lrModel);
@@ -1399,9 +1402,9 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 	@SuppressWarnings("unchecked")
 	@Override
 	public <T, P> T predict(P testingData) throws Exception {
-//		Dataset<Row> predictedValues = trainValidationSplitModel.transform((Dataset<Row>) testingData).select("features", "label", "prediction");	
-//		return (T) predictedValues;
-		return null;
+		Dataset<Row> predictedValues = trainValidationSplitModel.transform((Dataset<Row>) testingData).select("features", "label", "prediction");	
+		return (T) predictedValues;
+//		return null;
 	}
 
 	@Override

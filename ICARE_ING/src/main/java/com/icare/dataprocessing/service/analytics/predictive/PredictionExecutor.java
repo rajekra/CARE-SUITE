@@ -9,7 +9,7 @@ import com.icare.dataprocessing.util.CommonConstants;
 public class PredictionExecutor extends AbstractPredictorBuilder implements Job{
 	
 	public PredictionExecutor(String jobName) {
-		this.jobName = jobName;
+		this.predictionJobName = jobName;
 	}
 
 	public static void main(String[] args) throws Exception
