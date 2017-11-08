@@ -1,5 +1,7 @@
 package com.icare.dataprocessing.service.analytics.predictive;
 
+import java.util.List;
+
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.SparkSession;
@@ -75,7 +77,13 @@ public abstract class AbstractPredictorBuilder {
 			Dataset<Row> predictedData = modelBuilder.predict(testingData);
 			System.out.println("**************************** Predicted Data - Starts ***********************************");
 			predictedData.printSchema();
-			predictedData.show();
+			//predictedData.show();
+			List<Row> rows = predictedData.takeAsList(1000);
+			
+			for(Row row:rows)
+			{
+				System.out.println("row:" +row);
+			}
 			System.out.println("**************************** Predicted Data - Ends ***********************************");
 		}
 	}

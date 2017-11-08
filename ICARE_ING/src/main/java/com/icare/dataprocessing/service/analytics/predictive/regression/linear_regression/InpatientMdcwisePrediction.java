@@ -1402,7 +1402,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 	@SuppressWarnings("unchecked")
 	@Override
 	public <T, P> T predict(P testingData) throws Exception {
-		Dataset<Row> predictedValues = trainValidationSplitModel.transform((Dataset<Row>) testingData).select("features", "label", "prediction");	
+		Dataset<Row> predictedValues = trainValidationSplitModel.transform((Dataset<Row>) testingData).select("los","patientStatusLkpcd","admtDiagCd","age","patientGender","prncplDgnsCd","prncplPrcdrCd","drgCode","mdc","features", "label", "prediction");	
 		return (T) predictedValues;
 //		return null;
 	}
