@@ -26,7 +26,7 @@ import com.mongodb.client.MongoCursor;
 import com.mongodb.spark.MongoSpark;
 import com.mongodb.spark.config.ReadConfig;
 
-public class MdcAnalytics {
+public class MdcGraphAnalytics {
 	public static void main(String[] args) throws JsonParseException, JsonMappingException, IOException {
 
 		SparkSession spark = SparkSession.builder()
@@ -66,8 +66,8 @@ public class MdcAnalytics {
 		
 		
 		 Dataset<Row> masterMdcVertices = MongoSpark.load(jsc).toDF();
-		// masterMdcVertices.printSchema();
-		// masterMdcVertices.show();
+		 masterMdcVertices.printSchema();
+		 masterMdcVertices.show();
 
 		 // Loading data with a custom ReadConfig
 	     Map<String, String> readOverrides = new HashMap<String, String>();
