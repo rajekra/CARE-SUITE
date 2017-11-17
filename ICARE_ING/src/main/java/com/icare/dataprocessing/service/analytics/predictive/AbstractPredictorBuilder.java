@@ -44,48 +44,29 @@ public abstract class AbstractPredictorBuilder {
 	 * @param config the config
 	 * @throws Exception the exception
 	 */
-	public <P> void buildModel(P config) throws Exception
+	public <P> void predict(P config) throws Exception
 	{
 		System.out.println("[buildModel]: STARTS");
 		if(null!=modelBuilder)
 		{
+			System.out.println("++++++++++++++++++++STEP 1: Initialize prediction++++++++++++++++++++");
 			modelBuilder.initialize(config);
-			Dataset<Row> trainingData = modelBuilder.loadTrainingData(config);
-			System.out.println("====================Training Data====================");
-			//trainingData.show();
-			modelBuilder.buildPipeline(config);
-			modelBuilder.buildModel(trainingData);
+			System.out.println("++++++++++++++++++++STEP 2: Load the dataset+++++++++++++++++++++");
+			Dataset<Row> completeData = modelBuilder.loadTrainingData(config);
+			Dataset<Row>[] splitData = completeData.randomSplit(new double[]{0.7, 0.3});
+			Dataset<Row> trainData = splitData[0];
+			Dataset<Row> testData = splitData[1];
+			System.out.println("++++++++++++++++++++Step 3: Build the pipeline+++++++++++++++++++++");
+			trainData = modelBuilder.buildPipeline(trainData);
+			System.out.println("++++++++++++++++++++Step 4: Build the model with train data+++++++++++++++++++++");
+			modelBuilder.buildModel(trainData);
+			System.out.println("++++++++++++++++++++Step 5: Predict the model test data+++++++++++++++++++++");
+			Dataset<Row> predictedData = modelBuilder.predict(testData);
+			predictedData.printSchema();
+			predictedData.show();
+			System.out.println("++++++++++++++++++++Step 6: Save the prdicted data+++++++++++++++++++++");
 		}
 		System.out.println("[buildModel]: ENDS");
-	}
-	
-	/**
-	 * Predict.
-	 *
-	 * @param <P> the generic type
-	 * @param config the config
-	 * @throws Exception the exception
-	 */
-	public <P> void predict(P config) throws Exception
-	{
-		if(null!=modelBuilder)
-		{
-			Dataset<Row> testingData = modelBuilder.loadTestingData(config);
-			System.out.println("====================Testing Data====================");
-			testingData.show();
-			testingData.printSchema();
-			Dataset<Row> predictedData = modelBuilder.predict(testingData);
-			System.out.println("**************************** Predicted Data - Starts ***********************************");
-			predictedData.printSchema();
-			//predictedData.show();
-			List<Row> rows = predictedData.takeAsList(1000);
-			
-			for(Row row:rows)
-			{
-				System.out.println("row:" +row);
-			}
-			System.out.println("**************************** Predicted Data - Ends ***********************************");
-		}
 	}
 	
 	/**
@@ -102,8 +83,8 @@ public abstract class AbstractPredictorBuilder {
 		setModelBuilder(predictor);
 		System.out.println("[executePrediction]: setModelBuilder after");
 		System.out.println("[executePrediction]: buildModel before");
-		buildModel(null);
-		System.out.println("[executePrediction]: buildModel after");
 		predict(null);
+		System.out.println("[executePrediction]: buildModel after");
+	//	predict(null);
 	}
 }

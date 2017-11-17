@@ -11,9 +11,13 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.Year;
+import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Random;
+
+import org.apache.commons.lang3.RandomStringUtils;
 
 import com.icare.dataprocessing.repository.impl.MasterDataRepositoryImpl;
 import com.icare.dataprocessing.repository.intf.MasterDataRepositoryInf;
@@ -33,7 +37,7 @@ public class CSVReaderExample {
 		
         String csvFile = "C:/Users/kandhasamyr/Downloads/Model_13_Datasource_2.CSV";
 
-        String header = "mbrIdentifier,blngNationalPrvdrIdntfr,admtDiagCd,patientBirthDate,admissionDate,dischargeDate,patientStatusLkpcd,de1,prncplDgnsCd,p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,d1,d2,d3,d4,d5,d6,d7,d8,d9,d10,d11,d12,d13,d14,d15,d16,d17,d18,d19,d20,d21,d22,d23,d24,patientGender,totalBilledAmount,drgCode,mdc";
+        String header = "tcn,mbrIdentifier,blngNationalPrvdrIdntfr,admtDiagCd,patientBirthDate,admissionDate,dischargeDate,patientStatusLkpcd,de1,prncplDgnsCd,p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,d1,d2,d3,d4,d5,d6,d7,d8,d9,d10,d11,d12,d13,d14,d15,d16,d17,d18,d19,d20,d21,d22,d23,d24,patientGender,totalBilledAmount,drgCode,mdc";
         CSVReader reader = null;
         int count=0;
         try {
@@ -78,7 +82,7 @@ public class CSVReaderExample {
                 		drgCode = "23";
                 	}
                 	String mdc = repository.getMdcId(drgCode);
-                	String value = members[index] + "," + providers[index2] + "," + line[3]+","+memberDob[index]+","+admitDate+","+dischargeDate+ "," + line[6]+"," + line[7]+"," + icd10principleDiagCode+"," + line[9]+"," + line[10]+"," + line[11]+"," + line[12]+"," + line[13]+"," + line[14]+"," + line[15]+"," + line[16]+"," + line[17]+"," + line[18]+"," + line[19]+"," + line[20]+"," + line[21]+"," + line[22]+"," + line[23]+"," + line[24]+"," + line[25]+"," + line[26]+"," + line[27]+"," + line[28]+"," + line[29]+"," + line[30]+"," + line[31]+"," + line[33]+"," + line[34]+"," + line[35]+"," + line[36]+"," + line[37]+"," + line[38]+"," + line[39]+"," + line[40]+"," + line[41]+"," + line[42]+"," + line[43]+"," + line[44]+"," + line[45]+"," + line[46]+"," + line[47]+"," + line[48]+"," + line[49]+"," + line[50]+"," + line[51]+"," + line[52]+"," + line[53]+"," + line[54]+"," + line[55]+"," + line[56]+","+gender+"," + line[59]+","+drgCode+","+mdc;
+                	String value = generateTcn()+ "," +members[index] + "," + providers[index2] + "," + line[3]+","+memberDob[index]+","+admitDate+","+dischargeDate+ "," + line[6]+"," + line[7]+"," + icd10principleDiagCode+"," + line[9]+"," + line[10]+"," + line[11]+"," + line[12]+"," + line[13]+"," + line[14]+"," + line[15]+"," + line[16]+"," + line[17]+"," + line[18]+"," + line[19]+"," + line[20]+"," + line[21]+"," + line[22]+"," + line[23]+"," + line[24]+"," + line[25]+"," + line[26]+"," + line[27]+"," + line[28]+"," + line[29]+"," + line[30]+"," + line[31]+"," + line[33]+"," + line[34]+"," + line[35]+"," + line[36]+"," + line[37]+"," + line[38]+"," + line[39]+"," + line[40]+"," + line[41]+"," + line[42]+"," + line[43]+"," + line[44]+"," + line[45]+"," + line[46]+"," + line[47]+"," + line[48]+"," + line[49]+"," + line[50]+"," + line[51]+"," + line[52]+"," + line[53]+"," + line[54]+"," + line[55]+"," + line[56]+","+gender+"," + line[59]+","+drgCode+","+mdc;
                 	output.append(value+"\n");
                 	output.flush();
                 	System.out.println("=>"+count++);
@@ -99,5 +103,15 @@ public class CSVReaderExample {
 
 
     }
+    
+    public static String generateTcn()
+	{
+		return "1"+"1"+getJulianDay()+"0"+RandomStringUtils.random(5, false, true);
+	}
+	
+	private static String getJulianDay()
+	{
+		return Year.now().format(DateTimeFormatter.ofPattern("uu")) +Calendar.getInstance().get(Calendar.DAY_OF_YEAR);
+	}
 
 }

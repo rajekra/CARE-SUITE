@@ -134,7 +134,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 	@Override
 	public <T, P> T loadTrainingData(P config) throws Exception {
 		Dataset<Row> testingData  = RepositoryFactory.getInpatientAggregationRepo().load(javaSparkContext,"INPATIENT_AGGREGATED");
-		Dataset<Row> extractedTestingData = testingData.drop("_id", "inDate",
+		Dataset<Row> extractedTestingData = testingData.drop("inDate",
 				"ocr1_dt", "ocr2_dt", "ocr3_dt", "ocr4_dt", "ocr5_dt", "p1_dt",
 				"p2_dt", "p3_dt", "p4_dt", "p5_dt", "p6_dt", "p7_dt", "p8_dt",
 				"p9_dt", "p10_dt", "p11_dt", "p12_dt", "p13_dt", "p14_dt",
@@ -227,31 +227,13 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 	}
 
 	@Override
-	public <T, P> T buildPipeline(P config) throws Exception {
-		return null;
-	}
-
-	@SuppressWarnings("unchecked")
-	@Override
-	public <T, P> T buildModel(P completeData) throws Exception {
-//		trainValidationSplitModel = trainValidationSplit.fit((Dataset<Row>) trainingData);
-//		return (T) trainValidationSplitModel;
+	public <T, P> T buildPipeline(P trainInputData) throws Exception {
+		Dataset<Row> trainData = (Dataset<Row>) trainInputData;
 		
-		
-		Dataset<Row>[] splitData = ((Dataset<Row>) completeData).randomSplit(new double[]{0.7, 0.3});
-		Dataset<Row> trainData = splitData[0];
-		Dataset<Row> testData = splitData[1];
-		testData = testData.drop("totalBilledAmount");
-		testData = testData.drop("label");
+		trainData = trainData.drop("_id");
 		trainData = trainData.withColumnRenamed("totalBilledAmount", "label");
-		
 		trainData.createOrReplaceTempView("TrainingTable");
-		System.out.println("RAJ");
-		
-		//trainingDataConverted = sparkSession.sql("SELECT los, label, d1, d1_poa,d2, d2_poa,d3, d3_poa,d4, d4_poa from TrainingTable");
-		
 		List<PipelineStage> indexers = new ArrayList<PipelineStage>();
-		//List<PipelineStage> indexers = new ArrayList<PipelineStage>();
 		List<String> assemblers = new ArrayList<String>();
 		
 		if(ArrayUtils.contains(trainData.columns(),"d1"))
@@ -1772,37 +1754,24 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 		Pipeline pipeLine = new Pipeline().setStages(indexers.toArray(new PipelineStage[indexers.size()]));
 		
 
-		//Option 1
 		trainValidationSplit.setEstimator(pipeLine);
-		
+		return (T) trainData;
+	}
+
+	@SuppressWarnings("unchecked")
+	@Override
+	public <T, P> T buildModel(P trainInputData) throws Exception {
+
+		Dataset<Row> trainData = (Dataset<Row>) trainInputData;
 		
 		System.out.println("*****************TRAINING SUMMARY STARTS*************");
 		trainData.printSchema();
 		trainData.show();
 		System.out.println("*****************TRAINING SUMMARY ENDS*************");
 		
-		System.out.println("*****************TESTING SUMMARY STARTS*************");
-		testData.printSchema();
-		testData.show();
-		System.out.println("*****************TESTING SUMMARY ENDS*************");
+		System.out.println("*****************FIT THE MODEL STARTS*************");
 		trainValidationSplitModel = trainValidationSplit.fit(trainData);
-		Dataset<Row> holdOut = trainValidationSplitModel.transform(testData).select("prncplDgnsCd","drgCode","mdc","patientGender","prediction");
-		System.out.println("-------------------HOLDOUT----------------");
-		holdOut.printSchema();
-		holdOut.show();
-		System.out.println("-------------------HOLDOUT----------------");
-		holdOut.createOrReplaceTempView("PredictedTable");
-		Dataset<Row> dataForMetrics = sparkSession.sql("select prediction,CAST(mdc AS DOUBLE) AS mdc from PredictedTable ");
-		RegressionMetrics metrics = new RegressionMetrics(dataForMetrics);
-		System.out.println("Test Metrics");
-		System.out.println("Test Explained Variance:");
-		System.out.println(metrics.explainedVariance());
-		System.out.println("Test R^2 Coef:");
-		System.out.println(metrics.r2());
-		System.out.println("Test MSE:");
-		System.out.println(metrics.meanSquaredError());
-		System.out.println("Test RMSE:");
-		System.out.println(metrics.rootMeanSquaredError());
+		System.out.println("*****************FIT THE MODEL ENDS*************");
 		//Option 2
 //		LinearRegressionModel lrModel = linearRegression.fit(null);
 //		printMySummary(lrModel);
@@ -1815,7 +1784,26 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 	@SuppressWarnings("unchecked")
 	@Override
 	public <T, P> T predict(P testingData) throws Exception {
-		Dataset<Row> predictedValues = trainValidationSplitModel.transform((Dataset<Row>) testingData).select("los","patientStatusLkpcd","admtDiagCd","age","patientGender","prncplDgnsCd","prncplPrcdrCd","drgCode","mdc","features", "label", "prediction");	
+		Dataset<Row> testData = (Dataset<Row>) testingData;
+		testData = testData.drop("totalBilledAmount");
+		testData = testData.drop("label");
+		Dataset<Row> predictedValues = trainValidationSplitModel.transform(testData).select("_id","los","patientStatusLkpcd","admtDiagCd","age","patientGender","prncplDgnsCd","prncplPrcdrCd","drgCode","mdc","prediction");
+		System.out.println("-------------------HOLDOUT----------------");
+		predictedValues.printSchema();
+		predictedValues.show();
+		System.out.println("-------------------HOLDOUT----------------");
+		predictedValues.createOrReplaceTempView("PredictedTable");
+		Dataset<Row> dataForMetrics = sparkSession.sql("select prediction,CAST(mdc AS DOUBLE) AS mdc from PredictedTable ");
+		RegressionMetrics metrics = new RegressionMetrics(dataForMetrics);
+		System.out.println("Test Metrics");
+		System.out.println("Test Explained Variance:");
+		System.out.println(metrics.explainedVariance());
+		System.out.println("Test R^2 Coef:");
+		System.out.println(metrics.r2());
+		System.out.println("Test MSE:");
+		System.out.println(metrics.meanSquaredError());
+		System.out.println("Test RMSE:");
+		System.out.println(metrics.rootMeanSquaredError());
 		return (T) predictedValues;
 //		return null;
 	}
