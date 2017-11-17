@@ -23,19 +23,41 @@ public class MasterDataRepositoryImpl implements MasterDataRepositoryInf{
 		BasicDBObject query = new BasicDBObject();
 		query.put("icd9", icd9Code);
 		BasicDBObject fields = new BasicDBObject();
-		FindIterable<BasicDBObject> cursor = ICD_GEM_MS.find(query).projection(Projections.fields(Projections.include("icd9"),excludeId()));
+		FindIterable<BasicDBObject> cursor = ICD_GEM_MS.find(query).projection(Projections.fields(Projections.include("icd10"),excludeId()));
 		////String price = ((Document) cursor).getString("icd9");
 		MongoCursor<BasicDBObject> ll = cursor.iterator();
 		String correspondingIcd10Code = null;
 		while (ll.hasNext()) {
 			BasicDBObject bo = ll.next();
-			correspondingIcd10Code = bo.getString("icd9");
-			System.out.println(correspondingIcd10Code);
+			correspondingIcd10Code = bo.getString("icd10");
+			//System.out.println(correspondingIcd10Code);
 			break;
 		}
-		System.out.println("ICD 9 Code:"+icd9Code + " => ICD 10 Code:" +correspondingIcd10Code );
+		//System.out.println("ICD 9 Code:"+icd9Code + " => ICD 10 Code:" +correspondingIcd10Code );
 		return (correspondingIcd10Code==null)?icd9Code:correspondingIcd10Code;
 	}
+	
+	public String getDrgForDiag(String diagCode)
+	{
+		MongoCollection<BasicDBObject> ICD_GEM_MS = CommonConstants.MDC_DRG_DIAGNOSIS_CROSSWALK_MS;
+		BasicDBObject query = new BasicDBObject();
+		query.put("DX", diagCode);
+		BasicDBObject fields = new BasicDBObject();
+		FindIterable<BasicDBObject> cursor = ICD_GEM_MS.find(query).projection(Projections.fields(Projections.include("MS-DRG-START"),excludeId()));
+		////String price = ((Document) cursor).getString("icd9");
+		MongoCursor<BasicDBObject> ll = cursor.iterator();
+		String correspondingIcd10Code = null;
+		while (ll.hasNext()) {
+			BasicDBObject bo = ll.next();
+			correspondingIcd10Code = bo.getString("MS-DRG-START");
+			//System.out.println(correspondingIcd10Code);
+			break;
+		}
+		//System.out.println("getDrgForDiag:"+diagCode + " => ICD 10 Code:" +correspondingIcd10Code );
+		return (correspondingIcd10Code==null)?diagCode:correspondingIcd10Code;
+	}
+	
+	
 	public String getMdcId(String drgCode)
 	{
 		MongoCollection<BasicDBObject> MAJOR_DIAG_CATEGORY_MS =CommonConstants.MAJOR_DIAG_CATEGORY_MS;
@@ -54,7 +76,7 @@ public class MasterDataRepositoryImpl implements MasterDataRepositoryInf{
 			break;
 		}
  
-		System.out.println("MDC_ID:" +mdcDescription );
+		//System.out.println("MDC_ID:" +mdcDescription );
 		return (mdcDescription==null)?drgCode:mdcDescription;
 	}
 	@Override

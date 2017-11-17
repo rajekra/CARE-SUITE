@@ -81,49 +81,70 @@ public class SparkGraphFrameSampleV2 {
 		claimEdges.cache();
 		// Create a GraphFrame
 		GraphFrame gFrame = new GraphFrame(memberProviderEdges, claimEdges);
+		gFrame.cache();
 		gFrame.vertices().show();
-		//gFrame.cache();
 		gFrame.edges().show();
-		gFrame.inDegrees().show();
-		gFrame.outDegrees().show();
-//		
-//		//working fine
-//		GraphFrame pRank = gFrame.pageRank().resetProbability(0.01).maxIter(1).run();
-//		pRank.vertices().show();
-//		
-//		// Get in-degree of each vertex.
-//		gFrame.inDegrees().show();
-//		// Count the number of "follow" connections in the graph.
-//		@SuppressWarnings("unused")
-//		long count = gFrame.edges().filter("relationship = 'follow'").count();
-//		// Run PageRank algorithm, and show results.
-////		
-////		
+		
+		
+
+		//Sanity Check
+		System.out.println("Total Number of Entities: " + gFrame.vertices().count());
+		System.out.println("Total Number of Claims in Graph: " + gFrame.edges().count());
+		System.out.println("Total Number of Claims in Original Data: " + claimEdges.count());// sanity check
+		System.out.println("Total Triangle Count: " + gFrame.triangleCount());
+		System.out.println("Total Triplets: ");
+		gFrame.triplets().show();
+		
+		// Case 1: PageRank
 		GraphFrame pRank = gFrame.pageRank().resetProbability(0.15).maxIter(1).run();
 		//pRank.vertices().select("id", "pagerank").show();
+		System.out.println("===================PAGERANK==========================");
 		pRank.vertices().orderBy("pagerank").show();
-		pRank.edges().show();
-//
-//		// stop
+		//pRank.edges().show();
+		System.out.println("===================PAGERANK==========================");
 		
-//		System.out.println("Total Number of Entities: " + gFrame.vertices().count());
-//		System.out.println("Total Number of Claims in Graph: " + gFrame.edges().count());
-//		System.out.println("Total Number of Claims in Original Data: " + claimEdges.count());// sanity check
+		//Case 2: Shared providers
+		System.out.println("===================SHARED-PROVIDERS==========================");
+		Dataset<Row> sharedProviders = gFrame.edges().groupBy("src", "dst").count().orderBy("count");
+		sharedProviders.show();
+		System.out.println("===================SHARED-PROVIDERS==========================");
 		
-		Dataset<Row> topTrips = gFrame
-				  .edges()
-				  .groupBy("src", "dst")
-				  .count()
-				  .orderBy("count")
-				  .limit(10);
-		topTrips.show();
+		//Case 3: Shared members
+		System.out.println("===================SHARED-MEMBERS==========================");
+		Dataset<Row> sharedMembers = gFrame.edges().groupBy("dst", "src").count().orderBy("count");
+		sharedMembers.show();
+		System.out.println("===================SHARED-MEMBERS==========================");
+
 		
-		
+		//Case 4: No of claims submitted by provider
+		System.out.println("===================CLAIMS-PROVIDER==========================");
 		Dataset<Row> inDeg = gFrame.inDegrees();
 		inDeg.orderBy("inDegree").show();
+		System.out.println("===================CLAIMS-PROVIDER==========================");
 				
+		//Case 5: No of claims from member level
+		System.out.println("===================CLAIMS-MEMBER==========================");
 		Dataset<Row> outDeg = gFrame.outDegrees();
 		outDeg.orderBy("outDegree").show();
+		System.out.println("===================CLAIMS-MEMBER==========================");
+		
+		//Case 6: Shared members
+		System.out.println("===================SHARED-MEMBERS-BY-TOTAL==========================");
+		Dataset<Row> sharedMembersAmount = gFrame.edges();
+		sharedMembersAmount.createOrReplaceTempView("EdgeTable");
+		
+		//sharedMembersAmount.show();
+		System.out.println("===================SHARED-MEMBERS-BY-TOTAL==========================");
+		
+		//Case 7: Shared members
+		System.out.println("===================SHARED-PROVIDERS-BY-TOTAL==========================");
+		spark.sql("select dst, sum(totalBilledAmount) from EdgeTable group by dst").show();
+		System.out.println("===================SHARED-PROVIDERS-BY-TOTAL==========================");
+		
+		//Case 8: Shared members
+		System.out.println("===================SHARED-MEMBERS-PROVIDERS-BY-TOTAL==========================");
+		spark.sql("select src, dst, sum(totalBilledAmount) from EdgeTable group by src, dst").show();
+		System.out.println("===================SHARED-MEMBERS-PROVIDERS-BY-TOTAL==========================");
 				
 //		BFS bfs = gFrame.bfs();
 //		bfs.toExpr("totalBilledAmount >5500").run().show();

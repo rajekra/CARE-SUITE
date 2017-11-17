@@ -3,6 +3,7 @@ package com.icare.dataprocessing.service.analytics.predictive;
 import org.apache.spark.sql.SparkSession;
 
 import com.icare.dataprocessing.service.analytics.AbstractPredictive;
+import com.icare.dataprocessing.service.analytics.predictive.regression.linear_regression.CopyOfInpatientMdcwisePrediction;
 import com.icare.dataprocessing.service.analytics.predictive.regression.linear_regression.InpatientMdcwisePrediction;
 
 public class PredictiveFactory {
@@ -18,6 +19,7 @@ public class PredictiveFactory {
 	    	  try
 	    	  {
 	    		  inp = new InpatientMdcwisePrediction(sparkSession);
+	    		 // inp = new CopyOfInpatientMdcwisePrediction(sparkSession);
 	    		  System.out.println("[getPredictor] after InpatientMdcwisePrediction"  +inp);
 	    	  }
 	    	  catch(Exception ex)

@@ -45,6 +45,7 @@ public class InpatientAggregation extends AbstractDescriptive {
 	@SuppressWarnings("unchecked")
 	@Override
 	public <T, P> T process(P config) {
+		System.out.println("Processing the records from staging table!!!");
 		Map<String, List<?>> dataItem = (Map<String, List<?>>) config;
 		List<CH> cds = (List<CH>) dataItem.get("Header");
 		List<CL> cls = (List<CL>) dataItem.get("Line");
@@ -70,6 +71,7 @@ public class InpatientAggregation extends AbstractDescriptive {
 	@SuppressWarnings("unchecked")
 	@Override
 	public <T, P> T write(P inputData) {
+		System.out.println("Saving the records from staging table to AGGR table!!!");
 		Dataset<Row> dataSet = (Dataset<Row>) inputData;
 		dataSet.createOrReplaceTempView("aggheader");
 		//dataSet.printSchema();

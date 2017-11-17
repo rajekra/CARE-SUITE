@@ -26,7 +26,7 @@ public abstract class LinearRegressionBuilder implements AbstractPredictive{
 	protected ParamMap[] paramGrid = new ParamGridBuilder()
 	   .addGrid(linearRegression.regParam(), new double[] {0.1, 0.01})
 	   .addGrid(linearRegression.fitIntercept())
-	   .addGrid(linearRegression.elasticNetParam(), new double[] {0.0, 0.5, 1.0})
+	   .addGrid(linearRegression.elasticNetParam(), new double[] {0.0, 0.25, 0.5, 0.75, 1.0})
 	   .build();
 
 	 // In this case the estimator is simply the linear regression.
@@ -36,7 +36,7 @@ public abstract class LinearRegressionBuilder implements AbstractPredictive{
 	   //.setEstimator(linearRegression)
 	   .setEvaluator(new RegressionEvaluator())
 	   .setEstimatorParamMaps(paramGrid)
-	   .setTrainRatio(0.8); 
+	   .setTrainRatio(0.75); 
 	 
 	protected TrainValidationSplitModel trainValidationSplitModel = null;
 	

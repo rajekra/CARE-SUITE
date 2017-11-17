@@ -7,7 +7,7 @@ private String providerName;
 
 
 public Provider( BigDecimal id, String providerName) {
-	super(id);
+	super(id,"Provider");
 	this.providerName = providerName;
 }
 

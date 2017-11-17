@@ -25,8 +25,8 @@ public class InpatientAggregationRepoImpl implements InpatientAggregationRepoInt
 	public <T,C> T load(C context,String tableName) {
 		System.out.println("InpatientAggregationRepoImpl [load] STARTS");
 		Map<String, String> readOverrides = new HashMap<String, String>();
-	    //readOverrides.put("uri", "mongodb://10.0.0.247:27017/icare.INPATIENT_AGGREGATED");
-	    readOverrides.put("uri", "mongodb://10.0.0.247:27017/icare."+tableName);
+	  //  readOverrides.put("uri", "mongodb://10.0.0.247:27017/icare."+tableName);
+	    readOverrides.put("uri", "mongodb://127.0.0.1:27017/icare."+tableName);
 	    ReadConfig readConfig = ReadConfig.create(readOverrides);
 		Dataset<Row> implicitDS = MongoSpark.load((JavaSparkContext) context, readConfig).toDF();
 		System.out.println("InpatientAggregationRepoImpl [load] ENDS");

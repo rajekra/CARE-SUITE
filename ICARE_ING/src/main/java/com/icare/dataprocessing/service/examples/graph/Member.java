@@ -8,7 +8,7 @@ private String memberName;
 
 
 public Member(BigDecimal id, String memberName) {
-	super(id);
+	super(id,"Member");
 	this.memberName = memberName;
 }
 

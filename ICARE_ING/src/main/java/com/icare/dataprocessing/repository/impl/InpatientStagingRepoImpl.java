@@ -27,9 +27,11 @@ public class InpatientStagingRepoImpl implements InpatientStagingRepoIntf{
 	 * @see com.icare.ing.repository.intf.InpatientStagingRepoIntf#load()
 	 */
 	public <T> T load() throws JsonParseException, JsonMappingException, IOException {
+		System.out.println("Getting records from staging table!!!");
 		Map<String, List<?>> returnItems = new HashMap<String, List<?>>();
 		MongoCollection<BasicDBObject> collection = CommonConstants.INPATIENT_STAGING;
 		MongoCursor<BasicDBObject> cursor = collection.find().iterator();
+		int count =0;
 		List<CH> cds = new ArrayList<CH>();
 		List<CL> cls = new ArrayList<CL>();
 		while (cursor.hasNext()) {
@@ -37,14 +39,20 @@ public class InpatientStagingRepoImpl implements InpatientStagingRepoIntf{
 			String jsonString = basicDBObject.toJson();
 			CH cd = JsonUtil.translateJsonToCD(jsonString);
 			cls.addAll(cd.getLines());
-			System.out.println("CD===============================================");
-			System.out.println(cd);
-			System.out.println("CD===============================================");
+//			System.out.println("CD===============================================");
+//			System.out.println(cd);
+//			System.out.println("CD===============================================");
 			cds.add(cd);
 			cd.setLines(null);
+			count++;
+			if(count==1500)
+			{
+				break;
+			}
 		}
 		returnItems.put("Header", cds);
 		returnItems.put("Line", cls);
+		System.out.println("InpatientStagingRepoImpl=>"+ returnItems.get("Header").size());
 		return (T) returnItems;
 	}
 }

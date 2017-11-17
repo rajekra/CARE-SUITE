@@ -9,6 +9,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Random;
 import java.util.Set;
 
 import org.apache.commons.lang.StringUtils;
@@ -26,6 +27,9 @@ import com.icare.dataprocessing.dto.CL;
 import com.icare.dataprocessing.repository.intf.MasterDataRepositoryInf;
 
 public class ClaimHeaderToCHConverter {
+	
+	String[] members = {"502886879WA","501220072WA","501392415WA","502703310WA","502467082WA","501470246WA","501673983WA","500854602WA","503649270WA","501679321WA","503216258WA","503395375WA","500073535WA","503607867WA","501395626WA","500099926WA","500449152WA","503465089WA","502755624WA","501275246WA","501173310WA","501534782WA","500476322WA","503511056WA","501414567WA","500068942WA","501497422WA","500576583WA","503204006WA","501691122WA","500165272WA","500823858WA","502458081WA","500539104WA","501704594WA","501991191WA","502805531WA","500654422WA","501384732WA","500000573WA","500174244WA","502847226WA","500072452WA","503030823WA","500119901WA","502052602WA","503030577WA","500680456WA","501611775WA"};
+	String[] providers = {"1000000004","1000000005","1000000006","1000000007","1000000008","1000000009","1000000010"};
 	public CH translateClaimHeaderToCD(com.ecams.claim.bo.ClaimHeader claimHeaderBo, MasterDataRepositoryInf repository)
 	{
 		CH cd = new CH();
@@ -42,6 +46,14 @@ public class ClaimHeaderToCHConverter {
 		cd.setPatientLastName(claimHeaderBo.getPatientLastName());
 		cd.setPatientZip(claimHeaderBo.getPatientZipCode());
 		cd.setPatientStatusLkpcd(claimHeaderBo.getPatientRelationshipLkpcd());
+		
+		Random random = new Random();
+		int index = random.nextInt(members.length);
+		cd.setMbrIdentifier(members[index]);
+		
+		index = random.nextInt(providers.length);
+		cd.setBlngNationalPrvdrIdntfr(new BigDecimal(providers[index]));
+		cd.setBlngPrvdrLctnZipCode(claimHeaderBo.getBlngPrvdrLctnZipCode());
 		
 		cd.setTcn(claimHeaderBo.getTcn());
 		if(null!=claimHeaderBo.getFromServiceDate())
@@ -86,8 +98,7 @@ public class ClaimHeaderToCHConverter {
 			cd.setMdc(repository.getMdcId(claimHeaderBo.getDrgCode()));
 		}
 		
-		cd.setBlngNationalPrvdrIdntfr(claimHeaderBo.getBlngNationalPrvdrIdntfr());
-		cd.setBlngPrvdrLctnZipCode(claimHeaderBo.getBlngPrvdrLctnZipCode());
+
 		cd.setTotalBilledAmount(claimHeaderBo.getTotalBilledAmount());
 		if(null!=claimHeaderBo.getClmHdrDerivedElement())
 		{
