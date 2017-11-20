@@ -39,7 +39,7 @@ public class InpatientAggregation extends AbstractDescriptive {
 
 	@Override
 	public <T, P> T load(P config) throws Exception {
-		return RepositoryFactory.getInpatientStagingRepo().load();
+		return RepositoryFactory.getInpatientStagingRepo().load("INPATIENT_STAGING");
 	}
 
 	@SuppressWarnings("unchecked")

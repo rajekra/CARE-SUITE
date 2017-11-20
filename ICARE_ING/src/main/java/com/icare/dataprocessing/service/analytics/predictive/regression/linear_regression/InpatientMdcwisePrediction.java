@@ -1835,4 +1835,11 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 	    System.out.println("r2: " + trainingSummary.r2());
 	}
 
+	@Override
+	public <T, P> T savePrediction(P inpPredictedData) throws Exception {
+		Dataset<Row> predictedData = (Dataset<Row>) inpPredictedData;
+		RepositoryFactory.getInpatientAggregationRepo().save(predictedData, "INPATIENT_PREDICTION");
+		return null;
+	}
+
 }

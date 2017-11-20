@@ -10,14 +10,18 @@ import org.apache.spark.sql.Row;
 import com.icare.dataprocessing.repository.intf.InpatientAggregationRepoIntf;
 import com.mongodb.spark.MongoSpark;
 import com.mongodb.spark.config.ReadConfig;
+import com.mongodb.spark.config.WriteConfig;
 
 public class InpatientAggregationRepoImpl implements InpatientAggregationRepoIntf{
 
 	@SuppressWarnings("unchecked")
 	@Override
 	public <T> void save(T dataSet,String tableName) {
-		//MongoSpark.write((Dataset<T>) dataSet).option("collection",CommonConstants.INPATIENT_AGGREGATED_STR).mode("overwrite").save();
-		MongoSpark.write((Dataset<T>) dataSet).option("collection",tableName).mode("overwrite").save();
+		Map<String, String> writeOverrides = new HashMap<String, String>();
+		writeOverrides.put("uri", "mongodb://127.0.0.1:27017/icare."+tableName);
+		WriteConfig writeConfig = WriteConfig.create(writeOverrides);
+		//MongoSpark.write((Dataset<T>) dataSet).option("collection",tableName).mode("overwrite").save();
+		 MongoSpark.save((Dataset<T>) dataSet, writeConfig);
 	}
 
 	@SuppressWarnings("unchecked")

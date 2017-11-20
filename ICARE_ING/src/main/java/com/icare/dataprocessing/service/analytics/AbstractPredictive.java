@@ -20,4 +20,5 @@ public interface AbstractPredictive {
 	public <T, P> T predict(P config) throws Exception;
 	public <T, P> T saveModel(P config) throws Exception;
 	public <T, P> T readModel(P config) throws Exception;
+	public <T, P> T savePrediction(P config) throws Exception;
 }

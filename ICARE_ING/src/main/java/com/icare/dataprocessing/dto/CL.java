@@ -1,8 +1,6 @@
 package com.icare.dataprocessing.dto;
 
 import java.io.Serializable;
-import java.math.BigDecimal;
-import java.util.Date;
 
 public class CL implements Serializable{
 	private String claimLineTcn;
@@ -13,6 +11,8 @@ public class CL implements Serializable{
 	private String billedUnits;
 	private String billedAmount;
 	private String paidAmount;
+	private String mbrIdentifier;
+
 	public String getClaimLineTcn() {
 		return claimLineTcn;
 	}
@@ -60,6 +60,12 @@ public class CL implements Serializable{
 	}
 	public void setPaidAmount(String paidAmount) {
 		this.paidAmount = paidAmount;
+	}
+	public String getMbrIdentifier() {
+		return mbrIdentifier;
+	}
+	public void setMbrIdentifier(String mbrIdentifier) {
+		this.mbrIdentifier = mbrIdentifier;
 	}
 	
 }

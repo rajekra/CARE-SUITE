@@ -19,6 +19,8 @@ public class CommonConstants {
 	
 	public static MongoCollection<BasicDBObject> INPATIENT_STAGING = ICARE_SCHEMA.getCollection("INPATIENT_STAGING",BasicDBObject.class);
 	public static MongoCollection<BasicDBObject> INPATIENT_AGGREGATED = ICARE_SCHEMA.getCollection("INPATIENT_AGGREGATED",BasicDBObject.class);
+	public static MongoCollection<BasicDBObject> PROF_STAGING = ICARE_SCHEMA.getCollection("PROF_STAGING",BasicDBObject.class);
+
 	public static String INPATIENT_AGGREGATED_STR = "INPATIENT_AGGREGATED";
 	
 	public static MongoCollection<BasicDBObject> OUTPATIENT_STAGING = ICARE_SCHEMA.getCollection("OUTPATIENT_STAGING",BasicDBObject.class);

@@ -79,6 +79,25 @@ public class MasterDataRepositoryImpl implements MasterDataRepositoryInf{
 		//System.out.println("MDC_ID:" +mdcDescription );
 		return (mdcDescription==null)?drgCode:mdcDescription;
 	}
+	
+	public String getAdmissionData(String mbrIdentifier)
+	{
+		MongoCollection<BasicDBObject> ICD_GEM_MS = CommonConstants.INPATIENT_STAGING;
+		BasicDBObject query = new BasicDBObject();
+		query.put("mbrIdentifier", mbrIdentifier);
+		FindIterable<BasicDBObject> cursor = ICD_GEM_MS.find(query).projection(Projections.fields(Projections.include("admissionDate"),excludeId()));
+		MongoCursor<BasicDBObject> ll = cursor.iterator();
+		String correspondingIcd10Code = null;
+		while (ll.hasNext()) {
+			BasicDBObject bo = ll.next();
+			correspondingIcd10Code = bo.getString("admissionDate");
+			//System.out.println(correspondingIcd10Code);
+			break;
+		}
+		System.out.println("Admisison Date:" +correspondingIcd10Code);
+		return correspondingIcd10Code;
+	}
+	
 	@Override
 	public void saveCD(CH cd) {
 		MongoCollection<BasicDBObject> INSTITUTIONAL_LK = CommonConstants.INPATIENT_STAGING;

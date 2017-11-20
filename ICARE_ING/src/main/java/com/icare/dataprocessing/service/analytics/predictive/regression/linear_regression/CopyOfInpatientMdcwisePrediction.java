@@ -1772,4 +1772,10 @@ public class CopyOfInpatientMdcwisePrediction extends LinearRegressionBuilder {
 	    System.out.println("r2: " + trainingSummary.r2());
 	}
 
+	@Override
+	public <T, P> T savePrediction(P config) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

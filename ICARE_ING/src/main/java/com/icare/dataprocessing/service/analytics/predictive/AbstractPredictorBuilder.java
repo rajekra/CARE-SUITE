@@ -64,7 +64,8 @@ public abstract class AbstractPredictorBuilder {
 			Dataset<Row> predictedData = modelBuilder.predict(testData);
 			predictedData.printSchema();
 			predictedData.show();
-			System.out.println("++++++++++++++++++++Step 6: Save the prdicted data+++++++++++++++++++++");
+			System.out.println("++++++++++++++++++++Step 6: Save the predicted data+++++++++++++++++++++");
+			modelBuilder.savePrediction(predictedData);
 		}
 		System.out.println("[buildModel]: ENDS");
 	}
