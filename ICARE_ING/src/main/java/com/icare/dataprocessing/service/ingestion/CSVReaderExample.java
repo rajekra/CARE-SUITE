@@ -13,13 +13,18 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.Year;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
 import org.apache.commons.lang3.RandomStringUtils;
+
+
+
 
 
 
@@ -29,7 +34,7 @@ import com.icare.dataprocessing.repository.intf.MasterDataRepositoryInf;
 public class CSVReaderExample {
 
     public static void main(String[] args) throws ParseException, IOException {
-    	System.out.println(getMemberAndDate());
+    	tes();
     }
 public static void tes() throws ParseException{
     	String[] members = {"502886879WA","501220072WA","501392415WA","502703310WA","502467082WA","501470246WA","501673983WA","500854602WA","503649270WA","501679321WA","503216258WA","503395375WA","500073535WA","503607867WA","501395626WA","500099926WA","500449152WA","503465089WA","502755624WA","501275246WA","501173310WA","501534782WA","500476322WA","503511056WA","501414567WA","500068942WA","501497422WA","500576583WA","503204006WA","501691122WA","500165272WA","500823858WA","502458081WA","500539104WA","501704594WA","501991191WA","502805531WA","500654422WA","501384732WA","500000573WA","500174244WA","502847226WA","500072452WA","503030823WA","500119901WA","502052602WA","503030577WA","500680456WA","501611775WA"};
@@ -53,10 +58,12 @@ public static void tes() throws ParseException{
             reader = new CSVReader(new FileReader(csvFile));
             String[] line;
             line = reader.readNext();
-            File file = new File("C:\\Users\\kandhasamyr\\OneDrive - CNSI\\ICARE\\data\\MONGO_MASTER\\COPD_Final2.csv");
+            File file = new File("C:\\Users\\kandhasamyr\\OneDrive - CNSI\\ICARE\\data\\MONGO_MASTER\\COPD_Final3.csv");
             BufferedWriter output = null;
             output = new BufferedWriter(new FileWriter(file));
             output.append(header+"\n");
+            int memberIdStr = 50000;
+            List<String> memberList= new ArrayList<String>();
             while ((line = reader.readNext()) != null) {
             	//if(count>44510)
             	{
@@ -89,14 +96,29 @@ public static void tes() throws ParseException{
                 		drgCode = "23";
                 	}
                 	String mdc = repository.getMdcId(drgCode);
-                	String value = generateTcn()+ "," +members[index] + "," + providers[index2] + "," + line[3]+","+memberDob[index]+","+admitDate+","+dischargeDate+ "," + line[6]+"," + line[7]+"," + icd10principleDiagCode+"," + line[9]+"," + line[10]+"," + line[11]+"," + line[12]+"," + line[13]+"," + line[14]+"," + line[15]+"," + line[16]+"," + line[17]+"," + line[18]+"," + line[19]+"," + line[20]+"," + line[21]+"," + line[22]+"," + line[23]+"," + line[24]+"," + line[25]+"," + line[26]+"," + line[27]+"," + line[28]+"," + line[29]+"," + line[30]+"," + line[31]+"," + line[33]+"," + line[34]+"," + line[35]+"," + line[36]+"," + line[37]+"," + line[38]+"," + line[39]+"," + line[40]+"," + line[41]+"," + line[42]+"," + line[43]+"," + line[44]+"," + line[45]+"," + line[46]+"," + line[47]+"," + line[48]+"," + line[49]+"," + line[50]+"," + line[51]+"," + line[52]+"," + line[53]+"," + line[54]+"," + line[55]+"," + line[56]+","+gender+"," + line[59]+","+drgCode+","+mdc;
+                	String meberId =null;
+                	if(memberIdStr>58930)
+                	{
+                		int memberindex = random.nextInt(members.length);
+                		String[] members2 =memberList.toArray(new String[memberList.size()]);
+                		meberId = members2[memberindex] ;
+                	}
+                	else
+                	{
+                		memberIdStr++;
+                		meberId = String.valueOf(memberIdStr);
+                		memberList.add(meberId);
+                	}
+                	
+                	
+                	String value = generateTcn()+ "," +meberId+ "," + providers[index2] + "," + line[3]+","+memberDob[index]+","+admitDate+","+dischargeDate+ "," + line[6]+"," + line[7]+"," + icd10principleDiagCode+"," + line[9]+"," + line[10]+"," + line[11]+"," + line[12]+"," + line[13]+"," + line[14]+"," + line[15]+"," + line[16]+"," + line[17]+"," + line[18]+"," + line[19]+"," + line[20]+"," + line[21]+"," + line[22]+"," + line[23]+"," + line[24]+"," + line[25]+"," + line[26]+"," + line[27]+"," + line[28]+"," + line[29]+"," + line[30]+"," + line[31]+"," + line[33]+"," + line[34]+"," + line[35]+"," + line[36]+"," + line[37]+"," + line[38]+"," + line[39]+"," + line[40]+"," + line[41]+"," + line[42]+"," + line[43]+"," + line[44]+"," + line[45]+"," + line[46]+"," + line[47]+"," + line[48]+"," + line[49]+"," + line[50]+"," + line[51]+"," + line[52]+"," + line[53]+"," + line[54]+"," + line[55]+"," + line[56]+","+gender+"," + line[59]+","+drgCode+","+mdc;
                 	output.append(value+"\n");
                 	output.flush();
                 	System.out.println("=>"+count++);
             	}
             	//else
             	{
-            		System.out.println(count++);
+            		//System.out.println(count++);
             	}
             }
             

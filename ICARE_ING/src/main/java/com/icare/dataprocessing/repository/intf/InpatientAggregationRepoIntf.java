@@ -8,7 +8,7 @@ public interface InpatientAggregationRepoIntf {
 	
 	/** The Constant aggregateQuery. */
 	public static final StringBuilder inpatientAggregateQuery = new StringBuilder()
-	.append("SELECT cd.inDate, cd.prncplPrcdrCd,")
+	.append("SELECT CAST(cd.blngNationalPrvdrIdntfr AS STRING), cd.inDate, cd.prncplPrcdrCd,")
 	.append("  cd.prncplDgnsCd,")
 	.append("  CAST(cd.mdc AS INT),")
 	.append("  SUM(CAST(cd.totalBilledAmount AS DOUBLE)) AS label,")
@@ -180,7 +180,7 @@ public interface InpatientAggregationRepoIntf {
 	.append("  datediff(TO_DATE(CAST(UNIX_TIMESTAMP(cd.dischargeDate,'MM/dd/yyyy') AS TIMESTAMP)), TO_DATE(CAST(UNIX_TIMESTAMP(cd.admissionDate,'MM/dd/yyyy') AS TIMESTAMP))) as los,")
 	.append("  datediff(current_date(), TO_DATE(CAST(UNIX_TIMESTAMP(cd.patientBirthDate,'MM/dd/yyyy') AS TIMESTAMP)))/365 as age")
 	.append(" FROM CD cd ")
-	.append(" GROUP BY cd.mdc,cd.inDate,")
+	.append(" GROUP BY cd.blngNationalPrvdrIdntfr,cd.mdc,cd.inDate,")
 	.append("  cd.prncplPrcdrCd,")
 	.append("  cd.prncplDgnsCd,")
 	.append("  cd.admissionDate,")

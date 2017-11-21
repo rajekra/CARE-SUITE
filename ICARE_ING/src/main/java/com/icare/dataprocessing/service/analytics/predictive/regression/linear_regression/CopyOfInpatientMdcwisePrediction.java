@@ -110,12 +110,12 @@ import com.icare.dataprocessing.util.CommonConstants;
 public class CopyOfInpatientMdcwisePrediction extends LinearRegressionBuilder {
 	public CopyOfInpatientMdcwisePrediction(SparkSession sparkSession) throws Exception {
 		super(sparkSession);
-		 System.out.println("InpatientMdcwisePrediction Constructor");
+		 System.out.println("COPDReadmissionPrediction Constructor");
 	}
 
 	public static void main(String args[]) throws Exception {
 		SparkSession sparkSession = SparkSession.builder().master(CommonConstants.SPARK_MASTER)
-				 .config("spark.app.name", "InpatientMdcwisePrediction")
+				 .config("spark.app.name", "COPDReadmissionPrediction")
 				 .config("spark.sql.crossJoin.enabled", "true")
 				// .config("spark.mongodb.input.uri", "mongodb://10.0.0.247:27017/icare.INPATIENT_AGGREGATED")
 				// .config("spark.mongodb.output.uri", "mongodb://10.0.0.247:27017")
