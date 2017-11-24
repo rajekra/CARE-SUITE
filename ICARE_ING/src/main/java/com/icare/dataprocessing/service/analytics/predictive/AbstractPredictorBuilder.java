@@ -56,6 +56,11 @@ public abstract class AbstractPredictorBuilder {
 			Dataset<Row>[] splitData = completeData.randomSplit(new double[]{0.7, 0.3});
 			Dataset<Row> trainData = splitData[0];
 			Dataset<Row> testData = splitData[1];
+			System.out.println("==============TRAIN DATA=============");
+			trainData.show();
+			System.out.println("==============TEST DATA=============");
+			testData.show();
+			
 			System.out.println("++++++++++++++++++++Step 3: Build the pipeline+++++++++++++++++++++");
 			trainData = modelBuilder.buildPipeline(trainData);
 			System.out.println("++++++++++++++++++++Step 4: Build the model with train data+++++++++++++++++++++");

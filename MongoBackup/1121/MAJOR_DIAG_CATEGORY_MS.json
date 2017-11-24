@@ -1,0 +1,203 @@
+﻿{
+  "_id" : ObjectId("59bf3ac2950bd32880e88230"),
+  "MDC_ID" : 1,
+  "MDC_DESCRIPTION" : "Nervous system",
+  "MDC_START" : 20,
+  "MDC_END" : 103
+}
+{
+  "_id" : ObjectId("59bf3ac2950bd32880e88231"),
+  "MDC_ID" : 2,
+  "MDC_DESCRIPTION" : "Eye",
+  "MDC_START" : 113,
+  "MDC_END" : 125
+}
+{
+  "_id" : ObjectId("59bf3ac2950bd32880e88232"),
+  "MDC_ID" : 3,
+  "MDC_DESCRIPTION" : "Ear, Nose, Mouth & Throat",
+  "MDC_START" : 129,
+  "MDC_END" : 159
+}
+{
+  "_id" : ObjectId("59bf3ac2950bd32880e88233"),
+  "MDC_ID" : 4,
+  "MDC_DESCRIPTION" : "Respir\u00adatory System",
+  "MDC_START" : 163,
+  "MDC_END" : 208
+}
+{
+  "_id" : ObjectId("59bf3ac2950bd32880e88234"),
+  "MDC_ID" : 5,
+  "MDC_DESCRIPTION" : "Circul\u00adatory System",
+  "MDC_START" : 215,
+  "MDC_END" : 316
+}
+{
+  "_id" : ObjectId("59bf3ac2950bd32880e88235"),
+  "MDC_ID" : 6,
+  "MDC_DESCRIPTION" : "Digestive System",
+  "MDC_START" : 326,
+  "MDC_END" : 395
+}
+{
+  "_id" : ObjectId("59bf3ac2950bd32880e88236"),
+  "MDC_ID" : 7,
+  "MDC_DESCRIPTION" : "Hepato\u00adbiliary System & Pancreas",
+  "MDC_START" : 405,
+  "MDC_END" : 446
+}
+{
+  "_id" : ObjectId("59bf3ac2950bd32880e88237"),
+  "MDC_ID" : 8,
+  "MDC_DESCRIPTION" : "Muscul\u00adosk\u00adeletal System & Connective Tissue",
+  "MDC_START" : 453,
+  "MDC_END" : 566
+}
+{
+  "_id" : ObjectId("59bf3ac2950bd32880e88238"),
+  "MDC_ID" : 9,
+  "MDC_DESCRIPTION" : "Skin, Subcut\u00adaneous Tissue & Breast",
+  "MDC_START" : 573,
+  "MDC_END" : 607
+}
+{
+  "_id" : ObjectId("59bf3ac2950bd32880e88239"),
+  "MDC_ID" : 10,
+  "MDC_DESCRIPTION" : "Endocrine, Nutrit\u00adional & Metabolic System",
+  "MDC_START" : 614,
+  "MDC_END" : 645
+}
+{
+  "_id" : ObjectId("59bf3ac2950bd32880e8823a"),
+  "MDC_ID" : 11,
+  "MDC_DESCRIPTION" : "Kidney & Urinary Tract",
+  "MDC_START" : 652,
+  "MDC_END" : 700
+}
+{
+  "_id" : ObjectId("59bf3ac2950bd32880e8823b"),
+  "MDC_ID" : 12,
+  "MDC_DESCRIPTION" : "Male Reprod\u00aductive System",
+  "MDC_START" : 707,
+  "MDC_END" : 730
+}
+{
+  "_id" : ObjectId("59bf3ac2950bd32880e8823c"),
+  "MDC_ID" : 13,
+  "MDC_DESCRIPTION" : "Female Reprod\u00aductive System",
+  "MDC_START" : 734,
+  "MDC_END" : 761
+}
+{
+  "_id" : ObjectId("59bf3ac2950bd32880e8823d"),
+  "MDC_ID" : 14,
+  "MDC_DESCRIPTION" : "Pregnancy; Childbirth",
+  "MDC_START" : 765,
+  "MDC_END" : 782
+}
+{
+  "_id" : ObjectId("59bf3ac2950bd32880e8823e"),
+  "MDC_ID" : 14,
+  "MDC_DESCRIPTION" : "Pregnancy; Childbirth",
+  "MDC_START" : 998,
+  "MDC_END" : 998
+}
+{
+  "_id" : ObjectId("59bf3ac2950bd32880e8823f"),
+  "MDC_ID" : 15,
+  "MDC_DESCRIPTION" : "Newborns & Neonates (Perinatal Period)",
+  "MDC_START" : 789,
+  "MDC_END" : 795
+}
+{
+  "_id" : ObjectId("59bf3ac2950bd32880e88240"),
+  "MDC_ID" : 16,
+  "MDC_DESCRIPTION" : "Blood, Blood Forming Organs & Immuno\u00adlogical Disorders",
+  "MDC_START" : 799,
+  "MDC_END" : 816
+}
+{
+  "_id" : ObjectId("59bf3ac2950bd32880e88241"),
+  "MDC_ID" : 17,
+  "MDC_DESCRIPTION" : "Myelop\u00adrol\u00adife\u00adrative Diseases & Disorders",
+  "MDC_START" : 820,
+  "MDC_END" : 849
+}
+{
+  "_id" : ObjectId("59bf3ac2950bd32880e88242"),
+  "MDC_ID" : 18,
+  "MDC_DESCRIPTION" : "Infectious & Parasitic Disease & Disorders",
+  "MDC_START" : 853,
+  "MDC_END" : 872
+}
+{
+  "_id" : ObjectId("59bf3ac2950bd32880e88243"),
+  "MDC_ID" : 19,
+  "MDC_DESCRIPTION" : "Mental Diseases & Disorders",
+  "MDC_START" : 876,
+  "MDC_END" : 887
+}
+{
+  "_id" : ObjectId("59bf3ac2950bd32880e88244"),
+  "MDC_ID" : 20,
+  "MDC_DESCRIPTION" : "Alcoho\u00adl/Drug Use or Induced Mental Disorders",
+  "MDC_START" : 894,
+  "MDC_END" : 897
+}
+{
+  "_id" : ObjectId("59bf3ac2950bd32880e88245"),
+  "MDC_ID" : 21,
+  "MDC_DESCRIPTION" : "Injuries, Poison & Toxic Effects of Drugs",
+  "MDC_START" : 901,
+  "MDC_END" : 923
+}
+{
+  "_id" : ObjectId("59bf3ac2950bd32880e88246"),
+  "MDC_ID" : 22,
+  "MDC_DESCRIPTION" : "Burns",
+  "MDC_START" : 927,
+  "MDC_END" : 935
+}
+{
+  "_id" : ObjectId("59bf3ac2950bd32880e88247"),
+  "MDC_ID" : 23,
+  "MDC_DESCRIPTION" : "Factors influe\u00adncing Health Status",
+  "MDC_START" : 939,
+  "MDC_END" : 951
+}
+{
+  "_id" : ObjectId("59bf3ac2950bd32880e88248"),
+  "MDC_ID" : 24,
+  "MDC_DESCRIPTION" : "Multiple Signif\u00adicant Trauma",
+  "MDC_START" : 955,
+  "MDC_END" : 965
+}
+{
+  "_id" : ObjectId("59bf3ac2950bd32880e88249"),
+  "MDC_ID" : 25,
+  "MDC_DESCRIPTION" : "Human Immuno\u00addef\u00adiciency Virus Infections",
+  "MDC_START" : 969,
+  "MDC_END" : 977
+}
+{
+  "_id" : ObjectId("59bf3ac2950bd32880e8824a"),
+  "MDC_ID" : 26,
+  "MDC_DESCRIPTION" : "Transp\u00adlants",
+  "MDC_START" : 1,
+  "MDC_END" : 13
+}
+{
+  "_id" : ObjectId("59bf3ac2950bd32880e8824b"),
+  "MDC_ID" : 27,
+  "MDC_DESCRIPTION" : "Extensive Procedures Unrelated to Principal Diagnosis",
+  "MDC_START" : 981,
+  "MDC_END" : 989
+}
+{
+  "_id" : ObjectId("59bf3ac2950bd32880e8824c"),
+  "MDC_ID" : 27,
+  "MDC_DESCRIPTION" : "Extensive Procedures Unrelated to Principal Diagnosis",
+  "MDC_START" : 999,
+  "MDC_END" : 999
+}

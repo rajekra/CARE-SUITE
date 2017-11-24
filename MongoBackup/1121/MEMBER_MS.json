@@ -1,0 +1,500 @@
+﻿{
+  "_id" : ObjectId("5a0b41e46efff0b079f89a27"),
+  "IDNTFR" : "502886879WA",
+  "BIRTH_DATE" : "25-DEC-61",
+  "FIRST_NAME" : "GILDA",
+  "GENDER_LKPCD" : "F",
+  "LAST_NAME" : "DIMAS",
+  "RSDNC_COUNTY_CODE" : 31,
+  "MARITAL_STATUS_LKPCD" : ""
+}
+{
+  "_id" : ObjectId("5a0b41e46efff0b079f89a28"),
+  "IDNTFR" : "501220072WA",
+  "BIRTH_DATE" : "27-APR-64",
+  "FIRST_NAME" : "LAVON",
+  "GENDER_LKPCD" : "M",
+  "LAST_NAME" : "BERMEA",
+  "RSDNC_COUNTY_CODE" : 32,
+  "MARITAL_STATUS_LKPCD" : ""
+}
+{
+  "_id" : ObjectId("5a0b41e46efff0b079f89a29"),
+  "IDNTFR" : "501392415WA",
+  "BIRTH_DATE" : "14-NOV-00",
+  "FIRST_NAME" : "CLAUDENE",
+  "GENDER_LKPCD" : "M",
+  "LAST_NAME" : "BURN",
+  "RSDNC_COUNTY_CODE" : 300,
+  "MARITAL_STATUS_LKPCD" : ""
+}
+{
+  "_id" : ObjectId("5a0b41e46efff0b079f89a2a"),
+  "IDNTFR" : "502703310WA",
+  "BIRTH_DATE" : "27-AUG-67",
+  "FIRST_NAME" : "NICANORA",
+  "GENDER_LKPCD" : "F",
+  "LAST_NAME" : "BEST",
+  "RSDNC_COUNTY_CODE" : 17,
+  "MARITAL_STATUS_LKPCD" : ""
+}
+{
+  "_id" : ObjectId("5a0b41e46efff0b079f89a2b"),
+  "IDNTFR" : "502467082WA",
+  "BIRTH_DATE" : "13-SEP-99",
+  "FIRST_NAME" : "MAYNARD",
+  "GENDER_LKPCD" : "M",
+  "LAST_NAME" : "COBIA",
+  "RSDNC_COUNTY_CODE" : 31,
+  "MARITAL_STATUS_LKPCD" : ""
+}
+{
+  "_id" : ObjectId("5a0b41e46efff0b079f89a2c"),
+  "IDNTFR" : "501470246WA",
+  "BIRTH_DATE" : "24-OCT-67",
+  "FIRST_NAME" : "MOLLEY",
+  "GENDER_LKPCD" : "M",
+  "LAST_NAME" : "GRAPPE",
+  "RSDNC_COUNTY_CODE" : 38,
+  "MARITAL_STATUS_LKPCD" : ""
+}
+{
+  "_id" : ObjectId("5a0b41e46efff0b079f89a2d"),
+  "IDNTFR" : "501673983WA",
+  "BIRTH_DATE" : "20-JUL-71",
+  "FIRST_NAME" : "BERNADINA",
+  "GENDER_LKPCD" : "F",
+  "LAST_NAME" : "CLAYBAUGH",
+  "RSDNC_COUNTY_CODE" : 13,
+  "MARITAL_STATUS_LKPCD" : ""
+}
+{
+  "_id" : ObjectId("5a0b41e46efff0b079f89a2e"),
+  "IDNTFR" : "500854602WA",
+  "BIRTH_DATE" : "24-FEB-65",
+  "FIRST_NAME" : "STEPHANE",
+  "GENDER_LKPCD" : "M",
+  "LAST_NAME" : "ELLERT",
+  "RSDNC_COUNTY_CODE" : 21,
+  "MARITAL_STATUS_LKPCD" : ""
+}
+{
+  "_id" : ObjectId("5a0b41e46efff0b079f89a2f"),
+  "IDNTFR" : "123456789-01",
+  "BIRTH_DATE" : "01-JAN-00",
+  "FIRST_NAME" : "Joseph",
+  "GENDER_LKPCD" : "M",
+  "LAST_NAME" : "Miles",
+  "RSDNC_COUNTY_CODE" : 39,
+  "MARITAL_STATUS_LKPCD" : ""
+}
+{
+  "_id" : ObjectId("5a0b41e46efff0b079f89a30"),
+  "IDNTFR" : "503649270WA",
+  "BIRTH_DATE" : "26-MAY-86",
+  "FIRST_NAME" : "HELMIE",
+  "GENDER_LKPCD" : "F",
+  "LAST_NAME" : "YETMAN",
+  "RSDNC_COUNTY_CODE" : 27,
+  "MARITAL_STATUS_LKPCD" : ""
+}
+{
+  "_id" : ObjectId("5a0b41e46efff0b079f89a31"),
+  "IDNTFR" : "501679321WA",
+  "BIRTH_DATE" : "03-JUN-83",
+  "FIRST_NAME" : "DORITA",
+  "GENDER_LKPCD" : "F",
+  "LAST_NAME" : "PURVES",
+  "RSDNC_COUNTY_CODE" : 31,
+  "MARITAL_STATUS_LKPCD" : ""
+}
+{
+  "_id" : ObjectId("5a0b41e46efff0b079f89a32"),
+  "IDNTFR" : "503216258WA",
+  "BIRTH_DATE" : "03-FEB-92",
+  "FIRST_NAME" : "ANNAMARY",
+  "GENDER_LKPCD" : "F",
+  "LAST_NAME" : "REMME",
+  "RSDNC_COUNTY_CODE" : 300,
+  "MARITAL_STATUS_LKPCD" : ""
+}
+{
+  "_id" : ObjectId("5a0b41e46efff0b079f89a33"),
+  "IDNTFR" : "503395375WA",
+  "BIRTH_DATE" : "03-JUL-87",
+  "FIRST_NAME" : "MACEY",
+  "GENDER_LKPCD" : "F",
+  "LAST_NAME" : "MICALI",
+  "RSDNC_COUNTY_CODE" : 300,
+  "MARITAL_STATUS_LKPCD" : ""
+}
+{
+  "_id" : ObjectId("5a0b41e46efff0b079f89a34"),
+  "IDNTFR" : "500073535WA",
+  "BIRTH_DATE" : "19-MAR-80",
+  "FIRST_NAME" : "ERLE",
+  "GENDER_LKPCD" : "F",
+  "LAST_NAME" : "CREWE",
+  "RSDNC_COUNTY_CODE" : 39,
+  "MARITAL_STATUS_LKPCD" : ""
+}
+{
+  "_id" : ObjectId("5a0b41e46efff0b079f89a35"),
+  "IDNTFR" : "503607867WA",
+  "BIRTH_DATE" : "22-AUG-80",
+  "FIRST_NAME" : "SYBELLA",
+  "GENDER_LKPCD" : "F",
+  "LAST_NAME" : "GINTER",
+  "RSDNC_COUNTY_CODE" : 27,
+  "MARITAL_STATUS_LKPCD" : ""
+}
+{
+  "_id" : ObjectId("5a0b41e46efff0b079f89a36"),
+  "IDNTFR" : "501395626WA",
+  "BIRTH_DATE" : "27-NOV-62",
+  "FIRST_NAME" : "HALLETT",
+  "GENDER_LKPCD" : "M",
+  "LAST_NAME" : "LANDRON",
+  "RSDNC_COUNTY_CODE" : 32,
+  "MARITAL_STATUS_LKPCD" : ""
+}
+{
+  "_id" : ObjectId("5a0b41e46efff0b079f89a37"),
+  "IDNTFR" : "500099926WA",
+  "BIRTH_DATE" : "14-AUG-00",
+  "FIRST_NAME" : "JONITA",
+  "GENDER_LKPCD" : "F",
+  "LAST_NAME" : "ZEBLEY",
+  "RSDNC_COUNTY_CODE" : 29,
+  "MARITAL_STATUS_LKPCD" : ""
+}
+{
+  "_id" : ObjectId("5a0b41e46efff0b079f89a38"),
+  "IDNTFR" : "500449152WA",
+  "BIRTH_DATE" : "02-FEB-89",
+  "FIRST_NAME" : "MARELYN",
+  "GENDER_LKPCD" : "M",
+  "LAST_NAME" : "WOLOSZYN",
+  "RSDNC_COUNTY_CODE" : 5,
+  "MARITAL_STATUS_LKPCD" : ""
+}
+{
+  "_id" : ObjectId("5a0b41e46efff0b079f89a39"),
+  "IDNTFR" : "503465089WA",
+  "BIRTH_DATE" : "05-MAY-80",
+  "FIRST_NAME" : "ORISON",
+  "GENDER_LKPCD" : "F",
+  "LAST_NAME" : "KONOPSKI",
+  "RSDNC_COUNTY_CODE" : 17,
+  "MARITAL_STATUS_LKPCD" : ""
+}
+{
+  "_id" : ObjectId("5a0b41e46efff0b079f89a3a"),
+  "IDNTFR" : "502755624WA",
+  "BIRTH_DATE" : "22-AUG-80",
+  "FIRST_NAME" : "RAFFAELA",
+  "GENDER_LKPCD" : "F",
+  "LAST_NAME" : "ESHLEMAN",
+  "RSDNC_COUNTY_CODE" : 17,
+  "MARITAL_STATUS_LKPCD" : ""
+}
+{
+  "_id" : ObjectId("5a0b41e46efff0b079f89a3b"),
+  "IDNTFR" : "501275246WA",
+  "BIRTH_DATE" : "23-MAY-80",
+  "FIRST_NAME" : "AILI",
+  "GENDER_LKPCD" : "F",
+  "LAST_NAME" : "WAETZIG",
+  "RSDNC_COUNTY_CODE" : 17,
+  "MARITAL_STATUS_LKPCD" : ""
+}
+{
+  "_id" : ObjectId("5a0b41e46efff0b079f89a3c"),
+  "IDNTFR" : "501173310WA",
+  "BIRTH_DATE" : "03-JUL-53",
+  "FIRST_NAME" : "OSBALDO",
+  "GENDER_LKPCD" : "M",
+  "LAST_NAME" : "KENNISON",
+  "RSDNC_COUNTY_CODE" : 2,
+  "MARITAL_STATUS_LKPCD" : ""
+}
+{
+  "_id" : ObjectId("5a0b41e46efff0b079f89a3d"),
+  "IDNTFR" : "501534782WA",
+  "BIRTH_DATE" : "20-JUN-06",
+  "FIRST_NAME" : "JASPER",
+  "GENDER_LKPCD" : "F",
+  "LAST_NAME" : "HUTCHENS",
+  "RSDNC_COUNTY_CODE" : 17,
+  "MARITAL_STATUS_LKPCD" : ""
+}
+{
+  "_id" : ObjectId("5a0b41e46efff0b079f89a3e"),
+  "IDNTFR" : "500476322WA",
+  "BIRTH_DATE" : "01-OCT-80",
+  "FIRST_NAME" : "LUCETTE",
+  "GENDER_LKPCD" : "F",
+  "LAST_NAME" : "MARSHAL",
+  "RSDNC_COUNTY_CODE" : 27,
+  "MARITAL_STATUS_LKPCD" : ""
+}
+{
+  "_id" : ObjectId("5a0b41e46efff0b079f89a3f"),
+  "IDNTFR" : "503511056WA",
+  "BIRTH_DATE" : "02-JAN-80",
+  "FIRST_NAME" : "COYT",
+  "GENDER_LKPCD" : "F",
+  "LAST_NAME" : "COUNSELMAN",
+  "RSDNC_COUNTY_CODE" : 17,
+  "MARITAL_STATUS_LKPCD" : ""
+}
+{
+  "_id" : ObjectId("5a0b41e46efff0b079f89a40"),
+  "IDNTFR" : "501414567WA",
+  "BIRTH_DATE" : "08-OCT-81",
+  "FIRST_NAME" : "LOUIES",
+  "GENDER_LKPCD" : "F",
+  "LAST_NAME" : "JORDA",
+  "RSDNC_COUNTY_CODE" : 17,
+  "MARITAL_STATUS_LKPCD" : ""
+}
+{
+  "_id" : ObjectId("5a0b41e46efff0b079f89a41"),
+  "IDNTFR" : "503204006WA",
+  "BIRTH_DATE" : "03-MAY-56",
+  "FIRST_NAME" : "BETRICE",
+  "GENDER_LKPCD" : "F",
+  "LAST_NAME" : "ODENHEIMER",
+  "RSDNC_COUNTY_CODE" : 17,
+  "MARITAL_STATUS_LKPCD" : ""
+}
+{
+  "_id" : ObjectId("5a0b41e46efff0b079f89a42"),
+  "IDNTFR" : "501691122WA",
+  "BIRTH_DATE" : "11-DEC-57",
+  "FIRST_NAME" : "MICKEL",
+  "GENDER_LKPCD" : "F",
+  "LAST_NAME" : "LAWSHE",
+  "RSDNC_COUNTY_CODE" : 32,
+  "MARITAL_STATUS_LKPCD" : ""
+}
+{
+  "_id" : ObjectId("5a0b41e46efff0b079f89a43"),
+  "IDNTFR" : "500165272WA",
+  "BIRTH_DATE" : "31-DEC-60",
+  "FIRST_NAME" : "DOMINGOS",
+  "GENDER_LKPCD" : "M",
+  "LAST_NAME" : "MEIERS",
+  "RSDNC_COUNTY_CODE" : 27,
+  "MARITAL_STATUS_LKPCD" : ""
+}
+{
+  "_id" : ObjectId("5a0b41e46efff0b079f89a44"),
+  "IDNTFR" : "500823858WA",
+  "BIRTH_DATE" : "26-MAY-86",
+  "FIRST_NAME" : "HELMIE",
+  "GENDER_LKPCD" : "F",
+  "LAST_NAME" : "YETMAN",
+  "RSDNC_COUNTY_CODE" : 27,
+  "MARITAL_STATUS_LKPCD" : ""
+}
+{
+  "_id" : ObjectId("5a0b41e46efff0b079f89a45"),
+  "IDNTFR" : "502458081WA",
+  "BIRTH_DATE" : "27-MAR-80",
+  "FIRST_NAME" : "ROZINA",
+  "GENDER_LKPCD" : "F",
+  "LAST_NAME" : "TEITENBERG",
+  "RSDNC_COUNTY_CODE" : 34,
+  "MARITAL_STATUS_LKPCD" : ""
+}
+{
+  "_id" : ObjectId("5a0b41e46efff0b079f89a46"),
+  "IDNTFR" : "500539104WA",
+  "BIRTH_DATE" : "22-OCT-65",
+  "FIRST_NAME" : "VAUNDA",
+  "GENDER_LKPCD" : "F",
+  "LAST_NAME" : "OLIDE",
+  "RSDNC_COUNTY_CODE" : 27,
+  "MARITAL_STATUS_LKPCD" : ""
+}
+{
+  "_id" : ObjectId("5a0b41e46efff0b079f89a47"),
+  "IDNTFR" : "501704594WA",
+  "BIRTH_DATE" : "18-NOV-61",
+  "FIRST_NAME" : "HOLBERT",
+  "GENDER_LKPCD" : "M",
+  "LAST_NAME" : "CIRCELLI",
+  "RSDNC_COUNTY_CODE" : 39,
+  "MARITAL_STATUS_LKPCD" : ""
+}
+{
+  "_id" : ObjectId("5a0b41e46efff0b079f89a48"),
+  "IDNTFR" : "501991191WA",
+  "BIRTH_DATE" : "25-APR-00",
+  "FIRST_NAME" : "REONA",
+  "GENDER_LKPCD" : "M",
+  "LAST_NAME" : "DYKAS",
+  "RSDNC_COUNTY_CODE" : 27,
+  "MARITAL_STATUS_LKPCD" : ""
+}
+{
+  "_id" : ObjectId("5a0b41e46efff0b079f89a49"),
+  "IDNTFR" : "502805531WA",
+  "BIRTH_DATE" : "15-NOV-66",
+  "FIRST_NAME" : "BERNON",
+  "GENDER_LKPCD" : "M",
+  "LAST_NAME" : "SARCONI",
+  "RSDNC_COUNTY_CODE" : 18,
+  "MARITAL_STATUS_LKPCD" : ""
+}
+{
+  "_id" : ObjectId("5a0b41e46efff0b079f89a4a"),
+  "IDNTFR" : "500654422WA",
+  "BIRTH_DATE" : "26-MAY-86",
+  "FIRST_NAME" : "HELMIE",
+  "GENDER_LKPCD" : "F",
+  "LAST_NAME" : "YETMAN",
+  "RSDNC_COUNTY_CODE" : 27,
+  "MARITAL_STATUS_LKPCD" : ""
+}
+{
+  "_id" : ObjectId("5a0b41e46efff0b079f89a4b"),
+  "IDNTFR" : "501384732WA",
+  "BIRTH_DATE" : "25-FEB-80",
+  "FIRST_NAME" : "YONE",
+  "GENDER_LKPCD" : "F",
+  "LAST_NAME" : "RUSSAK",
+  "RSDNC_COUNTY_CODE" : 32,
+  "MARITAL_STATUS_LKPCD" : ""
+}
+{
+  "_id" : ObjectId("5a0b41e46efff0b079f89a4c"),
+  "IDNTFR" : "500000573WA",
+  "BIRTH_DATE" : "09-AUG-05",
+  "FIRST_NAME" : "WALFRED",
+  "GENDER_LKPCD" : "M",
+  "LAST_NAME" : "ALANO",
+  "RSDNC_COUNTY_CODE" : 39,
+  "MARITAL_STATUS_LKPCD" : ""
+}
+{
+  "_id" : ObjectId("5a0b41e46efff0b079f89a4d"),
+  "IDNTFR" : "500174244WA",
+  "BIRTH_DATE" : "15-AUG-00",
+  "FIRST_NAME" : "SHERI",
+  "GENDER_LKPCD" : "M",
+  "LAST_NAME" : "KREUZIGER",
+  "RSDNC_COUNTY_CODE" : 17,
+  "MARITAL_STATUS_LKPCD" : ""
+}
+{
+  "_id" : ObjectId("5a0b41e46efff0b079f89a4e"),
+  "IDNTFR" : "502847226WA",
+  "BIRTH_DATE" : "06-OCT-00",
+  "FIRST_NAME" : "JENICE",
+  "GENDER_LKPCD" : "M",
+  "LAST_NAME" : "KOLOSKI",
+  "RSDNC_COUNTY_CODE" : 27,
+  "MARITAL_STATUS_LKPCD" : ""
+}
+{
+  "_id" : ObjectId("5a0b41e46efff0b079f89a4f"),
+  "IDNTFR" : "500072452WA",
+  "BIRTH_DATE" : "12-JAN-68",
+  "FIRST_NAME" : "CATHERYN",
+  "GENDER_LKPCD" : "M",
+  "LAST_NAME" : "GREELY",
+  "RSDNC_COUNTY_CODE" : 34,
+  "MARITAL_STATUS_LKPCD" : ""
+}
+{
+  "_id" : ObjectId("5a0b41e46efff0b079f89a50"),
+  "IDNTFR" : "503030823WA",
+  "BIRTH_DATE" : "16-FEB-66",
+  "FIRST_NAME" : "EMMER",
+  "GENDER_LKPCD" : "F",
+  "LAST_NAME" : "ZAPALAC",
+  "RSDNC_COUNTY_CODE" : 32,
+  "MARITAL_STATUS_LKPCD" : ""
+}
+{
+  "_id" : ObjectId("5a0b41e46efff0b079f89a51"),
+  "IDNTFR" : "500119901WA",
+  "BIRTH_DATE" : "30-JAN-82",
+  "FIRST_NAME" : "SATURNINO",
+  "GENDER_LKPCD" : "M",
+  "LAST_NAME" : "MILA",
+  "RSDNC_COUNTY_CODE" : 17,
+  "MARITAL_STATUS_LKPCD" : ""
+}
+{
+  "_id" : ObjectId("5a0b41e46efff0b079f89a52"),
+  "IDNTFR" : "502052602WA",
+  "BIRTH_DATE" : "01-APR-80",
+  "FIRST_NAME" : "EVE",
+  "GENDER_LKPCD" : "M",
+  "LAST_NAME" : "BROADIE",
+  "RSDNC_COUNTY_CODE" : 17,
+  "MARITAL_STATUS_LKPCD" : ""
+}
+{
+  "_id" : ObjectId("5a0b41e46efff0b079f89a53"),
+  "IDNTFR" : "500068942WA",
+  "BIRTH_DATE" : "18-DEC-59",
+  "FIRST_NAME" : "EMMERSON",
+  "GENDER_LKPCD" : "M",
+  "LAST_NAME" : "MERRITT",
+  "RSDNC_COUNTY_CODE" : 13,
+  "MARITAL_STATUS_LKPCD" : ""
+}
+{
+  "_id" : ObjectId("5a0b41e46efff0b079f89a54"),
+  "IDNTFR" : "501497422WA",
+  "BIRTH_DATE" : "25-SEP-00",
+  "FIRST_NAME" : "COVA",
+  "GENDER_LKPCD" : "F",
+  "LAST_NAME" : "DUTCH",
+  "RSDNC_COUNTY_CODE" : 32,
+  "MARITAL_STATUS_LKPCD" : ""
+}
+{
+  "_id" : ObjectId("5a0b41e46efff0b079f89a55"),
+  "IDNTFR" : "500576583WA",
+  "BIRTH_DATE" : "15-JUN-56",
+  "FIRST_NAME" : "LOYETTE",
+  "GENDER_LKPCD" : "M",
+  "LAST_NAME" : "GERIS",
+  "RSDNC_COUNTY_CODE" : 32,
+  "MARITAL_STATUS_LKPCD" : ""
+}
+{
+  "_id" : ObjectId("5a0b41e46efff0b079f89a56"),
+  "IDNTFR" : "503030577WA",
+  "BIRTH_DATE" : "15-DEC-80",
+  "FIRST_NAME" : "HOOKER",
+  "GENDER_LKPCD" : "F",
+  "LAST_NAME" : "SKEWIS",
+  "RSDNC_COUNTY_CODE" : 32,
+  "MARITAL_STATUS_LKPCD" : ""
+}
+{
+  "_id" : ObjectId("5a0b41e46efff0b079f89a57"),
+  "IDNTFR" : "500680456WA",
+  "BIRTH_DATE" : "29-DEC-00",
+  "FIRST_NAME" : "CLERANCE",
+  "GENDER_LKPCD" : "M",
+  "LAST_NAME" : "CORBET",
+  "RSDNC_COUNTY_CODE" : 17,
+  "MARITAL_STATUS_LKPCD" : ""
+}
+{
+  "_id" : ObjectId("5a0b41e46efff0b079f89a58"),
+  "IDNTFR" : "501611775WA",
+  "BIRTH_DATE" : "23-APR-51",
+  "FIRST_NAME" : "DOM",
+  "GENDER_LKPCD" : "F",
+  "LAST_NAME" : "SUSKI",
+  "RSDNC_COUNTY_CODE" : 17,
+  "MARITAL_STATUS_LKPCD" : ""
+}

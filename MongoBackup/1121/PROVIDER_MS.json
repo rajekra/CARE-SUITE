@@ -1,0 +1,108 @@
+﻿{
+  "_id" : ObjectId("5a0b452c6efff0b079f89d7c"),
+  "IDNTFR" : 1000000004,
+  "BIRTH_DATE" : "",
+  "FIRST_NAME" : "",
+  "GENDER_LKPCD" : "",
+  "LAST_NAME" : "",
+  "STATE_PRVDR_IDNTFR" : "",
+  "ORG_BSNS_NAME" : "Ind3",
+  "STATE_CODE" : "MD",
+  "ZIP_CODE" : 20878
+}
+{
+  "_id" : ObjectId("5a0b452c6efff0b079f89d7d"),
+  "IDNTFR" : 1000000007,
+  "BIRTH_DATE" : "",
+  "FIRST_NAME" : "HOFFMAN",
+  "GENDER_LKPCD" : "",
+  "LAST_NAME" : "SCHAICH",
+  "STATE_PRVDR_IDNTFR" : "",
+  "ORG_BSNS_NAME" : "HOFFMAN, SCHAICH",
+  "STATE_CODE" : "MD",
+  "ZIP_CODE" : 20877
+}
+{
+  "_id" : ObjectId("5a0b452c6efff0b079f89d7e"),
+  "IDNTFR" : 1000000009,
+  "BIRTH_DATE" : "",
+  "FIRST_NAME" : "",
+  "GENDER_LKPCD" : "",
+  "LAST_NAME" : "",
+  "STATE_PRVDR_IDNTFR" : "",
+  "ORG_BSNS_NAME" : "Group1",
+  "STATE_CODE" : "NJ",
+  "ZIP_CODE" : 7003
+}
+{
+  "_id" : ObjectId("5a0b452c6efff0b079f89d7f"),
+  "IDNTFR" : 1000000007,
+  "BIRTH_DATE" : "",
+  "FIRST_NAME" : "HOFFMAN",
+  "GENDER_LKPCD" : "",
+  "LAST_NAME" : "SCHAICH",
+  "STATE_PRVDR_IDNTFR" : 602456413,
+  "ORG_BSNS_NAME" : "HOFFMAN, SCHAICH",
+  "STATE_CODE" : "CA",
+  "ZIP_CODE" : 90001
+}
+{
+  "_id" : ObjectId("5a0b452c6efff0b079f89d80"),
+  "IDNTFR" : 1000000008,
+  "BIRTH_DATE" : "",
+  "FIRST_NAME" : "",
+  "GENDER_LKPCD" : "",
+  "LAST_NAME" : "",
+  "STATE_PRVDR_IDNTFR" : "",
+  "ORG_BSNS_NAME" : "ABC Billing",
+  "STATE_CODE" : "GA",
+  "ZIP_CODE" : 30350
+}
+{
+  "_id" : ObjectId("5a0b452c6efff0b079f89d81"),
+  "IDNTFR" : 1000000004,
+  "BIRTH_DATE" : "",
+  "FIRST_NAME" : "",
+  "GENDER_LKPCD" : "",
+  "LAST_NAME" : "",
+  "STATE_PRVDR_IDNTFR" : "null",
+  "ORG_BSNS_NAME" : "Ind3",
+  "STATE_CODE" : "CA",
+  "ZIP_CODE" : 90002
+}
+{
+  "_id" : ObjectId("5a0b452c6efff0b079f89d82"),
+  "IDNTFR" : 1000000005,
+  "BIRTH_DATE" : "",
+  "FIRST_NAME" : "CLELLAN",
+  "GENDER_LKPCD" : "",
+  "LAST_NAME" : "WIEMANN",
+  "STATE_PRVDR_IDNTFR" : "",
+  "ORG_BSNS_NAME" : "CLELLAN, WIEMANN",
+  "STATE_CODE" : "MD",
+  "ZIP_CODE" : 20850
+}
+{
+  "_id" : ObjectId("5a0b452c6efff0b079f89d83"),
+  "IDNTFR" : 1000000010,
+  "BIRTH_DATE" : "",
+  "FIRST_NAME" : "",
+  "GENDER_LKPCD" : "",
+  "LAST_NAME" : "",
+  "STATE_PRVDR_IDNTFR" : "null",
+  "ORG_BSNS_NAME" : "FAOI1",
+  "STATE_CODE" : "NJ",
+  "ZIP_CODE" : 7001
+}
+{
+  "_id" : ObjectId("5a0b452c6efff0b079f89d84"),
+  "IDNTFR" : 1000000006,
+  "BIRTH_DATE" : "",
+  "FIRST_NAME" : "DEANNE",
+  "GENDER_LKPCD" : "",
+  "LAST_NAME" : "HUNSON",
+  "STATE_PRVDR_IDNTFR" : "",
+  "ORG_BSNS_NAME" : "DEANNE, HUNSON",
+  "STATE_CODE" : "GA",
+  "ZIP_CODE" : 30351
+}

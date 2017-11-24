@@ -29,8 +29,9 @@ public abstract class LogisticRegressionBuilder implements AbstractPredictive{
 	 // the evaluator.
 	protected ParamMap[] paramGrid = null;
 	protected ParamGridBuilder paramBuilder = new ParamGridBuilder()
-	//.addGrid(hashingTF.numFeatures(), new int[] { 10, 100, 1000 })
-	.addGrid(logisticRegression.regParam(), new double[] { 0.1, 0.01 });
+	 .addGrid(logisticRegression.regParam(),  new double[] {0.01, 0.5, 2.0})
+     .addGrid(logisticRegression.elasticNetParam(), new double[] {0.0, 0.5, 1.0})
+     .addGrid(logisticRegression.maxIter(), new int[] {1, 5, 10});
 
 	 // In this case the estimator is simply the linear regression.
 	 // A TrainValidationSplit requires an Estimator, a set of Estimator ParamMaps, and an Evaluator.

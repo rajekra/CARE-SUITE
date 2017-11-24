@@ -1,0 +1,5663 @@
+﻿{
+  "_id" : ObjectId("5a0e07064d21ea30e453591a"),
+  "los" : 1,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "5789",
+  "age" : 31.4986301369863,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "K922",
+  "prncplPrcdrCd" : "4516",
+  "drgCode" : 377,
+  "mdc" : 6,
+  "prediction" : 9374.857059077618
+}
+{
+  "_id" : ObjectId("5a0e07074d21ea30e453591f"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78701",
+  "age" : 56.032876712328765,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "H8109",
+  "prncplPrcdrCd" : "3722",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 9965.8553192173531
+}
+{
+  "_id" : ObjectId("5a0e07074d21ea30e4535923"),
+  "los" : 1,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "45829",
+  "age" : 30.394520547945206,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I952",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10311.091285059028
+}
+{
+  "_id" : ObjectId("5a0e07074d21ea30e4535928"),
+  "los" : 4,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "71516",
+  "age" : 17.268493150684932,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "M1710",
+  "prncplPrcdrCd" : "8154",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10515.015755462706
+}
+{
+  "_id" : ObjectId("5a0e07074d21ea30e453592f"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78097",
+  "age" : 37.558904109589044,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "F10229",
+  "prncplPrcdrCd" : "3995",
+  "drgCode" : 894,
+  "mdc" : 20,
+  "prediction" : 10568.820222349283
+}
+{
+  "_id" : ObjectId("5a0e07074d21ea30e4535931"),
+  "los" : 3,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "78079",
+  "age" : 37.558904109589044,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "J189",
+  "drgCode" : 193,
+  "mdc" : 4,
+  "prediction" : 11751.890214581032
+}
+{
+  "_id" : ObjectId("5a0e07074d21ea30e4535933"),
+  "los" : 8,
+  "patientStatusLkpcd" : "50",
+  "admtDiagCd" : "78605",
+  "age" : 50.257534246575339,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "J189",
+  "prncplPrcdrCd" : "9390",
+  "drgCode" : 193,
+  "mdc" : 4,
+  "prediction" : 10114.002188300039
+}
+{
+  "_id" : ObjectId("5a0e07084d21ea30e4535935"),
+  "los" : 7,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "7842",
+  "age" : 53.591780821917808,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I871",
+  "prncplPrcdrCd" : "9919",
+  "drgCode" : 299,
+  "mdc" : 5,
+  "prediction" : 9782.8733355424629
+}
+{
+  "_id" : ObjectId("5a0e07084d21ea30e453593b"),
+  "los" : 6,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "49121",
+  "age" : 31.4986301369863,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "J9620",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 11570.891507015896
+}
+{
+  "_id" : ObjectId("5a0e07084d21ea30e453593c"),
+  "los" : 9,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "70714",
+  "age" : 28.805479452054794,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "L97409",
+  "prncplPrcdrCd" : "8622",
+  "drgCode" : 573,
+  "mdc" : 9,
+  "prediction" : 11239.919594719064
+}
+{
+  "_id" : ObjectId("5a0e07084d21ea30e453593e"),
+  "los" : 5,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "78079",
+  "age" : 37.509589041095893,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "N179",
+  "drgCode" : 673,
+  "mdc" : 11,
+  "prediction" : 9573.8883177273801
+}
+{
+  "_id" : ObjectId("5a0e07084d21ea30e4535942"),
+  "los" : 5,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "5781",
+  "age" : 64.416438356164377,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "K921",
+  "prncplPrcdrCd" : "9904",
+  "drgCode" : 377,
+  "mdc" : 6,
+  "prediction" : 10401.281516099152
+}
+{
+  "_id" : ObjectId("5a0e07084d21ea30e4535947"),
+  "los" : 3,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "78079",
+  "age" : 36.945205479452056,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I2699",
+  "drgCode" : 175,
+  "mdc" : 4,
+  "prediction" : 16772.180342681109
+}
+{
+  "_id" : ObjectId("5a0e07084d21ea30e4535948"),
+  "los" : 14,
+  "patientStatusLkpcd" : "20",
+  "admtDiagCd" : "51881",
+  "age" : 25.802739726027397,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "3810",
+  "prncplPrcdrCd" : "9671",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 12236.466932707574
+}
+{
+  "_id" : ObjectId("5a0e07084d21ea30e4535949"),
+  "los" : 3,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "30401",
+  "age" : 50.257534246575339,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "F1120",
+  "drgCode" : 894,
+  "mdc" : 20,
+  "prediction" : 10295.944852142167
+}
+{
+  "_id" : ObjectId("5a0e07084d21ea30e453594c"),
+  "los" : 3,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "6826",
+  "age" : 17.123287671232877,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "L03119",
+  "prncplPrcdrCd" : "9396",
+  "drgCode" : 573,
+  "mdc" : 9,
+  "prediction" : 9621.3254808205074
+}
+{
+  "_id" : ObjectId("5a0e07084d21ea30e453594d"),
+  "los" : 3,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "71535",
+  "age" : 37.558904109589044,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "M169",
+  "prncplPrcdrCd" : "8151",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10200.083484016157
+}
+{
+  "_id" : ObjectId("5a0e07084d21ea30e4535951"),
+  "los" : 7,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "5579",
+  "age" : 17.016438356164382,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "K559",
+  "drgCode" : 393,
+  "mdc" : 6,
+  "prediction" : 13481.906335678632
+}
+{
+  "_id" : ObjectId("5a0e07084d21ea30e4535952"),
+  "los" : 1,
+  "patientStatusLkpcd" : "20",
+  "admtDiagCd" : "78630",
+  "age" : 37.260273972602739,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "J189",
+  "drgCode" : 193,
+  "mdc" : 4,
+  "prediction" : 11083.684993838959
+}
+{
+  "_id" : ObjectId("5a0e07084d21ea30e4535954"),
+  "los" : 6,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "6822",
+  "age" : 52.104109589041094,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "D7801",
+  "prncplPrcdrCd" : "8604",
+  "drgCode" : 919,
+  "mdc" : 21,
+  "prediction" : 9681.2957928358628
+}
+{
+  "_id" : ObjectId("5a0e07094d21ea30e4535960"),
+  "los" : 6,
+  "patientStatusLkpcd" : "20",
+  "admtDiagCd" : "42090",
+  "age" : 30.394520547945206,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I309",
+  "prncplPrcdrCd" : "370",
+  "drgCode" : 314,
+  "mdc" : 5,
+  "prediction" : 19126.258500232252
+}
+{
+  "_id" : ObjectId("5a0e07094d21ea30e4535966"),
+  "los" : 11,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "56211",
+  "age" : 17.265753424657536,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "K5732",
+  "prncplPrcdrCd" : "5491",
+  "drgCode" : 391,
+  "mdc" : 6,
+  "prediction" : 9643.5052331697661
+}
+{
+  "_id" : ObjectId("5a0e07094d21ea30e4535967"),
+  "los" : 7,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "486",
+  "age" : 55.008219178082193,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "389",
+  "prncplPrcdrCd" : "9904",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 12918.896517937914
+}
+{
+  "_id" : ObjectId("5a0e07094d21ea30e4535969"),
+  "los" : 12,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "78701",
+  "age" : 59.972602739726028,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "N390",
+  "prncplPrcdrCd" : "4516",
+  "drgCode" : 689,
+  "mdc" : 11,
+  "prediction" : 9524.5616787519848
+}
+{
+  "_id" : ObjectId("5a0e07094d21ea30e4535971"),
+  "los" : 10,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "42831",
+  "age" : 35.819178082191783,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I5033",
+  "prncplPrcdrCd" : "3723",
+  "drgCode" : 222,
+  "mdc" : 5,
+  "prediction" : 12013.415159382377
+}
+{
+  "_id" : ObjectId("5a0e07094d21ea30e4535973"),
+  "los" : 8,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "4359",
+  "age" : 52.104109589041094,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I6350",
+  "prncplPrcdrCd" : "4513",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 9056.3090537263433
+}
+{
+  "_id" : ObjectId("5a0e07094d21ea30e4535977"),
+  "los" : 14,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78605",
+  "age" : 17.016438356164382,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "D72829",
+  "prncplPrcdrCd" : "9904",
+  "drgCode" : 814,
+  "mdc" : 16,
+  "prediction" : 13665.531037879022
+}
+{
+  "_id" : ObjectId("5a0e070a4d21ea30e453597e"),
+  "los" : 7,
+  "patientStatusLkpcd" : "62",
+  "admtDiagCd" : "41401",
+  "age" : 49.87945205479452,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I2510",
+  "prncplPrcdrCd" : "3614",
+  "drgCode" : 302,
+  "mdc" : 5,
+  "prediction" : 10741.120563269653
+}
+{
+  "_id" : ObjectId("5a0e070a4d21ea30e4535983"),
+  "los" : 3,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "43491",
+  "age" : 37.509589041095893,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "G459",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 11414.866266169212
+}
+{
+  "_id" : ObjectId("5a0e070a4d21ea30e4535987"),
+  "los" : 4,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78909",
+  "age" : 31.4986301369863,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "K5732",
+  "drgCode" : 391,
+  "mdc" : 6,
+  "prediction" : 10779.441026731256
+}
+{
+  "_id" : ObjectId("5a0e070a4d21ea30e4535989"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "1890",
+  "age" : 51.783561643835618,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "C649",
+  "prncplPrcdrCd" : "554",
+  "drgCode" : 656,
+  "mdc" : 11,
+  "prediction" : 11301.741196028343
+}
+{
+  "_id" : ObjectId("5a0e070a4d21ea30e4535995"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "28800",
+  "age" : 17.153424657534245,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "K922",
+  "prncplPrcdrCd" : "9904",
+  "drgCode" : 377,
+  "mdc" : 6,
+  "prediction" : 9875.5382658881263
+}
+{
+  "_id" : ObjectId("5a0e070a4d21ea30e4535999"),
+  "los" : 6,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "78605",
+  "age" : 37.68767123287671,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I2510",
+  "prncplPrcdrCd" : "3613",
+  "drgCode" : 302,
+  "mdc" : 5,
+  "prediction" : 12011.521361077866
+}
+{
+  "_id" : ObjectId("5a0e070a4d21ea30e453599d"),
+  "los" : 7,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "78791",
+  "age" : 37.150684931506852,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "3842",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10539.032319331567
+}
+{
+  "_id" : ObjectId("5a0e070a4d21ea30e453599e"),
+  "los" : 3,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "42823",
+  "age" : 56.915068493150685,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I5023",
+  "drgCode" : 222,
+  "mdc" : 5,
+  "prediction" : 10396.51976550443
+}
+{
+  "_id" : ObjectId("5a0e070a4d21ea30e45359a1"),
+  "los" : 7,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78605",
+  "age" : 17.123287671232877,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "389",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 9843.9858264585764
+}
+{
+  "_id" : ObjectId("5a0e070a4d21ea30e45359a6"),
+  "los" : 4,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "57450",
+  "age" : 56.032876712328765,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "K8590",
+  "prncplPrcdrCd" : "5183",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 11060.007715186917
+}
+{
+  "_id" : ObjectId("5a0e070a4d21ea30e45359aa"),
+  "los" : 3,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "71536",
+  "age" : 25.802739726027397,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "M179",
+  "prncplPrcdrCd" : "8154",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10439.080444681262
+}
+{
+  "_id" : ObjectId("5a0e070a4d21ea30e45359ae"),
+  "los" : 4,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78909",
+  "age" : 11.416438356164383,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "K8051",
+  "prncplPrcdrCd" : "5185",
+  "drgCode" : 444,
+  "mdc" : 7,
+  "prediction" : 9269.2482636531822
+}
+{
+  "_id" : ObjectId("5a0e070a4d21ea30e45359b4"),
+  "los" : 6,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "4280",
+  "age" : 51.783561643835618,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I5033",
+  "prncplPrcdrCd" : "9390",
+  "drgCode" : 222,
+  "mdc" : 5,
+  "prediction" : 10850.318554888174
+}
+{
+  "_id" : ObjectId("5a0e070a4d21ea30e45359b6"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "5990",
+  "age" : 37.665753424657531,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "H7393",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 13981.972454600398
+}
+{
+  "_id" : ObjectId("5a0e070b4d21ea30e45359bd"),
+  "los" : 3,
+  "patientStatusLkpcd" : "65",
+  "admtDiagCd" : "71536",
+  "age" : 37.260273972602739,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "M179",
+  "prncplPrcdrCd" : "8154",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10517.338978092634
+}
+{
+  "_id" : ObjectId("5a0e070b4d21ea30e45359be"),
+  "los" : 4,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "5990",
+  "age" : 61.463013698630135,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "M47817",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 12789.734925308803
+}
+{
+  "_id" : ObjectId("5a0e070b4d21ea30e45359c1"),
+  "los" : 6,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "59971",
+  "age" : 55.008219178082193,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "C672",
+  "prncplPrcdrCd" : "5749",
+  "drgCode" : 656,
+  "mdc" : 11,
+  "prediction" : 9344.8854426918715
+}
+{
+  "_id" : ObjectId("5a0e070b4d21ea30e45359c2"),
+  "los" : 6,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "311",
+  "age" : 51.038356164383565,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "F333",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 9978.7794404805809
+}
+{
+  "_id" : ObjectId("5a0e070b4d21ea30e45359c5"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "2809",
+  "age" : 12.27945205479452,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "D509",
+  "prncplPrcdrCd" : "9904",
+  "drgCode" : 811,
+  "mdc" : 16,
+  "prediction" : 8649.063638396794
+}
+{
+  "_id" : ObjectId("5a0e070b4d21ea30e45359c6"),
+  "los" : 9,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78904",
+  "age" : 34.479452054794521,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "K5732",
+  "prncplPrcdrCd" : "570",
+  "drgCode" : 391,
+  "mdc" : 6,
+  "prediction" : 10126.009934760908
+}
+{
+  "_id" : ObjectId("5a0e070b4d21ea30e45359c7"),
+  "los" : 1,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "71941",
+  "age" : 17.572602739726026,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "M1990",
+  "prncplPrcdrCd" : "8180",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10836.522769646546
+}
+{
+  "_id" : ObjectId("5a0e070b4d21ea30e45359ce"),
+  "los" : 15,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "486",
+  "age" : 37.68767123287671,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "J189",
+  "prncplPrcdrCd" : "4513",
+  "drgCode" : 193,
+  "mdc" : 4,
+  "prediction" : 11478.184471611057
+}
+{
+  "_id" : ObjectId("5a0e070b4d21ea30e45359cf"),
+  "los" : 1,
+  "patientStatusLkpcd" : "50",
+  "admtDiagCd" : "1539",
+  "age" : 50.257534246575339,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "C189",
+  "drgCode" : 374,
+  "mdc" : 6,
+  "prediction" : 11324.753837386259
+}
+{
+  "_id" : ObjectId("5a0e070b4d21ea30e45359d7"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "71516",
+  "age" : 37.260273972602739,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "M179",
+  "prncplPrcdrCd" : "8154",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10435.114963605152
+}
+{
+  "_id" : ObjectId("5a0e070b4d21ea30e45359dc"),
+  "los" : 3,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "71535",
+  "age" : 57.953424657534249,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "M169",
+  "prncplPrcdrCd" : "8151",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10117.657532278783
+}
+{
+  "_id" : ObjectId("5a0e070b4d21ea30e45359e4"),
+  "los" : 9,
+  "patientStatusLkpcd" : "51",
+  "admtDiagCd" : "78097",
+  "age" : 18.18904109589041,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I6350",
+  "prncplPrcdrCd" : "9672",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10844.623547449099
+}
+{
+  "_id" : ObjectId("5a0e070b4d21ea30e45359eb"),
+  "los" : 7,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "5770",
+  "age" : 37.509589041095893,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "K8590",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10178.979539466025
+}
+{
+  "_id" : ObjectId("5a0e070b4d21ea30e45359f6"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78909",
+  "age" : 35.819178082191783,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "K56600",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10555.601488875207
+}
+{
+  "_id" : ObjectId("5a0e070c4d21ea30e45359fb"),
+  "los" : 4,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "78791",
+  "age" : 31.4986301369863,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "K5732",
+  "prncplPrcdrCd" : "9921",
+  "drgCode" : 391,
+  "mdc" : 6,
+  "prediction" : 11070.596780904856
+}
+{
+  "_id" : ObjectId("5a0e070c4d21ea30e45359fd"),
+  "los" : 3,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "5849",
+  "age" : 17.153424657534245,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "N179",
+  "drgCode" : 673,
+  "mdc" : 11,
+  "prediction" : 12689.224176857717
+}
+{
+  "_id" : ObjectId("5a0e070c4d21ea30e45359fe"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "4299",
+  "age" : 55.008219178082193,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I70219",
+  "prncplPrcdrCd" : "3929",
+  "drgCode" : 299,
+  "mdc" : 5,
+  "prediction" : 11003.047777010774
+}
+{
+  "_id" : ObjectId("5a0e070c4d21ea30e4535a09"),
+  "los" : 5,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "20288",
+  "age" : 12.27945205479452,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "Z5111",
+  "prncplPrcdrCd" : "9925",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 11329.539407098107
+}
+{
+  "_id" : ObjectId("5a0e070c4d21ea30e4535a0f"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78907",
+  "age" : 64.416438356164377,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "K523",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10532.78209755802
+}
+{
+  "_id" : ObjectId("5a0e070c4d21ea30e4535a11"),
+  "los" : 3,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "5781",
+  "age" : 28.805479452054794,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "D7801",
+  "prncplPrcdrCd" : "4543",
+  "drgCode" : 919,
+  "mdc" : 21,
+  "prediction" : 9149.243337749258
+}
+{
+  "_id" : ObjectId("5a0e070c4d21ea30e4535a12"),
+  "los" : 7,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "25080",
+  "age" : 17.268493150684932,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "E11618",
+  "prncplPrcdrCd" : "8417",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 11632.785666958089
+}
+{
+  "_id" : ObjectId("5a0e070c4d21ea30e4535a15"),
+  "los" : 3,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "7802",
+  "age" : 35.819178082191783,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "S060X1A",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 11264.853911952927
+}
+{
+  "_id" : ObjectId("5a0e070c4d21ea30e4535a16"),
+  "los" : 9,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "4280",
+  "age" : 37.260273972602739,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I5023",
+  "prncplPrcdrCd" : "3721",
+  "drgCode" : 222,
+  "mdc" : 5,
+  "prediction" : 10018.42934279835
+}
+{
+  "_id" : ObjectId("5a0e070c4d21ea30e4535a19"),
+  "los" : 7,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "78701",
+  "age" : 59.972602739726028,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "K279",
+  "prncplPrcdrCd" : "4516",
+  "drgCode" : 380,
+  "mdc" : 6,
+  "prediction" : 9220.9423587283309
+}
+{
+  "_id" : ObjectId("5a0e070c4d21ea30e4535a1b"),
+  "los" : 4,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "78701",
+  "age" : 31.4986301369863,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "F19939",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10259.360023401137
+}
+{
+  "_id" : ObjectId("5a0e070c4d21ea30e4535a1c"),
+  "los" : 8,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "27651",
+  "age" : 28.805479452054794,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "E1100",
+  "prncplPrcdrCd" : "9929",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 11289.84508674875
+}
+{
+  "_id" : ObjectId("5a0e070c4d21ea30e4535a1d"),
+  "los" : 3,
+  "patientStatusLkpcd" : "62",
+  "admtDiagCd" : "82021",
+  "age" : 34.479452054794521,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "M1610",
+  "prncplPrcdrCd" : "8151",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10199.682785904348
+}
+{
+  "_id" : ObjectId("5a0e070d4d21ea30e4535a1f"),
+  "los" : 5,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78650",
+  "age" : 57.953424657534249,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I4891",
+  "prncplPrcdrCd" : "3722",
+  "drgCode" : 308,
+  "mdc" : 5,
+  "prediction" : 9319.4849611712489
+}
+{
+  "_id" : ObjectId("5a0e070d4d21ea30e4535a20"),
+  "los" : 8,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "7802",
+  "age" : 37.509589041095893,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "R55",
+  "prncplPrcdrCd" : "9921",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 12727.068562990928
+}
+{
+  "_id" : ObjectId("5a0e070d4d21ea30e4535a21"),
+  "los" : 1,
+  "patientStatusLkpcd" : "2",
+  "admtDiagCd" : "7802",
+  "age" : 56.032876712328765,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I511",
+  "prncplPrcdrCd" : "3723",
+  "drgCode" : 306,
+  "mdc" : 5,
+  "prediction" : 9308.6774177446969
+}
+{
+  "_id" : ObjectId("5a0e070d4d21ea30e4535a25"),
+  "los" : 3,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "4271",
+  "age" : 64.416438356164377,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I472",
+  "prncplPrcdrCd" : "3722",
+  "drgCode" : 308,
+  "mdc" : 5,
+  "prediction" : 9606.2815545059711
+}
+{
+  "_id" : ObjectId("5a0e070d4d21ea30e4535a26"),
+  "los" : 6,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "7802",
+  "age" : 37.665753424657531,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "R55",
+  "prncplPrcdrCd" : "4513",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10777.16384451398
+}
+{
+  "_id" : ObjectId("5a0e070d4d21ea30e4535a28"),
+  "los" : 9,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "5789",
+  "age" : 50.098630136986301,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "845",
+  "prncplPrcdrCd" : "4525",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10581.339226640606
+}
+{
+  "_id" : ObjectId("5a0e070d4d21ea30e4535a29"),
+  "los" : 3,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "49121",
+  "age" : 37.260273972602739,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "J9620",
+  "prncplPrcdrCd" : "9390",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 12234.683501519903
+}
+{
+  "_id" : ObjectId("5a0e070d4d21ea30e4535a2b"),
+  "los" : 2,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "70706",
+  "age" : 17.268493150684932,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "L89509",
+  "drgCode" : 573,
+  "mdc" : 9,
+  "prediction" : 10517.526889189889
+}
+{
+  "_id" : ObjectId("5a0e070d4d21ea30e4535a2c"),
+  "los" : 4,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78900",
+  "age" : 52.761643835616439,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "K9130",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10197.524509170868
+}
+{
+  "_id" : ObjectId("5a0e070d4d21ea30e4535a2d"),
+  "los" : 1,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "44029",
+  "age" : 61.463013698630135,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "E1151",
+  "prncplPrcdrCd" : "3950",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 11564.379313877687
+}
+{
+  "_id" : ObjectId("5a0e070d4d21ea30e4535a2f"),
+  "los" : 3,
+  "patientStatusLkpcd" : "50",
+  "admtDiagCd" : "27651",
+  "age" : 12.27945205479452,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "N179",
+  "drgCode" : 673,
+  "mdc" : 11,
+  "prediction" : 9746.6677406862837
+}
+{
+  "_id" : ObjectId("5a0e070d4d21ea30e4535a36"),
+  "los" : 4,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78060",
+  "age" : 51.783561643835618,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "N390",
+  "prncplPrcdrCd" : "8847",
+  "drgCode" : 689,
+  "mdc" : 11,
+  "prediction" : 10191.745485311165
+}
+{
+  "_id" : ObjectId("5a0e070d4d21ea30e4535a3b"),
+  "los" : 1,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "2536",
+  "age" : 49.87945205479452,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "C3430",
+  "prncplPrcdrCd" : "3326",
+  "drgCode" : 180,
+  "mdc" : 4,
+  "prediction" : 9610.0405706344154
+}
+{
+  "_id" : ObjectId("5a0e070d4d21ea30e4535a3d"),
+  "los" : 8,
+  "patientStatusLkpcd" : "62",
+  "admtDiagCd" : "4280",
+  "age" : 30.394520547945206,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I495",
+  "prncplPrcdrCd" : "3772",
+  "drgCode" : 308,
+  "mdc" : 5,
+  "prediction" : 11156.733124367975
+}
+{
+  "_id" : ObjectId("5a0e070d4d21ea30e4535a42"),
+  "los" : 5,
+  "patientStatusLkpcd" : "20",
+  "admtDiagCd" : "78605",
+  "age" : 37.150684931506852,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I5031",
+  "prncplPrcdrCd" : "3491",
+  "drgCode" : 222,
+  "mdc" : 5,
+  "prediction" : 7868.4032522116286
+}
+{
+  "_id" : ObjectId("5a0e070d4d21ea30e4535a44"),
+  "los" : 7,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "78659",
+  "age" : 17.265753424657536,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "N179",
+  "drgCode" : 673,
+  "mdc" : 11,
+  "prediction" : 11864.153402512457
+}
+{
+  "_id" : ObjectId("5a0e070d4d21ea30e4535a45"),
+  "los" : 2,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "78605",
+  "age" : 56.915068493150685,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I5043",
+  "drgCode" : 222,
+  "mdc" : 5,
+  "prediction" : 14039.790893942445
+}
+{
+  "_id" : ObjectId("5a0e070e4d21ea30e4535a4a"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "5379",
+  "age" : 18.18904109589041,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "D175",
+  "prncplPrcdrCd" : "4389",
+  "drgCode" : 393,
+  "mdc" : 6,
+  "prediction" : 10763.053461168936
+}
+{
+  "_id" : ObjectId("5a0e070e4d21ea30e4535a4c"),
+  "los" : 5,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "4010",
+  "age" : 52.761643835616439,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I129",
+  "drgCode" : 673,
+  "mdc" : 11,
+  "prediction" : 9474.6919907624924
+}
+{
+  "_id" : ObjectId("5a0e070e4d21ea30e4535a50"),
+  "los" : 4,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "7295",
+  "age" : 36.131506849315066,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "M79609",
+  "prncplPrcdrCd" : "82",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10938.94539574257
+}
+{
+  "_id" : ObjectId("5a0e070e4d21ea30e4535a51"),
+  "los" : 5,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "20288",
+  "age" : 37.652054794520545,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "Z5111",
+  "prncplPrcdrCd" : "9925",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 12832.737982329954
+}
+{
+  "_id" : ObjectId("5a0e070e4d21ea30e4535a56"),
+  "los" : 6,
+  "patientStatusLkpcd" : "4",
+  "admtDiagCd" : "4870",
+  "age" : 11.416438356164383,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "J1100",
+  "prncplPrcdrCd" : "9390",
+  "drgCode" : 177,
+  "mdc" : 4,
+  "prediction" : 9935.2790546250289
+}
+{
+  "_id" : ObjectId("5a0e070e4d21ea30e4535a58"),
+  "los" : 0,
+  "patientStatusLkpcd" : "66",
+  "admtDiagCd" : "389",
+  "age" : 37.898630136986299,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "389",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 11048.852230489565
+}
+{
+  "_id" : ObjectId("5a0e070e4d21ea30e4535a5d"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "7851",
+  "age" : 52.104109589041094,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I471",
+  "drgCode" : 308,
+  "mdc" : 5,
+  "prediction" : 10462.354699744235
+}
+{
+  "_id" : ObjectId("5a0e070e4d21ea30e4535a5e"),
+  "los" : 17,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "78559",
+  "age" : 36.131506849315066,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "389",
+  "prncplPrcdrCd" : "9390",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 12171.159007623544
+}
+{
+  "_id" : ObjectId("5a0e070e4d21ea30e4535a61"),
+  "los" : 7,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "78605",
+  "age" : 34.479452054794521,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "J441",
+  "prncplPrcdrCd" : "3324",
+  "drgCode" : 190,
+  "mdc" : 4,
+  "prediction" : 10123.679572922591
+}
+{
+  "_id" : ObjectId("5a0e070e4d21ea30e4535a65"),
+  "los" : 3,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "7140",
+  "age" : 36.945205479452056,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "M069",
+  "prncplPrcdrCd" : "8154",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10676.735418599794
+}
+{
+  "_id" : ObjectId("5a0e070e4d21ea30e4535a67"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "71531",
+  "age" : 12.27945205479452,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "M1990",
+  "prncplPrcdrCd" : "8180",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10529.127241538501
+}
+{
+  "_id" : ObjectId("5a0e070e4d21ea30e4535a6a"),
+  "los" : 9,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "78060",
+  "age" : 12.27945205479452,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "E1151",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 11908.033860614669
+}
+{
+  "_id" : ObjectId("5a0e070e4d21ea30e4535a6b"),
+  "los" : 3,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "78097",
+  "age" : 31.4986301369863,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "G40101",
+  "drgCode" : 100,
+  "mdc" : 1,
+  "prediction" : 8764.0893046452638
+}
+{
+  "_id" : ObjectId("5a0e070e4d21ea30e4535a6c"),
+  "los" : 3,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "49121",
+  "age" : 17.268493150684932,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "J440",
+  "drgCode" : 190,
+  "mdc" : 4,
+  "prediction" : 10444.375462303999
+}
+{
+  "_id" : ObjectId("5a0e070e4d21ea30e4535a6f"),
+  "los" : 1,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "43310",
+  "age" : 36.131506849315066,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I6529",
+  "prncplPrcdrCd" : "3812",
+  "drgCode" : 67,
+  "mdc" : 1,
+  "prediction" : 10499.508794985017
+}
+{
+  "_id" : ObjectId("5a0e070f4d21ea30e4535a78"),
+  "los" : 5,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "4280",
+  "age" : 37.652054794520545,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "389",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 11697.483005617836
+}
+{
+  "_id" : ObjectId("5a0e070f4d21ea30e4535a7a"),
+  "los" : 2,
+  "patientStatusLkpcd" : "20",
+  "admtDiagCd" : "78659",
+  "age" : 25.802739726027397,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I214",
+  "prncplPrcdrCd" : "66",
+  "drgCode" : 222,
+  "mdc" : 5,
+  "prediction" : 13406.76090652126
+}
+{
+  "_id" : ObjectId("5a0e070f4d21ea30e4535a7f"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78900",
+  "age" : 34.479452054794521,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I951",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10347.836243574329
+}
+{
+  "_id" : ObjectId("5a0e070f4d21ea30e4535a83"),
+  "los" : 4,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "1534",
+  "age" : 61.580821917808223,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "C180",
+  "prncplPrcdrCd" : "1733",
+  "drgCode" : 374,
+  "mdc" : 6,
+  "prediction" : 13777.656394465932
+}
+{
+  "_id" : ObjectId("5a0e070f4d21ea30e4535a86"),
+  "los" : 1,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "71531",
+  "age" : 64.416438356164377,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "M1990",
+  "prncplPrcdrCd" : "8188",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 11970.579352632391
+}
+{
+  "_id" : ObjectId("5a0e070f4d21ea30e4535a89"),
+  "los" : 10,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "1369",
+  "age" : 11.416438356164383,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "T85730A",
+  "prncplPrcdrCd" : "394",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 11092.735057350943
+}
+{
+  "_id" : ObjectId("5a0e070f4d21ea30e4535a8a"),
+  "los" : 4,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78605",
+  "age" : 17.265753424657536,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "J440",
+  "drgCode" : 190,
+  "mdc" : 4,
+  "prediction" : 12914.408022243595
+}
+{
+  "_id" : ObjectId("5a0e070f4d21ea30e4535a95"),
+  "los" : 4,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "2762",
+  "age" : 56.032876712328765,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "J189",
+  "drgCode" : 193,
+  "mdc" : 4,
+  "prediction" : 11850.497412211593
+}
+{
+  "_id" : ObjectId("5a0e070f4d21ea30e4535a97"),
+  "los" : 7,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "44283",
+  "age" : 51.038356164383565,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I728",
+  "prncplPrcdrCd" : "3979",
+  "drgCode" : 299,
+  "mdc" : 5,
+  "prediction" : 12194.145427692451
+}
+{
+  "_id" : ObjectId("5a0e070f4d21ea30e4535a99"),
+  "los" : 3,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "78906",
+  "age" : 36.131506849315066,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "C161",
+  "prncplPrcdrCd" : "4516",
+  "drgCode" : 374,
+  "mdc" : 6,
+  "prediction" : 10011.987605064496
+}
+{
+  "_id" : ObjectId("5a0e070f4d21ea30e4535a9c"),
+  "los" : 3,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "71596",
+  "age" : 56.915068493150685,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "M179",
+  "prncplPrcdrCd" : "8154",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10503.27001700318
+}
+{
+  "_id" : ObjectId("5a0e070f4d21ea30e4535a9d"),
+  "los" : 3,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "71946",
+  "age" : 49.87945205479452,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "M1710",
+  "prncplPrcdrCd" : "8154",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10119.201607975107
+}
+{
+  "_id" : ObjectId("5a0e070f4d21ea30e4535aa0"),
+  "los" : 1,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78079",
+  "age" : 64.416438356164377,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "G20",
+  "drgCode" : 56,
+  "mdc" : 1,
+  "prediction" : 11338.393315751473
+}
+{
+  "_id" : ObjectId("5a0e070f4d21ea30e4535aa7"),
+  "los" : 16,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78900",
+  "age" : 17.268493150684932,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "K5190",
+  "prncplPrcdrCd" : "4685",
+  "drgCode" : 385,
+  "mdc" : 6,
+  "prediction" : 19406.861108761965
+}
+{
+  "_id" : ObjectId("5a0e07104d21ea30e4535aab"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "436",
+  "age" : 30.394520547945206,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I6350",
+  "prncplPrcdrCd" : "8891",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10117.023018619571
+}
+{
+  "_id" : ObjectId("5a0e07104d21ea30e4535aae"),
+  "los" : 7,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "5601",
+  "age" : 17.016438356164382,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "K9130",
+  "prncplPrcdrCd" : "3491",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 9737.3650243657703
+}
+{
+  "_id" : ObjectId("5a0e07104d21ea30e4535ab1"),
+  "los" : 3,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "71536",
+  "age" : 35.819178082191783,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "M179",
+  "prncplPrcdrCd" : "8154",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10213.490409237995
+}
+{
+  "_id" : ObjectId("5a0e07104d21ea30e4535ab6"),
+  "los" : 10,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "4589",
+  "age" : 18.18904109589041,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "389",
+  "prncplPrcdrCd" : "4131",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10660.805507460589
+}
+{
+  "_id" : ObjectId("5a0e07104d21ea30e4535ab8"),
+  "los" : 8,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "71946",
+  "age" : 30.394520547945206,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "T8450XA",
+  "prncplPrcdrCd" : "8006",
+  "drgCode" : 485,
+  "mdc" : 8,
+  "prediction" : 10613.480245552631
+}
+{
+  "_id" : ObjectId("5a0e07104d21ea30e4535ac1"),
+  "los" : 5,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "4241",
+  "age" : 59.972602739726028,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I350",
+  "prncplPrcdrCd" : "3522",
+  "drgCode" : 306,
+  "mdc" : 5,
+  "prediction" : 16507.498038276342
+}
+{
+  "_id" : ObjectId("5a0e07104d21ea30e4535ac3"),
+  "los" : 6,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "78039",
+  "age" : 17.268493150684932,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "K7030",
+  "prncplPrcdrCd" : "5491",
+  "drgCode" : 432,
+  "mdc" : 7,
+  "prediction" : 10885.3412889834
+}
+{
+  "_id" : ObjectId("5a0e07104d21ea30e4535ac7"),
+  "los" : 6,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "6826",
+  "age" : 55.93150684931507,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "L03119",
+  "drgCode" : 573,
+  "mdc" : 9,
+  "prediction" : 9834.4252567729054
+}
+{
+  "_id" : ObjectId("5a0e07104d21ea30e4535ac9"),
+  "los" : 10,
+  "patientStatusLkpcd" : "20",
+  "admtDiagCd" : "430",
+  "age" : 50.257534246575339,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I609",
+  "prncplPrcdrCd" : "3972",
+  "drgCode" : 20,
+  "mdc" : 1,
+  "prediction" : 11379.66324231874
+}
+{
+  "_id" : ObjectId("5a0e07104d21ea30e4535aca"),
+  "los" : 6,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "78097",
+  "age" : 18.18904109589041,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "K7290",
+  "prncplPrcdrCd" : "4516",
+  "drgCode" : 441,
+  "mdc" : 7,
+  "prediction" : 10812.07497160558
+}
+{
+  "_id" : ObjectId("5a0e07104d21ea30e4535acc"),
+  "los" : 3,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "78703",
+  "age" : 12.27945205479452,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "E1165",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 9904.2954686665835
+}
+{
+  "_id" : ObjectId("5a0e07104d21ea30e4535acd"),
+  "los" : 4,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "5920",
+  "age" : 17.887671232876713,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "N201",
+  "prncplPrcdrCd" : "560",
+  "drgCode" : 691,
+  "mdc" : 11,
+  "prediction" : 11228.730525908948
+}
+{
+  "_id" : ObjectId("5a0e07104d21ea30e4535ace"),
+  "los" : 1,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "71516",
+  "age" : 17.887671232876713,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "M179",
+  "prncplPrcdrCd" : "8154",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 9639.1709493631442
+}
+{
+  "_id" : ObjectId("5a0e07104d21ea30e4535ad1"),
+  "los" : 2,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "5849",
+  "age" : 17.123287671232877,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "N179",
+  "drgCode" : 673,
+  "mdc" : 11,
+  "prediction" : 8896.3463631441173
+}
+{
+  "_id" : ObjectId("5a0e07104d21ea30e4535ad5"),
+  "los" : 10,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "78079",
+  "age" : 46.358904109589041,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "E271",
+  "drgCode" : 643,
+  "mdc" : 10,
+  "prediction" : 11079.514355855312
+}
+{
+  "_id" : ObjectId("5a0e07104d21ea30e4535ad6"),
+  "los" : 2,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "7295",
+  "age" : 18.18904109589041,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "M1610",
+  "prncplPrcdrCd" : "8151",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10012.816353731252
+}
+{
+  "_id" : ObjectId("5a0e07104d21ea30e4535adc"),
+  "los" : 5,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "73314",
+  "age" : 51.038356164383565,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "M84459A",
+  "prncplPrcdrCd" : "8151",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 11073.336584879667
+}
+{
+  "_id" : ObjectId("5a0e07104d21ea30e4535adf"),
+  "los" : 6,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "5789",
+  "age" : 46.358904109589041,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "K922",
+  "prncplPrcdrCd" : "4443",
+  "drgCode" : 377,
+  "mdc" : 6,
+  "prediction" : 9647.2756405377077
+}
+{
+  "_id" : ObjectId("5a0e07104d21ea30e4535ae0"),
+  "los" : 4,
+  "patientStatusLkpcd" : "2",
+  "admtDiagCd" : "43411",
+  "age" : 25.802739726027397,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I6340",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 9733.3983254272007
+}
+{
+  "_id" : ObjectId("5a0e07104d21ea30e4535ae2"),
+  "los" : 4,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "7802",
+  "age" : 37.750684931506846,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "R55",
+  "prncplPrcdrCd" : "6021",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 11153.275686840178
+}
+{
+  "_id" : ObjectId("5a0e07104d21ea30e4535ae4"),
+  "los" : 4,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "20288",
+  "age" : 61.580821917808223,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "Z5111",
+  "prncplPrcdrCd" : "9925",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10444.056828735385
+}
+{
+  "_id" : ObjectId("5a0e07104d21ea30e4535ae8"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "5609",
+  "age" : 37.558904109589044,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "K56600",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 9290.4378211811381
+}
+{
+  "_id" : ObjectId("5a0e07104d21ea30e4535aeb"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78079",
+  "age" : 17.016438356164382,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "J90",
+  "prncplPrcdrCd" : "3491",
+  "drgCode" : 186,
+  "mdc" : 4,
+  "prediction" : 18448.687205056936
+}
+{
+  "_id" : ObjectId("5a0e07104d21ea30e4535aef"),
+  "los" : 0,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "4019",
+  "age" : 17.572602739726026,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I129",
+  "drgCode" : 673,
+  "mdc" : 11,
+  "prediction" : 10461.401610926683
+}
+{
+  "_id" : ObjectId("5a0e07114d21ea30e4535af3"),
+  "los" : 7,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "78609",
+  "age" : 37.558904109589044,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I5033",
+  "prncplPrcdrCd" : "9394",
+  "drgCode" : 222,
+  "mdc" : 5,
+  "prediction" : 11154.202391705061
+}
+{
+  "_id" : ObjectId("5a0e07114d21ea30e4535af4"),
+  "los" : 3,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "44023",
+  "age" : 17.123287671232877,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I7025",
+  "prncplPrcdrCd" : "8412",
+  "drgCode" : 299,
+  "mdc" : 5,
+  "prediction" : 9990.7159713133788
+}
+{
+  "_id" : ObjectId("5a0e07114d21ea30e4535af8"),
+  "los" : 2,
+  "patientStatusLkpcd" : "20",
+  "admtDiagCd" : "5849",
+  "age" : 50.257534246575339,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "389",
+  "prncplPrcdrCd" : "9604",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 12228.073593592952
+}
+{
+  "_id" : ObjectId("5a0e07114d21ea30e4535af9"),
+  "los" : 9,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "389",
+  "age" : 17.153424657534245,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I2109",
+  "prncplPrcdrCd" : "966",
+  "drgCode" : 222,
+  "mdc" : 5,
+  "prediction" : 11831.938788169791
+}
+{
+  "_id" : ObjectId("5a0e07114d21ea30e4535afb"),
+  "los" : 9,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "78900",
+  "age" : 37.898630136986299,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "K9130",
+  "prncplPrcdrCd" : "4573",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10482.094579151191
+}
+{
+  "_id" : ObjectId("5a0e07114d21ea30e4535afc"),
+  "los" : 9,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "V442",
+  "age" : 50.257534246575339,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "Z432",
+  "prncplPrcdrCd" : "4651",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 11900.602856189216
+}
+{
+  "_id" : ObjectId("5a0e07114d21ea30e4535afd"),
+  "los" : 4,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "49121",
+  "age" : 49.87945205479452,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "F10239",
+  "drgCode" : 894,
+  "mdc" : 20,
+  "prediction" : 10563.282401448752
+}
+{
+  "_id" : ObjectId("5a0e07114d21ea30e4535b00"),
+  "los" : 3,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "4359",
+  "age" : 34.479452054794521,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "G459",
+  "prncplPrcdrCd" : "8703",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10207.995199466204
+}
+{
+  "_id" : ObjectId("5a0e07114d21ea30e4535b05"),
+  "los" : 3,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "71535",
+  "age" : 55.008219178082193,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "M169",
+  "prncplPrcdrCd" : "8151",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 9850.1804757897462
+}
+{
+  "_id" : ObjectId("5a0e07114d21ea30e4535b06"),
+  "los" : 6,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "486",
+  "age" : 11.416438356164383,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "J189",
+  "prncplPrcdrCd" : "9901",
+  "drgCode" : 193,
+  "mdc" : 4,
+  "prediction" : 10284.00966834409
+}
+{
+  "_id" : ObjectId("5a0e07114d21ea30e4535b0c"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "486",
+  "age" : 56.032876712328765,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "J189",
+  "prncplPrcdrCd" : "3995",
+  "drgCode" : 193,
+  "mdc" : 4,
+  "prediction" : 10602.53216832768
+}
+{
+  "_id" : ObjectId("5a0e07114d21ea30e4535b11"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "28262",
+  "age" : 28.805479452054794,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "D5700",
+  "drgCode" : 811,
+  "mdc" : 16,
+  "prediction" : 10442.258032801557
+}
+{
+  "_id" : ObjectId("5a0e07114d21ea30e4535b12"),
+  "los" : 2,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "7245",
+  "age" : 30.394520547945206,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "M169",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10846.892482843226
+}
+{
+  "_id" : ObjectId("5a0e07114d21ea30e4535b13"),
+  "los" : 3,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "5921",
+  "age" : 12.27945205479452,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "N201",
+  "prncplPrcdrCd" : "9851",
+  "drgCode" : 691,
+  "mdc" : 11,
+  "prediction" : 10241.801074121477
+}
+{
+  "_id" : ObjectId("5a0e07114d21ea30e4535b14"),
+  "los" : 13,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "51189",
+  "age" : 61.463013698630135,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "J90",
+  "prncplPrcdrCd" : "3452",
+  "drgCode" : 186,
+  "mdc" : 4,
+  "prediction" : 12627.244962308212
+}
+{
+  "_id" : ObjectId("5a0e07114d21ea30e4535b15"),
+  "los" : 7,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "4414",
+  "age" : 34.479452054794521,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I714",
+  "prncplPrcdrCd" : "3844",
+  "drgCode" : 299,
+  "mdc" : 5,
+  "prediction" : 14374.142990288756
+}
+{
+  "_id" : ObjectId("5a0e07114d21ea30e4535b18"),
+  "los" : 5,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "79989",
+  "age" : 17.123287671232877,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "K5732",
+  "drgCode" : 391,
+  "mdc" : 6,
+  "prediction" : 11613.371369857938
+}
+{
+  "_id" : ObjectId("5a0e07114d21ea30e4535b1e"),
+  "los" : 3,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "45340",
+  "age" : 28.805479452054794,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I82819",
+  "drgCode" : 299,
+  "mdc" : 5,
+  "prediction" : 8938.7438014260042
+}
+{
+  "_id" : ObjectId("5a0e07114d21ea30e4535b20"),
+  "los" : 12,
+  "patientStatusLkpcd" : "65",
+  "admtDiagCd" : "34830",
+  "age" : 17.265753424657536,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "G9340",
+  "drgCode" : 70,
+  "mdc" : 1,
+  "prediction" : 12764.305076196722
+}
+{
+  "_id" : ObjectId("5a0e07114d21ea30e4535b23"),
+  "los" : 5,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "4871",
+  "age" : 36.945205479452056,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "J112",
+  "drgCode" : 865,
+  "mdc" : 18,
+  "prediction" : 11033.685447381029
+}
+{
+  "_id" : ObjectId("5a0e07114d21ea30e4535b25"),
+  "los" : 5,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "42731",
+  "age" : 52.761643835616439,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I214",
+  "prncplPrcdrCd" : "66",
+  "drgCode" : 222,
+  "mdc" : 5,
+  "prediction" : 10591.3658157104
+}
+{
+  "_id" : ObjectId("5a0e07124d21ea30e4535b29"),
+  "los" : 8,
+  "patientStatusLkpcd" : "62",
+  "admtDiagCd" : "78609",
+  "age" : 18.18904109589041,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "389",
+  "prncplPrcdrCd" : "3897",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 11972.904227239947
+}
+{
+  "_id" : ObjectId("5a0e07124d21ea30e4535b2c"),
+  "los" : 3,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "5781",
+  "age" : 25.802739726027397,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "K648",
+  "prncplPrcdrCd" : "4516",
+  "drgCode" : 393,
+  "mdc" : 6,
+  "prediction" : 9688.870601013803
+}
+{
+  "_id" : ObjectId("5a0e07124d21ea30e4535b33"),
+  "los" : 6,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "4271",
+  "age" : 17.123287671232877,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I472",
+  "prncplPrcdrCd" : "51",
+  "drgCode" : 308,
+  "mdc" : 5,
+  "prediction" : 8674.6717265207608
+}
+{
+  "_id" : ObjectId("5a0e07124d21ea30e4535b34"),
+  "los" : 6,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "4241",
+  "age" : 17.268493150684932,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "T82817A",
+  "prncplPrcdrCd" : "3521",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 12474.172439617838
+}
+{
+  "_id" : ObjectId("5a0e07124d21ea30e4535b37"),
+  "los" : 1,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78900",
+  "age" : 37.652054794520545,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "K56600",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 9643.7704963380147
+}
+{
+  "_id" : ObjectId("5a0e07124d21ea30e4535b3b"),
+  "los" : 2,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "79311",
+  "age" : 28.805479452054794,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "C7800",
+  "prncplPrcdrCd" : "3220",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 11172.654482557071
+}
+{
+  "_id" : ObjectId("5a0e07124d21ea30e4535b3c"),
+  "los" : 3,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "4111",
+  "age" : 55.93150684931507,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I2510",
+  "prncplPrcdrCd" : "66",
+  "drgCode" : 302,
+  "mdc" : 5,
+  "prediction" : 14964.968566748394
+}
+{
+  "_id" : ObjectId("5a0e07124d21ea30e4535b3d"),
+  "los" : 2,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "45989",
+  "age" : 46.358904109589041,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I742",
+  "prncplPrcdrCd" : "3803",
+  "drgCode" : 299,
+  "mdc" : 5,
+  "prediction" : 10836.5536628395
+}
+{
+  "_id" : ObjectId("5a0e07124d21ea30e4535b3e"),
+  "los" : 3,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "44020",
+  "age" : 53.591780821917808,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "T82818A",
+  "prncplPrcdrCd" : "3929",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 12397.325156364641
+}
+{
+  "_id" : ObjectId("5a0e07124d21ea30e4535b42"),
+  "los" : 4,
+  "patientStatusLkpcd" : "4",
+  "admtDiagCd" : "7802",
+  "age" : 37.509589041095893,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I951",
+  "prncplPrcdrCd" : "8914",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 7613.0721411441455
+}
+{
+  "_id" : ObjectId("5a0e07134d21ea30e4535b47"),
+  "los" : 6,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "41021",
+  "age" : 51.783561643835618,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I2119",
+  "prncplPrcdrCd" : "66",
+  "drgCode" : 222,
+  "mdc" : 5,
+  "prediction" : 9892.9836288593087
+}
+{
+  "_id" : ObjectId("5a0e07134d21ea30e4535b4a"),
+  "los" : 18,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "51881",
+  "age" : 28.805479452054794,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "J9600",
+  "prncplPrcdrCd" : "311",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 16536.025577341585
+}
+{
+  "_id" : ObjectId("5a0e07134d21ea30e4535b4c"),
+  "los" : 1,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "71536",
+  "age" : 31.4986301369863,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "M179",
+  "prncplPrcdrCd" : "8154",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 11399.369876614346
+}
+{
+  "_id" : ObjectId("5a0e07134d21ea30e4535b54"),
+  "los" : 8,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "78650",
+  "age" : 37.150684931506852,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "J918",
+  "prncplPrcdrCd" : "3404",
+  "drgCode" : 186,
+  "mdc" : 4,
+  "prediction" : 9297.1718673169435
+}
+{
+  "_id" : ObjectId("5a0e07134d21ea30e4535b56"),
+  "los" : 6,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "78060",
+  "age" : 52.761643835616439,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "389",
+  "prncplPrcdrCd" : "4901",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 11994.650639480054
+}
+{
+  "_id" : ObjectId("5a0e07134d21ea30e4535b5e"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78650",
+  "age" : 17.153424657534245,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "K219",
+  "prncplPrcdrCd" : "3995",
+  "drgCode" : 391,
+  "mdc" : 6,
+  "prediction" : 9559.0940477404129
+}
+{
+  "_id" : ObjectId("5a0e07134d21ea30e4535b5f"),
+  "los" : 1,
+  "patientStatusLkpcd" : "4",
+  "admtDiagCd" : "78900",
+  "age" : 50.257534246575339,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I498",
+  "drgCode" : 308,
+  "mdc" : 5,
+  "prediction" : 10328.123094022332
+}
+{
+  "_id" : ObjectId("5a0e07134d21ea30e4535b66"),
+  "los" : 1,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "53081",
+  "age" : 25.802739726027397,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "K219",
+  "prncplPrcdrCd" : "4467",
+  "drgCode" : 391,
+  "mdc" : 6,
+  "prediction" : 10649.502661266572
+}
+{
+  "_id" : ObjectId("5a0e07134d21ea30e4535b69"),
+  "los" : 4,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "389",
+  "age" : 46.358904109589041,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "389",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10479.078940071795
+}
+{
+  "_id" : ObjectId("5a0e07134d21ea30e4535b6d"),
+  "los" : 6,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "78097",
+  "age" : 25.802739726027397,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "N390",
+  "prncplPrcdrCd" : "8703",
+  "drgCode" : 689,
+  "mdc" : 11,
+  "prediction" : 12910.459179506906
+}
+{
+  "_id" : ObjectId("5a0e07134d21ea30e4535b6f"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "8505",
+  "age" : 37.665753424657531,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "S060X9A",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10608.678131463008
+}
+{
+  "_id" : ObjectId("5a0e07134d21ea30e4535b72"),
+  "los" : 7,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "72981",
+  "age" : 16.893150684931506,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "E1151",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 11707.576525270371
+}
+{
+  "_id" : ObjectId("5a0e07134d21ea30e4535b75"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78609",
+  "age" : 17.123287671232877,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "J441",
+  "drgCode" : 190,
+  "mdc" : 4,
+  "prediction" : 9722.8486404440791
+}
+{
+  "_id" : ObjectId("5a0e07134d21ea30e4535b79"),
+  "los" : 1,
+  "patientStatusLkpcd" : "20",
+  "admtDiagCd" : "845",
+  "age" : 61.580821917808223,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "389",
+  "prncplPrcdrCd" : "3893",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 11318.024769414413
+}
+{
+  "_id" : ObjectId("5a0e07134d21ea30e4535b7a"),
+  "los" : 3,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "71536",
+  "age" : 53.591780821917808,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "M179",
+  "prncplPrcdrCd" : "8154",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 9283.5274601768651
+}
+{
+  "_id" : ObjectId("5a0e07134d21ea30e4535b7c"),
+  "los" : 3,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "71946",
+  "age" : 17.887671232876713,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "M1710",
+  "prncplPrcdrCd" : "8154",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10169.974949393518
+}
+{
+  "_id" : ObjectId("5a0e07134d21ea30e4535b7e"),
+  "los" : 8,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "41401",
+  "age" : 37.260273972602739,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I2510",
+  "prncplPrcdrCd" : "3612",
+  "drgCode" : 302,
+  "mdc" : 5,
+  "prediction" : 10503.710070855097
+}
+{
+  "_id" : ObjectId("5a0e07134d21ea30e4535b7f"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78605",
+  "age" : 37.150684931506852,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "J441",
+  "drgCode" : 190,
+  "mdc" : 4,
+  "prediction" : 10875.696690046361
+}
+{
+  "_id" : ObjectId("5a0e07134d21ea30e4535b81"),
+  "los" : 1,
+  "patientStatusLkpcd" : "2",
+  "admtDiagCd" : "78659",
+  "age" : 17.153424657534245,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I5021",
+  "prncplPrcdrCd" : "3761",
+  "drgCode" : 222,
+  "mdc" : 5,
+  "prediction" : 12049.777947614462
+}
+{
+  "_id" : ObjectId("5a0e07134d21ea30e4535b86"),
+  "los" : 3,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "7295",
+  "age" : 51.783561643835618,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "L03119",
+  "drgCode" : 573,
+  "mdc" : 9,
+  "prediction" : 9669.9107680204961
+}
+{
+  "_id" : ObjectId("5a0e07134d21ea30e4535b87"),
+  "los" : 5,
+  "patientStatusLkpcd" : "62",
+  "admtDiagCd" : "7843",
+  "age" : 36.945205479452056,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I951",
+  "prncplPrcdrCd" : "8872",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 11655.164548888979
+}
+{
+  "_id" : ObjectId("5a0e07134d21ea30e4535b88"),
+  "los" : 1,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "7862",
+  "age" : 59.972602739726028,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "J441",
+  "drgCode" : 190,
+  "mdc" : 4,
+  "prediction" : 10011.095960267528
+}
+{
+  "_id" : ObjectId("5a0e07134d21ea30e4535b8a"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "42731",
+  "age" : 25.802739726027397,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I4891",
+  "drgCode" : 308,
+  "mdc" : 5,
+  "prediction" : 9892.7355089942448
+}
+{
+  "_id" : ObjectId("5a0e07134d21ea30e4535b8c"),
+  "los" : 3,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "311",
+  "age" : 37.68767123287671,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "F333",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10333.159853485746
+}
+{
+  "_id" : ObjectId("5a0e07134d21ea30e4535b8d"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "5789",
+  "age" : 61.463013698630135,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "K31811",
+  "prncplPrcdrCd" : "4443",
+  "drgCode" : 377,
+  "mdc" : 6,
+  "prediction" : 10952.388192597084
+}
+{
+  "_id" : ObjectId("5a0e07144d21ea30e4535b90"),
+  "los" : 3,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78900",
+  "age" : 37.898630136986299,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "K8020",
+  "prncplPrcdrCd" : "5123",
+  "drgCode" : 444,
+  "mdc" : 7,
+  "prediction" : 8829.2303906839861
+}
+{
+  "_id" : ObjectId("5a0e07144d21ea30e4535b91"),
+  "los" : 8,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "8208",
+  "age" : 53.591780821917808,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "S72043A",
+  "prncplPrcdrCd" : "8152",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 8874.546971128415
+}
+{
+  "_id" : ObjectId("5a0e07144d21ea30e4535b99"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78900",
+  "age" : 46.358904109589041,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "K56600",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 9793.1057468816362
+}
+{
+  "_id" : ObjectId("5a0e07144d21ea30e4535b9e"),
+  "los" : 5,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "56211",
+  "age" : 46.358904109589041,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "K5732",
+  "drgCode" : 391,
+  "mdc" : 6,
+  "prediction" : 10048.684911440563
+}
+{
+  "_id" : ObjectId("5a0e07144d21ea30e4535b9f"),
+  "los" : 1,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "43310",
+  "age" : 37.652054794520545,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I6529",
+  "prncplPrcdrCd" : "3812",
+  "drgCode" : 67,
+  "mdc" : 1,
+  "prediction" : 9783.0501323793324
+}
+{
+  "_id" : ObjectId("5a0e07144d21ea30e4535ba1"),
+  "los" : 5,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "8208",
+  "age" : 50.098630136986301,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "S72499A",
+  "prncplPrcdrCd" : "7935",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10899.392279453075
+}
+{
+  "_id" : ObjectId("5a0e07144d21ea30e4535baf"),
+  "los" : 3,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "71535",
+  "age" : 16.893150684931506,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "M169",
+  "prncplPrcdrCd" : "8151",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10022.620194045865
+}
+{
+  "_id" : ObjectId("5a0e07144d21ea30e4535bb1"),
+  "los" : 1,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "6931",
+  "age" : 50.098630136986301,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "T783XXA",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10715.990290778613
+}
+{
+  "_id" : ObjectId("5a0e07144d21ea30e4535bb3"),
+  "los" : 5,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78079",
+  "age" : 37.260273972602739,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I951",
+  "prncplPrcdrCd" : "8841",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 9084.8889246981489
+}
+{
+  "_id" : ObjectId("5a0e07144d21ea30e4535bb4"),
+  "los" : 3,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "44771",
+  "age" : 18.18904109589041,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I77810",
+  "drgCode" : 299,
+  "mdc" : 5,
+  "prediction" : 10834.709020533346
+}
+{
+  "_id" : ObjectId("5a0e07144d21ea30e4535bb8"),
+  "los" : 13,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "49121",
+  "age" : 35.819178082191783,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "J441",
+  "prncplPrcdrCd" : "8877",
+  "drgCode" : 190,
+  "mdc" : 4,
+  "prediction" : 9749.2580557362162
+}
+{
+  "_id" : ObjectId("5a0e07144d21ea30e4535bbb"),
+  "los" : 4,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "6826",
+  "age" : 35.819178082191783,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "L03119",
+  "drgCode" : 573,
+  "mdc" : 9,
+  "prediction" : 9685.0923330132027
+}
+{
+  "_id" : ObjectId("5a0e07144d21ea30e4535bc1"),
+  "los" : 1,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78605",
+  "age" : 25.802739726027397,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "D509",
+  "prncplPrcdrCd" : "4516",
+  "drgCode" : 811,
+  "mdc" : 16,
+  "prediction" : 9598.7914275179719
+}
+{
+  "_id" : ObjectId("5a0e07144d21ea30e4535bc4"),
+  "los" : 2,
+  "patientStatusLkpcd" : "4",
+  "admtDiagCd" : "5780",
+  "age" : 52.761643835616439,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "88",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 11863.03483537301
+}
+{
+  "_id" : ObjectId("5a0e07144d21ea30e4535bc9"),
+  "los" : 10,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "4280",
+  "age" : 61.580821917808223,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "380",
+  "prncplPrcdrCd" : "9907",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10781.002130657789
+}
+{
+  "_id" : ObjectId("5a0e07144d21ea30e4535bd2"),
+  "los" : 3,
+  "patientStatusLkpcd" : "20",
+  "admtDiagCd" : "78009",
+  "age" : 35.819178082191783,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "C220",
+  "prncplPrcdrCd" : "9671",
+  "drgCode" : 435,
+  "mdc" : 7,
+  "prediction" : 12014.45494335793
+}
+{
+  "_id" : ObjectId("5a0e07144d21ea30e4535bd9"),
+  "los" : 4,
+  "patientStatusLkpcd" : "62",
+  "admtDiagCd" : "43491",
+  "age" : 17.887671232876713,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I6350",
+  "prncplPrcdrCd" : "9910",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10236.329737369189
+}
+{
+  "_id" : ObjectId("5a0e07144d21ea30e4535bdb"),
+  "los" : 3,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "71536",
+  "age" : 17.887671232876713,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "M179",
+  "prncplPrcdrCd" : "8154",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10029.242294279178
+}
+{
+  "_id" : ObjectId("5a0e07144d21ea30e4535bdd"),
+  "los" : 1,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "1820",
+  "age" : 34.479452054794521,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "C541",
+  "prncplPrcdrCd" : "6851",
+  "drgCode" : 736,
+  "mdc" : 13,
+  "prediction" : 10409.775715774054
+}
+{
+  "_id" : ObjectId("5a0e07144d21ea30e4535be1"),
+  "los" : 7,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "70715",
+  "age" : 12.27945205479452,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I70269",
+  "prncplPrcdrCd" : "3950",
+  "drgCode" : 299,
+  "mdc" : 5,
+  "prediction" : 10339.020215974248
+}
+{
+  "_id" : ObjectId("5a0e07154d21ea30e4535bea"),
+  "los" : 8,
+  "patientStatusLkpcd" : "61",
+  "admtDiagCd" : "389",
+  "age" : 52.104109589041094,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "3811",
+  "prncplPrcdrCd" : "3893",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 11215.28606516905
+}
+{
+  "_id" : ObjectId("5a0e07154d21ea30e4535beb"),
+  "los" : 1,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78079",
+  "age" : 12.27945205479452,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "G933",
+  "drgCode" : 947,
+  "mdc" : 23,
+  "prediction" : 10406.092591661112
+}
+{
+  "_id" : ObjectId("5a0e07154d21ea30e4535bec"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78609",
+  "age" : 59.972602739726028,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "389",
+  "prncplPrcdrCd" : "9921",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 23585.388725658217
+}
+{
+  "_id" : ObjectId("5a0e07154d21ea30e4535bf0"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78650",
+  "age" : 17.887671232876713,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I2510",
+  "prncplPrcdrCd" : "3722",
+  "drgCode" : 302,
+  "mdc" : 5,
+  "prediction" : 10494.724228466359
+}
+{
+  "_id" : ObjectId("5a0e07154d21ea30e4535bf3"),
+  "los" : 5,
+  "patientStatusLkpcd" : "62",
+  "admtDiagCd" : "5932",
+  "age" : 50.257534246575339,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "N281",
+  "prncplPrcdrCd" : "554",
+  "drgCode" : 698,
+  "mdc" : 11,
+  "prediction" : 11291.858330049601
+}
+{
+  "_id" : ObjectId("5a0e07154d21ea30e4535bf6"),
+  "los" : 7,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "7802",
+  "age" : 50.098630136986301,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "R55",
+  "prncplPrcdrCd" : "3995",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10078.729748700089
+}
+{
+  "_id" : ObjectId("5a0e07154d21ea30e4535bf7"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "9951",
+  "age" : 61.463013698630135,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "T783XXA",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10510.322688056245
+}
+{
+  "_id" : ObjectId("5a0e07154d21ea30e4535bfa"),
+  "los" : 6,
+  "patientStatusLkpcd" : "20",
+  "admtDiagCd" : "56983",
+  "age" : 31.4986301369863,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "380",
+  "prncplPrcdrCd" : "9604",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 13138.663947620516
+}
+{
+  "_id" : ObjectId("5a0e07154d21ea30e4535c00"),
+  "los" : 1,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "7234",
+  "age" : 46.358904109589041,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "M47812",
+  "prncplPrcdrCd" : "8102",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 11761.415903112409
+}
+{
+  "_id" : ObjectId("5a0e07154d21ea30e4535c04"),
+  "los" : 4,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78079",
+  "age" : 64.416438356164377,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "J918",
+  "drgCode" : 186,
+  "mdc" : 4,
+  "prediction" : 10481.619012159863
+}
+{
+  "_id" : ObjectId("5a0e07154d21ea30e4535c06"),
+  "los" : 5,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78605",
+  "age" : 37.898630136986299,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "J9620",
+  "prncplPrcdrCd" : "9394",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10935.319946426462
+}
+{
+  "_id" : ObjectId("5a0e07154d21ea30e4535c08"),
+  "los" : 12,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "41041",
+  "age" : 34.479452054794521,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I2119",
+  "drgCode" : 222,
+  "mdc" : 5,
+  "prediction" : 13792.699955396045
+}
+{
+  "_id" : ObjectId("5a0e07154d21ea30e4535c0a"),
+  "los" : 3,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "5589",
+  "age" : 16.893150684931506,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "K523",
+  "prncplPrcdrCd" : "4543",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 8396.6794449433019
+}
+{
+  "_id" : ObjectId("5a0e07154d21ea30e4535c0c"),
+  "los" : 12,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "3577",
+  "age" : 51.783561643835618,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I5023",
+  "prncplPrcdrCd" : "50",
+  "drgCode" : 222,
+  "mdc" : 5,
+  "prediction" : 10963.385309487032
+}
+{
+  "_id" : ObjectId("5a0e07154d21ea30e4535c0f"),
+  "los" : 12,
+  "patientStatusLkpcd" : "20",
+  "admtDiagCd" : "4275",
+  "age" : 31.4986301369863,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I2699",
+  "prncplPrcdrCd" : "9672",
+  "drgCode" : 175,
+  "mdc" : 4,
+  "prediction" : 16491.716025523499
+}
+{
+  "_id" : ObjectId("5a0e07154d21ea30e4535c10"),
+  "los" : 4,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "389",
+  "age" : 17.153424657534245,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "389",
+  "prncplPrcdrCd" : "9921",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10726.671270350271
+}
+{
+  "_id" : ObjectId("5a0e07154d21ea30e4535c12"),
+  "los" : 6,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78605",
+  "age" : 30.394520547945206,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "J9620",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 13217.754211331203
+}
+{
+  "_id" : ObjectId("5a0e07164d21ea30e4535c14"),
+  "los" : 11,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "42731",
+  "age" : 56.032876712328765,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I4891",
+  "prncplPrcdrCd" : "9961",
+  "drgCode" : 308,
+  "mdc" : 5,
+  "prediction" : 11828.916102768329
+}
+{
+  "_id" : ObjectId("5a0e07164d21ea30e4535c17"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "42832",
+  "age" : 55.93150684931507,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "J918",
+  "prncplPrcdrCd" : "3491",
+  "drgCode" : 186,
+  "mdc" : 4,
+  "prediction" : 9627.9091810750015
+}
+{
+  "_id" : ObjectId("5a0e07164d21ea30e4535c19"),
+  "los" : 4,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "78605",
+  "age" : 59.972602739726028,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "J441",
+  "drgCode" : 190,
+  "mdc" : 4,
+  "prediction" : 10571.012477256469
+}
+{
+  "_id" : ObjectId("5a0e07164d21ea30e4535c1a"),
+  "los" : 6,
+  "patientStatusLkpcd" : "62",
+  "admtDiagCd" : "78605",
+  "age" : 51.783561643835618,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "J9620",
+  "prncplPrcdrCd" : "9390",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10272.174969306727
+}
+{
+  "_id" : ObjectId("5a0e07164d21ea30e4535c1c"),
+  "los" : 3,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "71536",
+  "age" : 17.268493150684932,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "M179",
+  "prncplPrcdrCd" : "8154",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 9695.124223166813
+}
+{
+  "_id" : ObjectId("5a0e07164d21ea30e4535c1d"),
+  "los" : 1,
+  "patientStatusLkpcd" : "21",
+  "admtDiagCd" : "78039",
+  "age" : 17.123287671232877,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "R569",
+  "drgCode" : 100,
+  "mdc" : 1,
+  "prediction" : 10636.880095822064
+}
+{
+  "_id" : ObjectId("5a0e07164d21ea30e4535c1e"),
+  "los" : 8,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "845",
+  "age" : 31.4986301369863,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "845",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10703.223661278742
+}
+{
+  "_id" : ObjectId("5a0e07164d21ea30e4535c20"),
+  "los" : 1,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "5789",
+  "age" : 64.416438356164377,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "K922",
+  "prncplPrcdrCd" : "4516",
+  "drgCode" : 377,
+  "mdc" : 6,
+  "prediction" : 9521.0445833981412
+}
+{
+  "_id" : ObjectId("5a0e07164d21ea30e4535c21"),
+  "los" : 2,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "78909",
+  "age" : 16.893150684931506,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "L03319",
+  "prncplPrcdrCd" : "8838",
+  "drgCode" : 573,
+  "mdc" : 9,
+  "prediction" : 9443.9400475169987
+}
+{
+  "_id" : ObjectId("5a0e07164d21ea30e4535c27"),
+  "los" : 3,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "71536",
+  "age" : 37.558904109589044,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "M179",
+  "prncplPrcdrCd" : "8154",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10482.490185904395
+}
+{
+  "_id" : ObjectId("5a0e07164d21ea30e4535c29"),
+  "los" : 6,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78060",
+  "age" : 31.4986301369863,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "J189",
+  "drgCode" : 193,
+  "mdc" : 4,
+  "prediction" : 10351.530209339184
+}
+{
+  "_id" : ObjectId("5a0e07164d21ea30e4535c2a"),
+  "los" : 3,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "486",
+  "age" : 59.972602739726028,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "J189",
+  "prncplPrcdrCd" : "8875",
+  "drgCode" : 193,
+  "mdc" : 4,
+  "prediction" : 10928.818093696947
+}
+{
+  "_id" : ObjectId("5a0e07164d21ea30e4535c2b"),
+  "los" : 10,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "3940",
+  "age" : 25.802739726027397,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I050",
+  "prncplPrcdrCd" : "3524",
+  "drgCode" : 306,
+  "mdc" : 5,
+  "prediction" : 14269.259669317282
+}
+{
+  "_id" : ObjectId("5a0e07164d21ea30e4535c2d"),
+  "los" : 9,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "70715",
+  "age" : 35.819178082191783,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "M86179",
+  "prncplPrcdrCd" : "3893",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 9182.6410160451978
+}
+{
+  "_id" : ObjectId("5a0e07164d21ea30e4535c2f"),
+  "los" : 2,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "7823",
+  "age" : 49.87945205479452,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I2781",
+  "drgCode" : 314,
+  "mdc" : 5,
+  "prediction" : 11278.50142785864
+}
+{
+  "_id" : ObjectId("5a0e07164d21ea30e4535c30"),
+  "los" : 3,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "82300",
+  "age" : 37.750684931506846,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "S82109A",
+  "prncplPrcdrCd" : "9359",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10129.92291513509
+}
+{
+  "_id" : ObjectId("5a0e07164d21ea30e4535c31"),
+  "los" : 3,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "71536",
+  "age" : 34.479452054794521,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "M179",
+  "prncplPrcdrCd" : "8154",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10604.702603588805
+}
+{
+  "_id" : ObjectId("5a0e07164d21ea30e4535c34"),
+  "los" : 4,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "5990",
+  "age" : 37.750684931506846,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "N390",
+  "drgCode" : 689,
+  "mdc" : 11,
+  "prediction" : 12598.409824289731
+}
+{
+  "_id" : ObjectId("5a0e07164d21ea30e4535c38"),
+  "los" : 4,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "7802",
+  "age" : 17.265753424657536,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I495",
+  "prncplPrcdrCd" : "3772",
+  "drgCode" : 308,
+  "mdc" : 5,
+  "prediction" : 12965.245785497984
+}
+{
+  "_id" : ObjectId("5a0e07164d21ea30e4535c3f"),
+  "los" : 9,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78605",
+  "age" : 37.260273972602739,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "J45901",
+  "prncplPrcdrCd" : "3324",
+  "drgCode" : 202,
+  "mdc" : 4,
+  "prediction" : 8675.1909314307286
+}
+{
+  "_id" : ObjectId("5a0e07164d21ea30e4535c43"),
+  "los" : 3,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "7804",
+  "age" : 31.4986301369863,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I959",
+  "drgCode" : 314,
+  "mdc" : 5,
+  "prediction" : 11468.64609180662
+}
+{
+  "_id" : ObjectId("5a0e07174d21ea30e4535c53"),
+  "los" : 6,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "5990",
+  "age" : 11.416438356164383,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "N390",
+  "drgCode" : 689,
+  "mdc" : 11,
+  "prediction" : 10242.548266282423
+}
+{
+  "_id" : ObjectId("5a0e07174d21ea30e4535c54"),
+  "los" : 3,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "71516",
+  "age" : 17.153424657534245,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "M1710",
+  "prncplPrcdrCd" : "8154",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10823.996042959858
+}
+{
+  "_id" : ObjectId("5a0e07174d21ea30e4535c5f"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "6823",
+  "age" : 37.750684931506846,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "L03119",
+  "drgCode" : 573,
+  "mdc" : 9,
+  "prediction" : 10036.363980680489
+}
+{
+  "_id" : ObjectId("5a0e07174d21ea30e4535c64"),
+  "los" : 1,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "5781",
+  "age" : 17.887671232876713,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "K5731",
+  "drgCode" : 377,
+  "mdc" : 6,
+  "prediction" : 10503.052933875735
+}
+{
+  "_id" : ObjectId("5a0e07174d21ea30e4535c68"),
+  "los" : 4,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78060",
+  "age" : 17.016438356164382,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "H7393",
+  "prncplPrcdrCd" : "3897",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10141.99853351132
+}
+{
+  "_id" : ObjectId("5a0e07174d21ea30e4535c69"),
+  "los" : 6,
+  "patientStatusLkpcd" : "62",
+  "admtDiagCd" : "7850",
+  "age" : 37.260273972602739,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I4891",
+  "drgCode" : 308,
+  "mdc" : 5,
+  "prediction" : 11494.484383195904
+}
+{
+  "_id" : ObjectId("5a0e07174d21ea30e4535c6a"),
+  "los" : 6,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "82300",
+  "age" : 31.4986301369863,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "S82109A",
+  "prncplPrcdrCd" : "7936",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10402.69466936256
+}
+{
+  "_id" : ObjectId("5a0e07174d21ea30e4535c6e"),
+  "los" : 3,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "6826",
+  "age" : 56.032876712328765,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "L03119",
+  "drgCode" : 573,
+  "mdc" : 9,
+  "prediction" : 9616.616473103526
+}
+{
+  "_id" : ObjectId("5a0e07174d21ea30e4535c6f"),
+  "los" : 3,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "45342",
+  "age" : 30.394520547945206,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I82449",
+  "prncplPrcdrCd" : "387",
+  "drgCode" : 299,
+  "mdc" : 5,
+  "prediction" : 11153.456583214605
+}
+{
+  "_id" : ObjectId("5a0e07174d21ea30e4535c70"),
+  "los" : 11,
+  "patientStatusLkpcd" : "63",
+  "admtDiagCd" : "78060",
+  "age" : 17.887671232876713,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "3812",
+  "prncplPrcdrCd" : "8314",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 12144.345535591116
+}
+{
+  "_id" : ObjectId("5a0e07174d21ea30e4535c71"),
+  "los" : 5,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "2769",
+  "age" : 17.123287671232877,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "G933",
+  "drgCode" : 947,
+  "mdc" : 23,
+  "prediction" : 9058.6530569094903
+}
+{
+  "_id" : ObjectId("5a0e07174d21ea30e4535c72"),
+  "los" : 1,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78659",
+  "age" : 51.038356164383565,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "D509",
+  "prncplPrcdrCd" : "4516",
+  "drgCode" : 811,
+  "mdc" : 16,
+  "prediction" : 9453.7948075557488
+}
+{
+  "_id" : ObjectId("5a0e07174d21ea30e4535c73"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78605",
+  "age" : 37.68767123287671,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "J441",
+  "drgCode" : 190,
+  "mdc" : 4,
+  "prediction" : 10414.406084804406
+}
+{
+  "_id" : ObjectId("5a0e07174d21ea30e4535c74"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78605",
+  "age" : 56.032876712328765,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I5033",
+  "drgCode" : 222,
+  "mdc" : 5,
+  "prediction" : 10185.923165381268
+}
+{
+  "_id" : ObjectId("5a0e07174d21ea30e4535c75"),
+  "los" : 7,
+  "patientStatusLkpcd" : "51",
+  "admtDiagCd" : "4275",
+  "age" : 52.104109589041094,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "J9600",
+  "prncplPrcdrCd" : "9672",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 11035.579660827641
+}
+{
+  "_id" : ObjectId("5a0e07174d21ea30e4535c78"),
+  "los" : 2,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "5781",
+  "age" : 37.260273972602739,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "K260",
+  "prncplPrcdrCd" : "3979",
+  "drgCode" : 377,
+  "mdc" : 6,
+  "prediction" : 11520.83823722683
+}
+{
+  "_id" : ObjectId("5a0e07174d21ea30e4535c7b"),
+  "los" : 42,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "V5811",
+  "age" : 51.783561643835618,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "Z5111",
+  "prncplPrcdrCd" : "9925",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 12921.167617458284
+}
+{
+  "_id" : ObjectId("5a0e07174d21ea30e4535c81"),
+  "los" : 4,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "79902",
+  "age" : 50.098630136986301,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "L03119",
+  "drgCode" : 573,
+  "mdc" : 9,
+  "prediction" : 8916.5000955390824
+}
+{
+  "_id" : ObjectId("5a0e07174d21ea30e4535c84"),
+  "los" : 4,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "5781",
+  "age" : 56.915068493150685,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "K254",
+  "prncplPrcdrCd" : "4516",
+  "drgCode" : 377,
+  "mdc" : 6,
+  "prediction" : 9780.7567671018987
+}
+{
+  "_id" : ObjectId("5a0e07174d21ea30e4535c87"),
+  "los" : 4,
+  "patientStatusLkpcd" : "4",
+  "admtDiagCd" : "70715",
+  "age" : 37.665753424657531,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I7025",
+  "prncplPrcdrCd" : "8622",
+  "drgCode" : 299,
+  "mdc" : 5,
+  "prediction" : 11081.64831980001
+}
+{
+  "_id" : ObjectId("5a0e07184d21ea30e4535c8b"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "5601",
+  "age" : 25.802739726027397,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "K560",
+  "drgCode" : 388,
+  "mdc" : 6,
+  "prediction" : 9932.1091825223575
+}
+{
+  "_id" : ObjectId("5a0e07184d21ea30e4535c94"),
+  "los" : 5,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "486",
+  "age" : 25.802739726027397,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "J189",
+  "drgCode" : 193,
+  "mdc" : 4,
+  "prediction" : 9380.9351207350046
+}
+{
+  "_id" : ObjectId("5a0e07184d21ea30e4535ca3"),
+  "los" : 2,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "4280",
+  "age" : 37.260273972602739,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I50814",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10710.200555854834
+}
+{
+  "_id" : ObjectId("5a0e07184d21ea30e4535ca6"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78650",
+  "age" : 35.819178082191783,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "K2900",
+  "drgCode" : 391,
+  "mdc" : 6,
+  "prediction" : 10411.704552574342
+}
+{
+  "_id" : ObjectId("5a0e07184d21ea30e4535ca9"),
+  "los" : 27,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "45340",
+  "age" : 56.915068493150685,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I82419",
+  "prncplPrcdrCd" : "387",
+  "drgCode" : 299,
+  "mdc" : 5,
+  "prediction" : 11679.373689233802
+}
+{
+  "_id" : ObjectId("5a0e07184d21ea30e4535cab"),
+  "los" : 3,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "42821",
+  "age" : 31.4986301369863,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I5023",
+  "drgCode" : 222,
+  "mdc" : 5,
+  "prediction" : 12892.648275045372
+}
+{
+  "_id" : ObjectId("5a0e07184d21ea30e4535cb3"),
+  "los" : 4,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "59971",
+  "age" : 37.665753424657531,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "R310",
+  "prncplPrcdrCd" : "570",
+  "drgCode" : 695,
+  "mdc" : 11,
+  "prediction" : 10741.369045972298
+}
+{
+  "_id" : ObjectId("5a0e07194d21ea30e4535cbc"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "9173",
+  "age" : 37.509589041095893,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "E1140",
+  "prncplPrcdrCd" : "8622",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 12346.673865090839
+}
+{
+  "_id" : ObjectId("5a0e07194d21ea30e4535cbd"),
+  "los" : 13,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "496",
+  "age" : 61.463013698630135,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "J441",
+  "drgCode" : 190,
+  "mdc" : 4,
+  "prediction" : 11402.549412782717
+}
+{
+  "_id" : ObjectId("5a0e07194d21ea30e4535cbf"),
+  "los" : 4,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "7842",
+  "age" : 37.898630136986299,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I82C19",
+  "prncplPrcdrCd" : "8877",
+  "drgCode" : 299,
+  "mdc" : 5,
+  "prediction" : 14371.747225002269
+}
+{
+  "_id" : ObjectId("5a0e07194d21ea30e4535cc3"),
+  "los" : 5,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "5184",
+  "age" : 17.153424657534245,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I5023",
+  "prncplPrcdrCd" : "9390",
+  "drgCode" : 222,
+  "mdc" : 5,
+  "prediction" : 12997.069999019468
+}
+{
+  "_id" : ObjectId("5a0e07194d21ea30e4535cc4"),
+  "los" : 4,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78659",
+  "age" : 61.463013698630135,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I2510",
+  "prncplPrcdrCd" : "2911",
+  "drgCode" : 302,
+  "mdc" : 5,
+  "prediction" : 12371.515432784543
+}
+{
+  "_id" : ObjectId("5a0e07194d21ea30e4535cc8"),
+  "los" : 4,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "71945",
+  "age" : 31.4986301369863,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "S72009A",
+  "prncplPrcdrCd" : "8152",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 11169.197037248077
+}
+{
+  "_id" : ObjectId("5a0e07194d21ea30e4535ccb"),
+  "los" : 1,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "5693",
+  "age" : 16.893150684931506,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "K648",
+  "drgCode" : 393,
+  "mdc" : 6,
+  "prediction" : 10742.770293859108
+}
+{
+  "_id" : ObjectId("5a0e07194d21ea30e4535cd6"),
+  "los" : 4,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "2859",
+  "age" : 37.652054794520545,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "S82009A",
+  "prncplPrcdrCd" : "8659",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 9852.4832755415991
+}
+{
+  "_id" : ObjectId("5a0e07194d21ea30e4535cdb"),
+  "los" : 4,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "78079",
+  "age" : 31.4986301369863,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "N179",
+  "drgCode" : 673,
+  "mdc" : 11,
+  "prediction" : 11281.444816133513
+}
+{
+  "_id" : ObjectId("5a0e07194d21ea30e4535cdd"),
+  "los" : 1,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "41400",
+  "age" : 37.652054794520545,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I080",
+  "prncplPrcdrCd" : "3723",
+  "drgCode" : 306,
+  "mdc" : 5,
+  "prediction" : 12589.249342116353
+}
+{
+  "_id" : ObjectId("5a0e07194d21ea30e4535cde"),
+  "los" : 5,
+  "patientStatusLkpcd" : "50",
+  "admtDiagCd" : "72981",
+  "age" : 56.915068493150685,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "N179",
+  "drgCode" : 673,
+  "mdc" : 11,
+  "prediction" : 11026.297356881727
+}
+{
+  "_id" : ObjectId("5a0e07194d21ea30e4535ce1"),
+  "los" : 3,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "7840",
+  "age" : 12.27945205479452,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "E871",
+  "prncplPrcdrCd" : "8951",
+  "drgCode" : 640,
+  "mdc" : 10,
+  "prediction" : 10169.539541080707
+}
+{
+  "_id" : ObjectId("5a0e07194d21ea30e4535ce6"),
+  "los" : 1,
+  "patientStatusLkpcd" : "20",
+  "admtDiagCd" : "431",
+  "age" : 51.783561643835618,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I619",
+  "prncplPrcdrCd" : "9671",
+  "drgCode" : 20,
+  "mdc" : 1,
+  "prediction" : 11566.268599721583
+}
+{
+  "_id" : ObjectId("5a0e07194d21ea30e4535cea"),
+  "los" : 6,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "5609",
+  "age" : 28.805479452054794,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "K56600",
+  "prncplPrcdrCd" : "3995",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10047.6416908925
+}
+{
+  "_id" : ObjectId("5a0e07194d21ea30e4535ceb"),
+  "los" : 1,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "42731",
+  "age" : 28.805479452054794,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I495",
+  "drgCode" : 308,
+  "mdc" : 5,
+  "prediction" : 9025.8127518510919
+}
+{
+  "_id" : ObjectId("5a0e07194d21ea30e4535cec"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "486",
+  "age" : 36.945205479452056,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "J189",
+  "prncplPrcdrCd" : "8877",
+  "drgCode" : 193,
+  "mdc" : 4,
+  "prediction" : 11066.194967883746
+}
+{
+  "_id" : ObjectId("5a0e07194d21ea30e4535cf0"),
+  "los" : 1,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "6826",
+  "age" : 11.416438356164383,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "L03119",
+  "drgCode" : 573,
+  "mdc" : 9,
+  "prediction" : 9129.2841414822669
+}
+{
+  "_id" : ObjectId("5a0e07194d21ea30e4535cf2"),
+  "los" : 1,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "41401",
+  "age" : 64.416438356164377,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I2129",
+  "prncplPrcdrCd" : "66",
+  "drgCode" : 222,
+  "mdc" : 5,
+  "prediction" : 9751.3858797502271
+}
+{
+  "_id" : ObjectId("5a0e07194d21ea30e4535cfb"),
+  "los" : 5,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "20280",
+  "age" : 37.68767123287671,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "Z5111",
+  "prncplPrcdrCd" : "9925",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 11735.008506076902
+}
+{
+  "_id" : ObjectId("5a0e07194d21ea30e4535cfc"),
+  "los" : 6,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "4580",
+  "age" : 37.750684931506846,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I951",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10961.169246461301
+}
+{
+  "_id" : ObjectId("5a0e07194d21ea30e4535cfd"),
+  "los" : 14,
+  "patientStatusLkpcd" : "63",
+  "admtDiagCd" : "7295",
+  "age" : 56.032876712328765,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "L03119",
+  "prncplPrcdrCd" : "8339",
+  "drgCode" : 573,
+  "mdc" : 9,
+  "prediction" : 11427.692706443942
+}
+{
+  "_id" : ObjectId("5a0e07194d21ea30e4535cfe"),
+  "los" : 10,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "4280",
+  "age" : 51.038356164383565,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I5043",
+  "prncplPrcdrCd" : "9960",
+  "drgCode" : 222,
+  "mdc" : 5,
+  "prediction" : 11463.982400234056
+}
+{
+  "_id" : ObjectId("5a0e07194d21ea30e4535cff"),
+  "los" : 5,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78605",
+  "age" : 36.131506849315066,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I5043",
+  "prncplPrcdrCd" : "9907",
+  "drgCode" : 222,
+  "mdc" : 5,
+  "prediction" : 11417.0926343144
+}
+{
+  "_id" : ObjectId("5a0e071a4d21ea30e4535d03"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "42823",
+  "age" : 17.268493150684932,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I5023",
+  "prncplPrcdrCd" : "9390",
+  "drgCode" : 222,
+  "mdc" : 5,
+  "prediction" : 8594.6053225281903
+}
+{
+  "_id" : ObjectId("5a0e071a4d21ea30e4535d04"),
+  "los" : 6,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "5781",
+  "age" : 56.915068493150685,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "K921",
+  "drgCode" : 377,
+  "mdc" : 6,
+  "prediction" : 8862.4026784278303
+}
+{
+  "_id" : ObjectId("5a0e071a4d21ea30e4535d06"),
+  "los" : 3,
+  "patientStatusLkpcd" : "62",
+  "admtDiagCd" : "71946",
+  "age" : 55.008219178082193,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "T84069A",
+  "prncplPrcdrCd" : "84",
+  "drgCode" : 559,
+  "mdc" : 8,
+  "prediction" : 10192.515966441984
+}
+{
+  "_id" : ObjectId("5a0e071a4d21ea30e4535d0e"),
+  "los" : 3,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "5609",
+  "age" : 50.257534246575339,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "K56600",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 9946.327810019131
+}
+{
+  "_id" : ObjectId("5a0e071a4d21ea30e4535d11"),
+  "los" : 3,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "78097",
+  "age" : 51.038356164383565,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "G92",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10409.267586249258
+}
+{
+  "_id" : ObjectId("5a0e071a4d21ea30e4535d13"),
+  "los" : 5,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "4019",
+  "age" : 12.27945205479452,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I10",
+  "prncplPrcdrCd" : "8950",
+  "drgCode" : 304,
+  "mdc" : 5,
+  "prediction" : 9771.6984643796004
+}
+{
+  "_id" : ObjectId("5a0e071a4d21ea30e4535d16"),
+  "los" : 1,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78605",
+  "age" : 18.18904109589041,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "J441",
+  "drgCode" : 190,
+  "mdc" : 4,
+  "prediction" : 10031.125490531345
+}
+{
+  "_id" : ObjectId("5a0e071a4d21ea30e4535d17"),
+  "los" : 3,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "5119",
+  "age" : 11.416438356164383,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "J918",
+  "prncplPrcdrCd" : "3491",
+  "drgCode" : 186,
+  "mdc" : 4,
+  "prediction" : 9176.7251928852838
+}
+{
+  "_id" : ObjectId("5a0e071a4d21ea30e4535d19"),
+  "los" : 3,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "71515",
+  "age" : 35.819178082191783,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "M1610",
+  "prncplPrcdrCd" : "8151",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10088.50413095811
+}
+{
+  "_id" : ObjectId("5a0e071a4d21ea30e4535d1b"),
+  "los" : 4,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "43491",
+  "age" : 25.802739726027397,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I63139",
+  "prncplPrcdrCd" : "3812",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 9549.595734291046
+}
+{
+  "_id" : ObjectId("5a0e071a4d21ea30e4535d1c"),
+  "los" : 1,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "79029",
+  "age" : 36.945205479452056,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "E11618",
+  "prncplPrcdrCd" : "9921",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 9152.3006169397195
+}
+{
+  "_id" : ObjectId("5a0e071a4d21ea30e4535d2a"),
+  "los" : 14,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "99883",
+  "age" : 37.260273972602739,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "T8189XA",
+  "prncplPrcdrCd" : "8669",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 11226.317535193029
+}
+{
+  "_id" : ObjectId("5a0e071a4d21ea30e4535d2e"),
+  "los" : 8,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "82009",
+  "age" : 16.893150684931506,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "S72099A",
+  "prncplPrcdrCd" : "7935",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10273.619322080325
+}
+{
+  "_id" : ObjectId("5a0e071a4d21ea30e4535d33"),
+  "los" : 10,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "5849",
+  "age" : 37.558904109589044,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "N179",
+  "drgCode" : 673,
+  "mdc" : 11,
+  "prediction" : 10560.472950286059
+}
+{
+  "_id" : ObjectId("5a0e071a4d21ea30e4535d34"),
+  "los" : 3,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "71536",
+  "age" : 46.358904109589041,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "M179",
+  "prncplPrcdrCd" : "8154",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10988.212895679148
+}
+{
+  "_id" : ObjectId("5a0e071a4d21ea30e4535d37"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "7840",
+  "age" : 37.150684931506852,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "S066X0A",
+  "prncplPrcdrCd" : "8703",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 9982.1290825579381
+}
+{
+  "_id" : ObjectId("5a0e071a4d21ea30e4535d38"),
+  "los" : 11,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "5589",
+  "age" : 64.416438356164377,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "845",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 11843.955124147986
+}
+{
+  "_id" : ObjectId("5a0e071a4d21ea30e4535d3c"),
+  "los" : 10,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "41071",
+  "age" : 37.260273972602739,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I214",
+  "prncplPrcdrCd" : "3615",
+  "drgCode" : 222,
+  "mdc" : 5,
+  "prediction" : 13667.835424429963
+}
+{
+  "_id" : ObjectId("5a0e071a4d21ea30e4535d47"),
+  "los" : 16,
+  "patientStatusLkpcd" : "62",
+  "admtDiagCd" : "486",
+  "age" : 37.750684931506846,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "J869",
+  "prncplPrcdrCd" : "3452",
+  "drgCode" : 177,
+  "mdc" : 4,
+  "prediction" : 23184.534274341451
+}
+{
+  "_id" : ObjectId("5a0e071a4d21ea30e4535d49"),
+  "los" : 1,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "71536",
+  "age" : 57.953424657534249,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "M179",
+  "prncplPrcdrCd" : "8154",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10454.087994110892
+}
+{
+  "_id" : ObjectId("5a0e071a4d21ea30e4535d4e"),
+  "los" : 7,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "78900",
+  "age" : 64.416438356164377,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I7102",
+  "prncplPrcdrCd" : "3971",
+  "drgCode" : 299,
+  "mdc" : 5,
+  "prediction" : 9546.015256395367
+}
+{
+  "_id" : ObjectId("5a0e071a4d21ea30e4535d52"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "4359",
+  "age" : 34.479452054794521,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I2699",
+  "drgCode" : 175,
+  "mdc" : 4,
+  "prediction" : 10018.78123860774
+}
+{
+  "_id" : ObjectId("5a0e071b4d21ea30e4535d58"),
+  "los" : 8,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "4111",
+  "age" : 37.558904109589044,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I214",
+  "prncplPrcdrCd" : "9359",
+  "drgCode" : 222,
+  "mdc" : 5,
+  "prediction" : 12995.817161447045
+}
+{
+  "_id" : ObjectId("5a0e071b4d21ea30e4535d5c"),
+  "los" : 3,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "8363",
+  "age" : 30.394520547945206,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "S83006A",
+  "prncplPrcdrCd" : "8144",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10615.702150210449
+}
+{
+  "_id" : ObjectId("5a0e071b4d21ea30e4535d5d"),
+  "los" : 3,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "5990",
+  "age" : 11.416438356164383,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "389",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10832.058686635901
+}
+{
+  "_id" : ObjectId("5a0e071b4d21ea30e4535d63"),
+  "los" : 3,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "7384",
+  "age" : 37.150684931506852,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "M4300",
+  "prncplPrcdrCd" : "8108",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 17625.926086610409
+}
+{
+  "_id" : ObjectId("5a0e071b4d21ea30e4535d66"),
+  "los" : 5,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "2859",
+  "age" : 31.4986301369863,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "K5731",
+  "prncplPrcdrCd" : "4516",
+  "drgCode" : 377,
+  "mdc" : 6,
+  "prediction" : 11658.222563881896
+}
+{
+  "_id" : ObjectId("5a0e071b4d21ea30e4535d69"),
+  "los" : 9,
+  "patientStatusLkpcd" : "51",
+  "admtDiagCd" : "78097",
+  "age" : 37.750684931506846,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "389",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10675.154184868701
+}
+{
+  "_id" : ObjectId("5a0e071b4d21ea30e4535d6b"),
+  "los" : 4,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "78605",
+  "age" : 46.358904109589041,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "J918",
+  "prncplPrcdrCd" : "3491",
+  "drgCode" : 186,
+  "mdc" : 4,
+  "prediction" : 10010.974499798613
+}
+{
+  "_id" : ObjectId("5a0e071b4d21ea30e4535d71"),
+  "los" : 1,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78659",
+  "age" : 36.131506849315066,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "R0782",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10600.940749094938
+}
+{
+  "_id" : ObjectId("5a0e071b4d21ea30e4535d72"),
+  "los" : 6,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "2859",
+  "age" : 16.893150684931506,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "D638",
+  "prncplPrcdrCd" : "9904",
+  "drgCode" : 811,
+  "mdc" : 16,
+  "prediction" : 9540.0507643399706
+}
+{
+  "_id" : ObjectId("5a0e071b4d21ea30e4535d78"),
+  "los" : 1,
+  "patientStatusLkpcd" : "51",
+  "admtDiagCd" : "78605",
+  "age" : 31.4986301369863,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "K7030",
+  "prncplPrcdrCd" : "8954",
+  "drgCode" : 432,
+  "mdc" : 7,
+  "prediction" : 11485.352007710826
+}
+{
+  "_id" : ObjectId("5a0e071b4d21ea30e4535d7f"),
+  "los" : 3,
+  "patientStatusLkpcd" : "65",
+  "admtDiagCd" : "4280",
+  "age" : 61.580821917808223,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I5023",
+  "prncplPrcdrCd" : "8872",
+  "drgCode" : 222,
+  "mdc" : 5,
+  "prediction" : 9151.4200459185649
+}
+{
+  "_id" : ObjectId("5a0e071b4d21ea30e4535d81"),
+  "los" : 2,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "41402",
+  "age" : 37.509589041095893,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I425",
+  "prncplPrcdrCd" : "51",
+  "drgCode" : 314,
+  "mdc" : 5,
+  "prediction" : 13639.541023873011
+}
+{
+  "_id" : ObjectId("5a0e071b4d21ea30e4535d83"),
+  "los" : 11,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "2859",
+  "age" : 56.915068493150685,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "3811",
+  "prncplPrcdrCd" : "3491",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 12804.538251990913
+}
+{
+  "_id" : ObjectId("5a0e071b4d21ea30e4535d87"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78720",
+  "age" : 37.652054794520545,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "K222",
+  "prncplPrcdrCd" : "4292",
+  "drgCode" : 391,
+  "mdc" : 6,
+  "prediction" : 10849.409802768438
+}
+{
+  "_id" : ObjectId("5a0e071c4d21ea30e4535d88"),
+  "los" : 7,
+  "patientStatusLkpcd" : "20",
+  "admtDiagCd" : "4280",
+  "age" : 64.416438356164377,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I5023",
+  "prncplPrcdrCd" : "9390",
+  "drgCode" : 222,
+  "mdc" : 5,
+  "prediction" : 11844.927538066007
+}
+{
+  "_id" : ObjectId("5a0e071c4d21ea30e4535d8b"),
+  "los" : 8,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "389",
+  "age" : 37.750684931506846,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "389",
+  "prncplPrcdrCd" : "9921",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10600.461061319187
+}
+{
+  "_id" : ObjectId("5a0e071c4d21ea30e4535d90"),
+  "los" : 2,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "5609",
+  "age" : 17.016438356164382,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "T85398A",
+  "prncplPrcdrCd" : "4523",
+  "drgCode" : 124,
+  "mdc" : 2,
+  "prediction" : 10476.382283664658
+}
+{
+  "_id" : ObjectId("5a0e071c4d21ea30e4535d91"),
+  "los" : 0,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "4271",
+  "age" : 50.257534246575339,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I472",
+  "drgCode" : 308,
+  "mdc" : 5,
+  "prediction" : 10522.069978352039
+}
+{
+  "_id" : ObjectId("5a0e071c4d21ea30e4535d95"),
+  "los" : 9,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78097",
+  "age" : 37.260273972602739,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "T83590A",
+  "prncplPrcdrCd" : "598",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 9537.4354851242279
+}
+{
+  "_id" : ObjectId("5a0e071c4d21ea30e4535d98"),
+  "los" : 5,
+  "patientStatusLkpcd" : "50",
+  "admtDiagCd" : "78605",
+  "age" : 51.038356164383565,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "J910",
+  "prncplPrcdrCd" : "3491",
+  "drgCode" : 180,
+  "mdc" : 4,
+  "prediction" : 9988.4144516293181
+}
+{
+  "_id" : ObjectId("5a0e071c4d21ea30e4535da3"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78650",
+  "age" : 53.591780821917808,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "J9383",
+  "prncplPrcdrCd" : "9952",
+  "drgCode" : 199,
+  "mdc" : 4,
+  "prediction" : 9938.4325588352749
+}
+{
+  "_id" : ObjectId("5a0e071c4d21ea30e4535daa"),
+  "los" : 4,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "72402",
+  "age" : 16.893150684931506,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "M4714",
+  "prncplPrcdrCd" : "8107",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 12717.835336868549
+}
+{
+  "_id" : ObjectId("5a0e071c4d21ea30e4535db4"),
+  "los" : 1,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "7840",
+  "age" : 37.509589041095893,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "K122",
+  "drgCode" : 11,
+  "mdc" : 26,
+  "prediction" : 10999.975748493391
+}
+{
+  "_id" : ObjectId("5a0e071c4d21ea30e4535db5"),
+  "los" : 1,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "7804",
+  "age" : 37.509589041095893,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I63019",
+  "prncplPrcdrCd" : "8897",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10391.261775821467
+}
+{
+  "_id" : ObjectId("5a0e071d4d21ea30e4535dba"),
+  "los" : 1,
+  "patientStatusLkpcd" : "51",
+  "admtDiagCd" : "78605",
+  "age" : 28.805479452054794,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "J441",
+  "drgCode" : 190,
+  "mdc" : 4,
+  "prediction" : 10938.831880291873
+}
+{
+  "_id" : ObjectId("5a0e071d4d21ea30e4535dbf"),
+  "los" : 14,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "3849",
+  "age" : 31.4986301369863,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "H7393",
+  "prncplPrcdrCd" : "3895",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10564.234796481423
+}
+{
+  "_id" : ObjectId("5a0e071d4d21ea30e4535dc1"),
+  "los" : 6,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "75612",
+  "age" : 51.783561643835618,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "Q762",
+  "prncplPrcdrCd" : "8108",
+  "drgCode" : 551,
+  "mdc" : 8,
+  "prediction" : 13695.231819859408
+}
+{
+  "_id" : ObjectId("5a0e071d4d21ea30e4535dc5"),
+  "los" : 5,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "5781",
+  "age" : 51.038356164383565,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "K921",
+  "prncplPrcdrCd" : "4543",
+  "drgCode" : 377,
+  "mdc" : 6,
+  "prediction" : 10190.321700978
+}
+{
+  "_id" : ObjectId("5a0e071d4d21ea30e4535dc6"),
+  "los" : 1,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "45342",
+  "age" : 37.150684931506852,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I82419",
+  "drgCode" : 299,
+  "mdc" : 5,
+  "prediction" : 10118.592669231575
+}
+{
+  "_id" : ObjectId("5a0e071d4d21ea30e4535dc7"),
+  "los" : 3,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "5856",
+  "age" : 64.416438356164377,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I120",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 11974.154064806609
+}
+{
+  "_id" : ObjectId("5a0e071d4d21ea30e4535dcb"),
+  "los" : 5,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "9597",
+  "age" : 53.591780821917808,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "S72409A",
+  "prncplPrcdrCd" : "7935",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10719.518409087254
+}
+{
+  "_id" : ObjectId("5a0e071d4d21ea30e4535dcc"),
+  "los" : 3,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "71535",
+  "age" : 51.038356164383565,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "M169",
+  "prncplPrcdrCd" : "8151",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 9792.4149876797419
+}
+{
+  "_id" : ObjectId("5a0e071d4d21ea30e4535dce"),
+  "los" : 3,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "44021",
+  "age" : 17.265753424657536,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I70219",
+  "prncplPrcdrCd" : "3929",
+  "drgCode" : 299,
+  "mdc" : 5,
+  "prediction" : 11081.515301348845
+}
+{
+  "_id" : ObjectId("5a0e071d4d21ea30e4535dd3"),
+  "los" : 3,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78791",
+  "age" : 30.394520547945206,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "N179",
+  "drgCode" : 673,
+  "mdc" : 11,
+  "prediction" : 9680.1730825654449
+}
+{
+  "_id" : ObjectId("5a0e071d4d21ea30e4535dd4"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "43491",
+  "age" : 17.265753424657536,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "G459",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10169.274307841308
+}
+{
+  "_id" : ObjectId("5a0e071d4d21ea30e4535dd5"),
+  "los" : 7,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78650",
+  "age" : 56.032876712328765,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I2510",
+  "prncplPrcdrCd" : "3613",
+  "drgCode" : 302,
+  "mdc" : 5,
+  "prediction" : 12943.537600228545
+}
+{
+  "_id" : ObjectId("5a0e071d4d21ea30e4535dd6"),
+  "los" : 22,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "78097",
+  "age" : 51.038356164383565,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "B488",
+  "prncplPrcdrCd" : "2264",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 13561.654380043761
+}
+{
+  "_id" : ObjectId("5a0e071d4d21ea30e4535dd7"),
+  "los" : 13,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "8208",
+  "age" : 37.558904109589044,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "T84119A",
+  "prncplPrcdrCd" : "7935",
+  "drgCode" : 559,
+  "mdc" : 8,
+  "prediction" : 10811.098931759439
+}
+{
+  "_id" : ObjectId("5a0e071d4d21ea30e4535dd8"),
+  "los" : 1,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "6269",
+  "age" : 37.509589041095893,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "N8500",
+  "prncplPrcdrCd" : "6851",
+  "drgCode" : 742,
+  "mdc" : 13,
+  "prediction" : 10664.124709562449
+}
+{
+  "_id" : ObjectId("5a0e071d4d21ea30e4535dda"),
+  "los" : 1,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78609",
+  "age" : 61.463013698630135,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "J8410",
+  "prncplPrcdrCd" : "3320",
+  "drgCode" : 196,
+  "mdc" : 4,
+  "prediction" : 9879.7025604869978
+}
+{
+  "_id" : ObjectId("5a0e071d4d21ea30e4535ddb"),
+  "los" : 11,
+  "patientStatusLkpcd" : "20",
+  "admtDiagCd" : "7862",
+  "age" : 17.268493150684932,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "J690",
+  "prncplPrcdrCd" : "4632",
+  "drgCode" : 177,
+  "mdc" : 4,
+  "prediction" : 11619.917397488862
+}
+{
+  "_id" : ObjectId("5a0e071d4d21ea30e4535ddc"),
+  "los" : 6,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "56211",
+  "age" : 37.68767123287671,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "K5732",
+  "prncplPrcdrCd" : "4862",
+  "drgCode" : 391,
+  "mdc" : 6,
+  "prediction" : 9247.0699483301978
+}
+{
+  "_id" : ObjectId("5a0e071d4d21ea30e4535ddd"),
+  "los" : 2,
+  "patientStatusLkpcd" : "20",
+  "admtDiagCd" : "78097",
+  "age" : 30.394520547945206,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "389",
+  "prncplPrcdrCd" : "8919",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10079.537641153227
+}
+{
+  "_id" : ObjectId("5a0e071d4d21ea30e4535de1"),
+  "los" : 4,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "71947",
+  "age" : 16.893150684931506,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "L03119",
+  "prncplPrcdrCd" : "8191",
+  "drgCode" : 573,
+  "mdc" : 9,
+  "prediction" : 9388.3981345982338
+}
+{
+  "_id" : ObjectId("5a0e071d4d21ea30e4535de2"),
+  "los" : 3,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "71536",
+  "age" : 37.665753424657531,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "M179",
+  "prncplPrcdrCd" : "8154",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10038.779925269751
+}
+{
+  "_id" : ObjectId("5a0e071d4d21ea30e4535de4"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "5849",
+  "age" : 30.394520547945206,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "N013",
+  "prncplPrcdrCd" : "5523",
+  "drgCode" : 698,
+  "mdc" : 11,
+  "prediction" : 9997.3455725925978
+}
+{
+  "_id" : ObjectId("5a0e071d4d21ea30e4535de7"),
+  "los" : 13,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "4240",
+  "age" : 36.945205479452056,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I080",
+  "prncplPrcdrCd" : "3523",
+  "drgCode" : 306,
+  "mdc" : 5,
+  "prediction" : 20861.254629893119
+}
+{
+  "_id" : ObjectId("5a0e071d4d21ea30e4535dea"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "51881",
+  "age" : 64.416438356164377,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "J9600",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 11761.536923472031
+}
+{
+  "_id" : ObjectId("5a0e071d4d21ea30e4535def"),
+  "los" : 6,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "78605",
+  "age" : 17.153424657534245,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "J189",
+  "prncplPrcdrCd" : "3995",
+  "drgCode" : 193,
+  "mdc" : 4,
+  "prediction" : 10163.519631557676
+}
+{
+  "_id" : ObjectId("5a0e071d4d21ea30e4535df0"),
+  "los" : 5,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "7230",
+  "age" : 12.27945205479452,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "M5000",
+  "prncplPrcdrCd" : "8103",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10942.559065251367
+}
+{
+  "_id" : ObjectId("5a0e071d4d21ea30e4535df2"),
+  "los" : 4,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "4279",
+  "age" : 50.098630136986301,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I472",
+  "prncplPrcdrCd" : "3723",
+  "drgCode" : 308,
+  "mdc" : 5,
+  "prediction" : 11002.406958116238
+}
+{
+  "_id" : ObjectId("5a0e071d4d21ea30e4535df6"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78900",
+  "age" : 49.87945205479452,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "K559",
+  "prncplPrcdrCd" : "4525",
+  "drgCode" : 393,
+  "mdc" : 6,
+  "prediction" : 9495.3834048531116
+}
+{
+  "_id" : ObjectId("5a0e071d4d21ea30e4535df9"),
+  "los" : 1,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "486",
+  "age" : 17.572602739726026,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "G92",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10718.221891634732
+}
+{
+  "_id" : ObjectId("5a0e071e4d21ea30e4535dff"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "59971",
+  "age" : 59.972602739726028,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "D7801",
+  "prncplPrcdrCd" : "9648",
+  "drgCode" : 919,
+  "mdc" : 21,
+  "prediction" : 9887.9751670024598
+}
+{
+  "_id" : ObjectId("5a0e071e4d21ea30e4535e06"),
+  "los" : 5,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "7801",
+  "age" : 36.131506849315066,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "F331",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 9784.0639512814596
+}
+{
+  "_id" : ObjectId("5a0e071e4d21ea30e4535e07"),
+  "los" : 7,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "4111",
+  "age" : 18.18904109589041,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "M6282",
+  "prncplPrcdrCd" : "8703",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 7458.0919864273501
+}
+{
+  "_id" : ObjectId("5a0e071e4d21ea30e4535e0f"),
+  "los" : 4,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "81200",
+  "age" : 37.665753424657531,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "S42209A",
+  "prncplPrcdrCd" : "8659",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10616.938901829135
+}
+{
+  "_id" : ObjectId("5a0e071e4d21ea30e4535e15"),
+  "los" : 21,
+  "patientStatusLkpcd" : "20",
+  "admtDiagCd" : "3201",
+  "age" : 37.260273972602739,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "382",
+  "prncplPrcdrCd" : "311",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 12381.085674282796
+}
+{
+  "_id" : ObjectId("5a0e071e4d21ea30e4535e1e"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "45340",
+  "age" : 25.802739726027397,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I82419",
+  "drgCode" : 299,
+  "mdc" : 5,
+  "prediction" : 9551.6642138717762
+}
+{
+  "_id" : ObjectId("5a0e071e4d21ea30e4535e1f"),
+  "los" : 4,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "65421",
+  "age" : 16.893150684931506,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "O34211",
+  "prncplPrcdrCd" : "741",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10512.998892621112
+}
+{
+  "_id" : ObjectId("5a0e071e4d21ea30e4535e2b"),
+  "los" : 20,
+  "patientStatusLkpcd" : "62",
+  "admtDiagCd" : "78791",
+  "age" : 35.819178082191783,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "845",
+  "prncplPrcdrCd" : "6021",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 14525.92822457546
+}
+{
+  "_id" : ObjectId("5a0e071e4d21ea30e4535e2c"),
+  "los" : 6,
+  "patientStatusLkpcd" : "4",
+  "admtDiagCd" : "4589",
+  "age" : 17.572602739726026,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "389",
+  "prncplPrcdrCd" : "9904",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 11579.703951045194
+}
+{
+  "_id" : ObjectId("5a0e071f4d21ea30e4535e30"),
+  "los" : 3,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78605",
+  "age" : 53.591780821917808,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I4892",
+  "drgCode" : 308,
+  "mdc" : 5,
+  "prediction" : 10638.545168155695
+}
+{
+  "_id" : ObjectId("5a0e071f4d21ea30e4535e34"),
+  "los" : 1,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78605",
+  "age" : 17.572602739726026,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "J182",
+  "prncplPrcdrCd" : "3995",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 9159.3170166799791
+}
+{
+  "_id" : ObjectId("5a0e071f4d21ea30e4535e36"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "8052",
+  "age" : 37.558904109589044,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "S22009A",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 9548.3011222913556
+}
+{
+  "_id" : ObjectId("5a0e071f4d21ea30e4535e39"),
+  "los" : 1,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78900",
+  "age" : 51.783561643835618,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "R109",
+  "drgCode" : 391,
+  "mdc" : 6,
+  "prediction" : 10562.881251542502
+}
+{
+  "_id" : ObjectId("5a0e071f4d21ea30e4535e3b"),
+  "los" : 7,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "7804",
+  "age" : 57.953424657534249,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "D688",
+  "prncplPrcdrCd" : "9907",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10361.621966797858
+}
+{
+  "_id" : ObjectId("5a0e071f4d21ea30e4535e3c"),
+  "los" : 3,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "4280",
+  "age" : 55.008219178082193,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I5033",
+  "drgCode" : 222,
+  "mdc" : 5,
+  "prediction" : 10833.717600836542
+}
+{
+  "_id" : ObjectId("5a0e071f4d21ea30e4535e43"),
+  "los" : 2,
+  "patientStatusLkpcd" : "50",
+  "admtDiagCd" : "7812",
+  "age" : 28.805479452054794,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "C7931",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10979.888036701399
+}
+{
+  "_id" : ObjectId("5a0e071f4d21ea30e4535e4a"),
+  "los" : 8,
+  "patientStatusLkpcd" : "62",
+  "admtDiagCd" : "78650",
+  "age" : 37.68767123287671,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I2510",
+  "prncplPrcdrCd" : "3611",
+  "drgCode" : 302,
+  "mdc" : 5,
+  "prediction" : 12876.201634668592
+}
+{
+  "_id" : ObjectId("5a0e071f4d21ea30e4535e4c"),
+  "los" : 1,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78605",
+  "age" : 37.150684931506852,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "J441",
+  "drgCode" : 190,
+  "mdc" : 4,
+  "prediction" : 9990.4439535689144
+}
+{
+  "_id" : ObjectId("5a0e071f4d21ea30e4535e55"),
+  "los" : 17,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "59971",
+  "age" : 17.016438356164382,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "389",
+  "prncplPrcdrCd" : "387",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 11461.910493015646
+}
+{
+  "_id" : ObjectId("5a0e071f4d21ea30e4535e56"),
+  "los" : 3,
+  "patientStatusLkpcd" : "65",
+  "admtDiagCd" : "5849",
+  "age" : 37.260273972602739,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "N179",
+  "drgCode" : 673,
+  "mdc" : 11,
+  "prediction" : 13657.137409585768
+}
+{
+  "_id" : ObjectId("5a0e071f4d21ea30e4535e57"),
+  "los" : 4,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78079",
+  "age" : 35.819178082191783,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "J984",
+  "prncplPrcdrCd" : "3327",
+  "drgCode" : 205,
+  "mdc" : 4,
+  "prediction" : 10332.073181544889
+}
+{
+  "_id" : ObjectId("5a0e071f4d21ea30e4535e58"),
+  "los" : 4,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "486",
+  "age" : 51.038356164383565,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "J180",
+  "prncplPrcdrCd" : "9921",
+  "drgCode" : 193,
+  "mdc" : 4,
+  "prediction" : 10051.922363609876
+}
+{
+  "_id" : ObjectId("5a0e071f4d21ea30e4535e59"),
+  "los" : 8,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "51881",
+  "age" : 35.819178082191783,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "J9620",
+  "prncplPrcdrCd" : "9604",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 20310.902284174008
+}
+{
+  "_id" : ObjectId("5a0e07204d21ea30e4535e63"),
+  "los" : 6,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78605",
+  "age" : 37.750684931506846,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I5033",
+  "drgCode" : 222,
+  "mdc" : 5,
+  "prediction" : 10628.869522571655
+}
+{
+  "_id" : ObjectId("5a0e07204d21ea30e4535e69"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "71691",
+  "age" : 50.257534246575339,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "M129",
+  "prncplPrcdrCd" : "8188",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 11249.202230493172
+}
+{
+  "_id" : ObjectId("5a0e07204d21ea30e4535e6c"),
+  "los" : 2,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "99662",
+  "age" : 17.123287671232877,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "T827XXA",
+  "prncplPrcdrCd" : "3995",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10997.509473089143
+}
+{
+  "_id" : ObjectId("5a0e07204d21ea30e4535e6e"),
+  "los" : 10,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "29532",
+  "age" : 46.358904109589041,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "F200",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10882.867583374151
+}
+{
+  "_id" : ObjectId("5a0e07204d21ea30e4535e74"),
+  "los" : 6,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "490",
+  "age" : 55.93150684931507,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "J441",
+  "drgCode" : 190,
+  "mdc" : 4,
+  "prediction" : 8362.9419774250073
+}
+{
+  "_id" : ObjectId("5a0e07204d21ea30e4535e75"),
+  "los" : 8,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "49392",
+  "age" : 18.18904109589041,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "J101",
+  "prncplPrcdrCd" : "3995",
+  "drgCode" : 193,
+  "mdc" : 4,
+  "prediction" : 11656.476645762334
+}
+{
+  "_id" : ObjectId("5a0e07204d21ea30e4535e76"),
+  "los" : 9,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "51881",
+  "age" : 17.268493150684932,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "J9600",
+  "prncplPrcdrCd" : "9390",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 11504.078990218208
+}
+{
+  "_id" : ObjectId("5a0e07204d21ea30e4535e7b"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "43491",
+  "age" : 17.887671232876713,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I6350",
+  "prncplPrcdrCd" : "8891",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 8768.2181527469384
+}
+{
+  "_id" : ObjectId("5a0e07204d21ea30e4535e7c"),
+  "los" : 17,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "2859",
+  "age" : 28.805479452054794,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "D500",
+  "prncplPrcdrCd" : "640",
+  "drgCode" : 811,
+  "mdc" : 16,
+  "prediction" : 12344.860924199025
+}
+{
+  "_id" : ObjectId("5a0e07204d21ea30e4535e7d"),
+  "los" : 2,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "78605",
+  "age" : 17.123287671232877,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "J918",
+  "prncplPrcdrCd" : "3492",
+  "drgCode" : 186,
+  "mdc" : 4,
+  "prediction" : 10430.88270471358
+}
+{
+  "_id" : ObjectId("5a0e07204d21ea30e4535e7f"),
+  "los" : 4,
+  "patientStatusLkpcd" : "65",
+  "admtDiagCd" : "29421",
+  "age" : 37.260273972602739,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "389",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 14463.26490085132
+}
+{
+  "_id" : ObjectId("5a0e07204d21ea30e4535e8c"),
+  "los" : 1,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "59969",
+  "age" : 37.68767123287671,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "N358",
+  "prncplPrcdrCd" : "586",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10689.545071196368
+}
+{
+  "_id" : ObjectId("5a0e07204d21ea30e4535e8d"),
+  "los" : 1,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "71941",
+  "age" : 17.887671232876713,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "M1990",
+  "prncplPrcdrCd" : "8180",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 11478.396160124243
+}
+{
+  "_id" : ObjectId("5a0e07204d21ea30e4535e8f"),
+  "los" : 3,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "78605",
+  "age" : 31.4986301369863,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "J440",
+  "drgCode" : 190,
+  "mdc" : 4,
+  "prediction" : 10559.159781148252
+}
+{
+  "_id" : ObjectId("5a0e07204d21ea30e4535e92"),
+  "los" : 3,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78909",
+  "age" : 61.463013698630135,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "K4030",
+  "prncplPrcdrCd" : "5305",
+  "drgCode" : 393,
+  "mdc" : 6,
+  "prediction" : 11621.36326050838
+}
+{
+  "_id" : ObjectId("5a0e07214d21ea30e4535e96"),
+  "los" : 1,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "36844",
+  "age" : 61.580821917808223,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I10",
+  "drgCode" : 304,
+  "mdc" : 5,
+  "prediction" : 10564.422600437096
+}
+{
+  "_id" : ObjectId("5a0e07214d21ea30e4535e9a"),
+  "los" : 3,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "59010",
+  "age" : 51.783561643835618,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "N10",
+  "drgCode" : 689,
+  "mdc" : 11,
+  "prediction" : 10472.504071585809
+}
+{
+  "_id" : ObjectId("5a0e07214d21ea30e4535e9b"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "49392",
+  "age" : 37.558904109589044,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "J45901",
+  "drgCode" : 202,
+  "mdc" : 4,
+  "prediction" : 11187.267993509227
+}
+{
+  "_id" : ObjectId("5a0e07214d21ea30e4535e9c"),
+  "los" : 9,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "51884",
+  "age" : 31.4986301369863,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "J9620",
+  "prncplPrcdrCd" : "3404",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 11028.97718776928
+}
+{
+  "_id" : ObjectId("5a0e07214d21ea30e4535ea2"),
+  "los" : 9,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78079",
+  "age" : 31.4986301369863,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I350",
+  "prncplPrcdrCd" : "3506",
+  "drgCode" : 306,
+  "mdc" : 5,
+  "prediction" : 13157.852668119463
+}
+{
+  "_id" : ObjectId("5a0e07214d21ea30e4535ea4"),
+  "los" : 9,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78097",
+  "age" : 35.819178082191783,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "388",
+  "prncplPrcdrCd" : "3893",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 9279.7067118643135
+}
+{
+  "_id" : ObjectId("5a0e07214d21ea30e4535ea7"),
+  "los" : 3,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "28522",
+  "age" : 59.972602739726028,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "D630",
+  "prncplPrcdrCd" : "9904",
+  "drgCode" : 811,
+  "mdc" : 16,
+  "prediction" : 9313.7528694075954
+}
+{
+  "_id" : ObjectId("5a0e07214d21ea30e4535ea8"),
+  "los" : 5,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "41091",
+  "age" : 46.358904109589041,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I2109",
+  "prncplPrcdrCd" : "66",
+  "drgCode" : 222,
+  "mdc" : 5,
+  "prediction" : 13591.139756423272
+}
+{
+  "_id" : ObjectId("5a0e07214d21ea30e4535ea9"),
+  "los" : 2,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "71596",
+  "age" : 35.819178082191783,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "M179",
+  "prncplPrcdrCd" : "8154",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10230.763463763333
+}
+{
+  "_id" : ObjectId("5a0e07214d21ea30e4535eb0"),
+  "los" : 6,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "71945",
+  "age" : 17.572602739726026,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "S32501A",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 11659.123062824425
+}
+{
+  "_id" : ObjectId("5a0e07214d21ea30e4535eb2"),
+  "los" : 1,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "78079",
+  "age" : 12.27945205479452,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "K2961",
+  "prncplPrcdrCd" : "4516",
+  "drgCode" : 377,
+  "mdc" : 6,
+  "prediction" : 8833.9404542629818
+}
+{
+  "_id" : ObjectId("5a0e07214d21ea30e4535eb3"),
+  "los" : 6,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "5849",
+  "age" : 37.898630136986299,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "N179",
+  "drgCode" : 673,
+  "mdc" : 11,
+  "prediction" : 12556.290163674639
+}
+{
+  "_id" : ObjectId("5a0e07214d21ea30e4535ebc"),
+  "los" : 4,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "51881",
+  "age" : 55.93150684931507,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "J9600",
+  "prncplPrcdrCd" : "9671",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 11544.600150836657
+}
+{
+  "_id" : ObjectId("5a0e07214d21ea30e4535ebd"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "2859",
+  "age" : 30.394520547945206,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "D631",
+  "prncplPrcdrCd" : "9904",
+  "drgCode" : 811,
+  "mdc" : 16,
+  "prediction" : 9506.2933445455237
+}
+{
+  "_id" : ObjectId("5a0e07214d21ea30e4535ebe"),
+  "los" : 8,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "1707",
+  "age" : 37.68767123287671,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "C4020",
+  "prncplPrcdrCd" : "9229",
+  "drgCode" : 542,
+  "mdc" : 8,
+  "prediction" : 11686.984355334222
+}
+{
+  "_id" : ObjectId("5a0e07214d21ea30e4535ec1"),
+  "los" : 7,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "78650",
+  "age" : 35.819178082191783,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "J441",
+  "prncplPrcdrCd" : "9462",
+  "drgCode" : 190,
+  "mdc" : 4,
+  "prediction" : 10351.716189158724
+}
+{
+  "_id" : ObjectId("5a0e07224d21ea30e4535ec6"),
+  "los" : 10,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "78605",
+  "age" : 59.972602739726028,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "J15212",
+  "drgCode" : 177,
+  "mdc" : 4,
+  "prediction" : 10794.821121299628
+}
+{
+  "_id" : ObjectId("5a0e07224d21ea30e4535ec7"),
+  "los" : 10,
+  "patientStatusLkpcd" : "70",
+  "admtDiagCd" : "27651",
+  "age" : 18.18904109589041,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "G20",
+  "prncplPrcdrCd" : "8703",
+  "drgCode" : 56,
+  "mdc" : 1,
+  "prediction" : 10178.00009889033
+}
+{
+  "_id" : ObjectId("5a0e07224d21ea30e4535ec8"),
+  "los" : 3,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "5990",
+  "age" : 30.394520547945206,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "N179",
+  "drgCode" : 673,
+  "mdc" : 11,
+  "prediction" : 10099.026898177008
+}
+{
+  "_id" : ObjectId("5a0e07224d21ea30e4535eca"),
+  "los" : 21,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "27651",
+  "age" : 34.479452054794521,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "N179",
+  "prncplPrcdrCd" : "4311",
+  "drgCode" : 673,
+  "mdc" : 11,
+  "prediction" : 12070.527063212774
+}
+{
+  "_id" : ObjectId("5a0e07224d21ea30e4535ecd"),
+  "los" : 4,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "2989",
+  "age" : 28.805479452054794,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "F29",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10367.306749133588
+}
+{
+  "_id" : ObjectId("5a0e07224d21ea30e4535ecf"),
+  "los" : 2,
+  "patientStatusLkpcd" : "51",
+  "admtDiagCd" : "1985",
+  "age" : 16.893150684931506,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "C9000",
+  "drgCode" : 820,
+  "mdc" : 17,
+  "prediction" : 10601.409619484271
+}
+{
+  "_id" : ObjectId("5a0e07224d21ea30e4535ed1"),
+  "los" : 0,
+  "patientStatusLkpcd" : "2",
+  "admtDiagCd" : "78650",
+  "age" : 49.87945205479452,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "I712",
+  "drgCode" : 299,
+  "mdc" : 5,
+  "prediction" : 9931.9774859211557
+}
+{
+  "_id" : ObjectId("5a0e07224d21ea30e4535ed7"),
+  "los" : 3,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "V553",
+  "age" : 37.260273972602739,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "Z433",
+  "prncplPrcdrCd" : "4652",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 12239.077157199403
+}
+{
+  "_id" : ObjectId("5a0e07224d21ea30e4535edc"),
+  "los" : 1,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "43310",
+  "age" : 31.4986301369863,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I6529",
+  "prncplPrcdrCd" : "3812",
+  "drgCode" : 67,
+  "mdc" : 1,
+  "prediction" : 9527.4205552016483
+}
+{
+  "_id" : ObjectId("5a0e07224d21ea30e4535ee4"),
+  "los" : 1,
+  "patientStatusLkpcd" : "3",
+  "admtDiagCd" : "V556",
+  "age" : 17.153424657534245,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "Z436",
+  "prncplPrcdrCd" : "5503",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10305.223645566906
+}
+{
+  "_id" : ObjectId("5a0e07224d21ea30e4535ee9"),
+  "los" : 3,
+  "patientStatusLkpcd" : "62",
+  "admtDiagCd" : "430",
+  "age" : 61.580821917808223,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "S066X1A",
+  "prncplPrcdrCd" : "8703",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 9866.2210213835278
+}
+{
+  "_id" : ObjectId("5a0e07224d21ea30e4535eeb"),
+  "los" : 6,
+  "patientStatusLkpcd" : "62",
+  "admtDiagCd" : "41401",
+  "age" : 37.68767123287671,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "I2510",
+  "prncplPrcdrCd" : "3612",
+  "drgCode" : 302,
+  "mdc" : 5,
+  "prediction" : 13722.927786122202
+}
+{
+  "_id" : ObjectId("5a0e07224d21ea30e4535eec"),
+  "los" : 5,
+  "patientStatusLkpcd" : "4",
+  "admtDiagCd" : "78791",
+  "age" : 52.104109589041094,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "845",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 11095.496894479886
+}
+{
+  "_id" : ObjectId("5a0e07224d21ea30e4535eed"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78959",
+  "age" : 37.260273972602739,
+  "patientGender" : "M",
+  "prncplDgnsCd" : "K766",
+  "prncplPrcdrCd" : "5491",
+  "drgCode" : 441,
+  "mdc" : 7,
+  "prediction" : 11214.798210455869
+}
+{
+  "_id" : ObjectId("5a0e07224d21ea30e4535ef1"),
+  "los" : 2,
+  "patientStatusLkpcd" : "1",
+  "admtDiagCd" : "78605",
+  "age" : 37.665753424657531,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "J189",
+  "drgCode" : 193,
+  "mdc" : 4,
+  "prediction" : 10313.702103894611
+}
+{
+  "_id" : ObjectId("5a0e07224d21ea30e4535ef3"),
+  "los" : 1,
+  "patientStatusLkpcd" : "6",
+  "admtDiagCd" : "7231",
+  "age" : 55.008219178082193,
+  "patientGender" : "F",
+  "prncplDgnsCd" : "M5000",
+  "prncplPrcdrCd" : "8102",
+  "drgCode" : 23,
+  "mdc" : 1,
+  "prediction" : 10211.659258864103
+}
