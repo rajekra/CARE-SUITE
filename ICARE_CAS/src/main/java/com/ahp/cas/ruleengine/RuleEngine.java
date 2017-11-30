@@ -44,13 +44,6 @@ public class RuleEngine {
 	//	ExportDB.derivedData(xmlDBPath);
 		TransactionManager tm = com.arjuna.ats.jta.TransactionManager.transactionManager();
 
-		//build the EntityManagerFactory as you would build in in Hibernate ORM
-		EntityManagerFactory emf = Persistence.createEntityManagerFactory("ogmdemo");
-		EntityManager em = emf.createEntityManager();
-		System.out.println("TRANSACTION MABAGE: "+tm);
-		System.out.println("emf: "+emf);
-		
-		System.out.println("em: "+em);
 		RuleITInitilizer.setM_sConfigFileLocation(ruleAppHome);
 		ClassPathXmlApplicationContext  rulecontext = (ClassPathXmlApplicationContext) RuleITInit.ctx;
 		l_objRuleProcessor = RuleITInit.getRuleProcessor();

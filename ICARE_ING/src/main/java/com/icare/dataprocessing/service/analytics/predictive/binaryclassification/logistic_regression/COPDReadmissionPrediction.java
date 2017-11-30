@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.apache.spark.ml.Pipeline;
 import org.apache.spark.ml.PipelineStage;
+import org.apache.spark.ml.evaluation.BinaryClassificationEvaluator;
 import org.apache.spark.ml.feature.Bucketizer;
 import org.apache.spark.ml.feature.Normalizer;
 import org.apache.spark.ml.feature.OneHotEncoder;
@@ -149,10 +150,10 @@ public class COPDReadmissionPrediction extends LogisticRegressionBuilder {
 		indexers.add(normalizer);
 		indexers.add(logisticRegression);
 		
-		Pipeline pipeLine = new Pipeline().setStages(indexers.toArray(new PipelineStage[indexers.size()]));
+		pipeLine = new Pipeline().setStages(indexers.toArray(new PipelineStage[indexers.size()]));
 
-		paramGrid = paramBuilder.build();
-		trainValidationSplit.setEstimatorParamMaps(paramGrid);
+		//paramGrid = paramBuilder.build();
+		//trainValidationSplit.setEstimatorParamMaps(paramGrid);
 		trainValidationSplit.setEstimator(pipeLine);
 		return (T) config;
 	}
@@ -162,19 +163,24 @@ public class COPDReadmissionPrediction extends LogisticRegressionBuilder {
 		Dataset<Row> train = (Dataset<Row>) training;
 		train = train.drop("mbrIdentifier");
 		train = train.drop("_id");
-		trainValidationSplitModel = trainValidationSplit.fit(train);
-		System.out.println("Avg Met:"+trainValidationSplitModel.bestModel().explainParams());
+		System.out.println("[buildModel]: STARTS");
+		train.show();
+		System.out.println("[buildModel]: ENDS");
+		pipelineModel = pipeLine.fit(train);
+		
+//		System.out.println("Avg Met:"+trainValidationSplitModel.bestModel().explainParams());
 		return null;
 	}
 
 	@Override
 	public <T, P> T predict(P test) throws Exception {
 		Dataset<Row> testing = (Dataset<Row>) test;
-		testing = testing.drop("label");
+		//testing = testing.drop("label");
 		System.out.println("===========B4 PREDICTION==========");
 		testing.printSchema();
 		testing.show();
-		Dataset<Row> predictions = trainValidationSplitModel.transform(testing);
+		System.out.println("===========B4 TRANSFORM==========");
+		Dataset<Row> predictions = pipelineModel.transform(testing);
 		System.out.println("===========AFTER PREDICTION==========");
 		predictions.printSchema();
 		predictions.show();
@@ -183,7 +189,12 @@ public class COPDReadmissionPrediction extends LogisticRegressionBuilder {
 			System.out.println("(" + r.get(0) + ", " + r.get(1) + ") --> prob="
 					+ r.get(2) + ", prediction=" + r.get(3));
 		}
+		BinaryClassificationEvaluator eval = new BinaryClassificationEvaluator();
+		eval.setRawPredictionCol("rawPrediction");
+		System.out.println("eval.evaluate:"+eval.evaluate(predictions));
+		System.out.println("eval.getMetricName():"+eval.getMetricName());
 		return (T) predictions;
+//		return null;
 	}
 
 	@Override
@@ -200,7 +211,21 @@ public class COPDReadmissionPrediction extends LogisticRegressionBuilder {
 
 	@Override
 	public <T, P> T savePrediction(P config) throws Exception {
-		// TODO Auto-generated method stub
+		Dataset<Row> predictedData = (Dataset<Row>) config;
+		predictedData = predictedData.drop("patientGenderIndexer");
+		predictedData = predictedData.drop("patientGenderVec");
+		predictedData = predictedData.drop("admitYearIndexer");
+		predictedData = predictedData.drop("admitYearVec");
+		predictedData = predictedData.drop("admitMonthIndexer");
+		predictedData = predictedData.drop("admitMonthVec");
+		predictedData = predictedData.drop("patientStatusLkpcdIndexer");
+		predictedData = predictedData.drop("patientStatusLkpcdVec");
+		predictedData = predictedData.drop("ageBucketizer");
+		predictedData = predictedData.drop("features_temp");
+		predictedData = predictedData.drop("features");
+		predictedData = predictedData.drop("rawPrediction");
+		predictedData = predictedData.drop("probability");
+		RepositoryFactory.getInpatientAggregationRepo().save(predictedData, "COPD_READMISSION_PREDICTION");	
 		return null;
 	}
 }

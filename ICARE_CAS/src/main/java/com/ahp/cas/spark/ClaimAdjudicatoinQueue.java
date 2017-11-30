@@ -17,13 +17,13 @@ public class ClaimAdjudicatoinQueue {
 	public static void main(String[] args) {
 		 SparkSession spark = SparkSession
 			      .builder()
-			      .master("local")
+			      .master("local[*]")
 			      .appName("Java Spark SQL basic example")
 			      .config("spark.some.config.option", "some-value")
 			      .getOrCreate();
 		 
 		 JavaRDD<String> peopleRDD = spark.read()
-			      .textFile("file:///C:/DevelopmentStage/OWCP/HCE_DEMO/HCE_DEMO_JSONS/ICARE/1_RBRVS_Pricing_1_1_20171107_123313655.json")
+			      .textFile("file:///C:/DevelopmentStage/OWCP/HCE_DEMO/HCE_DEMO_JSONS/ICARE/")
 				// .textFile("file:///C:\\Users\\kandhasamyr\\OneDrive - CNSI\\ICARE\\data\\MONGO_MASTER\\COPD_Final2.csv")
 			      .toJavaRDD();
 		 

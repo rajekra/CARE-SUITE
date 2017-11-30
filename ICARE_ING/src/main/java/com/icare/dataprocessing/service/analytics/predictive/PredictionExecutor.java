@@ -14,8 +14,8 @@ public class PredictionExecutor extends AbstractPredictorBuilder implements Job{
 
 	public static void main(String[] args) throws Exception
 	{
-		//PredictionExecutor client = new PredictionExecutor("INPATIENT_MDC");
-		PredictionExecutor client = new PredictionExecutor("COPD_READMISSION");
+		PredictionExecutor client = new PredictionExecutor("INPATIENT_MDC");
+		//PredictionExecutor client = new PredictionExecutor("COPD_READMISSION");
 		SparkSession sparkSession = SparkSession.builder().master(CommonConstants.SPARK_MASTER)
 				 .config("spark.app.name", "COPDReadmissionPrediction")
 				 .config("spark.sql.crossJoin.enabled", "true")
