@@ -133,7 +133,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 
 	@Override
 	public <T, P> T loadTrainingData(P config) throws Exception {
-		Dataset<Row> testingData  = RepositoryFactory.getInpatientAggregationRepo().load(javaSparkContext,"INPATIENT_AGGREGATED");
+		Dataset<Row> testingData  = RepositoryFactory.getInpatientAggregationRepo().load(javaSparkContext,"INPATIENT_AGGREGATED_NONCOPD");
 		testingData.createOrReplaceTempView("Withcopd");
 		testingData  = sparkSession.sql("SELECT * FROM Withcopd ip WHERE ip.prncplDgnsCd NOT IN ('J449','J441','J440') ");
 		Dataset<Row> extractedTestingData = testingData.drop("inDate",
@@ -148,8 +148,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 				"val4_amt", "val5", "val5_amt", "val6", "val6_amt", "val7",
 				"val7_amt", "val8", "val8_amt", "val9", "val9_amt", "val10",
 				"val10_amt", "prncplPrcdrCdDate", "dischargeDate",
-				"admissionDate",
-				
+				"admissionDate","age_range","MDC_DESCRIPTION",
 				"p1",
 				"p1_dt",
 				"p2",
@@ -233,7 +232,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 
 	@Override
 	public <T, P> T loadTestingData(P config) throws Exception {
-		Dataset<Row> testingData  = RepositoryFactory.getInpatientAggregationRepo().load(javaSparkContext,"INPATIENT_AGGREGATED");
+		Dataset<Row> testingData  = RepositoryFactory.getInpatientAggregationRepo().load(javaSparkContext,"INPATIENT_AGGREGATED_NONCOPD");
 		Dataset<Row> extractedTestingData = testingData.drop("_id", "inDate",
 				"ocr1_dt", "ocr2_dt", "ocr3_dt", "ocr4_dt", "ocr5_dt", "p1_dt",
 				"p2_dt", "p3_dt", "p4_dt", "p5_dt", "p6_dt", "p7_dt", "p8_dt",
@@ -1764,6 +1763,14 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 				assemblers.add("patientGenderIndexer");
 				assemblers.add("patientGenderVec");
 				
+				StringIndexer patientZipIndexer = new StringIndexer().setInputCol("patientZip").setOutputCol("patientZipIndexer");
+				indexers.add(patientZipIndexer);
+				OneHotEncoder patientZipVec = new OneHotEncoder().setInputCol("patientZipIndexer").setOutputCol("patientZipVec");
+				indexers.add(patientZipVec);			
+				patientZipIndexer.setHandleInvalid("keep");
+				assemblers.add("patientZipIndexer");
+				assemblers.add("patientZipVec");
+				
 				
 				double[] splits = {001,020,113,129,163,215,326,405,453,573,614,652,707,734,765,789,799,820,853,876,894,901,927,939,955,969,981,999};
 				Bucketizer drgCodeBucketizer = new Bucketizer().setInputCol("drgCode").setOutputCol("drgCodeBucketizer").setSplits(splits);
@@ -1823,7 +1830,7 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 		Dataset<Row> testData = (Dataset<Row>) testingData;
 		testData = testData.drop("totalBilledAmount");
 		testData = testData.drop("label");
-		Dataset<Row> predictedValues = trainValidationSplitModel.transform(testData).select("_id","los","patientStatusLkpcd","admtDiagCd","age","patientGender","prncplDgnsCd","prncplPrcdrCd","drgCode","mdc","prediction");
+		Dataset<Row> predictedValues = trainValidationSplitModel.transform(testData).select("_id","los","patientStatusLkpcd","admtDiagCd","age","patientGender","patientZip","prncplDgnsCd","prncplPrcdrCd","drgCode","mdc","prediction");
 		System.out.println("-------------------HOLDOUT----------------");
 		predictedValues.printSchema();
 		predictedValues.show();
@@ -1874,12 +1881,16 @@ public class InpatientMdcwisePrediction extends LinearRegressionBuilder {
 	@Override
 	public <T, P> T savePrediction(P inpPredictedData) throws Exception {
 		Dataset<Row> predictedData = (Dataset<Row>) inpPredictedData;
+		System.out.println("In savePrediction 1");
 		Dataset<Row> mdcData  = RepositoryFactory.getInpatientAggregationRepo().load(javaSparkContext,"MAJOR_DIAG_CATEGORY_MS");
 		mdcData.createOrReplaceTempView("MDC");
 		predictedData.createOrReplaceTempView("PREDICTION");
-		Dataset<Row> dataForMetrics = sparkSession.sql("select P.los,P.patientStatusLkpcd,P.admtDiagCd,P.age, P.patientGender,P.prncplDgnsCd,P.prncplPrcdrCd,P.drgCode,P.prediction,M.MDC_DESCRIPTION from PREDICTION P, MDC M WHERE P.mdc = M.MDC_ID");
-		
+		Dataset<Row> dataForMetrics = sparkSession.sql("select P.los,P.patientStatusLkpcd,P.admtDiagCd,P.age, P.patientGender,P.patientZip, P.prncplDgnsCd,P.prncplPrcdrCd,P.drgCode,P.prediction,M.MDC_DESCRIPTION from PREDICTION P, MDC M WHERE P.mdc = M.MDC_ID");
+		System.out.println("In savePrediction 2");
 		dataForMetrics.show();
+		dataForMetrics.cache();
+		dataForMetrics.persist();
+		System.out.println("In savePrediction 3");
 		RepositoryFactory.getInpatientAggregationRepo().save(dataForMetrics, "INPATIENT_PREDICTION");
 		return null;
 	}

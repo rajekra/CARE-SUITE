@@ -17,11 +17,11 @@ public class CommonConstants {
 
 	public static MongoCollection<BasicDBObject> MAJOR_DIAG_CATEGORY_MS = ICARE_SCHEMA.getCollection("MAJOR_DIAG_CATEGORY_MS",BasicDBObject.class);
 	
-	public static MongoCollection<BasicDBObject> INPATIENT_STAGING = ICARE_SCHEMA.getCollection("INPATIENT_STAGING",BasicDBObject.class);
-	public static MongoCollection<BasicDBObject> INPATIENT_AGGREGATED = ICARE_SCHEMA.getCollection("INPATIENT_AGGREGATED",BasicDBObject.class);
+	public static MongoCollection<BasicDBObject> INPATIENT_STAGING = ICARE_SCHEMA.getCollection("INPATIENT_STAGING_NONCOPD",BasicDBObject.class);
+	public static MongoCollection<BasicDBObject> INPATIENT_AGGREGATED = ICARE_SCHEMA.getCollection("INPATIENT_AGGREGATED_NONCOPD",BasicDBObject.class);
 	public static MongoCollection<BasicDBObject> PROF_STAGING = ICARE_SCHEMA.getCollection("PROF_STAGING",BasicDBObject.class);
 
-	public static String INPATIENT_AGGREGATED_STR = "INPATIENT_AGGREGATED";
+	public static String INPATIENT_AGGREGATED_STR = "INPATIENT_STAGING_NONCOPD";
 	
 	public static MongoCollection<BasicDBObject> OUTPATIENT_STAGING = ICARE_SCHEMA.getCollection("OUTPATIENT_STAGING",BasicDBObject.class);
 	public static MongoCollection<BasicDBObject> OUTPATIENT_AGGREGATED = ICARE_SCHEMA.getCollection("OUTPATIENT_AGGREGATED",BasicDBObject.class);

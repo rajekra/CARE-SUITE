@@ -1,4 +1,4 @@
-package com.icare.dataprocessing.service.examples.graph;
+package com.icare.dataprocessing.service.analytics.graph.nodes;
 
 import java.math.BigDecimal;
 
@@ -7,7 +7,7 @@ public class Member extends Entity{
 private String memberName;
 
 
-public Member(BigDecimal id, String memberName) {
+public Member(String id, String memberName) {
 	super(id,"Member");
 	this.memberName = memberName;
 }

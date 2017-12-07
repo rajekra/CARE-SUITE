@@ -1,21 +1,21 @@
-package com.icare.dataprocessing.service.examples.graph;
+package com.icare.dataprocessing.service.analytics.graph.nodes;
 
 import java.math.BigDecimal;
 
 public abstract class Entity {
 
-	private BigDecimal id;
+	private String id;
 	private String entityType;
 
-	public BigDecimal getId() {
+	public String getId() {
 		return id;
 	}
 
-	public void setId(BigDecimal id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 
-	public Entity(BigDecimal id, String entityType) {
+	public Entity(String id, String entityType) {
 		super();
 		this.id = id;
 		this.entityType= entityType;

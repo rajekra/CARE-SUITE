@@ -21,7 +21,7 @@ public class COPDReadmissionReconcile extends AbstractDescriptive{
 	@Override
 	public void init() {
 		sparkSession = SparkSession.builder().master(CommonConstants.SPARK_MASTER)
-				 .config("spark.app.name", "COPDEpisodeOfCare")
+				 .config("spark.app.name", "COPDEpisodeOfCarePotentialyAvoidableCost")
 				 .config("spark.executor.heartbeatInterval", "20s")
 				 .config("spark.driver.extraJavaOptions", "-Xss5g")
 				  .config("spark.driver.driver-memory ", "5g")

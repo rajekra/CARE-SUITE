@@ -39,7 +39,7 @@ public class InpatientAggregation extends AbstractDescriptive {
 
 	@Override
 	public <T, P> T load(P config) throws Exception {
-		return RepositoryFactory.getInpatientStagingRepo().load("INPATIENT_STAGING");
+		return RepositoryFactory.getInpatientStagingRepo().load("INPATIENT_STAGING_NONCOPD");
 	}
 
 	@SuppressWarnings("unchecked")
@@ -65,6 +65,7 @@ public class InpatientAggregation extends AbstractDescriptive {
 		// Dataset<Row> centenarians =
 		// spark.sql("select distinct h.prncplPrcdrCd, h.prncplDgnsCd, h.mdc, sum(cast(h.totalBilledAmount as int)) as total_amount from header h group by h.mdc,h.prncplDgnsCd, h.prncplPrcdrCd order by total_amount desc");
 		Dataset<Row> centenarians = sparkSession.sql(InpatientAggregationRepoIntf.inpatientAggregateQuery.toString());
+		
 		return (T) centenarians;
 	}
 
@@ -76,7 +77,21 @@ public class InpatientAggregation extends AbstractDescriptive {
 		dataSet.createOrReplaceTempView("aggheader");
 		//dataSet.printSchema();
 		dataSet.show();
-		RepositoryFactory.getInpatientAggregationRepo().save(dataSet,CommonConstants.INPATIENT_AGGREGATED_STR);
+		Dataset<Row> withAge = sparkSession.sql(" select aggr.*, CASE WHEN aggr.age between 0 and 18 THEN '0 - 18' WHEN aggr.age between 19 and 30 THEN '18 - 30' WHEN aggr.age between 31 and 40 THEN '31 - 40' WHEN aggr.age between 41 and 50 THEN '41 - 50' WHEN aggr.age between 51 and 65 THEN '51 - 65' ELSE 'GT 65' END AS age_range from aggheader aggr");
+		withAge.printSchema();
+		withAge.show();
+		withAge.persist();
+		withAge.cache();
+		
+		Dataset<Row> mdcData  = RepositoryFactory.getInpatientAggregationRepo().load(javaSparkContext,"MAJOR_DIAG_CATEGORY_MS");
+		mdcData.createOrReplaceTempView("MDC");
+		withAge.createOrReplaceTempView("AGGREGATION");
+		Dataset<Row> dataForMetrics = sparkSession.sql("select P.*,M.MDC_DESCRIPTION from AGGREGATION P, MDC M WHERE P.mdc = M.MDC_ID");
+		dataForMetrics.printSchema();
+		dataForMetrics.show();
+		dataForMetrics.persist();
+		dataForMetrics.cache();
+		RepositoryFactory.getInpatientAggregationRepo().save(dataForMetrics,"INPATIENT_AGGREGATED_NONCOPD");
 		return null;
 	}
 

@@ -30,7 +30,7 @@ public class InpatientStagingRepoImpl implements InpatientStagingRepoIntf{
 		System.out.println("Getting records from staging table!!!");
 		Map<String, List<?>> returnItems = new HashMap<String, List<?>>();
 		MongoCollection<BasicDBObject> collection = null;
-		if(null!=tableName && "INPATIENT_STAGING".equalsIgnoreCase(tableName))
+		if(null!=tableName && "INPATIENT_STAGING_NONCOPD".equalsIgnoreCase(tableName))
 		{
 			collection = CommonConstants.INPATIENT_STAGING;
 		}

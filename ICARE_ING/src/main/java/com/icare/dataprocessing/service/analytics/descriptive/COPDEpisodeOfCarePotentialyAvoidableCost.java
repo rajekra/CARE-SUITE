@@ -15,20 +15,20 @@ import com.icare.dataprocessing.service.analytics.AbstractDescriptive;
 import com.icare.dataprocessing.util.CommonConstants;
 import com.mongodb.spark.MongoSpark;
 
-public class COPDEpisodeOfCare extends AbstractDescriptive{
+public class COPDEpisodeOfCarePotentialyAvoidableCost extends AbstractDescriptive{
 
-	public COPDEpisodeOfCare() throws Exception {
+	public COPDEpisodeOfCarePotentialyAvoidableCost() throws Exception {
 		super();
 	}
 
 	public static void main(String[] args) throws Exception {
-		new COPDEpisodeOfCare();
+		new COPDEpisodeOfCarePotentialyAvoidableCost();
 	}
 
 	@Override
 	public void init() {
 		sparkSession = SparkSession.builder().master(CommonConstants.SPARK_MASTER)
-				 .config("spark.app.name", "COPDEpisodeOfCare")
+				 .config("spark.app.name", "COPDEpisodeOfCarePotentialyAvoidableCost")
 				 .config("spark.executor.heartbeatInterval", "20s")
 				 .config("spark.driver.extraJavaOptions", "-Xss5g")
 				  .config("spark.driver.driver-memory ", "5g")
@@ -45,7 +45,7 @@ public class COPDEpisodeOfCare extends AbstractDescriptive{
 		//OR Load the claims with  ICD 10-Diagnosis codes: 0DBQ0ZZ, 0DBQ3ZZ, 0DBQ4ZZ, 0DBQ7ZZ, 0DBQ8ZZ, 0DBQXZZ, 0DBR0ZZ, 0DBR3ZZ, 0DBR4ZZ, 0DTQ0ZZ, 0DTQ4ZZ,0DTQ7ZZ, 0DTQ8ZZ, 0DTR0ZZ, 0DTR4ZZ, J410, J411, J418, J42, J430, J431, J432, J438, J439, J440, J441, J449
 		//OR Load the claims with DRG codes: 0190, 0191, 0192
 		//OR Load the claims with Revenue Codes: 0450, 0451, 0452, 0456, 0459
-		Dataset<Row> completeData  = RepositoryFactory.getInpatientAggregationRepo().load(javaSparkContext,"INPATIENT_STAGING");
+		Dataset<Row> completeData  = RepositoryFactory.getInpatientAggregationRepo().load(javaSparkContext,"INPATIENT_STAGING_COPD");
 		completeData.createOrReplaceTempView("InpStagingTable");
 		// ICD 9 => Dataset<Row> eocData  = sparkSession.sql("SELECT * FROM InpAggTable ip WHERE ip.prncplDgnsCd IN ('49100', '49110', '49120', '49121', '49122', '49180', '49190', '49200', '49280', '49600')");
 		Dataset<Row> eocData  = sparkSession.sql("SELECT * FROM InpStagingTable ip WHERE ip.prncplDgnsCd IN ('J449','J441','J440') ");
@@ -69,7 +69,7 @@ public class COPDEpisodeOfCare extends AbstractDescriptive{
 		profLines.show();
 		
 		Dataset<Row> joinedData = sparkSession
-				.sql("SELECT ET.admissiondate, ET.dischargeDate, ET.prncplDgnsCd, ET.drgCode,ET.mdc,ET.blngNationalPrvdrIdntfr,ET.patientGender,ET.patientBirthDate, PT.billedAmount,PT.fromServiceDate, PT.mbrIdentifier,PT.prcdrCode"
+				.sql("SELECT ET.admissiondate, ET.dischargeDate, ET.prncplDgnsCd, ET.drgCode,ET.mdc,ET.blngNationalPrvdrIdntfr,ET.patientGender,ET.patientBirthDate, CAST(PT.billedAmount AS INT) ,PT.fromServiceDate, PT.mbrIdentifier,PT.prcdrCode"
 						+ " FROM EpisodeTable ET , ProfLineTable PT WHERE ET.mbrIdentifier = PT.mbrIdentifier"
 						+ " AND TO_DATE(CAST(UNIX_TIMESTAMP(PT.fromServiceDate,'MM/dd/yyyy') AS TIMESTAMP))"
 						+ " BETWEEN TO_DATE(CAST(UNIX_TIMESTAMP(ET.admissionDate,'MM/dd/yyyy') AS TIMESTAMP)) AND TO_DATE(CAST(UNIX_TIMESTAMP(ET.dischargeDate,'MM/dd/yyyy') AS TIMESTAMP))"
@@ -96,7 +96,7 @@ public class COPDEpisodeOfCare extends AbstractDescriptive{
 		//MongoSpark.write((Dataset<T>) dataSet).option("collection","COPD_DESCRIPTIVE").mode("overwrite").save();
 		dataSet.cache();
 		dataSet.persist();
-		RepositoryFactory.getInpatientAggregationRepo().save(dataSet, "COPD_DESCRIPITIVE");
+		RepositoryFactory.getInpatientAggregationRepo().save(dataSet, "COPD_PAC");
 
 		//MongoSpark.save(dataSet);
 		return null;

@@ -1,12 +1,12 @@
-package com.icare.dataprocessing.service.examples.graph;
+package com.icare.dataprocessing.service.analytics.graph.nodes;
 
 import java.math.BigDecimal;
 
 public class Claim {
 private String tcn;
-private BigDecimal memberId;
-private BigDecimal providerId;
-private BigDecimal totalBilledAmount;
+private Integer memberId;
+private Integer providerId;
+private Long totalBilledAmount;
 private String principleDiagCode;
 public String getTcn() {
 	return tcn;
@@ -14,22 +14,22 @@ public String getTcn() {
 public void setTcn(String tcn) {
 	this.tcn = tcn;
 }
-public BigDecimal getMemberId() {
+public Integer getMemberId() {
 	return memberId;
 }
-public void setMemberId(BigDecimal memberId) {
+public void setMemberId(Integer memberId) {
 	this.memberId = memberId;
 }
-public BigDecimal getProviderId() {
+public Integer getProviderId() {
 	return providerId;
 }
-public void setProviderId(BigDecimal providerId) {
+public void setProviderId(Integer providerId) {
 	this.providerId = providerId;
 }
-public BigDecimal getTotalBilledAmount() {
+public  Long getTotalBilledAmount() {
 	return totalBilledAmount;
 }
-public void setTotalBilledAmount(BigDecimal totalBilledAmount) {
+public void setTotalBilledAmount( Long totalBilledAmount) {
 	this.totalBilledAmount = totalBilledAmount;
 }
 public String getPrincipleDiagCode() {
@@ -38,8 +38,8 @@ public String getPrincipleDiagCode() {
 public void setPrincipleDiagCode(String principleDiagCode) {
 	this.principleDiagCode = principleDiagCode;
 }
-public Claim( BigDecimal memberId, BigDecimal providerId,
-		BigDecimal totalBilledAmount) {
+public Claim( Integer memberId, Integer providerId,
+		 Long totalBilledAmount) {
 	super();
 	this.memberId = memberId;
 	this.providerId = providerId;
