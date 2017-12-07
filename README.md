@@ -1,2 +1,4 @@
 # ICARE
-This is test
+Component Architecture
+![alt text](https://github.com/rajekra/CARE-SUITE/blob/master/image.png)
+
