@@ -13,3 +13,6 @@ Algorithms Used
 
 Dashboard
 ![alt text](https://github.com/rajekra/CARE-SUITE/blob/master/DB.png)
+
+![alt text](https://github.com/rajekra/CARE-SUITE/blob/master/PAC.png)
+
