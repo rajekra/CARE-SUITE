@@ -10,3 +10,6 @@ Use Cases And Business Value
 
 Algorithms Used
 ![alt text](https://github.com/rajekra/CARE-SUITE/blob/master/ALG.png)
+
+Dashboard
+![alt text](https://github.com/rajekra/CARE-SUITE/blob/master/DB.png)
