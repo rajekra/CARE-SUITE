@@ -33,4 +33,6 @@ Dashboard
 SLACK INTEGRATION
 ![alt text](https://github.com/rajekra/CARE-SUITE/blob/master/SLACK.png)
 
+![alt text](https://github.com/rajekra/CARE-SUITE/blob/master/MS.png)
+
 
