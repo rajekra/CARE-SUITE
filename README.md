@@ -26,4 +26,11 @@ Dashboard
 
 ![alt text](https://github.com/rajekra/CARE-SUITE/blob/master/GA.png)
 
+![alt text](https://github.com/rajekra/CARE-SUITE/blob/master/HR.png)
+
+![alt text](https://github.com/rajekra/CARE-SUITE/blob/master/IP.png)
+
+SLACK INTEGRATION
+![alt text](https://github.com/rajekra/CARE-SUITE/blob/master/SLACK.png)
+
 
