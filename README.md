@@ -16,3 +16,6 @@ Dashboard
 
 ![alt text](https://github.com/rajekra/CARE-SUITE/blob/master/PAC.png)
 
+![alt text](https://github.com/rajekra/CARE-SUITE/blob/master/COPD_READMIT.png)
+
+
