@@ -7,3 +7,6 @@ Data Flow Architecture
 
 Use Cases And Business Value
 ![alt text](https://github.com/rajekra/CARE-SUITE/blob/master/UCS.png)
+
+Algorithms Used
+![alt text](https://github.com/rajekra/CARE-SUITE/blob/master/ALG.png)
