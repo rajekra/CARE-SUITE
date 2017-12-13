@@ -18,4 +18,12 @@ Dashboard
 
 ![alt text](https://github.com/rajekra/CARE-SUITE/blob/master/COPD_READMIT.png)
 
+![alt text](https://github.com/rajekra/CARE-SUITE/blob/master/CU1.png)
+
+![alt text](https://github.com/rajekra/CARE-SUITE/blob/master/CU2.png)
+
+![alt text](https://github.com/rajekra/CARE-SUITE/blob/master/CU3.png)
+
+![alt text](https://github.com/rajekra/CARE-SUITE/blob/master/GA.png)
+
 
